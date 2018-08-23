@@ -1,4 +1,0 @@
-name: 52-climate
-recipe: drupal8
-config:
-  webroot: web
