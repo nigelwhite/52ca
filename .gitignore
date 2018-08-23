@@ -12,7 +12,7 @@
 /web/sites/*/settings.local.php
 
 # Ignore Drupal's file directory
-# /web/sites/*/files/
+/web/sites/*/files/
 
 # Ignore SimpleTest multi-site environment.
 /web/sites/simpletest
@@ -26,3 +26,8 @@
 # Ignore Lando stuff
 .lando.yml
 /app/
+
+# Ignore nwsub theme helpers
+/web/themes/custom/nwsub/gulpfile.js
+/web/themes/custom/nwsub/package-lock.json
+/web/themes/custom/nwsub/package.json
