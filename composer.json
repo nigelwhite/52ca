@@ -32,6 +32,7 @@
         "drupal/field_group": "^1.0",
         "drupal/hide_revision_field": "^1.1",
         "drupal/module_filter": "^3.1",
+        "drupal/stage_file_proxy": "^1.0@alpha",
         "drupal/views_bootstrap": "^3.0",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
