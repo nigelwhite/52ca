@@ -24,6 +24,7 @@
         "drupal/bootstrap": "^3.12",
         "drupal/bootstrap_barrio": "^4.17",
         "drupal/bootstrap_layouts": "^5.1",
+        "drupal/bootstrap_library": "^1.11",
         "drupal/coffee": "^1.0@beta",
         "drupal/console": "^1.0.2",
         "drupal/core": "~8.5.3",
