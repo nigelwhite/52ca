@@ -3,3 +3,6 @@
  * Subtheme specific CSS.
  */
 
+ .list-group-item {
+   border: none;
+ }
