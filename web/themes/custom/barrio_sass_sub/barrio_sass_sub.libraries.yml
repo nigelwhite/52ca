@@ -10,7 +10,7 @@ global-styling:
   fonts:
     css:
       theme:
-        'https://fonts.googleapis.com/css?family=Roboto': { type: external }
+        '//fonts.googleapis.com/css?family=Roboto': { type: external }
   dependencies:
     - core/jquery
     - core/drupal
