@@ -32,6 +32,8 @@
 /web/themes/custom/barrio_sass_sub/package-lock.json
 /web/themes/custom/barrio_sass_sub/package.json
 /web/themes/custom/barrio_sass_sub/bootstrap/package.json
+/web/themes/custom/barrio_sass_sub/scss/
+/web/themes/custom/barrio_sass_sub/node_modules
 
 # Ignore contrib/bootstrap_sass theme. All files in there copied to custom/barrio_sass_sub to avoid overwriting on update
 /web/themes/contrib/bootstrap_sass/
