@@ -28,7 +28,10 @@
 /app/
 
 # Ignore nwsub theme helpers
-/web/themes/custom/nwsub/gulpfile.js
-/web/themes/custom/nwsub/package-lock.json
-/web/themes/custom/nwsub/package.json
-/web/themes/custom/nwsub/bootstrap/package.json
+/web/themes/custom/barrio_sass_sub/gulpfile.js
+/web/themes/custom/barrio_sass_sub/package-lock.json
+/web/themes/custom/barrio_sass_sub/package.json
+/web/themes/custom/barrio_sass_sub/bootstrap/package.json
+
+# Ignore contrib/bootstrap_sass theme. All files in there copied to custom/barrio_sass_sub to avoid overwriting on update
+/web/themes/contrib/bootstrap_sass/
