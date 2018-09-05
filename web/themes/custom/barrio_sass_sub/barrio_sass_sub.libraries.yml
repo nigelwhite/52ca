@@ -1,12 +1,16 @@
 global-styling:
   version: VERSION
-  js: 
+  js:
     js/popper.min.js: {}
     js/bootstrap.min.js: {}
     js/global.js: {}
   css:
     component:
       css/style.css: {}
+  fonts:
+    css:
+      theme:
+        'https://fonts.googleapis.com/css?family=Roboto': { type: external }
   dependencies:
     - core/jquery
     - core/drupal
