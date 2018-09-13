@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8f279270f9aeb56e9817343046bad53b",
+    "content-hash": "7c2954a267ff58bf80ae7d96ce3a68de",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2794,53 +2794,6 @@
             "homepage": "https://www.drupal.org/project/field_group",
             "support": {
                 "source": "http://cgit.drupalcode.org/field_group"
-            }
-        },
-        {
-            "name": "drupal/hide_revision_field",
-            "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/hide_revision_field",
-                "reference": "8.x-2.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/hide_revision_field-8.x-2.0.zip",
-                "reference": "8.x-2.0",
-                "shasum": "3eca20f4e82868feb6a16c9ee48bc2edf4b636a6"
-            },
-            "require": {
-                "drupal/core": "~8.3"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-2.0",
-                    "datestamp": "1536373683",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "NickWilde",
-                    "homepage": "https://www.drupal.org/user/3094661"
-                }
-            ],
-            "description": "Controls visibility of the revision field on entity add/edit forms.",
-            "homepage": "https://www.drupal.org/project/hide_revision_field",
-            "support": {
-                "source": "http://cgit.drupalcode.org/hide_revision_field"
             }
         },
         {
