@@ -7,10 +7,6 @@ global-styling:
   css:
     component:
       css/style.css: {}
-  fonts:
-    css:
-      theme:
-        '//fonts.googleapis.com/css?family=Roboto': { type: external }
   dependencies:
     - core/jquery
     - core/drupal

@@ -1,15 +1,14 @@
-name: barrio_sass_sub
+name: NW Bootstrap Barrio Subtheme
 type: theme
-description: 'NW copy of SASS Bootstrap Starter Kit.'
+description: 'Basic structure for a Bootstrap Barrio SubTheme.'
 version: VERSION
 core: 8.x
 base theme: bootstrap_barrio
 
 libraries:
-  - bootstrap_sass/global-styling
-libraries-override:
-  bootstrap_barrio/global-styling: false
-  bootstrap_barrio/file: false
+  - barrio_sub/bootstrap_cdn
+  - barrio_sub/global-styling
+
 regions:
   top_header: 'Top Header'
   top_header_form: "Top Header Form"
