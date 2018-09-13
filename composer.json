@@ -27,7 +27,7 @@
         "drupal/bootstrap_sass": "^1.6",
         "drupal/coffee": "^1.0@beta",
         "drupal/console": "^1.0.2",
-        "drupal/core": "~8.5.3",
+        "drupal/core": "^8.6.0",
         "drupal/ds": "^3.1",
         "drupal/environment_indicator": "^3.3",
         "drupal/field_formatter_class": "^1.1",
@@ -43,7 +43,7 @@
     },
     "require-dev": {
         "drupal/devel": "^1.2",
-        "webflo/drupal-core-require-dev": "~8.5.3"
+        "webflo/drupal-core-require-dev": "^8.6.0"
     },
     "conflict": {
         "drupal/drupal": "*"
