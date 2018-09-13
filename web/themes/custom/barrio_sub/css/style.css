@@ -3,3 +3,8 @@
  * Subtheme specific CSS.
  */
 
+.family-title {
+    font-family: 'zila-slab', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+}

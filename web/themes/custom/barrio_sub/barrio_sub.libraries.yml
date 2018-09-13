@@ -29,3 +29,15 @@ color.preview:
     color/preview.js: {}
   dependencies:
     - color/drupal.color
+muli:
+  version: VERSION
+  css:
+    component:
+      fonts/muli.css: {}
+      //fonts.googleapis.com/css?family=Muli: {}
+zila-slab:
+  version: VERSION
+  css:
+    component:
+      fonts/zila-slab.css: {}
+      //fonts.googleapis.com/css?family=Zila+Slab:800: {}
