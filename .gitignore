@@ -11,8 +11,10 @@
 /web/sites/*/settings.php
 /web/sites/*/settings.local.php
 
-# Ignore Drupal's file directory
-/web/sites/*/files/
+# Files: not ignoring user files for now, but ignoring the following
+/web/sites/*/files/css/
+/web/sites/*/files/js/
+/web/sites/*/files/php/
 
 # Ignore SimpleTest multi-site environment.
 /web/sites/simpletest
@@ -22,10 +24,6 @@
 
 # Ignore .env files as they are personal
 /.env
-
-# Ignore Lando stuff
-.lando.yml
-/app/
 
 # Ignore nwsub theme helpers
 /web/themes/custom/barrio_sass_sub/gulpfile.js
@@ -37,3 +35,6 @@
 
 # Ignore contrib/bootstrap_sass theme. All files in there copied to custom/barrio_sass_sub to avoid overwriting on update
 /web/themes/contrib/bootstrap_sass/
+
+# Ignore db exports
+/app
