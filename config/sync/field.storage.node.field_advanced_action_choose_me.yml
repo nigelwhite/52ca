@@ -1,0 +1,21 @@
+uuid: 26e1cd8a-99d3-4638-a8d0-104707cf4e6d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_advanced_action_choose_me
+field_name: field_advanced_action_choose_me
+entity_type: node
+type: string
+settings:
+  max_length: 180
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

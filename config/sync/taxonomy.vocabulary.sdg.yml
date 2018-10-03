@@ -1,0 +1,9 @@
+uuid: a765fad5-6d8c-4e10-8fbc-8de15e7409df
+langcode: en
+status: true
+dependencies: {  }
+name: SDG
+vid: sdg
+description: ''
+hierarchy: 0
+weight: 0

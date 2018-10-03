@@ -1,0 +1,20 @@
+uuid: d68268eb-db65-47d5-b514-5b8101029f66
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_people_self_care
+field_name: field_people_self_care
+entity_type: node
+type: text
+settings:
+  max_length: 90
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

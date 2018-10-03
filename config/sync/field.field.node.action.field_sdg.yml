@@ -1,0 +1,29 @@
+uuid: 38728331-e1f7-4a78-a38e-a9790843f183
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sdg
+    - node.type.action
+    - taxonomy.vocabulary.sdg
+id: node.action.field_sdg
+field_name: field_sdg
+entity_type: node
+bundle: action
+label: SDG
+description: 'Limited to 4 SDGs'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sdg: sdg
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

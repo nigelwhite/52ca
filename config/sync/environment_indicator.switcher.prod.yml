@@ -1,0 +1,10 @@
+uuid: c4f55cbe-b33f-43e2-9437-a6be634b54b6
+langcode: en
+status: true
+dependencies: {  }
+machine: prod
+description: null
+name: prod
+url: 'http://178.128.162.13'
+fg_color: '#000000'
+bg_color: '#87f2f3'

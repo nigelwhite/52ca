@@ -1,0 +1,19 @@
+uuid: 39bc0d06-9041-454d-ae4f-49f7ebb38057
+langcode: en
+status: true
+dependencies: {  }
+id: content_editor
+label: 'Content editor'
+weight: 3
+is_admin: null
+permissions:
+  - 'access taxonomy overview'
+  - 'create action content'
+  - 'create terms in family'
+  - 'create terms in sdg'
+  - 'delete any action content'
+  - 'delete terms in family'
+  - 'delete terms in sdg'
+  - 'edit any action content'
+  - 'edit terms in family'
+  - 'edit terms in sdg'

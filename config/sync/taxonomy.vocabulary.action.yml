@@ -1,0 +1,9 @@
+uuid: 90bef5a9-f640-43db-9d47-d5e6f6c485e0
+langcode: en
+status: true
+dependencies: {  }
+name: Action
+vid: action
+description: 'Concise version of action'
+hierarchy: 0
+weight: 0

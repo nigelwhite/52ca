@@ -1,0 +1,20 @@
+uuid: 4e2f9aae-4a74-4c5e-948d-e63a1a362256
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_global_action
+field_name: field_global_action
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

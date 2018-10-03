@@ -1,0 +1,23 @@
+uuid: e3d42ca8-73d6-491c-9beb-8f7512b6de8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_for
+    - node.type.resource
+id: node.resource.field_for
+field_name: field_for
+entity_type: node
+bundle: resource
+label: For
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Children
+  off_label: Adults
+field_type: boolean

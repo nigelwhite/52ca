@@ -1,0 +1,19 @@
+uuid: a67ee124-1e64-42d2-954a-ba4be3a815a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_community_action_choose_me
+    - node.type.action
+id: node.action.field_community_action_choose_me
+field_name: field_community_action_choose_me
+entity_type: node
+bundle: action
+label: 'Community Action Choose me'
+description: 'Limited to 180 characters'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,29 @@
+uuid: b912d505-c6ef-4a74-987c-2366812bf76b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_simple_action
+    - node.type.action
+    - taxonomy.vocabulary.action
+id: node.action.field_simple_action
+field_name: field_simple_action
+entity_type: node
+bundle: action
+label: 'Simple action'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      action: action
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

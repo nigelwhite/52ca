@@ -1,0 +1,29 @@
+uuid: 7e6e25e2-363d-4a64-a138-ef11125183e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_family
+    - node.type.action
+    - taxonomy.vocabulary.family
+id: node.action.field_family
+field_name: field_family
+entity_type: node
+bundle: action
+label: Family
+description: 'Limited to 4 families'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      family: family
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

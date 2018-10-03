@@ -1,0 +1,20 @@
+uuid: d434deba-b89d-422f-91e3-118dd9b0e9f5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_linked_actions
+field_name: field_linked_actions
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

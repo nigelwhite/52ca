@@ -1,0 +1,20 @@
+uuid: 16ab8f95-706f-4f08-89de-e7054cb422a3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_radical_action
+field_name: field_radical_action
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

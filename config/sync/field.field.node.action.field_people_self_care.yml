@@ -1,0 +1,21 @@
+uuid: 0a85fbee-71ef-4611-ba67-e4b066d966d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_people_self_care
+    - node.type.action
+  module:
+    - text
+id: node.action.field_people_self_care
+field_name: field_people_self_care
+entity_type: node
+bundle: action
+label: 'People/self care'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

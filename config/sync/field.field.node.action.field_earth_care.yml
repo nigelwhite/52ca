@@ -1,0 +1,21 @@
+uuid: c288f71e-4504-4e1e-a466-017ade65bcd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_earth_care
+    - node.type.action
+  module:
+    - text
+id: node.action.field_earth_care
+field_name: field_earth_care
+entity_type: node
+bundle: action
+label: 'Earth care'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

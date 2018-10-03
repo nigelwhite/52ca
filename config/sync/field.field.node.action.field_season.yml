@@ -1,0 +1,29 @@
+uuid: f9c93723-57ec-4d20-a972-319d248f0883
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_season
+    - node.type.action
+    - taxonomy.vocabulary.season
+id: node.action.field_season
+field_name: field_season
+entity_type: node
+bundle: action
+label: Season
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      season: season
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

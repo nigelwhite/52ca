@@ -1,0 +1,19 @@
+uuid: 1de5b2b6-bd57-40c5-8045-0fd471530b14
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_alt
+    - media.type.image
+id: media.image.field_alt
+field_name: field_alt
+entity_type: media
+bundle: image
+label: Alt
+description: 'For screen readers'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

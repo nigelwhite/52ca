@@ -1,0 +1,22 @@
+uuid: 5dadaac9-e8df-44de-aa21-1f384952cc84
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - barrio_sub
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: barrio_sub_messages
+theme: barrio_sub
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

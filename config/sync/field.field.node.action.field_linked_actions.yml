@@ -1,0 +1,29 @@
+uuid: 2eccf611-5229-4efe-9343-5732aff053f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_linked_actions
+    - node.type.action
+    - taxonomy.vocabulary.action
+id: node.action.field_linked_actions
+field_name: field_linked_actions
+entity_type: node
+bundle: action
+label: 'Linked actions'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      action: action
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
