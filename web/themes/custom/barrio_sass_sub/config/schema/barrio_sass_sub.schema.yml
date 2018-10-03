@@ -1,5 +1,0 @@
-# Schema for the configuration files of the Bootstrap SASS Subtheme.
-
-barrio_sass_sub.settings:
-  type: theme_settings
-  label: 'NW copy of SASS Bootstrap Starter Kit'
