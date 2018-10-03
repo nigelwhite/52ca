@@ -4,7 +4,8 @@
  */
 
 .family-title {
-    font-family: 'zila-slab', sans-serif;
+    font-family: 'Zilla Slab', sans-serif;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 700;
+    font-size: 1.25em;
 }

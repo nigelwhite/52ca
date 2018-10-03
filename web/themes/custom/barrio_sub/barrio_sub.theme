@@ -34,17 +34,17 @@ function barrio_sub_form_system_theme_settings_alter(&$form, FormStateInterface 
   );
 
   $form['fonts']['fonts']['bootstrap_barrio_google_fonts']['#options']['muli'] = 'Muli';
-  $form['fonts']['fonts']['bootstrap_barrio_google_fonts']['#options']['zila-slab'] = 'zila-slab';
+  // $form['fonts']['fonts']['bootstrap_barrio_google_fonts']['#options']['zila-slab'] = 'zila-slab';
 
 }
 
-function barrio_sub_preprocess_page(&$variables)
-    {
-  $fonts = theme_get_setting('bootstrap_barrio_google_fonts');
-  if ($fonts) {
-    $variables['#attached']['library'][] = ( $fonts == 'muli' ? 'barrio_sub' : 'bootstrap_barrio' ) . '/' . $fonts;
-}
-elseif ($fonts) {
-    $variables['#attached']['library'][] = ( $fonts == 'zila-slab' ? 'barrio_sub' : 'bootstrap_barrio' ) . '/' . $fonts;
-}
-  }
+// function barrio_sub_preprocess_page(&$variables)
+//     {
+//   $fonts = theme_get_setting('bootstrap_barrio_google_fonts');
+//   if ($fonts) {
+//     $variables['#attached']['library'][] = ( $fonts == 'muli' ? 'barrio_sub' : 'bootstrap_barrio' ) . '/' . $fonts;
+// }
+// elseif ($fonts) {
+//     $variables['#attached']['library'][] = ( $fonts == 'zila-slab' ? 'barrio_sub' : 'bootstrap_barrio' ) . '/' . $fonts;
+// }
+//   }

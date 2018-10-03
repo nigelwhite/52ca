@@ -1,5 +1,4 @@
 global-styling:
-  version: VERSION
   js:
     js/global.js: {}
   css:
@@ -21,7 +20,6 @@ bootstrap_cdn:
     component:
       //stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css: {}
 color.preview:
-  version: VERSION
   css:
     theme:
       color/preview.css: {}
@@ -29,15 +27,7 @@ color.preview:
     color/preview.js: {}
   dependencies:
     - color/drupal.color
-muli:
-  version: VERSION
+fonts:
   css:
-    component:
-      fonts/muli.css: {}
-      //fonts.googleapis.com/css?family=Muli: {}
-zila-slab:
-  version: VERSION
-  css:
-    component:
-      fonts/zila-slab.css: {}
-      //fonts.googleapis.com/css?family=Zila+Slab:800: {}
+    theme:
+      '//fonts.googleapis.com/css?family=Muli|Zilla+Slab:400,500,700': { type: external }
