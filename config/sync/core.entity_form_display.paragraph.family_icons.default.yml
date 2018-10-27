@@ -1,0 +1,25 @@
+uuid: b4f5337d-fc81-42e9-b989-50f3e33889af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.family_icons.field_family
+    - paragraphs.paragraphs_type.family_icons
+id: paragraph.family_icons.default
+targetEntityType: paragraph
+bundle: family_icons
+mode: default
+content:
+  field_family:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

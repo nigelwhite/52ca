@@ -1,16 +1,16 @@
-uuid: 2eccf611-5229-4efe-9343-5732aff053f5
+uuid: d4434f65-a4e6-49d7-a461-b9d691c6c2c8
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_linked_actions
-    - node.type.action
-    - taxonomy.vocabulary.action
-id: node.action.field_linked_actions
-field_name: field_linked_actions
-entity_type: node
-bundle: action
-label: 'Linked actions'
+    - field.storage.paragraph.field_family
+    - paragraphs.paragraphs_type.family_icons
+    - taxonomy.vocabulary.family
+id: paragraph.family_icons.field_family
+field_name: field_family
+entity_type: paragraph
+bundle: family_icons
+label: Family
 description: ''
 required: false
 translatable: false
@@ -20,7 +20,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      action: action
+      family: family
     sort:
       field: name
       direction: asc

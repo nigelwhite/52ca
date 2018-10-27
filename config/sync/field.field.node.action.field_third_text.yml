@@ -1,0 +1,21 @@
+uuid: 9a9e2cae-524c-4076-8f99-1cd1834a7dda
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_third_text
+    - node.type.action
+  module:
+    - text
+id: node.action.field_third_text
+field_name: field_third_text
+entity_type: node
+bundle: action
+label: 'Third text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

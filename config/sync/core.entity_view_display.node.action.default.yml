@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.action.body
-    - field.field.node.action.field_action_main_image
     - field.field.node.action.field_advanced_action_choose_me
     - field.field.node.action.field_card_action
     - field.field.node.action.field_community_action
@@ -14,7 +13,7 @@ dependencies:
     - field.field.node.action.field_family
     - field.field.node.action.field_global_action
     - field.field.node.action.field_global_action_choose_me
-    - field.field.node.action.field_linked_actions
+    - field.field.node.action.field_main_text
     - field.field.node.action.field_people_self_care
     - field.field.node.action.field_project_examples
     - field.field.node.action.field_radical_action
@@ -22,12 +21,13 @@ dependencies:
     - field.field.node.action.field_resources
     - field.field.node.action.field_sdg
     - field.field.node.action.field_season
+    - field.field.node.action.field_second_text
     - field.field.node.action.field_simple_action
     - field.field.node.action.field_simple_action_choose_me
+    - field.field.node.action.field_third_text
     - node.type.action
   module:
-    - ds
-    - field_formatter_class
+    - entity_reference_revisions
     - text
     - user
 id: node.action.default
@@ -91,17 +91,13 @@ content:
     type: string
     region: content
   field_family:
-    weight: 1
-    label: hidden
+    type: entity_reference_revisions_entity_view
+    weight: 24
+    label: above
     settings:
-      view_mode: family_icon
-      link: false
-    third_party_settings:
-      field_formatter_class:
-        class: ''
-      ds:
-        ds_limit: ''
-    type: entity_reference_entity_view
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
     region: content
   field_global_action:
     weight: 16
@@ -119,13 +115,12 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-  field_linked_actions:
-    weight: 17
-    label: inline
-    settings:
-      link: true
+  field_main_text:
+    weight: 21
+    label: above
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_label
+    type: text_default
     region: content
   field_people_self_care:
     weight: 6
@@ -183,6 +178,13 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
+  field_second_text:
+    weight: 22
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   field_simple_action:
     weight: 13
     label: inline
@@ -199,6 +201,12 @@ content:
     third_party_settings: {  }
     type: string
     region: content
+  field_third_text:
+    weight: 23
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
 hidden:
-  field_action_main_image: true
   links: true

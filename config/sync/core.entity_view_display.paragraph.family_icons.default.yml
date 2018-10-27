@@ -1,0 +1,26 @@
+uuid: 4b766269-38c7-47b0-a201-3bd7993c9d2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.family_icons.field_family
+    - paragraphs.paragraphs_type.family_icons
+  module:
+    - field_formatter_class
+id: paragraph.family_icons.default
+targetEntityType: paragraph
+bundle: family_icons
+mode: default
+content:
+  field_family:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: family_icon
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: family-icon
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

@@ -1,0 +1,252 @@
+uuid: 4aee947b-759d-4a9b-b5ee-8b5603cd43db
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.action_full_page
+    - field.field.node.action.body
+    - field.field.node.action.field_advanced_action_choose_me
+    - field.field.node.action.field_card_action
+    - field.field.node.action.field_community_action
+    - field.field.node.action.field_community_action_choose_me
+    - field.field.node.action.field_earth_care
+    - field.field.node.action.field_fair_share
+    - field.field.node.action.field_family
+    - field.field.node.action.field_global_action
+    - field.field.node.action.field_global_action_choose_me
+    - field.field.node.action.field_main_text
+    - field.field.node.action.field_people_self_care
+    - field.field.node.action.field_project_examples
+    - field.field.node.action.field_radical_action
+    - field.field.node.action.field_references
+    - field.field.node.action.field_resources
+    - field.field.node.action.field_sdg
+    - field.field.node.action.field_season
+    - field.field.node.action.field_second_text
+    - field.field.node.action.field_simple_action
+    - field.field.node.action.field_simple_action_choose_me
+    - field.field.node.action.field_third_text
+    - node.type.action
+  module:
+    - ds
+    - entity_reference_revisions
+    - field_formatter_class
+    - field_group
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_2col_stacked
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          top:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+          left:
+            wrapper: div
+            classes:
+              col-xs-12: col-xs-12
+              col-sm-12: col-sm-12
+              col-md-8: col-md-8
+              col-lg-8: col-lg-8
+            add_region_classes: 1
+            attributes: ''
+          right:
+            wrapper: div
+            classes:
+              col-xs-12: col-xs-12
+              col-sm-12: col-sm-12
+              col-md-4: col-md-4
+              col-lg-4: col-lg-4
+            add_region_classes: 1
+            attributes: ''
+          bottom:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      left:
+        - field_main_text
+        - field_second_text
+        - field_third_text
+      right:
+        - field_family
+        - group_families
+        - field_simple_action
+        - field_radical_action
+        - field_community_action
+        - field_global_action
+        - field_earth_care
+        - field_people_self_care
+        - field_fair_share
+        - field_resources
+        - field_project_examples
+        - field_references
+  field_group:
+    group_families:
+      children:
+        - field_family
+      parent_name: ''
+      weight: 3
+      format_type: html_element
+      format_settings:
+        label: Families
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'families clearfix'
+      label: Families
+id: node.action.action_full_page
+targetEntityType: node
+bundle: action
+mode: action_full_page
+content:
+  field_community_action:
+    weight: 6
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: right
+  field_earth_care:
+    weight: 8
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: right
+  field_fair_share:
+    weight: 10
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: right
+  field_family:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    region: right
+    label: hidden
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ds_limit: ''
+  field_global_action:
+    weight: 7
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: right
+  field_main_text:
+    type: text_default
+    weight: 0
+    region: left
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_people_self_care:
+    weight: 9
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: right
+  field_project_examples:
+    weight: 12
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: right
+  field_radical_action:
+    weight: 5
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: right
+  field_references:
+    weight: 13
+    label: above
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: right
+  field_resources:
+    weight: 11
+    label: above
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: right
+  field_second_text:
+    type: text_default
+    weight: 1
+    region: left
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_simple_action:
+    weight: 4
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: right
+  field_third_text:
+    type: text_default
+    weight: 2
+    region: left
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_advanced_action_choose_me: true
+  field_card_action: true
+  field_community_action_choose_me: true
+  field_global_action_choose_me: true
+  field_sdg: true
+  field_season: true
+  field_simple_action_choose_me: true
+  links: true

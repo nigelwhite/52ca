@@ -1,0 +1,22 @@
+uuid: a6fb0ae7-3047-4a66-b56d-4065b898084b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: action_full
+label: 'Action full'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  31571bd5-ec10-43c3-9604-0fc78cd6c2fe:
+    id: node_type
+    bundles:
+      action: action
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 31571bd5-ec10-43c3-9604-0fc78cd6c2fe
+selection_logic: and
+weight: -5
+relationships: {  }

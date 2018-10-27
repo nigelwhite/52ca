@@ -1,0 +1,21 @@
+uuid: b7433473-9942-4486-804c-66c6753cc9b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_second_text
+    - node.type.action
+  module:
+    - text
+id: node.action.field_second_text
+field_name: field_second_text
+entity_type: node
+bundle: action
+label: 'Second text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,16 +1,14 @@
-uuid: 294049c6-2d99-4bac-81fb-1b00d09571a9
+uuid: c27d11e5-f789-4045-b7c4-139ac54e54a8
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.taxonomy_term.family_icon
-    - field.field.taxonomy_term.family.field_icon
-    - image.style.thumbnail
-    - taxonomy.vocabulary.family
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.family_icons.field_family
+    - paragraphs.paragraphs_type.family_icons
   module:
     - ds
     - field_formatter_class
-    - svg_image
 third_party_settings:
   ds:
     layout:
@@ -34,26 +32,21 @@ third_party_settings:
             attributes: ''
     regions:
       main:
-        - field_icon
-id: taxonomy_term.family.family_icon
-targetEntityType: taxonomy_term
-bundle: family
-mode: family_icon
+        - field_family
+id: paragraph.family_icons.preview
+targetEntityType: paragraph
+bundle: family_icons
+mode: preview
 content:
-  field_icon:
+  field_family:
     weight: 0
     label: hidden
     settings:
-      image_style: thumbnail
-      image_link: ''
-      svg_render_as_image: '1'
-      svg_attributes:
-        width: '80'
-        height: '80'
+      view_mode: family_icon
+      link: false
     third_party_settings:
       field_formatter_class:
-        class: ''
-    type: image
+        class: family-icon
+    type: entity_reference_entity_view
     region: main
-hidden:
-  description: true
+hidden: {  }

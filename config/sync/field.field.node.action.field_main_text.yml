@@ -1,0 +1,21 @@
+uuid: 5dfc8eba-dee6-4373-a1ec-2ca9f656a813
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_main_text
+    - node.type.action
+  module:
+    - text
+id: node.action.field_main_text
+field_name: field_main_text
+entity_type: node
+bundle: action
+label: 'Main text'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

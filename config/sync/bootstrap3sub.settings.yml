@@ -4,14 +4,17 @@ schemas:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://localhost:32770/themes/contrib/bootstrap/favicon.ico'
-  use_default: true
+  url: 'http://localhost:32770/themes/custom/bootstrap3sub/favicon.ico'
+  use_default: false
 features:
-  comment_user_picture: true
-  comment_user_verification: true
-  favicon: true
-  node_user_picture: true
+  comment_user_picture: false
+  comment_user_verification: false
+  favicon: false
+  node_user_picture: false
 logo:
   path: ''
   url: ''
-  use_default: true
+  use_default: false
+breadcrumb: '0'
+table_responsive: '-1'
+table: ''

@@ -1,17 +1,18 @@
-uuid: 37963c3a-ceaa-478e-8dbd-e0aae9cfeb6c
+uuid: 9bb98715-c965-4298-b682-8ffc87ce9994
 langcode: en
 status: true
 dependencies:
   module:
+    - entity_reference_revisions
     - node
-    - taxonomy
+    - paragraphs
 id: node.field_family
 field_name: field_family
 entity_type: node
-type: entity_reference
+type: entity_reference_revisions
 settings:
-  target_type: taxonomy_term
-module: core
+  target_type: paragraph
+module: entity_reference_revisions
 locked: false
 cardinality: 4
 translatable: true

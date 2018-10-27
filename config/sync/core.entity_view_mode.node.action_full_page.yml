@@ -1,0 +1,10 @@
+uuid: 668a4493-fdb6-4003-b833-a5ff4d446cd6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.action_full_page
+label: 'Action Full Page'
+targetEntityType: node
+cache: true

@@ -1,3 +1,8 @@
-/**
- * Place your custom styles here.
- */
+.field--name-field-family .field--item {
+    float: right;
+}
+
+.clearfix::after {
+	content: “”;
+	display: table;
+	clear: both; }

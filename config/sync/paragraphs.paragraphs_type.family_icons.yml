@@ -1,0 +1,9 @@
+uuid: 162ffe44-b7d4-49e4-9d93-abf88deb40ec
+langcode: en
+status: true
+dependencies: {  }
+id: family_icons
+label: 'Family icons'
+icon_uuid: null
+description: 'icons only'
+behavior_plugins: {  }

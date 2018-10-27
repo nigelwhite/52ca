@@ -1,29 +1,31 @@
-uuid: b1716a4b-0420-4253-b840-87ad333fd3c4
+uuid: 33a46fd4-2cc6-466e-a080-1faca7ac05d5
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_family
     - node.type.action
-    - taxonomy.vocabulary.family
+    - paragraphs.paragraphs_type.family_icons
+  module:
+    - entity_reference_revisions
 id: node.action.field_family
 field_name: field_family
 entity_type: node
 bundle: action
 label: Family
-description: 'max 4'
-required: true
+description: ''
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:taxonomy_term'
+  handler: 'default:paragraph'
   handler_settings:
+    negate: 0
     target_bundles:
-      family: family
-    sort:
-      field: name
-      direction: asc
-    auto_create: false
-    auto_create_bundle: ''
-field_type: entity_reference
+      family_icons: family_icons
+    target_bundles_drag_drop:
+      family_icons:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

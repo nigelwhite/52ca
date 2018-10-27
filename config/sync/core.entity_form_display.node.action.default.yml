@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.action.body
-    - field.field.node.action.field_action_main_image
     - field.field.node.action.field_advanced_action_choose_me
     - field.field.node.action.field_card_action
     - field.field.node.action.field_community_action
@@ -14,7 +13,7 @@ dependencies:
     - field.field.node.action.field_family
     - field.field.node.action.field_global_action
     - field.field.node.action.field_global_action_choose_me
-    - field.field.node.action.field_linked_actions
+    - field.field.node.action.field_main_text
     - field.field.node.action.field_people_self_care
     - field.field.node.action.field_project_examples
     - field.field.node.action.field_radical_action
@@ -22,12 +21,13 @@ dependencies:
     - field.field.node.action.field_resources
     - field.field.node.action.field_sdg
     - field.field.node.action.field_season
+    - field.field.node.action.field_second_text
     - field.field.node.action.field_simple_action
     - field.field.node.action.field_simple_action_choose_me
-    - image.style.thumbnail
+    - field.field.node.action.field_third_text
     - node.type.action
   module:
-    - image_widget_crop
+    - paragraphs
     - path
     - text
 id: node.action.default
@@ -43,24 +43,6 @@ content:
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
-    region: content
-  field_action_main_image:
-    weight: 1
-    settings:
-      show_default_crop: true
-      warn_multiple_usages: true
-      preview_image_style: thumbnail
-      crop_preview_image_style: max_1300x1300
-      crop_list:
-        - action_banner
-        - card
-      crop_types_required:
-        - action_banner
-        - card
-      progress_indicator: throbber
-      show_crop_area: false
-    third_party_settings: {  }
-    type: image_widget_crop
     region: content
   field_advanced_action_choose_me:
     weight: 10
@@ -113,10 +95,16 @@ content:
     type: string_textfield
     region: content
   field_family:
-    weight: 2
-    settings: {  }
+    type: entity_reference_paragraphs
+    weight: 29
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: preview
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: family_icons
     third_party_settings: {  }
-    type: options_buttons
     region: content
   field_global_action:
     weight: 17
@@ -135,14 +123,13 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_linked_actions:
-    weight: 18
+  field_main_text:
+    weight: 26
     settings:
-      match_operator: CONTAINS
-      size: 60
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: text_textarea
     region: content
   field_people_self_care:
     weight: 7
@@ -199,6 +186,14 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
+  field_second_text:
+    weight: 27
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
   field_simple_action:
     weight: 14
     settings:
@@ -215,6 +210,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_third_text:
+    weight: 28
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
     region: content
   path:
     type: path

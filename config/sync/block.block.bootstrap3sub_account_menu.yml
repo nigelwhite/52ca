@@ -12,8 +12,8 @@ _core:
   default_config_hash: R2K_qX0ZUMbUL6ie_-S9tZVjvqmlWKlscikgeRv9vhw
 id: bootstrap3sub_account_menu
 theme: bootstrap3sub
-region: navigation_collapsible
-weight: 11
+region: footer
+weight: -4
 provider: null
 plugin: 'system_menu_block:account'
 settings:
