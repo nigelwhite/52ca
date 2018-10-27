@@ -21,7 +21,7 @@
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/admin_toolbar": "^1.24",
         "drupal/backup_migrate": "^4.0",
-        "drupal/bootstrap_barrio": "^4.17",
+        "drupal/bootstrap": "^3.13",
         "drupal/bootstrap_layouts": "^5.1",
         "drupal/bootstrap_library": "^1.11",
         "drupal/coffee": "^1.0@beta",
