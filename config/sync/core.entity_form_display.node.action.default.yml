@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.action.body
+    - field.field.node.action.field_action_number
     - field.field.node.action.field_advanced_action_choose_me
     - field.field.node.action.field_card_action
     - field.field.node.action.field_community_action
@@ -13,6 +14,8 @@ dependencies:
     - field.field.node.action.field_family
     - field.field.node.action.field_global_action
     - field.field.node.action.field_global_action_choose_me
+    - field.field.node.action.field_image
+    - field.field.node.action.field_intro_svg
     - field.field.node.action.field_main_text
     - field.field.node.action.field_people_self_care
     - field.field.node.action.field_project_examples
@@ -25,10 +28,13 @@ dependencies:
     - field.field.node.action.field_simple_action
     - field.field.node.action.field_simple_action_choose_me
     - field.field.node.action.field_third_text
+    - image.style.thumbnail
     - node.type.action
   module:
+    - image_widget_crop
     - paragraphs
     - path
+    - svg_image
     - text
 id: node.action.default
 targetEntityType: node
@@ -43,6 +49,13 @@ content:
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
+    region: content
+  field_action_number:
+    weight: 31
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
     region: content
   field_advanced_action_choose_me:
     weight: 10
@@ -122,6 +135,30 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_image:
+    weight: 30
+    settings:
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - main_image
+      crop_types_required:
+        - main_image
+      progress_indicator: throbber
+      show_crop_area: false
+    third_party_settings: {  }
+    type: image_widget_crop
+    region: content
+  field_intro_svg:
+    weight: 32
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   field_main_text:
     weight: 26

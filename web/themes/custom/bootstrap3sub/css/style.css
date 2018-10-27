@@ -1,8 +1,13 @@
 .field--name-field-family .field--item {
-    float: right;
+    float: left;
 }
 
 .clearfix::after {
 	content: “”;
 	display: table;
 	clear: both; }
+
+.action-number {
+    font-size: 5em;
+    font-weight: 800;
+}

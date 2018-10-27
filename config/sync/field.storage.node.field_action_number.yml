@@ -1,0 +1,20 @@
+uuid: 3b76c0be-c381-4a99-8cc8-d0856e7ed628
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_action_number
+field_name: field_action_number
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

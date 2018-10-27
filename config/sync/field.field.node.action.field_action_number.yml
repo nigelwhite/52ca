@@ -1,0 +1,23 @@
+uuid: 2fd75dd7-f0e1-4336-b28f-47590f92e400
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_action_number
+    - node.type.action
+id: node.action.field_action_number
+field_name: field_action_number
+entity_type: node
+bundle: action
+label: 'Action number'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
