@@ -1,0 +1,53 @@
+uuid: 8bc4d2fb-3eb0-48a1-9808-2daaf596cdb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.assets_library
+  module:
+    - entity_browser_entity_form
+    - views
+name: assets_library
+label: 'Assets library'
+display: iframe
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  fe4933b7-be48-4841-ad61-e2ab0cefa1b8:
+    settings:
+      extensions: 'jpg jpeg png gif'
+      media_type: image
+      upload_location: 'public://'
+      multiple: '1'
+      submit_text: 'Select files'
+    uuid: fe4933b7-be48-4841-ad61-e2ab0cefa1b8
+    weight: 1
+    label: Upload
+    id: media_image_upload
+  90aadd1f-31a8-4c8f-8d89-2b190a96144e:
+    settings:
+      view: assets_library
+      view_display: entity_browser_1
+      submit_text: 'Select entities'
+      auto_select: false
+    uuid: 90aadd1f-31a8-4c8f-8d89-2b190a96144e
+    weight: 2
+    label: Library
+    id: view
+  e6224b30-3a48-47cf-b54a-a812b1801683:
+    settings:
+      entity_type: media
+      bundle: remote_video
+      form_mode: embed
+      submit_text: 'Save entity'
+    uuid: e6224b30-3a48-47cf-b54a-a812b1801683
+    weight: 3
+    label: Youtube/Vimeo
+    id: entity_form

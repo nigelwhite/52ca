@@ -32,8 +32,8 @@ settings:
         -
           name: Media
           items:
+            - media
             - Blockquote
-            - DrupalImage
         -
           name: 'Block Formatting'
           items:

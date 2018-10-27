@@ -1,0 +1,57 @@
+uuid: aefde219-7f03-4af3-8112-810c9e91efd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.action_banner
+    - field.field.media.image.field_alt
+    - field.field.media.image.field_caption
+    - field.field.media.image.field_media_image
+    - image.style.action_main_image
+    - media.type.image
+  module:
+    - image_widget_crop
+_core:
+  default_config_hash: nZlttO4YMwMCpkhYMz7bQ1ZMjABGc59YY1us3eSfvTY
+id: media.image.action_banner
+targetEntityType: media
+bundle: image
+mode: action_banner
+content:
+  field_alt:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_media_image:
+    settings:
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: action_main_image
+      crop_preview_image_style: action_main_image
+      crop_list:
+        - action_banner
+      progress_indicator: throbber
+      crop_types_required: {  }
+      show_crop_area: false
+    third_party_settings: {  }
+    type: image_widget_crop
+    weight: 1
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_caption: true
+  path: true
+  status: true
+  uid: true

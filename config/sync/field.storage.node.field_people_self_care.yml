@@ -1,17 +1,18 @@
-uuid: d68268eb-db65-47d5-b514-5b8101029f66
+uuid: a20f2a05-9f60-4add-99c1-a5ad94119f90
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - text
 id: node.field_people_self_care
 field_name: field_people_self_care
 entity_type: node
-type: text
+type: string
 settings:
   max_length: 90
-module: text
+  is_ascii: false
+  case_sensitive: false
+module: core
 locked: false
 cardinality: 1
 translatable: true

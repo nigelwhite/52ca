@@ -1,17 +1,18 @@
-uuid: 7fffce87-1261-40c7-9ba3-36edcb85c172
+uuid: 27887099-be4a-4967-a612-ed9302fbc456
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - text
 id: node.field_earth_care
 field_name: field_earth_care
 entity_type: node
-type: text
+type: string
 settings:
   max_length: 90
-module: text
+  is_ascii: false
+  case_sensitive: false
+module: core
 locked: false
 cardinality: 1
 translatable: true

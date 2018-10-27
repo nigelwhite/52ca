@@ -1,0 +1,10 @@
+uuid: 8e5eff77-3576-4a29-b1fa-de38324403ef
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.embed
+label: 'Embed remote video'
+targetEntityType: media
+cache: true

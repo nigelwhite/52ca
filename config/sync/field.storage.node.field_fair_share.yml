@@ -1,17 +1,18 @@
-uuid: aedbce6a-7d69-4c29-94ae-06ab1ae61861
+uuid: 38ca6323-1697-4d2a-b9c8-a33934f73da9
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - text
 id: node.field_fair_share
 field_name: field_fair_share
 entity_type: node
-type: text
+type: string
 settings:
   max_length: 90
-module: text
+  is_ascii: false
+  case_sensitive: false
+module: core
 locked: false
 cardinality: 1
 translatable: true

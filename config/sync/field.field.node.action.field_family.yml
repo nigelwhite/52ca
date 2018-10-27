@@ -1,4 +1,4 @@
-uuid: 7e6e25e2-363d-4a64-a138-ef11125183e4
+uuid: b1716a4b-0420-4253-b840-87ad333fd3c4
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ field_name: field_family
 entity_type: node
 bundle: action
 label: Family
-description: 'Limited to 4 families'
+description: 'max 4'
 required: true
 translatable: false
 default_value: {  }

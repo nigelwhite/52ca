@@ -1,0 +1,12 @@
+uuid: 67955698-6551-442e-b26b-4641659ccacb
+langcode: en
+status: true
+dependencies: {  }
+label: 'Full page'
+id: action_banner
+description: ''
+aspect_ratio: '222:25'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: 1110
+hard_limit_height: 125

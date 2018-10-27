@@ -1,21 +1,19 @@
-uuid: ab235dba-6088-40ae-b66c-737fef509a69
+uuid: b2a29a90-9972-4375-833d-cdde6822bfcd
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_fair_share
     - node.type.action
-  module:
-    - text
 id: node.action.field_fair_share
 field_name: field_fair_share
 entity_type: node
 bundle: action
-label: 'Fair share'
+label: 'Fair Share'
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: text
+field_type: string

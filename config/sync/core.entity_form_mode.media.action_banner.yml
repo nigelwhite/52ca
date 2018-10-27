@@ -1,0 +1,10 @@
+uuid: 029b6ed1-da85-4668-ab6d-8dee1ac10e3f
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.action_banner
+label: 'Action banner'
+targetEntityType: media
+cache: true

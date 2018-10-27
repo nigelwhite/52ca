@@ -18,7 +18,7 @@ translatable: true
 default_value:
   -
     summary: ''
-    value: "<p>[delete&nbsp;this text -</p>\r\n\r\n<p>Summary is for Card:&nbsp;limited to 300 characters</p>\r\n\r\n<p>Body is for&nbsp;Full Web Page:&nbsp;can't limit the length.</p>\r\n\r\n<p>Images can be inserted via the icon of a mini picture, above. Files have to be smaller than 2MB in size. Width and height is scaled&nbsp;automatically to max 500x500 px. Once inserted, resize/re-position the image by dragging in the editor window. Right click on image to change its alignment in relation to the text.]</p>\r\n"
+    value: "<p>[delete&nbsp;this text -</p>\r\n\r\n<p>Summary is for Card:&nbsp;limited to 300 characters</p>\r\n\r\n<p>Body is for&nbsp;Full Web Page:&nbsp;can't limit the length.</p>\r\n\r\n<p>Images and videos can be inserted via the E icon, above.</p>\r\n\r\n<ul>\r\n\t<li>click E</li>\r\n\t<li>Upload a new image OR pick one from the site's library OR link to a Youtube/Vimeo.</li>\r\n\t<li>Select</li>\r\n\t<li>Display as Thumbnail</li>\r\n\t<li>Choose image style (size)</li>\r\n\t<li>Choose alignment</li>\r\n\t<li>Enter caption (optional)</li>\r\n\t<li>Embed</li>\r\n\t<li>Once inserted, double&nbsp;click on image to edit.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n"
     format: basic_html
 default_value_callback: ''
 settings:

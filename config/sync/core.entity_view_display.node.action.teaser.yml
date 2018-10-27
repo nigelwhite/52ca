@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.action.body
+    - field.field.node.action.field_action_main_image
     - field.field.node.action.field_advanced_action_choose_me
     - field.field.node.action.field_card_action
     - field.field.node.action.field_community_action
@@ -19,6 +20,7 @@ dependencies:
     - field.field.node.action.field_project_examples
     - field.field.node.action.field_radical_action
     - field.field.node.action.field_references
+    - field.field.node.action.field_resources
     - field.field.node.action.field_sdg
     - field.field.node.action.field_season
     - field.field.node.action.field_simple_action
@@ -46,6 +48,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_action_main_image: true
   field_advanced_action_choose_me: true
   field_card_action: true
   field_community_action: true
@@ -60,6 +63,7 @@ hidden:
   field_project_examples: true
   field_radical_action: true
   field_references: true
+  field_resources: true
   field_sdg: true
   field_season: true
   field_simple_action: true
