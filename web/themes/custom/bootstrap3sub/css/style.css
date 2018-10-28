@@ -6,15 +6,24 @@ body {
     float: left;
 }
 
-.clearfix::after {
+/* .clearfix::after {
 	content: “”;
 	display: table;
-	clear: both; }
+	clear: both; } */
 
 .action-number {
-    font-size: 5em;
-    font-weight: 800;
+    float: left;
+    font-size: 8em;
+    font-weight: 700;
+    font-family: 'Zilla Slab', sans-serif;
+    padding-left: 25px;
 }
 .intro-svg {
     float: left;
 }
+
+.family-title {
+    font-family: 'Zilla Slab', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.25em;
