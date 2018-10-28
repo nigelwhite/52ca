@@ -3,18 +3,18 @@ langcode: en
 status: true
 dependencies:
   config:
-    - crop.type.main_image
+    - crop.type.action_banner
   module:
     - crop
 name: main_image_style
-label: 'Main image style'
+label: 'Main image - fullpage'
 effects:
   4fb818ee-6ffa-4315-9191-81e0a54bbc34:
     uuid: 4fb818ee-6ffa-4315-9191-81e0a54bbc34
     id: crop_crop
     weight: 1
     data:
-      crop_type: main_image
+      crop_type: action_banner
   f9d5554f-7476-4a7d-a589-ec52aa93f5e4:
     uuid: f9d5554f-7476-4a7d-a589-ec52aa93f5e4
     id: image_scale_and_crop

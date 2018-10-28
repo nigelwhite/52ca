@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.action.body
     - field.field.node.action.field_action_number
+    - field.field.node.action.field_action_svg
     - field.field.node.action.field_advanced_action_choose_me
     - field.field.node.action.field_card_action
     - field.field.node.action.field_community_action
@@ -54,6 +55,19 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     type: number_integer
+    region: content
+  field_action_svg:
+    weight: 28
+    label: above
+    settings:
+      svg_attributes:
+        width: ''
+        height: ''
+      svg_render_as_image: true
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
     region: content
   field_advanced_action_choose_me:
     weight: 9

@@ -3,23 +3,23 @@ langcode: en
 status: true
 dependencies:
   config:
-    - crop.type.card
+    - crop.type.action_banner
   module:
     - crop
 name: action_card_image
-label: 'Action main image - card'
+label: 'Main image - card'
 effects:
   b1fc4fd0-e110-4305-ab16-547d9f09b5d3:
     uuid: b1fc4fd0-e110-4305-ab16-547d9f09b5d3
     id: crop_crop
     weight: 1
     data:
-      crop_type: card
+      crop_type: action_banner
   9d87e3a0-01c5-4b38-8303-cc7481dad031:
     uuid: 9d87e3a0-01c5-4b38-8303-cc7481dad031
     id: image_scale_and_crop
     weight: 2
     data:
       width: 480
-      height: 272
+      height: 229
       anchor: center-center

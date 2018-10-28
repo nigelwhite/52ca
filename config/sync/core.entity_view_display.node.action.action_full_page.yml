@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.action_full_page
     - field.field.node.action.body
     - field.field.node.action.field_action_number
+    - field.field.node.action.field_action_svg
     - field.field.node.action.field_advanced_action_choose_me
     - field.field.node.action.field_card_action
     - field.field.node.action.field_community_action
@@ -88,15 +89,17 @@ third_party_settings:
       top:
         - field_image
       left:
-        - field_intro_svg
-        - field_action_number
+        - group_intro
         - node_title
+        - field_intro_svg
         - field_main_text
+        - field_action_number
         - field_second_text
         - field_third_text
       right:
         - field_family
         - group_families
+        - field_action_svg
         - field_simple_action
         - field_radical_action
         - field_community_action
@@ -110,7 +113,7 @@ third_party_settings:
     fields:
       node_title:
         plugin_id: node_title
-        weight: 3
+        weight: 2
         label: hidden
         formatter: default
   field_group:
@@ -118,7 +121,7 @@ third_party_settings:
       children:
         - field_family
       parent_name: ''
-      weight: 7
+      weight: 6
       format_type: html_element
       format_settings:
         label: Families
@@ -131,22 +134,53 @@ third_party_settings:
         id: ''
         classes: 'families clearfix'
       label: Families
+    group_intro:
+      children:
+        - field_intro_svg
+        - field_action_number
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        label: Intro
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'intro-full clearfix'
+      label: Intro
 id: node.action.action_full_page
 targetEntityType: node
 bundle: action
 mode: action_full_page
 content:
   field_action_number:
-    type: number_integer
-    weight: 2
+    type: number_unformatted
+    weight: 3
     region: left
     label: hidden
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
+    settings: {  }
     third_party_settings:
       field_formatter_class:
         class: action-number
+  field_action_svg:
+    type: image
+    weight: 7
+    region: right
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+      svg_render_as_image: '1'
+      svg_attributes:
+        width: '300'
+        height: ''
+    third_party_settings:
+      field_formatter_class:
+        class: action-svg
   field_community_action:
     weight: 10
     label: above
@@ -211,7 +245,7 @@ content:
         class: ''
   field_intro_svg:
     type: image
-    weight: 1
+    weight: 2
     region: left
     label: hidden
     settings:
@@ -219,14 +253,14 @@ content:
       image_link: ''
       svg_render_as_image: '1'
       svg_attributes:
-        width: ''
+        width: '200'
         height: ''
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: intro-svg
   field_main_text:
     type: text_default
-    weight: 4
+    weight: 3
     region: left
     label: hidden
     settings: {  }
@@ -276,7 +310,7 @@ content:
     region: right
   field_second_text:
     type: text_default
-    weight: 5
+    weight: 4
     region: left
     label: hidden
     settings: {  }
@@ -292,7 +326,7 @@ content:
     region: right
   field_third_text:
     type: text_default
-    weight: 6
+    weight: 5
     region: left
     label: hidden
     settings: {  }

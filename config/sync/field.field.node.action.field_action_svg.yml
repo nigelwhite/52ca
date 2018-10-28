@@ -1,17 +1,17 @@
-uuid: 816bfa01-e3c8-4696-8e9e-72b5052a0255
+uuid: de5648a0-06e3-4094-90c8-2595ab3e79d5
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_intro_svg
+    - field.storage.node.field_action_svg
     - node.type.action
   module:
     - image
-id: node.action.field_intro_svg
-field_name: field_intro_svg
+id: node.action.field_action_svg
+field_name: field_action_svg
 entity_type: node
 bundle: action
-label: 'Intro svg'
+label: 'Action svg'
 description: ''
 required: false
 translatable: false
@@ -28,8 +28,8 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: 11262759-308c-4c5d-870d-00f0a5f9e7a9
-    alt: 'Climate Action'
+    uuid: 750a2c72-5273-42ca-9c38-43075db868ff
+    alt: Action
     title: ''
     width: null
     height: null
