@@ -12,7 +12,7 @@ body {
   border-width: 3px;
   border-color: rgb(0, 141, 65);
   border-radius: 35px;
-  padding: 5px 10px 5px 10px;
+  /* padding: 5px 10px 5px 10px; */
   box-shadow: 10px 10px 5px #888888;
   position: relative;
   width: 100%;
@@ -26,11 +26,31 @@ body {
    left: 0;
    bottom: 0;
    right: 0;
-   margin: 5%;
+   /* margin: 5%; */
    height: 100%;
 }
 
-.field--name-field-family .field--item {
+.card-body {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.card-footer {
+    background-color: rgb(254, 217, 5);
+}
+
+.family-card .field--item {
+    float: left;
+    max-width: 50px;
+}
+
+.families-card {
+    float: left;
+}
+
+/* --------------------------------------------------------------- */
+
+.family-fullpage .field--item {
     float: left;
 }
 

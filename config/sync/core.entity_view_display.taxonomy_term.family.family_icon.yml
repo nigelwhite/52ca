@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.taxonomy_term.family_icon
     - field.field.taxonomy_term.family.field_icon
-    - image.style.thumbnail
     - taxonomy.vocabulary.family
   module:
     - ds
@@ -44,7 +43,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: thumbnail
+      image_style: ''
       image_link: ''
       svg_render_as_image: '1'
       svg_attributes:

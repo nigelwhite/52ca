@@ -89,9 +89,8 @@ third_party_settings:
         - field_image
       left:
         - group_intro
-        - node_title
         - field_intro_svg
-        - field_main_text
+        - node_title
         - field_action_number
         - field_second_text
         - field_third_text
@@ -131,7 +130,7 @@ third_party_settings:
         effect: none
         speed: fast
         id: ''
-        classes: 'families clearfix'
+        classes: 'families-fullpage clearfix'
       label: Families
     group_intro:
       children:
@@ -215,7 +214,7 @@ content:
       link: ''
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: family-fullpage
       ds:
         ds_limit: ''
   field_global_action:

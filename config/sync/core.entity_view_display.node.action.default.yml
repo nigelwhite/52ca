@@ -35,7 +35,6 @@ dependencies:
     - entity_reference_revisions
     - field_formatter_class
     - field_group
-    - image
     - svg_image
     - text
     - user
@@ -62,15 +61,19 @@ third_party_settings:
             attributes: ''
     regions:
       main:
+        - group_card_header
         - field_image
         - field_family
         - group_intro
+        - group_families
         - node_title
-        - field_card_text
-        - field_action_svg
-        - field_card_action
         - field_intro_svg
+        - group_card_body
+        - field_action_svg
+        - field_card_text
         - field_action_number
+        - group_card_footer
+        - field_card_action
     fields:
       node_title:
         plugin_id: node_title
@@ -82,7 +85,7 @@ third_party_settings:
       children:
         - field_intro_svg
         - field_action_number
-      parent_name: ''
+      parent_name: group_card_body
       weight: 2
       format_type: html_element
       format_settings:
@@ -95,13 +98,83 @@ third_party_settings:
         effect: none
         speed: fast
       label: Intro
+    group_card_body:
+      children:
+        - group_intro
+        - node_title
+        - field_card_text
+      parent_name: ''
+      weight: 3
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: card-body
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Card body'
+    group_card_footer:
+      children:
+        - field_action_svg
+        - field_card_action
+      parent_name: ''
+      weight: 4
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: card-footer
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Card footer'
+    group_families:
+      children:
+        - field_family
+      parent_name: group_card_header
+      weight: 2
+      format_type: html_element
+      format_settings:
+        label: Families
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'families-card clearfix'
+      label: Families
+    group_card_header:
+      children:
+        - field_image
+        - group_families
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        label: 'Card header'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'card-header clearfix'
+      label: 'Card header'
 id: node.action.default
 targetEntityType: node
 bundle: action
 mode: default
 content:
   field_action_number:
-    weight: 8
+    weight: 4
     label: hidden
     settings:
       thousand_separator: ''
@@ -110,15 +183,22 @@ content:
     type: number_integer
     region: main
   field_action_svg:
-    type: image_url
-    weight: 5
+    type: image
+    weight: 4
     region: main
     label: hidden
     settings:
       image_style: ''
-    third_party_settings: {  }
+      image_link: ''
+      svg_render_as_image: '1'
+      svg_attributes:
+        width: '200'
+        height: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
   field_card_action:
-    weight: 6
+    weight: 5
     label: hidden
     settings:
       link: true
@@ -134,15 +214,19 @@ content:
     region: main
   field_family:
     type: entity_reference_revisions_entity_view
-    weight: 1
+    weight: 2
     label: hidden
     settings:
-      view_mode: default
+      view_mode: preview
       link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: family-card
+      ds:
+        ds_limit: ''
     region: main
   field_image:
-    weight: 0
+    weight: 1
     label: hidden
     settings:
       image_style: action_card_image
@@ -157,7 +241,7 @@ content:
     type: image
     region: main
   field_intro_svg:
-    weight: 7
+    weight: 3
     label: hidden
     settings:
       image_style: ''
