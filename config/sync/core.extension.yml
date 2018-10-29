@@ -70,6 +70,8 @@ module:
   view_mode_page: 0
   views_bootstrap: 0
   views_infinite_scroll: 0
+  views_slideshow: 0
+  views_slideshow_cycle: 0
   views_ui: 0
   ds: 1
   menu_link_content: 1

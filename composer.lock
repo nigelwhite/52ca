@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "586684a50de247d28c71a7feac7afb98",
+    "content-hash": "47d1f0c5d3640075ce92da6ba9054813",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3027,6 +3027,58 @@
                 "source": "http://cgit.drupalcode.org/entity_embed",
                 "issues": "https://www.drupal.org/project/issues/entity_embed",
                 "irc": "irc://irc.freenode.org/drupal-media"
+            }
+        },
+        {
+            "name": "drupal/entity_pager",
+            "version": "1.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/entity_pager",
+                "reference": "8.x-1.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_pager-8.x-1.0-beta1.zip",
+                "reference": "8.x-1.0-beta1",
+                "shasum": "5357e5e350f657617bbb914d5a71a3c4b257c8b8"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/token": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta1",
+                    "datestamp": "1533156780",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "JmOkay",
+                    "homepage": "https://www.drupal.org/user/1208402"
+                },
+                {
+                    "name": "bmcclure",
+                    "homepage": "https://www.drupal.org/user/278485"
+                }
+            ],
+            "description": "Entity Pager",
+            "homepage": "https://github.com/TopFloorTech/drupal-entity_pager",
+            "support": {
+                "source": "http://cgit.drupalcode.org/entity_pager"
             }
         },
         {
@@ -9619,6 +9671,7 @@
     "stability-flags": {
         "drupal/coffee": 10,
         "drupal/entity_embed": 10,
+        "drupal/entity_pager": 10,
         "drupal/inline_entity_form": 5,
         "drupal/stage_file_proxy": 15,
         "drupal/views_bootstrap": 20

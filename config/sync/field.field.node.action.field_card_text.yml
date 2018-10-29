@@ -1,21 +1,21 @@
-uuid: 5dfc8eba-dee6-4373-a1ec-2ca9f656a813
+uuid: f128a5bf-7f80-4fb8-b678-9f8c5b7bec08
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_main_text
+    - field.storage.node.field_card_text
     - node.type.action
   module:
     - text
-id: node.action.field_main_text
-field_name: field_main_text
+id: node.action.field_card_text
+field_name: field_card_text
 entity_type: node
 bundle: action
-label: 'Main text'
-description: ''
+label: 'Card text'
+description: '300 characters max'
 required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: text_long
+field_type: text

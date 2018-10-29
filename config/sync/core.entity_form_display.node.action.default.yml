@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.action.field_action_svg
     - field.field.node.action.field_advanced_action_choose_me
     - field.field.node.action.field_card_action
+    - field.field.node.action.field_card_text
     - field.field.node.action.field_community_action
     - field.field.node.action.field_community_action_choose_me
     - field.field.node.action.field_earth_care
@@ -17,7 +18,6 @@ dependencies:
     - field.field.node.action.field_global_action_choose_me
     - field.field.node.action.field_image
     - field.field.node.action.field_intro_svg
-    - field.field.node.action.field_main_text
     - field.field.node.action.field_people_self_care
     - field.field.node.action.field_project_examples
     - field.field.node.action.field_radical_action
@@ -64,6 +64,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_card_text:
+    weight: 2
+    settings:
+      size: 300
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
     region: content
   field_community_action:
     weight: 15
@@ -142,14 +150,6 @@ content:
       show_crop_area: false
     third_party_settings: {  }
     type: image_widget_crop
-    region: content
-  field_main_text:
-    weight: 2
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
     region: content
   field_people_self_care:
     weight: 6

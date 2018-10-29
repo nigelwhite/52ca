@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.action.field_action_svg
     - field.field.node.action.field_advanced_action_choose_me
     - field.field.node.action.field_card_action
+    - field.field.node.action.field_card_text
     - field.field.node.action.field_community_action
     - field.field.node.action.field_community_action_choose_me
     - field.field.node.action.field_earth_care
@@ -18,7 +19,6 @@ dependencies:
     - field.field.node.action.field_global_action_choose_me
     - field.field.node.action.field_image
     - field.field.node.action.field_intro_svg
-    - field.field.node.action.field_main_text
     - field.field.node.action.field_people_self_care
     - field.field.node.action.field_project_examples
     - field.field.node.action.field_radical_action
@@ -30,7 +30,6 @@ dependencies:
     - field.field.node.action.field_simple_action
     - field.field.node.action.field_simple_action_choose_me
     - field.field.node.action.field_third_text
-    - image.style.medium
     - node.type.action
   module:
     - ds
@@ -249,7 +248,7 @@ content:
     region: left
     label: hidden
     settings:
-      image_style: medium
+      image_style: ''
       image_link: ''
       svg_render_as_image: '1'
       svg_attributes:
@@ -258,13 +257,6 @@ content:
     third_party_settings:
       field_formatter_class:
         class: intro-svg
-  field_main_text:
-    type: text_default
-    weight: 3
-    region: left
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
   field_people_self_care:
     weight: 13
     label: above
@@ -335,6 +327,7 @@ hidden:
   body: true
   field_advanced_action_choose_me: true
   field_card_action: true
+  field_card_text: true
   field_community_action_choose_me: true
   field_global_action_choose_me: true
   field_sdg: true
