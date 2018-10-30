@@ -80,6 +80,10 @@ third_party_settings:
         weight: 3
         label: hidden
         formatter: default
+        settings:
+          wrapper: p
+          class: title-card
+          link: false
   field_group:
     group_intro:
       children:
@@ -89,14 +93,15 @@ third_party_settings:
       weight: 2
       format_type: html_element
       format_settings:
-        id: ''
-        classes: intro-card
+        label: Intro
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
+        id: ''
+        classes: 'intro-card clearfix'
       label: Intro
     group_card_body:
       children:
@@ -178,8 +183,10 @@ content:
     label: hidden
     settings:
       thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
+      prefix_suffix: false
+    third_party_settings:
+      field_formatter_class:
+        class: number-card
     type: number_integer
     region: main
   field_action_svg:
@@ -196,20 +203,24 @@ content:
         height: ''
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: actionsvg-card
   field_card_action:
     weight: 5
     label: hidden
     settings:
       link: true
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: card-action
     type: entity_reference_label
     region: main
   field_card_text:
     weight: 4
     label: hidden
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: text-card
     type: text_default
     region: main
   field_family:
@@ -237,7 +248,7 @@ content:
         height: ''
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: mainimage-card
     type: image
     region: main
   field_intro_svg:

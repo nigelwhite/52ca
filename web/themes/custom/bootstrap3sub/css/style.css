@@ -1,5 +1,5 @@
 body {
-    font-family: Muli;
+    font-family: 'Muli', sans-serif !important;
 }
 
 .card-size-container {
@@ -28,11 +28,12 @@ body {
    right: 0;
    /* margin: 5%; */
    height: 100%;
+   overflow: hidden;
 }
 
 .card-body {
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .card-footer {
@@ -44,10 +45,64 @@ body {
     max-width: 50px;
 }
 
+.mainimage-card {
+    position: relative;
+}
+
+.mainimage-card .img-responsive {
+    border-radius: 32px 32px 0 0;
+}
+
 .families-card {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.intro-card {
+    margin: 0 auto;
+    width: 75%;
+}
+
+.number-card {
+    float: left;
+    font-size: 7em;
+}
+
+.field--name-field-intro-svg {
+    max-width: 125x;
     float: left;
 }
 
+.title-card {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.text-card {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.card-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0 0 32px 32px;
+}
+
+.actionsvg-card .img-responsive {
+    margin: 0 auto;
+}
+
+.card-action {
+    text-align: center;
+    font-size: 1.75em;
+    font-weight: 400;
+}
 /* --------------------------------------------------------------- */
 
 .family-fullpage .field--item {
