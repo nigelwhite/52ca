@@ -1,0 +1,17 @@
+id: card_pager
+label: 'Card pager'
+ui_limit: ''
+properties:
+  block: 'views_block:card_pager-block_1'
+  use_block_title: false
+  config:
+    id: 'views_block:card_pager-block_1'
+    label: ''
+    provider: views
+    label_display: visible
+    views_label: ''
+    items_per_page: '1'
+type: block
+type_label: 'Block field'
+entities:
+  node: node

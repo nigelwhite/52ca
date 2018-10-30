@@ -35,6 +35,7 @@ dependencies:
     - image_widget_crop
     - paragraphs
     - path
+    - svg_image
     - text
 id: node.action.default
 targetEntityType: node
@@ -151,6 +152,14 @@ content:
     third_party_settings: {  }
     type: image_widget_crop
     region: content
+  field_intro_svg:
+    type: image_image
+    weight: 25
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
   field_people_self_care:
     weight: 6
     settings:
@@ -257,7 +266,6 @@ hidden:
   body: true
   created: true
   field_action_svg: true
-  field_intro_svg: true
   promote: true
   status: true
   sticky: true
