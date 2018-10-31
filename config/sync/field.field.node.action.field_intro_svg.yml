@@ -28,7 +28,7 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: 6b1fcc42-320f-4263-9553-0fda4a89b928
+    uuid: ba52154e-7cf0-4648-a2bb-c82974109a00
     alt: 'Climate Action'
     title: ''
     width: null

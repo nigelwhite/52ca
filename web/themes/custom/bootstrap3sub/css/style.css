@@ -66,18 +66,24 @@ body {
 }
 
 .intro-card {
-    margin: 0 auto;
-    width: 75%;
+    margin: 1em auto;
+    width: 60%;
 }
 
-.introsvg-card .img-responsive {
-    max-width: 150px;
-    float: left;
+.introsvg-card {
+    max-width: 160px;
 }
 
 .number-card {
-    float: left;
-    font-size: 5em;
+    display: inline-block;
+    font-size: 6.5rem;
+    font-family: 'Muli', sans-serif;
+    line-height: 5.2rem;
+    height: 5.2rem;
+    font-weight: 1000;
+    margin: 0;
+    padding: 0;;
+    border: none;
 }
 
 .title-card {
@@ -100,9 +106,10 @@ body {
     border-radius: 0 0 32px 32px;
 } */
 
-.actionsvg-card .img-responsive {
+.actionsvg-card {
     margin: 0 auto;
     max-width: 175px;
+    /* margin-top: 2em; */
 }
 
 .card-action {
@@ -154,7 +161,6 @@ ul.entity-pager-list {
     float: left;
     font-size: 8em;
     font-weight: 700;
-    font-family: 'Zilla Slab', sans-serif;
     padding-left: 25px;
 }
 .intro-svg {

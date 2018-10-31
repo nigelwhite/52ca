@@ -29,6 +29,7 @@ dependencies:
     - field.field.node.action.field_simple_action
     - field.field.node.action.field_simple_action_choose_me
     - field.field.node.action.field_third_text
+    - image.style.medium
     - node.type.action
   module:
     - ds
@@ -107,7 +108,7 @@ third_party_settings:
         effect: none
         speed: fast
         id: ''
-        classes: 'intro-card clearfix'
+        classes: 'intro-card row'
       label: Intro
     group_card_body:
       children:
@@ -190,10 +191,10 @@ content:
     label: hidden
     settings:
       thousand_separator: ''
-      prefix_suffix: false
+      prefix_suffix: true
     third_party_settings:
       field_formatter_class:
-        class: number-card
+        class: 'number-card col-xs-4'
     type: number_integer
     region: main
   field_action_svg:
@@ -262,7 +263,7 @@ content:
     weight: 3
     label: hidden
     settings:
-      image_style: ''
+      image_style: medium
       image_link: ''
       svg_render_as_image: '1'
       svg_attributes:
@@ -270,7 +271,7 @@ content:
         height: ''
     third_party_settings:
       field_formatter_class:
-        class: introsvg-card
+        class: 'introsvg-card col-xs-8'
     type: image
     region: main
 hidden:
