@@ -12,3 +12,15 @@
 
 // Set the proper directory for the Bootstrap Glyphicon font.
 $icon-font-path: '../bootstrap/assets/fonts/bootstrap/';
+
+$navbar-default-bg: rgb(0,164,92);
+$navbar-default-link-color: #000;
+// $navbar-default-link-hover-color:
+// $navbar-default-link-hover-bg:
+.navbar-nav {
+  > li > a {
+      text-transform: uppercase;
+      font-size: 1.2em;
+      font-weight: 500;
+  }
+}
