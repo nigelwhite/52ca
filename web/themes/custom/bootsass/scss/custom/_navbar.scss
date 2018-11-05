@@ -1,0 +1,9 @@
+// $navbar-default-link-hover-color:
+// $navbar-default-link-hover-bg:
+.navbar-nav {
+  > li > a {
+      text-transform: uppercase;
+      font-size: 1.2em;
+      font-weight: 500;
+  }
+}

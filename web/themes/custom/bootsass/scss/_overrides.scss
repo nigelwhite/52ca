@@ -14,8 +14,9 @@
 @import "component/table-drag";
 @import "component/tabs";
 @import "component/toolbar";
-@import "component/card";
-@import "component/fullpage";
+@import "custom/card";
+@import "custom/fullpage";
+@import "custom/navbar";
 
 // jQuery UI style overrides.
 @import "jquery-ui/autocomplete";
