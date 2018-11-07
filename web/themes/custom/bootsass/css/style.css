@@ -9522,6 +9522,17 @@ body.toolbar-loading.toolbar {
   font-weight: 500;
 }
 
+/* line 11, ../scss/custom/_navbar.scss */
+.wideband {
+  background-color: #00a45c;
+  height: 50px;
+}
+
+/* line 16, ../scss/custom/_navbar.scss */
+.navbar-default {
+  border: none;
+}
+
 /**
  * jQuery UI autocomplete widget style overrides.
  *
