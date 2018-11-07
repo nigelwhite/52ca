@@ -1728,7 +1728,7 @@ html {
 
 /* line 27, ../bootstrap/assets/stylesheets/bootstrap/_scaffolding.scss */
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Muli", sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -7888,7 +7888,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Muli", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -8026,7 +8026,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Muli", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -9515,6 +9515,204 @@ body.toolbar-loading.toolbar {
   margin-bottom: 15px;
 }
 
+/* line 1, ../scss/custom/_card.scss */
+.card-size-container {
+  max-width: 450px;
+  margin: 0px auto;
+}
+
+/* line 6, ../scss/custom/_card.scss */
+.main-container-card {
+  border-style: solid;
+  border-width: 3px;
+  border-color: #008d41;
+  border-radius: 35px;
+  /* padding: 5px 10px 5px 10px; */
+  box-shadow: 10px 10px 5px #888888;
+  position: relative;
+  width: 100%;
+  /* padding-top: 140%; /* 3.5:2.5 Aspect Ratio */
+  padding-top: 151%;
+  /* 23.7 : 15.7 aspect ratio */
+}
+
+/* line 19, ../scss/custom/_card.scss */
+.inner-container-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /* margin: 5%; */
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 30, ../scss/custom/_card.scss */
+.card-body {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* line 35, ../scss/custom/_card.scss */
+.card-footer {
+  background-color: #fed905;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-height: 120px;
+  border-radius: 0 0 32px 32px;
+}
+
+/* line 44, ../scss/custom/_card.scss */
+.family-card .field--item {
+  float: left;
+  max-width: 50px;
+}
+
+/* line 49, ../scss/custom/_card.scss */
+.mainimage-card {
+  position: relative;
+}
+
+/* line 53, ../scss/custom/_card.scss */
+.mainimage-card .img-responsive {
+  border-radius: 32px 32px 0 0;
+}
+
+/* line 57, ../scss/custom/_card.scss */
+.families-card {
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* line 64, ../scss/custom/_card.scss */
+.intro-card {
+  margin: 1em auto;
+  width: 60%;
+}
+
+/* line 69, ../scss/custom/_card.scss */
+.introsvg-card {
+  max-width: 160px;
+}
+
+/* line 73, ../scss/custom/_card.scss */
+.number-card {
+  display: inline-block;
+  font-size: 6.5rem;
+  font-family: 'Muli', sans-serif;
+  line-height: 5.2rem;
+  height: 5.2rem;
+  font-weight: 1000;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* line 85, ../scss/custom/_card.scss */
+.title-card {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+/* line 92, ../scss/custom/_card.scss */
+.text-card {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/* .card-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-height: 120px;
+    border-radius: 0 0 32px 32px;
+} */
+/* line 105, ../scss/custom/_card.scss */
+.actionsvg-card {
+  margin: 0 auto;
+  max-width: 175px;
+  /* margin-top: 2em; */
+}
+
+/* line 111, ../scss/custom/_card.scss */
+.card-action {
+  text-align: center;
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+/* line 117, ../scss/custom/_card.scss */
+.entity-pager-item-all {
+  background-color: #fff;
+  height: 40px;
+  line-height: 30px;
+  width: 130px;
+  margin-bottom: 0;
+  padding: 5px 5px 5px 0;
+  border-radius: 20px 20px 0 0;
+  text-align: center;
+}
+
+/* line 128, ../scss/custom/_card.scss */
+.entity-pager-item-prev,
+.entity-pager-item-next {
+  font-size: 30px;
+  font-weight: 1000;
+  height: 40px;
+  line-height: 30px;
+  margin-bottom: 0;
+}
+
+/* line 137, ../scss/custom/_card.scss */
+.entity-pager-list .entity-pager-item {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/* line 142, ../scss/custom/_card.scss */
+ul.entity-pager-list {
+  margin-bottom: 0;
+}
+
+/* line 1, ../scss/custom/_fullpage.scss */
+.family-fullpage .field--item {
+  float: left;
+}
+
+/* line 5, ../scss/custom/_fullpage.scss */
+.intro-full {
+  margin-top: 30px;
+}
+
+/* line 9, ../scss/custom/_fullpage.scss */
+.action-number {
+  display: inline-block;
+  font-size: 10rem;
+  font-family: 'Muli', sans-serif;
+  line-height: 8rem;
+  font-weight: 1000;
+  margin-left: 0.2em;
+}
+
+/* line 19, ../scss/custom/_fullpage.scss */
+.intro-svg {
+  float: left;
+}
+
+/* line 23, ../scss/custom/_fullpage.scss */
+.family-title {
+  font-family: 'Zilla Slab', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.25em;
+}
+
 /* line 4, ../scss/custom/_navbar.scss */
 .navbar-nav > li > a {
   text-transform: uppercase;
@@ -9533,6 +9731,24 @@ body.toolbar-loading.toolbar {
   border: none;
 }
 
+/* line 20, ../scss/custom/_navbar.scss */
+#navbar:last-child {
+  margin-right: -15px;
+}
+
+/* line 1, ../scss/custom/_attic.scss */
+.search-block-form {
+  width: 25%;
+  float: right;
+  margin-top: 20px;
+}
+
+/* line 7, ../scss/custom/_attic.scss */
+.logo52 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
 /**
  * jQuery UI autocomplete widget style overrides.
  *
@@ -9547,7 +9763,7 @@ body.toolbar-loading.toolbar {
   border-radius: 4px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   color: inherit;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Muli", sans-serif;
   font-size: 14px;
   list-style: none;
   min-width: 160px;
@@ -9582,21 +9798,21 @@ body.toolbar-loading.toolbar {
   color: #fff;
 }
 
-/* line 24, ../scss/_overrides.scss */
+/* line 25, ../scss/_overrides.scss */
 ol, ul {
   padding-left: 1.5em;
 }
-/* line 26, ../scss/_overrides.scss */
+/* line 27, ../scss/_overrides.scss */
 .popover ol:last-child, .popover ul:last-child {
   margin-bottom: 0;
 }
 
-/* line 32, ../scss/_overrides.scss */
+/* line 33, ../scss/_overrides.scss */
 .page-header {
   margin-top: 0;
 }
 
-/* line 37, ../scss/_overrides.scss */
+/* line 38, ../scss/_overrides.scss */
 .footer {
   margin-top: 45px;
   padding-top: 35px;
@@ -9604,32 +9820,32 @@ ol, ul {
   border-top: 1px solid #E5E5E5;
 }
 
-/* line 45, ../scss/_overrides.scss */
+/* line 46, ../scss/_overrides.scss */
 p:last-child,
 .form-group:last-child,
 .panel:last-child {
   margin-bottom: 0;
 }
 
-/* line 53, ../scss/_overrides.scss */
+/* line 54, ../scss/_overrides.scss */
 .region-help > .glyphicon {
   font-size: 18px;
   float: left;
   margin: -0.05em 0.5em 0 0;
 }
-/* line 58, ../scss/_overrides.scss */
+/* line 59, ../scss/_overrides.scss */
 .region-help .block {
   overflow: hidden;
 }
 
-/* line 64, ../scss/_overrides.scss */
+/* line 65, ../scss/_overrides.scss */
 .help-block, .control-group .help-inline {
   color: #777777;
   font-size: 12px;
   margin: 5px 0 10px;
   padding: 0;
 }
-/* line 69, ../scss/_overrides.scss */
+/* line 70, ../scss/_overrides.scss */
 .help-block:first-child, .control-group .help-inline:first-child {
   margin-top: 0;
 }
