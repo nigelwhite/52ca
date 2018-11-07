@@ -1730,7 +1730,7 @@ html {
 body {
   font-family: "Muli", sans-serif;
   font-size: 18px;
-  line-height: 1.42857;
+  line-height: 1.5;
   color: #333333;
   background-color: #fff;
 }
@@ -1786,7 +1786,7 @@ img {
 /* line 93, ../bootstrap/assets/stylesheets/bootstrap/_scaffolding.scss */
 .img-thumbnail {
   padding: 4px;
-  line-height: 1.42857;
+  line-height: 1.5;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -1805,8 +1805,8 @@ img {
 
 /* line 113, ../bootstrap/assets/stylesheets/bootstrap/_scaffolding.scss */
 hr {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 27px;
+  margin-bottom: 27px;
   border: 0;
   border-top: 1px solid #eeeeee;
 }
@@ -1870,8 +1870,8 @@ h6 .small,
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  margin-top: 25px;
-  margin-bottom: 12.5px;
+  margin-top: 27px;
+  margin-bottom: 13.5px;
 }
 /* line 30, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
 h1 small,
@@ -1890,8 +1890,8 @@ h3 .small, .h3 small,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  margin-top: 12.5px;
-  margin-bottom: 12.5px;
+  margin-top: 13.5px;
+  margin-bottom: 13.5px;
 }
 /* line 41, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
 h4 small,
@@ -1938,12 +1938,12 @@ h6, .h6 {
 
 /* line 58, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
 p {
-  margin: 0 0 12.5px;
+  margin: 0 0 13.5px;
 }
 
 /* line 62, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
 .lead {
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   font-size: 20px;
   font-weight: 300;
   line-height: 1.4;
@@ -2130,8 +2130,8 @@ a.bg-danger:focus {
 
 /* line 138, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
 .page-header {
-  padding-bottom: 11.5px;
-  margin: 50px 0 25px;
+  padding-bottom: 12.5px;
+  margin: 54px 0 27px;
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -2139,7 +2139,7 @@ a.bg-danger:focus {
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 12.5px;
+  margin-bottom: 13.5px;
 }
 /* line 153, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
 ul ul,
@@ -2171,13 +2171,13 @@ ol ol {
 /* line 185, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
 dl {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }
 
 /* line 189, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
 dt,
 dd {
-  line-height: 1.42857;
+  line-height: 1.5;
 }
 
 /* line 193, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
@@ -2230,8 +2230,8 @@ abbr[data-original-title] {
 
 /* line 241, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
 blockquote {
-  padding: 12.5px 25px;
-  margin: 0 0 25px;
+  padding: 13.5px 27px;
+  margin: 0 0 27px;
   font-size: 22.5px;
   border-left: 5px solid #eeeeee;
 }
@@ -2247,7 +2247,7 @@ blockquote small,
 blockquote .small {
   display: block;
   font-size: 80%;
-  line-height: 1.42857;
+  line-height: 1.5;
   color: #777777;
 }
 /* line 265, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
@@ -2287,9 +2287,9 @@ blockquote.pull-right .small:after {
 
 /* line 294, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
 address {
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   font-style: normal;
-  line-height: 1.42857;
+  line-height: 1.5;
 }
 
 /* line 7, ../bootstrap/assets/stylesheets/bootstrap/_code.scss */
@@ -2329,10 +2329,10 @@ kbd kbd {
 /* line 41, ../bootstrap/assets/stylesheets/bootstrap/_code.scss */
 pre {
   display: block;
-  padding: 12px;
-  margin: 0 0 12.5px;
+  padding: 13px;
+  margin: 0 0 13.5px;
   font-size: 17px;
-  line-height: 1.42857;
+  line-height: 1.5;
   word-break: break-all;
   word-wrap: break-word;
   color: #333333;
@@ -3496,7 +3496,7 @@ th {
 .table {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }
 /* line 31, ../bootstrap/assets/stylesheets/bootstrap/_tables.scss */
 .table > thead > tr > th,
@@ -3506,7 +3506,7 @@ th {
 .table > tfoot > tr > th,
 .table > tfoot > tr > td {
   padding: 8px;
-  line-height: 1.42857;
+  line-height: 1.5;
   vertical-align: top;
   border-top: 1px solid #ddd;
 }
@@ -3696,7 +3696,7 @@ table th[class*="col-"] {
   /* line 171, ../bootstrap/assets/stylesheets/bootstrap/_tables.scss */
   .table-responsive {
     width: 100%;
-    margin-bottom: 18.75px;
+    margin-bottom: 20.25px;
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     border: 1px solid #ddd;
@@ -3758,7 +3758,7 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   font-size: 27px;
   line-height: inherit;
   color: #333333;
@@ -3819,7 +3819,7 @@ output {
   display: block;
   padding-top: 7px;
   font-size: 18px;
-  line-height: 1.42857;
+  line-height: 1.5;
   color: #555555;
 }
 
@@ -3827,10 +3827,10 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  height: 39px;
+  height: 41px;
   padding: 6px 12px;
   font-size: 18px;
-  line-height: 1.42857;
+  line-height: 1.5;
   color: #555555;
   background-color: #fff;
   background-image: none;
@@ -3893,7 +3893,7 @@ input[type="search"] {
   input[type="time"].form-control,
   input[type="datetime-local"].form-control,
   input[type="month"].form-control {
-    line-height: 39px;
+    line-height: 41px;
   }
   /* line 197, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
   input[type="date"].input-sm, .input-group-sm > input[type="date"].form-control,
@@ -3954,7 +3954,7 @@ input[type="search"] {
 /* line 231, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
 .radio label,
 .checkbox label {
-  min-height: 25px;
+  min-height: 27px;
   padding-left: 20px;
   margin-bottom: 0;
   font-weight: normal;
@@ -4023,7 +4023,7 @@ input[type="checkbox"] {
   padding-top: 7px;
   padding-bottom: 7px;
   margin-bottom: 0;
-  min-height: 43px;
+  min-height: 45px;
 }
 /* line 315, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
 .form-control-static.input-lg, .input-group-lg > .form-control-static.form-control,
@@ -4086,7 +4086,7 @@ select[multiple].input-sm,
 /* line 348, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
 .form-group-sm .form-control-static {
   height: 36px;
-  min-height: 41px;
+  min-height: 43px;
   padding: 6px 10px;
   font-size: 16px;
   line-height: 1.5;
@@ -4143,7 +4143,7 @@ select[multiple].input-lg,
 /* line 374, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
 .form-group-lg .form-control-static {
   height: 53px;
-  min-height: 48px;
+  min-height: 50px;
   padding: 11px 16px;
   font-size: 23px;
   line-height: 1.33333;
@@ -4155,7 +4155,7 @@ select[multiple].input-lg,
 }
 /* line 393, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
 .has-feedback .form-control {
-  padding-right: 48.75px;
+  padding-right: 51.25px;
 }
 
 /* line 398, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
@@ -4165,9 +4165,9 @@ select[multiple].input-lg,
   right: 0;
   z-index: 2;
   display: block;
-  width: 39px;
-  height: 39px;
-  line-height: 39px;
+  width: 41px;
+  height: 41px;
+  line-height: 41px;
   text-align: center;
   pointer-events: none;
 }
@@ -4292,7 +4292,7 @@ select[multiple].input-lg,
 
 /* line 439, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
 .has-feedback label ~ .form-control-feedback {
-  top: 30px;
+  top: 32px;
 }
 /* line 442, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
 .has-feedback label.sr-only ~ .form-control-feedback {
@@ -4381,7 +4381,7 @@ select[multiple].input-lg,
 /* line 569, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
 .form-horizontal .radio,
 .form-horizontal .checkbox {
-  min-height: 32px;
+  min-height: 34px;
 }
 /* line 575, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
 .form-horizontal .form-group {
@@ -4438,7 +4438,7 @@ select[multiple].input-lg,
   white-space: nowrap;
   padding: 6px 12px;
   font-size: 18px;
-  line-height: 1.42857;
+  line-height: 1.5;
   border-radius: 4px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -4914,7 +4914,7 @@ tbody.collapse.in {
 /* line 60, ../bootstrap/assets/stylesheets/bootstrap/_dropdowns.scss */
 .dropdown-menu .divider {
   height: 1px;
-  margin: 11.5px 0;
+  margin: 12.5px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -4924,7 +4924,7 @@ tbody.collapse.in {
   padding: 3px 20px;
   clear: both;
   font-weight: normal;
-  line-height: 1.42857;
+  line-height: 1.5;
   color: #333333;
   white-space: nowrap;
 }
@@ -4983,7 +4983,7 @@ tbody.collapse.in {
   display: block;
   padding: 3px 20px;
   font-size: 16px;
-  line-height: 1.42857;
+  line-height: 1.5;
   color: #777777;
   white-space: nowrap;
 }
@@ -5473,7 +5473,7 @@ tbody.collapse.in {
 /* line 59, ../bootstrap/assets/stylesheets/bootstrap/_navs.scss */
 .nav .nav-divider {
   height: 1px;
-  margin: 11.5px 0;
+  margin: 12.5px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -5494,7 +5494,7 @@ tbody.collapse.in {
 /* line 84, ../bootstrap/assets/stylesheets/bootstrap/_navs.scss */
 .nav-tabs > li > a {
   margin-right: 2px;
-  line-height: 1.42857;
+  line-height: 1.5;
   border: 1px solid transparent;
   border-radius: 4px 4px 0 0;
 }
@@ -5622,7 +5622,7 @@ tbody.collapse.in {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   border: 1px solid transparent;
 }
 /* line 14, ../bootstrap/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
@@ -5780,9 +5780,9 @@ tbody.collapse.in {
 /* line 163, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-brand {
   float: left;
-  padding: 12.5px 15px;
+  padding: 11.5px 15px;
   font-size: 23px;
-  line-height: 25px;
+  line-height: 27px;
   height: 50px;
 }
 /* line 170, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
@@ -5837,13 +5837,13 @@ tbody.collapse.in {
 
 /* line 232, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-nav {
-  margin: 6.25px -15px;
+  margin: 5.75px -15px;
 }
 /* line 235, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 25px;
+  line-height: 27px;
 }
 @media (max-width: 767px) {
   /* line 243, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
@@ -5863,7 +5863,7 @@ tbody.collapse.in {
   }
   /* line 255, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav .open .dropdown-menu > li > a {
-    line-height: 25px;
+    line-height: 27px;
   }
   /* line 257, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -5882,8 +5882,8 @@ tbody.collapse.in {
   }
   /* line 272, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav > li > a {
-    padding-top: 12.5px;
-    padding-bottom: 12.5px;
+    padding-top: 11.5px;
+    padding-bottom: 11.5px;
   }
 }
 
@@ -5896,8 +5896,8 @@ tbody.collapse.in {
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 5.5px;
-  margin-bottom: 5.5px;
+  margin-top: 4.5px;
+  margin-bottom: 4.5px;
 }
 @media (min-width: 768px) {
   /* line 478, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
@@ -6002,8 +6002,8 @@ tbody.collapse.in {
 
 /* line 343, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-btn {
-  margin-top: 5.5px;
-  margin-bottom: 5.5px;
+  margin-top: 4.5px;
+  margin-bottom: 4.5px;
 }
 /* line 346, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn {
@@ -6018,8 +6018,8 @@ tbody.collapse.in {
 
 /* line 359, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-text {
-  margin-top: 12.5px;
-  margin-bottom: 12.5px;
+  margin-top: 11.5px;
+  margin-bottom: 11.5px;
 }
 @media (min-width: 768px) {
   /* line 359, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
@@ -6259,7 +6259,7 @@ tbody.collapse.in {
 /* line 6, ../bootstrap/assets/stylesheets/bootstrap/_breadcrumbs.scss */
 .breadcrumb {
   padding: 8px 15px;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   list-style: none;
   background-color: #f5f5f5;
   border-radius: 4px;
@@ -6283,7 +6283,7 @@ tbody.collapse.in {
 .pagination {
   display: inline-block;
   padding-left: 0;
-  margin: 25px 0;
+  margin: 27px 0;
   border-radius: 4px;
 }
 /* line 10, ../bootstrap/assets/stylesheets/bootstrap/_pagination.scss */
@@ -6296,7 +6296,7 @@ tbody.collapse.in {
   position: relative;
   float: left;
   padding: 6px 12px;
-  line-height: 1.42857;
+  line-height: 1.5;
   text-decoration: none;
   color: #337ab7;
   background-color: #fff;
@@ -6392,7 +6392,7 @@ tbody.collapse.in {
 /* line 6, ../bootstrap/assets/stylesheets/bootstrap/_pager.scss */
 .pager {
   padding-left: 0;
-  margin: 25px 0;
+  margin: 27px 0;
   list-style: none;
   text-align: center;
 }
@@ -6637,8 +6637,8 @@ a.badge:hover, a.badge:focus {
 .thumbnail {
   display: block;
   padding: 4px;
-  margin-bottom: 25px;
-  line-height: 1.42857;
+  margin-bottom: 27px;
+  line-height: 1.5;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -6671,7 +6671,7 @@ a.thumbnail.active {
 /* line 9, ../bootstrap/assets/stylesheets/bootstrap/_alerts.scss */
 .alert {
   padding: 15px;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   border: 1px solid transparent;
   border-radius: 4px;
 }
@@ -6787,8 +6787,8 @@ a.thumbnail.active {
 /* line 26, ../bootstrap/assets/stylesheets/bootstrap/_progress-bars.scss */
 .progress {
   overflow: hidden;
-  height: 25px;
-  margin-bottom: 25px;
+  height: 27px;
+  margin-bottom: 27px;
   background-color: #f5f5f5;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -6801,7 +6801,7 @@ a.thumbnail.active {
   width: 0%;
   height: 100%;
   font-size: 16px;
-  line-height: 25px;
+  line-height: 27px;
   color: #fff;
   text-align: center;
   background-color: #337ab7;
@@ -7179,7 +7179,7 @@ button.list-group-item-danger.active:focus {
 
 /* line 7, ../bootstrap/assets/stylesheets/bootstrap/_panels.scss */
 .panel {
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   background-color: #fff;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -7441,7 +7441,7 @@ button.list-group-item-danger.active:focus {
 
 /* line 222, ../bootstrap/assets/stylesheets/bootstrap/_panels.scss */
 .panel-group {
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }
 /* line 226, ../bootstrap/assets/stylesheets/bootstrap/_panels.scss */
 .panel-group .panel {
@@ -7812,7 +7812,7 @@ button.close {
 /* line 90, ../bootstrap/assets/stylesheets/bootstrap/_modals.scss */
 .modal-title {
   margin: 0;
-  line-height: 1.42857;
+  line-height: 1.5;
 }
 
 /* line 97, ../bootstrap/assets/stylesheets/bootstrap/_modals.scss */
@@ -7893,7 +7893,7 @@ button.close {
   font-weight: normal;
   letter-spacing: normal;
   line-break: auto;
-  line-height: 1.42857;
+  line-height: 1.5;
   text-align: left;
   text-align: start;
   text-decoration: none;
@@ -8031,7 +8031,7 @@ button.close {
   font-weight: normal;
   letter-spacing: normal;
   line-break: auto;
-  line-height: 1.42857;
+  line-height: 1.5;
   text-align: left;
   text-align: start;
   text-decoration: none;
@@ -9688,7 +9688,7 @@ ul.entity-pager-list {
 /* line 5, ../scss/custom/_fullpage.scss */
 .intro-full {
   margin-top: 30px;
-  border-bottom: 8px solid;
+  border-bottom: 10px solid;
   padding-bottom: 3rem;
   border-image: linear-gradient(to right, yellow 5%, #d5d5d5 5%) 1;
 }
@@ -9697,7 +9697,7 @@ ul.entity-pager-list {
 .action-number {
   display: inline-block;
   font-size: 10rem;
-  font-family: 'Muli', sans-serif;
+  font-family: "Muli", sans-serif;
   line-height: 8rem;
   font-weight: 1000;
   margin-left: 0.2em;
@@ -9713,24 +9713,28 @@ ul.entity-pager-list {
   font-size: 5rem;
   text-transform: uppercase;
   font-weight: 600;
-  font-family: 'Zilla Slab', sans-serif;
+  font-family: "Zilla Slab", sans-serif;
   margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
-/* line 35, ../scss/custom/_fullpage.scss */
+/* line 36, ../scss/custom/_fullpage.scss */
 .families-fullpage {
   margin-top: 3rem;
 }
 
-/* line 39, ../scss/custom/_fullpage.scss */
+/* line 40, ../scss/custom/_fullpage.scss */
 .actionfull-svg {
   max-width: 200px;
   margin-top: 2rem;
 }
 
-/* line 44, ../scss/custom/_fullpage.scss */
+/* line 45, ../scss/custom/_fullpage.scss */
 .field--name-field-second-text {
-  font-weight: lighter;
+  font-family: "Muli", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
 /* line 4, ../scss/custom/_navbar.scss */
@@ -9815,7 +9819,7 @@ ul.entity-pager-list {
   cursor: pointer;
   display: block;
   font-weight: normal;
-  line-height: 1.42857;
+  line-height: 1.5;
   margin: 0;
   outline: 0;
   padding: 3px 20px;
