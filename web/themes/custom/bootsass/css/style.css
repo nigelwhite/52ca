@@ -1729,7 +1729,7 @@ html {
 /* line 27, ../bootstrap/assets/stylesheets/bootstrap/_scaffolding.scss */
 body {
   font-family: "Muli", sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.42857;
   color: #333333;
   background-color: #fff;
@@ -1805,8 +1805,8 @@ img {
 
 /* line 113, ../bootstrap/assets/stylesheets/bootstrap/_scaffolding.scss */
 hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   border: 0;
   border-top: 1px solid #eeeeee;
 }
@@ -1870,8 +1870,8 @@ h6 .small,
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 25px;
+  margin-bottom: 12.5px;
 }
 /* line 30, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
 h1 small,
@@ -1890,8 +1890,8 @@ h3 .small, .h3 small,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 12.5px;
+  margin-bottom: 12.5px;
 }
 /* line 41, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
 h4 small,
@@ -1908,57 +1908,57 @@ h6 .small, .h6 small,
 
 /* line 47, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
 h1, .h1 {
-  font-size: 36px;
+  font-size: 46px;
 }
 
 /* line 48, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
 h2, .h2 {
-  font-size: 30px;
+  font-size: 38px;
 }
 
 /* line 49, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
 h3, .h3 {
-  font-size: 24px;
+  font-size: 31px;
 }
 
 /* line 50, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
 h4, .h4 {
-  font-size: 18px;
+  font-size: 23px;
 }
 
 /* line 51, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
 h5, .h5 {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 /* line 52, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
 h6, .h6 {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 /* line 58, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
 p {
-  margin: 0 0 10px;
+  margin: 0 0 12.5px;
 }
 
 /* line 62, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
 .lead {
-  margin-bottom: 20px;
-  font-size: 16px;
+  margin-bottom: 25px;
+  font-size: 20px;
   font-weight: 300;
   line-height: 1.4;
 }
 @media (min-width: 768px) {
   /* line 62, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
   .lead {
-    font-size: 21px;
+    font-size: 27px;
   }
 }
 
 /* line 78, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
 small,
 .small {
-  font-size: 85%;
+  font-size: 88%;
 }
 
 /* line 83, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
@@ -2130,8 +2130,8 @@ a.bg-danger:focus {
 
 /* line 138, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
 .page-header {
-  padding-bottom: 9px;
-  margin: 40px 0 20px;
+  padding-bottom: 11.5px;
+  margin: 50px 0 25px;
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -2139,7 +2139,7 @@ a.bg-danger:focus {
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 12.5px;
 }
 /* line 153, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
 ul ul,
@@ -2171,7 +2171,7 @@ ol ol {
 /* line 185, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
 dl {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 /* line 189, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
@@ -2230,9 +2230,9 @@ abbr[data-original-title] {
 
 /* line 241, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
 blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
-  font-size: 17.5px;
+  padding: 12.5px 25px;
+  margin: 0 0 25px;
+  font-size: 22.5px;
   border-left: 5px solid #eeeeee;
 }
 /* line 250, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
@@ -2287,7 +2287,7 @@ blockquote.pull-right .small:after {
 
 /* line 294, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
 address {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   font-style: normal;
   line-height: 1.42857;
 }
@@ -2329,9 +2329,9 @@ kbd kbd {
 /* line 41, ../bootstrap/assets/stylesheets/bootstrap/_code.scss */
 pre {
   display: block;
-  padding: 9.5px;
-  margin: 0 0 10px;
-  font-size: 13px;
+  padding: 12px;
+  margin: 0 0 12.5px;
+  font-size: 17px;
   line-height: 1.42857;
   word-break: break-all;
   word-wrap: break-word;
@@ -3496,7 +3496,7 @@ th {
 .table {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 /* line 31, ../bootstrap/assets/stylesheets/bootstrap/_tables.scss */
 .table > thead > tr > th,
@@ -3696,7 +3696,7 @@ table th[class*="col-"] {
   /* line 171, ../bootstrap/assets/stylesheets/bootstrap/_tables.scss */
   .table-responsive {
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 18.75px;
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     border: 1px solid #ddd;
@@ -3758,8 +3758,8 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 20px;
-  font-size: 21px;
+  margin-bottom: 25px;
+  font-size: 27px;
   line-height: inherit;
   color: #333333;
   border: 0;
@@ -3818,7 +3818,7 @@ input[type="checkbox"]:focus {
 output {
   display: block;
   padding-top: 7px;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.42857;
   color: #555555;
 }
@@ -3827,9 +3827,9 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  height: 34px;
+  height: 39px;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.42857;
   color: #555555;
   background-color: #fff;
@@ -3893,7 +3893,7 @@ input[type="search"] {
   input[type="time"].form-control,
   input[type="datetime-local"].form-control,
   input[type="month"].form-control {
-    line-height: 34px;
+    line-height: 39px;
   }
   /* line 197, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
   input[type="date"].input-sm, .input-group-sm > input[type="date"].form-control,
@@ -3914,7 +3914,7 @@ input[type="search"] {
   .input-group-sm > input[type="month"].input-group-addon,
   .input-group-sm > .input-group-btn > input[type="month"].btn, .input-group-sm
   input[type="month"] {
-    line-height: 30px;
+    line-height: 36px;
   }
   /* line 202, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
   input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control,
@@ -3935,7 +3935,7 @@ input[type="search"] {
   .input-group-lg > input[type="month"].input-group-addon,
   .input-group-lg > .input-group-btn > input[type="month"].btn, .input-group-lg
   input[type="month"] {
-    line-height: 46px;
+    line-height: 53px;
   }
 }
 /* line 215, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
@@ -3954,7 +3954,7 @@ input[type="search"] {
 /* line 231, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
 .radio label,
 .checkbox label {
-  min-height: 20px;
+  min-height: 25px;
   padding-left: 20px;
   margin-bottom: 0;
   font-weight: normal;
@@ -4023,7 +4023,7 @@ input[type="checkbox"] {
   padding-top: 7px;
   padding-bottom: 7px;
   margin-bottom: 0;
-  min-height: 34px;
+  min-height: 43px;
 }
 /* line 315, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
 .form-control-static.input-lg, .input-group-lg > .form-control-static.form-control,
@@ -4039,9 +4039,9 @@ input[type="checkbox"] {
 .input-sm, .input-group-sm > .form-control,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn {
-  height: 30px;
+  height: 36px;
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.5;
   border-radius: 3px;
 }
@@ -4050,8 +4050,8 @@ input[type="checkbox"] {
 select.input-sm, .input-group-sm > select.form-control,
 .input-group-sm > select.input-group-addon,
 .input-group-sm > .input-group-btn > select.btn {
-  height: 30px;
-  line-height: 30px;
+  height: 36px;
+  line-height: 36px;
 }
 
 /* line 84, ../bootstrap/assets/stylesheets/bootstrap/mixins/_forms.scss */
@@ -4067,16 +4067,16 @@ select[multiple].input-sm,
 
 /* line 333, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
 .form-group-sm .form-control {
-  height: 30px;
+  height: 36px;
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.5;
   border-radius: 3px;
 }
 /* line 340, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
 .form-group-sm select.form-control {
-  height: 30px;
-  line-height: 30px;
+  height: 36px;
+  line-height: 36px;
 }
 /* line 344, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
 .form-group-sm textarea.form-control,
@@ -4085,10 +4085,10 @@ select[multiple].input-sm,
 }
 /* line 348, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
 .form-group-sm .form-control-static {
-  height: 30px;
-  min-height: 32px;
+  height: 36px;
+  min-height: 41px;
   padding: 6px 10px;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -4096,9 +4096,9 @@ select[multiple].input-sm,
 .input-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
-  height: 46px;
+  height: 53px;
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 23px;
   line-height: 1.33333;
   border-radius: 6px;
 }
@@ -4107,8 +4107,8 @@ select[multiple].input-sm,
 select.input-lg, .input-group-lg > select.form-control,
 .input-group-lg > select.input-group-addon,
 .input-group-lg > .input-group-btn > select.btn {
-  height: 46px;
-  line-height: 46px;
+  height: 53px;
+  line-height: 53px;
 }
 
 /* line 84, ../bootstrap/assets/stylesheets/bootstrap/mixins/_forms.scss */
@@ -4124,16 +4124,16 @@ select[multiple].input-lg,
 
 /* line 359, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
 .form-group-lg .form-control {
-  height: 46px;
+  height: 53px;
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 23px;
   line-height: 1.33333;
   border-radius: 6px;
 }
 /* line 366, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
 .form-group-lg select.form-control {
-  height: 46px;
-  line-height: 46px;
+  height: 53px;
+  line-height: 53px;
 }
 /* line 370, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
 .form-group-lg textarea.form-control,
@@ -4142,10 +4142,10 @@ select[multiple].input-lg,
 }
 /* line 374, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
 .form-group-lg .form-control-static {
-  height: 46px;
-  min-height: 38px;
+  height: 53px;
+  min-height: 48px;
   padding: 11px 16px;
-  font-size: 18px;
+  font-size: 23px;
   line-height: 1.33333;
 }
 
@@ -4155,7 +4155,7 @@ select[multiple].input-lg,
 }
 /* line 393, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
 .has-feedback .form-control {
-  padding-right: 42.5px;
+  padding-right: 48.75px;
 }
 
 /* line 398, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
@@ -4165,9 +4165,9 @@ select[multiple].input-lg,
   right: 0;
   z-index: 2;
   display: block;
-  width: 34px;
-  height: 34px;
-  line-height: 34px;
+  width: 39px;
+  height: 39px;
+  line-height: 39px;
   text-align: center;
   pointer-events: none;
 }
@@ -4178,9 +4178,9 @@ select[multiple].input-lg,
 .input-group-lg > .input-group-btn > .btn + .form-control-feedback,
 .input-group-lg + .form-control-feedback,
 .form-group-lg .form-control + .form-control-feedback {
-  width: 46px;
-  height: 46px;
-  line-height: 46px;
+  width: 53px;
+  height: 53px;
+  line-height: 53px;
 }
 
 /* line 417, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
@@ -4189,9 +4189,9 @@ select[multiple].input-lg,
 .input-group-sm > .input-group-btn > .btn + .form-control-feedback,
 .input-group-sm + .form-control-feedback,
 .form-group-sm .form-control + .form-control-feedback {
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
 }
 
 /* line 8, ../bootstrap/assets/stylesheets/bootstrap/mixins/_forms.scss */
@@ -4292,7 +4292,7 @@ select[multiple].input-lg,
 
 /* line 439, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
 .has-feedback label ~ .form-control-feedback {
-  top: 25px;
+  top: 30px;
 }
 /* line 442, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
 .has-feedback label.sr-only ~ .form-control-feedback {
@@ -4381,7 +4381,7 @@ select[multiple].input-lg,
 /* line 569, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
 .form-horizontal .radio,
 .form-horizontal .checkbox {
-  min-height: 27px;
+  min-height: 32px;
 }
 /* line 575, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
 .form-horizontal .form-group {
@@ -4413,14 +4413,14 @@ select[multiple].input-lg,
   /* line 603, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
   .form-horizontal .form-group-lg .control-label {
     padding-top: 11px;
-    font-size: 18px;
+    font-size: 23px;
   }
 }
 @media (min-width: 768px) {
   /* line 611, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
   .form-horizontal .form-group-sm .control-label {
     padding-top: 6px;
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
@@ -4437,7 +4437,7 @@ select[multiple].input-lg,
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.42857;
   border-radius: 4px;
   -webkit-user-select: none;
@@ -4777,7 +4777,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
 /* line 135, ../bootstrap/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-lg, .btn-group-lg > .btn {
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 23px;
   line-height: 1.33333;
   border-radius: 6px;
 }
@@ -4785,7 +4785,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
 /* line 139, ../bootstrap/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-sm, .btn-group-sm > .btn {
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.5;
   border-radius: 3px;
 }
@@ -4793,7 +4793,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
 /* line 143, ../bootstrap/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-xs, .btn-group-xs > .btn {
   padding: 1px 5px;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.5;
   border-radius: 3px;
 }
@@ -4896,7 +4896,7 @@ tbody.collapse.in {
   padding: 5px 0;
   margin: 2px 0 0;
   list-style: none;
-  font-size: 14px;
+  font-size: 18px;
   text-align: left;
   background-color: #fff;
   border: 1px solid #ccc;
@@ -4914,7 +4914,7 @@ tbody.collapse.in {
 /* line 60, ../bootstrap/assets/stylesheets/bootstrap/_dropdowns.scss */
 .dropdown-menu .divider {
   height: 1px;
-  margin: 9px 0;
+  margin: 11.5px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -4982,7 +4982,7 @@ tbody.collapse.in {
 .dropdown-header {
   display: block;
   padding: 3px 20px;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.42857;
   color: #777777;
   white-space: nowrap;
@@ -5328,7 +5328,7 @@ tbody.collapse.in {
 /* line 77, ../bootstrap/assets/stylesheets/bootstrap/_input-groups.scss */
 .input-group-addon {
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: normal;
   line-height: 1;
   color: #555555;
@@ -5342,7 +5342,7 @@ tbody.collapse.in {
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .input-group-addon.btn {
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 16px;
   border-radius: 3px;
 }
 /* line 94, ../bootstrap/assets/stylesheets/bootstrap/_input-groups.scss */
@@ -5350,7 +5350,7 @@ tbody.collapse.in {
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .input-group-addon.btn {
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 23px;
   border-radius: 6px;
 }
 /* line 101, ../bootstrap/assets/stylesheets/bootstrap/_input-groups.scss */
@@ -5473,7 +5473,7 @@ tbody.collapse.in {
 /* line 59, ../bootstrap/assets/stylesheets/bootstrap/_navs.scss */
 .nav .nav-divider {
   height: 1px;
-  margin: 9px 0;
+  margin: 11.5px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -5622,7 +5622,7 @@ tbody.collapse.in {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   border: 1px solid transparent;
 }
 /* line 14, ../bootstrap/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
@@ -5780,9 +5780,9 @@ tbody.collapse.in {
 /* line 163, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-brand {
   float: left;
-  padding: 15px 15px;
-  font-size: 18px;
-  line-height: 20px;
+  padding: 12.5px 15px;
+  font-size: 23px;
+  line-height: 25px;
   height: 50px;
 }
 /* line 170, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
@@ -5837,13 +5837,13 @@ tbody.collapse.in {
 
 /* line 232, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-nav {
-  margin: 7.5px -15px;
+  margin: 6.25px -15px;
 }
 /* line 235, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 20px;
+  line-height: 25px;
 }
 @media (max-width: 767px) {
   /* line 243, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
@@ -5863,7 +5863,7 @@ tbody.collapse.in {
   }
   /* line 255, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav .open .dropdown-menu > li > a {
-    line-height: 20px;
+    line-height: 25px;
   }
   /* line 257, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -5882,8 +5882,8 @@ tbody.collapse.in {
   }
   /* line 272, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
   }
 }
 
@@ -5896,8 +5896,8 @@ tbody.collapse.in {
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 5.5px;
+  margin-bottom: 5.5px;
 }
 @media (min-width: 768px) {
   /* line 478, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
@@ -6002,13 +6002,13 @@ tbody.collapse.in {
 
 /* line 343, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-btn {
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 5.5px;
+  margin-bottom: 5.5px;
 }
 /* line 346, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 /* line 349, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn {
@@ -6018,8 +6018,8 @@ tbody.collapse.in {
 
 /* line 359, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-text {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 12.5px;
+  margin-bottom: 12.5px;
 }
 @media (min-width: 768px) {
   /* line 359, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
@@ -6259,7 +6259,7 @@ tbody.collapse.in {
 /* line 6, ../bootstrap/assets/stylesheets/bootstrap/_breadcrumbs.scss */
 .breadcrumb {
   padding: 8px 15px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   list-style: none;
   background-color: #f5f5f5;
   border-radius: 4px;
@@ -6283,7 +6283,7 @@ tbody.collapse.in {
 .pagination {
   display: inline-block;
   padding-left: 0;
-  margin: 20px 0;
+  margin: 25px 0;
   border-radius: 4px;
 }
 /* line 10, ../bootstrap/assets/stylesheets/bootstrap/_pagination.scss */
@@ -6353,7 +6353,7 @@ tbody.collapse.in {
 .pagination-lg > li > a,
 .pagination-lg > li > span {
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 23px;
   line-height: 1.33333;
 }
 /* line 12, ../bootstrap/assets/stylesheets/bootstrap/mixins/_pagination.scss */
@@ -6373,7 +6373,7 @@ tbody.collapse.in {
 .pagination-sm > li > a,
 .pagination-sm > li > span {
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.5;
 }
 /* line 12, ../bootstrap/assets/stylesheets/bootstrap/mixins/_pagination.scss */
@@ -6392,7 +6392,7 @@ tbody.collapse.in {
 /* line 6, ../bootstrap/assets/stylesheets/bootstrap/_pager.scss */
 .pager {
   padding-left: 0;
-  margin: 20px 0;
+  margin: 25px 0;
   list-style: none;
   text-align: center;
 }
@@ -6533,7 +6533,7 @@ a.label:hover, a.label:focus {
   display: inline-block;
   min-width: 10px;
   padding: 3px 7px;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: bold;
   color: #fff;
   line-height: 1;
@@ -6598,7 +6598,7 @@ a.badge:hover, a.badge:focus {
 /* line 18, ../bootstrap/assets/stylesheets/bootstrap/_jumbotron.scss */
 .jumbotron p {
   margin-bottom: 15px;
-  font-size: 21px;
+  font-size: 27px;
   font-weight: 200;
 }
 /* line 24, ../bootstrap/assets/stylesheets/bootstrap/_jumbotron.scss */
@@ -6629,7 +6629,7 @@ a.badge:hover, a.badge:focus {
   /* line 49, ../bootstrap/assets/stylesheets/bootstrap/_jumbotron.scss */
   .jumbotron h1,
   .jumbotron .h1 {
-    font-size: 63px;
+    font-size: 81px;
   }
 }
 
@@ -6637,7 +6637,7 @@ a.badge:hover, a.badge:focus {
 .thumbnail {
   display: block;
   padding: 4px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   line-height: 1.42857;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -6671,7 +6671,7 @@ a.thumbnail.active {
 /* line 9, ../bootstrap/assets/stylesheets/bootstrap/_alerts.scss */
 .alert {
   padding: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   border: 1px solid transparent;
   border-radius: 4px;
 }
@@ -6787,8 +6787,8 @@ a.thumbnail.active {
 /* line 26, ../bootstrap/assets/stylesheets/bootstrap/_progress-bars.scss */
 .progress {
   overflow: hidden;
-  height: 20px;
-  margin-bottom: 20px;
+  height: 25px;
+  margin-bottom: 25px;
   background-color: #f5f5f5;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -6800,8 +6800,8 @@ a.thumbnail.active {
   float: left;
   width: 0%;
   height: 100%;
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 25px;
   color: #fff;
   text-align: center;
   background-color: #337ab7;
@@ -7179,7 +7179,7 @@ button.list-group-item-danger.active:focus {
 
 /* line 7, ../bootstrap/assets/stylesheets/bootstrap/_panels.scss */
 .panel {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   background-color: #fff;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -7217,7 +7217,7 @@ button.list-group-item-danger.active:focus {
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 21px;
   color: inherit;
 }
 /* line 39, ../bootstrap/assets/stylesheets/bootstrap/_panels.scss */
@@ -7441,7 +7441,7 @@ button.list-group-item-danger.active:focus {
 
 /* line 222, ../bootstrap/assets/stylesheets/bootstrap/_panels.scss */
 .panel-group {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 /* line 226, ../bootstrap/assets/stylesheets/bootstrap/_panels.scss */
 .panel-group .panel {
@@ -7679,7 +7679,7 @@ button.list-group-item-danger.active:focus {
 /* line 6, ../bootstrap/assets/stylesheets/bootstrap/_close.scss */
 .close {
   float: right;
-  font-size: 21px;
+  font-size: 27px;
   font-weight: bold;
   line-height: 1;
   color: #000;
@@ -7903,7 +7903,7 @@ button.close {
   word-break: normal;
   word-spacing: normal;
   word-wrap: normal;
-  font-size: 12px;
+  font-size: 16px;
   opacity: 0;
   filter: alpha(opacity=0);
 }
@@ -8041,7 +8041,7 @@ button.close {
   word-break: normal;
   word-spacing: normal;
   word-wrap: normal;
-  font-size: 14px;
+  font-size: 18px;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ccc;
@@ -8071,7 +8071,7 @@ button.close {
 .popover-title {
   margin: 0;
   padding: 8px 14px;
-  font-size: 14px;
+  font-size: 18px;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
   border-radius: 5px 5px 0 0;
@@ -9272,7 +9272,7 @@ body.navbar-is-fixed-bottom {
 /* line 16, ../scss/component/_progress-bar.scss */
 .progress-wrapper .percentage,
 .progress-wrapper .progress-label {
-  font-size: 12px;
+  font-size: 16px;
 }
 /* line 21, ../scss/component/_progress-bar.scss */
 .progress-wrapper .progress-bar {
@@ -9357,7 +9357,7 @@ body.navbar-is-fixed-bottom {
 /* line 22, ../scss/component/_tabs.scss */
 .tabs-below > .nav-tabs .summary, .tabs-left > .nav-tabs .summary, .tabs-right > .nav-tabs .summary {
   color: #777777;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 /* line 28, ../scss/component/_tabs.scss */
@@ -9688,9 +9688,12 @@ ul.entity-pager-list {
 /* line 5, ../scss/custom/_fullpage.scss */
 .intro-full {
   margin-top: 30px;
+  border-bottom: 8px solid;
+  padding-bottom: 3rem;
+  border-image: linear-gradient(to right, yellow 5%, #d5d5d5 5%) 1;
 }
 
-/* line 9, ../scss/custom/_fullpage.scss */
+/* line 12, ../scss/custom/_fullpage.scss */
 .action-number {
   display: inline-block;
   font-size: 10rem;
@@ -9700,17 +9703,34 @@ ul.entity-pager-list {
   margin-left: 0.2em;
 }
 
-/* line 19, ../scss/custom/_fullpage.scss */
+/* line 23, ../scss/custom/_fullpage.scss */
 .intro-svg {
   float: left;
 }
 
-/* line 23, ../scss/custom/_fullpage.scss */
-.family-title {
-  font-family: 'Zilla Slab', sans-serif;
+/* line 27, ../scss/custom/_fullpage.scss */
+.title-fullpage {
+  font-size: 5rem;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.25em;
+  font-weight: 600;
+  font-family: 'Zilla Slab', sans-serif;
+  margin-top: 1.5rem;
+}
+
+/* line 35, ../scss/custom/_fullpage.scss */
+.families-fullpage {
+  margin-top: 3rem;
+}
+
+/* line 39, ../scss/custom/_fullpage.scss */
+.actionfull-svg {
+  max-width: 200px;
+  margin-top: 2rem;
+}
+
+/* line 44, ../scss/custom/_fullpage.scss */
+.field--name-field-second-text {
+  font-weight: lighter;
 }
 
 /* line 4, ../scss/custom/_navbar.scss */
@@ -9749,6 +9769,21 @@ ul.entity-pager-list {
   margin-top: 20px;
 }
 
+/* line 1, ../scss/custom/_family.scss */
+.family-title {
+  font-family: 'Zilla Slab', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+/* line 8, ../scss/custom/_family.scss */
+.family-icon > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /**
  * jQuery UI autocomplete widget style overrides.
  *
@@ -9764,7 +9799,7 @@ ul.entity-pager-list {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   color: inherit;
   font-family: "Muli", sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   list-style: none;
   min-width: 160px;
   padding: 5px 0;
@@ -9798,21 +9833,21 @@ ul.entity-pager-list {
   color: #fff;
 }
 
-/* line 25, ../scss/_overrides.scss */
+/* line 26, ../scss/_overrides.scss */
 ol, ul {
   padding-left: 1.5em;
 }
-/* line 27, ../scss/_overrides.scss */
+/* line 28, ../scss/_overrides.scss */
 .popover ol:last-child, .popover ul:last-child {
   margin-bottom: 0;
 }
 
-/* line 33, ../scss/_overrides.scss */
+/* line 34, ../scss/_overrides.scss */
 .page-header {
   margin-top: 0;
 }
 
-/* line 38, ../scss/_overrides.scss */
+/* line 39, ../scss/_overrides.scss */
 .footer {
   margin-top: 45px;
   padding-top: 35px;
@@ -9820,32 +9855,32 @@ ol, ul {
   border-top: 1px solid #E5E5E5;
 }
 
-/* line 46, ../scss/_overrides.scss */
+/* line 47, ../scss/_overrides.scss */
 p:last-child,
 .form-group:last-child,
 .panel:last-child {
   margin-bottom: 0;
 }
 
-/* line 54, ../scss/_overrides.scss */
+/* line 55, ../scss/_overrides.scss */
 .region-help > .glyphicon {
-  font-size: 18px;
+  font-size: 23px;
   float: left;
   margin: -0.05em 0.5em 0 0;
 }
-/* line 59, ../scss/_overrides.scss */
+/* line 60, ../scss/_overrides.scss */
 .region-help .block {
   overflow: hidden;
 }
 
-/* line 65, ../scss/_overrides.scss */
+/* line 66, ../scss/_overrides.scss */
 .help-block, .control-group .help-inline {
   color: #777777;
   font-size: 12px;
   margin: 5px 0 10px;
   padding: 0;
 }
-/* line 70, ../scss/_overrides.scss */
+/* line 71, ../scss/_overrides.scss */
 .help-block:first-child, .control-group .help-inline:first-child {
   margin-top: 0;
 }
