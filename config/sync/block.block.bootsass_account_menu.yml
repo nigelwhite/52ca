@@ -1,4 +1,4 @@
-uuid: 0d402a6d-d217-46db-95eb-56eed21f4298
+uuid: d15b98e8-0a5d-4f74-9136-25043f166fbc
 langcode: en
 status: true
 dependencies:
@@ -7,13 +7,13 @@ dependencies:
   module:
     - system
   theme:
-    - bootstrap3sub
+    - bootsass
 _core:
-  default_config_hash: R2K_qX0ZUMbUL6ie_-S9tZVjvqmlWKlscikgeRv9vhw
-id: bootstrap3sub_account_menu
-theme: bootstrap3sub
+  default_config_hash: DweBpscQZdG0-fHkSpUzdYucrNH45G_KF7Z82V-oyQM
+id: bootsass_account_menu
+theme: bootsass
 region: footer
-weight: -4
+weight: -5
 provider: null
 plugin: 'system_menu_block:account'
 settings:
@@ -22,5 +22,5 @@ settings:
   provider: system
   label_display: '0'
   level: 1
-  depth: 2
+  depth: 1
 visibility: {  }

@@ -1,0 +1,33 @@
+cdn_provider: ''
+_core:
+  default_config_hash: _5qrDuRmWmRVjW00si3U1s1NrgrocA4N653EYGRfgEE
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'http://localhost:32772/themes/custom/bootsass/favicon.ico'
+  use_default: false
+schemas:
+  bootstrap: 8000
+  bootsass: 8000
+features:
+  comment_user_picture: false
+  comment_user_verification: false
+  favicon: true
+  node_user_picture: false
+table_responsive: '-1'
+table: ''
+logo:
+  path: ''
+  url: ''
+  use_default: false
+region_wells:
+  attic: ''
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: well
+  footer: ''

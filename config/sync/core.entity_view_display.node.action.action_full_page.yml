@@ -114,6 +114,10 @@ third_party_settings:
         weight: 2
         label: hidden
         formatter: default
+        settings:
+          wrapper: p
+          class: title-fullpage
+          link: false
   field_group:
     group_families:
       children:
@@ -174,11 +178,11 @@ content:
       image_link: ''
       svg_render_as_image: '1'
       svg_attributes:
-        width: '300'
+        width: ''
         height: ''
     third_party_settings:
       field_formatter_class:
-        class: action-svg
+        class: actionfull-svg
   field_community_action:
     weight: 10
     label: above

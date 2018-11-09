@@ -1,0 +1,22 @@
+uuid: c9359cd9-6b2e-4f73-a396-f4f495b1b63a
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - bootsass
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: bootsass_breadcrumbs
+theme: bootsass
+region: navigation
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

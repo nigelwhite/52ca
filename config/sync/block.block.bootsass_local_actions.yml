@@ -1,15 +1,15 @@
-uuid: bda73677-5f29-47ef-9864-7f0091d8e6be
+uuid: af3080d5-716f-430e-b08b-802bfda50b2e
 langcode: en
 status: true
 dependencies:
   theme:
-    - bootstrap3sub
+    - bootsass
 _core:
-  default_config_hash: ffxthelqQF8xcr4GTG4HlaNNsluiHftN0pujmQpW0bQ
-id: bootstrap3sub_local_actions
-theme: bootstrap3sub
-region: header
-weight: 20
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: bootsass_local_actions
+theme: bootsass
+region: content
+weight: -20
 provider: null
 plugin: local_actions_block
 settings:

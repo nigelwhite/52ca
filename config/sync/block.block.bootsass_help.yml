@@ -1,16 +1,16 @@
-uuid: 95ce4e2a-e245-4b10-84e1-3c349f07a806
+uuid: 74d08c23-5dc7-4dd4-b5ad-273206409bc8
 langcode: en
 status: true
 dependencies:
   module:
     - help
   theme:
-    - bootstrap3sub
+    - bootsass
 _core:
-  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
-id: bootstrap3sub_help
-theme: bootstrap3sub
-region: help
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: bootsass_help
+theme: bootsass
+region: content
 weight: -30
 provider: null
 plugin: help_block

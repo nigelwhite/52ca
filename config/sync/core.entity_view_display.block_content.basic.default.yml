@@ -5,8 +5,10 @@ dependencies:
   config:
     - block_content.type.basic
     - field.field.block_content.basic.body
+    - field.field.block_content.basic.field_logo52
   module:
-    - text
+    - field_formatter_class
+    - svg_image
 _core:
   default_config_hash: orJpHUlAc_wiQLMUjIgEJXGeiqylGHMPcmNRjGtct-M
 id: block_content.basic.default
@@ -14,11 +16,20 @@ targetEntityType: block_content
 bundle: basic
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
+  field_logo52:
     weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+      svg_render_as_image: '1'
+      svg_attributes:
+        width: '125'
+        height: ''
+    third_party_settings:
+      field_formatter_class:
+        class: logo52
+    type: image
     region: content
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  body: true

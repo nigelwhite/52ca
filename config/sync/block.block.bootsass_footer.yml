@@ -1,4 +1,4 @@
-uuid: 0bfe3ed6-6c47-4404-a6ff-b5d2ce3c2d2c
+uuid: 034a920b-4dd3-49cc-8129-63e41a935e30
 langcode: en
 status: true
 dependencies:
@@ -7,13 +7,13 @@ dependencies:
   module:
     - system
   theme:
-    - bootstrap3sub
+    - bootsass
 _core:
-  default_config_hash: h06zhb3xV9_2_3Zy9NsyylL7YBaEDlMwMEqNwAn8kMo
-id: bootstrap3sub_footer
-theme: bootstrap3sub
+  default_config_hash: kkISXE1LT2FJEoYnqCrCpeFB-2pmGmMxMklVk7rQcfg
+id: bootsass_footer
+theme: bootsass
 region: footer
-weight: -5
+weight: -6
 provider: null
 plugin: 'system_menu_block:footer'
 settings:
