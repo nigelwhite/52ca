@@ -9668,17 +9668,21 @@ body.toolbar-loading.toolbar {
 
 /* line 131, ../scss/custom/_card.scss */
 .entity-pager-item-prev a:hover,
-.entity-pager-item-next a:hover {
+.entity-pager-item-next a:hover,
+.entity-pager-item-prev a:active,
+.entity-pager-item-next a:active,
+.entity-pager-item-prev a:visited,
+.entity-pager-item-next a:visited {
   text-decoration: none;
 }
 
-/* line 136, ../scss/custom/_card.scss */
+/* line 141, ../scss/custom/_card.scss */
 .entity-pager-list .entity-pager-item {
   margin-bottom: 0;
   margin-top: 0;
 }
 
-/* line 141, ../scss/custom/_card.scss */
+/* line 146, ../scss/custom/_card.scss */
 ul.entity-pager-list {
   margin-bottom: 0;
 }
