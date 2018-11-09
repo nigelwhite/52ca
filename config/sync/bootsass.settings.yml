@@ -1,4 +1,4 @@
-cdn_provider: ''
+cdn_provider: jsdelivr
 _core:
   default_config_hash: _5qrDuRmWmRVjW00si3U1s1NrgrocA4N653EYGRfgEE
 favicon:
@@ -12,7 +12,7 @@ schemas:
 features:
   comment_user_picture: false
   comment_user_verification: false
-  favicon: true
+  favicon: false
   node_user_picture: false
 table_responsive: '-1'
 table: ''
@@ -29,5 +29,5 @@ region_wells:
   help: ''
   content: ''
   sidebar_first: ''
-  sidebar_second: well
+  sidebar_second: ''
   footer: ''
