@@ -69,12 +69,13 @@ third_party_settings:
         - group_card_footer
         - field_family
         - group_families
-        - field_intro_svg
         - node_title
-        - field_action_number
+        - field_intro_svg
         - field_card_text
+        - field_action_number
         - field_action_svg
         - field_card_action
+        - 'dynamic_block_field:node-card_pager'
     fields:
       node_title:
         plugin_id: node_title
@@ -85,6 +86,11 @@ third_party_settings:
           wrapper: p
           class: title-card
           link: false
+      'dynamic_block_field:node-card_pager':
+        plugin_id: 'dynamic_block_field:node-card_pager'
+        weight: 6
+        label: hidden
+        formatter: default
   field_group:
     group_intro:
       children:
@@ -126,6 +132,7 @@ third_party_settings:
       children:
         - field_action_svg
         - field_card_action
+        - 'dynamic_block_field:node-card_pager'
       parent_name: ''
       weight: 2
       format_type: html_element

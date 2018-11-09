@@ -9735,24 +9735,18 @@ ul.entity-pager-list {
 /* line 4, ../scss/custom/_navbar.scss */
 .navbar-nav > li > a {
   text-transform: uppercase;
-  font-size: 1.2em;
   font-weight: 500;
 }
 
-/* line 11, ../scss/custom/_navbar.scss */
+/* line 10, ../scss/custom/_navbar.scss */
 .wideband {
   background-color: #00a45c;
   height: 50px;
 }
 
-/* line 16, ../scss/custom/_navbar.scss */
+/* line 15, ../scss/custom/_navbar.scss */
 .navbar-default {
   border: none;
-}
-
-/* line 20, ../scss/custom/_navbar.scss */
-#navbar:last-child {
-  margin-right: -15px;
 }
 
 /* line 1, ../scss/custom/_attic.scss */

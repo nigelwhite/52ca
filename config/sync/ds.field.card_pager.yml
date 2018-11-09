@@ -1,9 +1,16 @@
 id: card_pager
-label: 'Card pager'
+label: 'Card Pager'
 ui_limit: ''
 properties:
-  block: 'block_content:4377c0d1-d4c5-4ec1-80e5-fa95c43c8e61'
+  block: 'views_block:card_pager-block_1'
   use_block_title: false
+  config:
+    id: 'views_block:card_pager-block_1'
+    label: ''
+    provider: views
+    label_display: visible
+    views_label: ''
+    items_per_page: none
 type: block
 type_label: 'Block field'
 entities:
