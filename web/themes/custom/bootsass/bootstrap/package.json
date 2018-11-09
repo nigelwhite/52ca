@@ -35,10 +35,13 @@
   "devDependencies": {
     "ejs": ">=2.5.5",
     "mincer": "^1.5.1",
-    "node-sass": "^3.8.0"
+    "node-sass": "^4.10.0"
   },
   "eyeglass": {
     "exports": "eyeglass-exports.js",
     "needs": "^0.7.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
   }
 }
