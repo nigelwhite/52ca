@@ -60,7 +60,7 @@ display:
           link_next: '>'
           link_prev: '<'
           display_all: true
-          link_all_url: '<front>'
+          link_all_url: 'node/[node:nid]/full'
           link_all_text: 'READ MORE'
           display_count: false
           circular_paging: false
