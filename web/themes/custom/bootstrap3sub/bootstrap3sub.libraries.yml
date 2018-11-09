@@ -1,8 +1,0 @@
-global-styling:
-  css:
-    theme:
-      css/style.css: {}
-fonts:
-  css:
-    theme:
-      '//fonts.googleapis.com/css?family=Muli|Zilla+Slab:400,500,700': { type: external }
