@@ -26,10 +26,8 @@ dependencies:
     - field.field.node.action.field_resources
     - field.field.node.action.field_sdg
     - field.field.node.action.field_season
-    - field.field.node.action.field_second_text
     - field.field.node.action.field_simple_action
     - field.field.node.action.field_simple_action_choose_me
-    - field.field.node.action.field_third_text
     - node.type.action
   module:
     - text
@@ -74,7 +72,5 @@ hidden:
   field_resources: true
   field_sdg: true
   field_season: true
-  field_second_text: true
   field_simple_action: true
   field_simple_action_choose_me: true
-  field_third_text: true

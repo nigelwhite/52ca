@@ -1,0 +1,9 @@
+uuid: f3e362d0-1ba0-411c-9757-a42e36ace89d
+langcode: en
+status: true
+dependencies: {  }
+id: fullpage_image
+label: 'Fullpage image'
+icon_uuid: null
+description: 'Image for Full Page view of Action'
+behavior_plugins: {  }

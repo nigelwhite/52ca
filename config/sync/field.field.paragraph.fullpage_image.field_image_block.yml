@@ -1,20 +1,20 @@
-uuid: 0889034b-5339-47ff-a771-ce4772b16327
+uuid: 3bfc92fc-ef50-43cb-83b1-18391e79e3c4
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image
-    - node.type.action
+    - field.storage.paragraph.field_image_block
+    - paragraphs.paragraphs_type.fullpage_image
   module:
     - image
-id: node.action.field_image
-field_name: field_image
-entity_type: node
-bundle: action
-label: 'Main image'
+id: paragraph.fullpage_image.field_image_block
+field_name: field_image_block
+entity_type: paragraph
+bundle: fullpage_image
+label: 'Image block'
 description: ''
-required: true
-translatable: true
+required: false
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -22,7 +22,7 @@ settings:
   file_extensions: 'png gif jpg jpeg'
   max_filesize: '2 MB'
   max_resolution: ''
-  min_resolution: 1150x550
+  min_resolution: 750x455
   alt_field: true
   alt_field_required: true
   title_field: false

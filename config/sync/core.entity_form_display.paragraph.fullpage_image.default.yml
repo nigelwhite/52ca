@@ -1,0 +1,27 @@
+uuid: 12ceea89-d7e7-45ca-a115-b1f3ae15904c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.fullpage_image.field_image_block
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.fullpage_image
+  module:
+    - svg_image
+id: paragraph.fullpage_image.default
+targetEntityType: paragraph
+bundle: fullpage_image
+mode: default
+content:
+  field_image_block:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,21 @@
+uuid: 48993bfc-e7ba-4ea4-84ce-96956691ff0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_block
+    - paragraphs.paragraphs_type.fullpage_text
+  module:
+    - text
+id: paragraph.fullpage_text.field_text_block
+field_name: field_text_block
+entity_type: paragraph
+bundle: fullpage_text
+label: 'Text block'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

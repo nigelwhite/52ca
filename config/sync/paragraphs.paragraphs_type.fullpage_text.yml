@@ -1,0 +1,9 @@
+uuid: e1a82034-7d50-4ff3-ad8a-d4feb086d837
+langcode: en
+status: true
+dependencies: {  }
+id: fullpage_text
+label: 'Fullpage text'
+icon_uuid: null
+description: 'Text block for Full Page view of an Action'
+behavior_plugins: {  }

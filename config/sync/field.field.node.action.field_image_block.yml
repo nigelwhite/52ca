@@ -1,0 +1,39 @@
+uuid: 872d713a-9946-4fef-85d9-7100d21a0dc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_block
+    - node.type.action
+    - paragraphs.paragraphs_type.fullpage_image
+    - paragraphs.paragraphs_type.fullpage_text
+  module:
+    - entity_reference_revisions
+id: node.action.field_image_block
+field_name: field_image_block
+entity_type: node
+bundle: action
+label: Chunk
+description: 'A text or image chunk for the Full Page view of an Action'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      fullpage_image: fullpage_image
+      fullpage_text: fullpage_text
+    target_bundles_drag_drop:
+      family_icons:
+        weight: 4
+        enabled: false
+      fullpage_image:
+        enabled: true
+        weight: 5
+      fullpage_text:
+        enabled: true
+        weight: 6
+field_type: entity_reference_revisions
