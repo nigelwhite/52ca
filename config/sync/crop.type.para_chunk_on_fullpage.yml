@@ -1,0 +1,12 @@
+uuid: a5fa20d7-b814-46cf-89dd-e115094292e3
+langcode: en
+status: true
+dependencies: {  }
+label: 'Para chunk on Fullpage'
+id: para_chunk_on_fullpage
+description: ''
+aspect_ratio: '150:91'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: 750
+hard_limit_height: 455

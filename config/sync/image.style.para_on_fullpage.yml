@@ -1,0 +1,25 @@
+uuid: 821dc754-b0a7-4f19-8ea0-10969bde8a3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.para_chunk_on_fullpage
+  module:
+    - crop
+name: para_on_fullpage
+label: 'Para on fullpage'
+effects:
+  710c4964-2749-4238-877d-1c21c0d8dbce:
+    uuid: 710c4964-2749-4238-877d-1c21c0d8dbce
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: para_chunk_on_fullpage
+  54bb7fa2-248b-4e42-9cb3-29d4c0491e30:
+    uuid: 54bb7fa2-248b-4e42-9cb3-29d4c0491e30
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 750
+      height: 455
+      anchor: center-center

@@ -34,7 +34,6 @@ dependencies:
     - image_widget_crop
     - paragraphs
     - path
-    - svg_image
     - text
 id: node.action.default
 targetEntityType: node
@@ -143,10 +142,9 @@ content:
       preview_image_style: thumbnail
       crop_preview_image_style: crop_thumbnail
       crop_list:
-        - main_image
-      crop_types_required:
-        - main_image
+        - action_banner
       progress_indicator: throbber
+      crop_types_required: {  }
       show_crop_area: false
     third_party_settings: {  }
     type: image_widget_crop
@@ -163,14 +161,6 @@ content:
       default_paragraph_type: _none
     third_party_settings: {  }
     region: content
-  field_intro_svg:
-    type: image_image
-    weight: 24
-    region: content
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
   field_people_self_care:
     weight: 7
     settings:
@@ -261,6 +251,7 @@ hidden:
   body: true
   created: true
   field_action_svg: true
+  field_intro_svg: true
   promote: true
   status: true
   sticky: true
