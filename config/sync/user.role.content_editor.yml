@@ -49,5 +49,6 @@ permissions:
   - 'edit terms in season'
   - 'update media'
   - 'use advanced search'
+  - 'use text format basic_html'
   - 'view own unpublished content'
   - 'view the administration theme'
