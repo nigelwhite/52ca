@@ -17,6 +17,7 @@
 /app/
 
 # Ignore theming tools
+/web/themes/custom/.sass-cache/
 /web/themes/custom/bootsass/.sass-cache/
 /web/themes/custom/bootsass/node-modules/
 /web/themes/custom/bootsass/scss/
