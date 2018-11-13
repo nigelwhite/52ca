@@ -1,0 +1,29 @@
+uuid: a5164a6e-0ba7-4ff8-bb7e-6a6d457806fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_example
+    - node.type.action
+    - node.type.resource
+id: node.action.field_project_example
+field_name: field_project_example
+entity_type: node
+bundle: action
+label: 'Project example'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      resource: resource
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

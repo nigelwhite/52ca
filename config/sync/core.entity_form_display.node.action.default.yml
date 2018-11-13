@@ -20,8 +20,11 @@ dependencies:
     - field.field.node.action.field_image_block
     - field.field.node.action.field_intro_svg
     - field.field.node.action.field_people_self_care
+    - field.field.node.action.field_project_example
     - field.field.node.action.field_radical_action
-    - field.field.node.action.field_resource
+    - field.field.node.action.field_reference
+    - field.field.node.action.field_resources_for_children_
+    - field.field.node.action.field_resources_for_higher_educa
     - field.field.node.action.field_sdg
     - field.field.node.action.field_season
     - field.field.node.action.field_simple_action
@@ -29,7 +32,9 @@ dependencies:
     - image.style.thumbnail
     - node.type.action
   module:
+    - entity_browser_entity_form
     - image_widget_crop
+    - inline_entity_form
     - paragraphs
     - text
 id: node.action.default
@@ -166,6 +171,24 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_project_example:
+    weight: 28
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
+    region: content
   field_radical_action:
     weight: 17
     settings:
@@ -175,17 +198,59 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_resource:
-    type: entity_reference_paragraphs
-    weight: 20
+  field_reference:
+    weight: 29
     settings:
-      title: Resource
-      title_plural: Resources
-      edit_mode: preview
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: _none
-    third_party_settings: {  }
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
+    region: content
+  field_resources_for_children_:
+    weight: 26
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
+    region: content
+  field_resources_for_higher_educa:
+    weight: 27
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
     region: content
   field_sdg:
     weight: 7

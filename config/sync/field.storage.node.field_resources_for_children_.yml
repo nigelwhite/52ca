@@ -1,13 +1,12 @@
-uuid: 08464692-7a69-4d72-88fd-1369d3a613e9
+uuid: 81b9d214-c7cf-4aab-9252-c10ca36b903e
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - paragraphs
-id: paragraph.field_resource_higher_ed
-field_name: field_resource_higher_ed
-entity_type: paragraph
+id: node.field_resources_for_children_
+field_name: field_resources_for_children_
+entity_type: node
 type: entity_reference
 settings:
   target_type: node

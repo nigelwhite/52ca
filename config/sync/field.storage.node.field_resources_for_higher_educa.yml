@@ -1,0 +1,19 @@
+uuid: 717fac4f-341b-488d-b663-f98765b32556
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_resources_for_higher_educa
+field_name: field_resources_for_higher_educa
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

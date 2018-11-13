@@ -1,0 +1,21 @@
+uuid: c59686f1-d682-455d-bc42-fabb1d6d8cf2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_index_as
+    - node.type.resource
+  module:
+    - options
+id: node.resource.field_index_as
+field_name: field_index_as
+entity_type: node
+bundle: resource
+label: 'Index as'
+description: 'Index this resource primarily as....... (you can use the resource in any category on a specific page)'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

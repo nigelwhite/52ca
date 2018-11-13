@@ -22,7 +22,6 @@ dependencies:
     - field.field.node.action.field_intro_svg
     - field.field.node.action.field_people_self_care
     - field.field.node.action.field_radical_action
-    - field.field.node.action.field_resource
     - field.field.node.action.field_sdg
     - field.field.node.action.field_season
     - field.field.node.action.field_simple_action
@@ -67,7 +66,6 @@ hidden:
   field_intro_svg: true
   field_people_self_care: true
   field_radical_action: true
-  field_resource: true
   field_sdg: true
   field_season: true
   field_simple_action: true

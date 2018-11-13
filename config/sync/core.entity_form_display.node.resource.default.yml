@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.resource.body
+    - field.field.node.resource.field_index_as
     - field.field.node.resource.field_link2
     - node.type.resource
   module:
@@ -15,13 +16,19 @@ bundle: resource
 mode: default
 content:
   body:
-    weight: 26
+    weight: 3
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea_with_summary
+    region: content
+  field_index_as:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_link2:
     weight: 1

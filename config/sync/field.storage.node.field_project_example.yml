@@ -1,13 +1,12 @@
-uuid: 76f0b19b-798e-4183-8511-9b8d1bdd2ce2
+uuid: 1dbe7cac-2681-47b8-8c71-1a7cf3dc04fb
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - paragraphs
-id: paragraph.field_resource_for_children
-field_name: field_resource_for_children
-entity_type: paragraph
+id: node.field_project_example
+field_name: field_project_example
+entity_type: node
 type: entity_reference
 settings:
   target_type: node

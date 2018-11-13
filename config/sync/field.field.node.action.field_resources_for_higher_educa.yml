@@ -1,0 +1,29 @@
+uuid: b1e57ff9-c162-4cf5-bbdb-82f90c37116b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resources_for_higher_educa
+    - node.type.action
+    - node.type.resource
+id: node.action.field_resources_for_higher_educa
+field_name: field_resources_for_higher_educa
+entity_type: node
+bundle: action
+label: 'Resources for higher education:'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      resource: resource
+    sort:
+      field: title
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

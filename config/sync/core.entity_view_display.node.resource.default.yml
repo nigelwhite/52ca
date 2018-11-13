@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.resource.body
+    - field.field.node.resource.field_index_as
     - field.field.node.resource.field_link2
     - node.type.resource
   module:
@@ -57,7 +58,7 @@ mode: default
 content:
   body:
     weight: 2
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
@@ -75,4 +76,5 @@ content:
     type: link
     region: left
 hidden:
+  field_index_as: true
   links: true
