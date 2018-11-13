@@ -40,7 +40,6 @@
         "drupal/field_group": "^1.0",
         "drupal/image_widget_crop": "^2.2",
         "drupal/inline_entity_form": "^1.0@RC",
-        "drupal/link_to_entity": "^1.1",
         "drupal/module_filter": "^3.1",
         "drupal/paragraphs": "^1.4",
         "drupal/pathauto": "^1.3",

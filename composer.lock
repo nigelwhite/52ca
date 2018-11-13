@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7fe968d4e266f27eae81538750c39213",
+    "content-hash": "0072ccef33833a1c86a2863e658e7878",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3499,53 +3499,6 @@
             "homepage": "https://www.drupal.org/project/inline_entity_form",
             "support": {
                 "source": "http://cgit.drupalcode.org/inline_entity_form"
-            }
-        },
-        {
-            "name": "drupal/link_to_entity",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/link_to_entity",
-                "reference": "8.x-1.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/link_to_entity-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "bc424d683fed16296b1ff9b5d9bbe9599b693e90"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1469742839",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "takim",
-                    "homepage": "https://www.drupal.org/user/252386"
-                }
-            ],
-            "description": "Provides field formatter to link entity where it belongs to.",
-            "homepage": "https://www.drupal.org/project/link_to_entity",
-            "support": {
-                "source": "http://cgit.drupalcode.org/link_to_entity"
             }
         },
         {

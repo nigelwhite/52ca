@@ -9,7 +9,7 @@ id: node.action.field_advanced_action_choose_me
 field_name: field_advanced_action_choose_me
 entity_type: node
 bundle: action
-label: 'Advanced action Choose me'
+label: 'Radical action Choose me'
 description: 'Limited to 180 characters'
 required: false
 translatable: false
