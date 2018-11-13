@@ -1,18 +1,19 @@
-uuid: 68292943-35be-4955-b106-def19edf771e
+uuid: 08464692-7a69-4d72-88fd-1369d3a613e9
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_references
-field_name: field_references
-entity_type: node
+    - paragraphs
+id: paragraph.field_resource_higher_ed
+field_name: field_resource_higher_ed
+entity_type: paragraph
 type: entity_reference
 settings:
   target_type: node
 module: core
 locked: false
-cardinality: 5
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

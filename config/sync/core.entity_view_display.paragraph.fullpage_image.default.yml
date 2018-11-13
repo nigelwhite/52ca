@@ -14,7 +14,7 @@ mode: default
 content:
   field_image_block:
     weight: 0
-    label: above
+    label: hidden
     settings:
       svg_attributes:
         width: ''

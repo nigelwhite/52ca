@@ -3,39 +3,59 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.resource.body
-    - field.field.node.resource.field_for
     - field.field.node.resource.field_link2
     - node.type.resource
   module:
+    - ds
     - link
-    - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_2col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          left:
+            wrapper: div
+            classes:
+              col-sm-6: col-sm-6
+            add_region_classes: 1
+            attributes: ''
+          right:
+            wrapper: div
+            classes:
+              col-sm-6: col-sm-6
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      left:
+        - body
+      right:
+        - node_title
+        - field_link2
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
 id: node.resource.default
 targetEntityType: node
 bundle: resource
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 101
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_for:
-    weight: 103
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
-    region: content
   field_link2:
-    weight: 102
-    label: above
+    weight: 2
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -44,10 +64,6 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
-    region: content
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-hidden: {  }
+    region: right
+hidden:
+  links: true

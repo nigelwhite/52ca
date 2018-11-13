@@ -20,10 +20,8 @@ dependencies:
     - field.field.node.action.field_image_block
     - field.field.node.action.field_intro_svg
     - field.field.node.action.field_people_self_care
-    - field.field.node.action.field_project_examples
     - field.field.node.action.field_radical_action
-    - field.field.node.action.field_references
-    - field.field.node.action.field_resources
+    - field.field.node.action.field_resource
     - field.field.node.action.field_sdg
     - field.field.node.action.field_season
     - field.field.node.action.field_simple_action
@@ -33,7 +31,6 @@ dependencies:
   module:
     - image_widget_crop
     - paragraphs
-    - path
     - text
 id: node.action.default
 targetEntityType: node
@@ -169,14 +166,6 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_project_examples:
-    weight: 20
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_radical_action:
     weight: 17
     settings:
@@ -186,23 +175,17 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_references:
-    weight: 21
+  field_resource:
+    type: entity_reference_paragraphs
+    weight: 20
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      title: Resource
+      title_plural: Resources
+      edit_mode: preview
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
-  field_resources:
-    weight: 22
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
     region: content
   field_sdg:
     weight: 7
@@ -233,12 +216,6 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  path:
-    type: path
-    weight: 23
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   title:
     type: string_textfield
     weight: 0
@@ -252,6 +229,7 @@ hidden:
   created: true
   field_action_svg: true
   field_intro_svg: true
+  path: true
   promote: true
   status: true
   sticky: true

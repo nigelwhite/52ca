@@ -1,0 +1,9 @@
+uuid: fdf21e4d-5bb6-4c5f-8f34-cbb517ca09bb
+langcode: en
+status: true
+dependencies: {  }
+id: resource_for_children
+label: 'Resource for children'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

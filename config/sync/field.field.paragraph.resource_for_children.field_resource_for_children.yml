@@ -1,0 +1,28 @@
+uuid: d08dfb2f-6782-4a31-b401-a1b28368af7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_resource_for_children
+    - node.type.resource
+    - paragraphs.paragraphs_type.resource_for_children
+id: paragraph.resource_for_children.field_resource_for_children
+field_name: field_resource_for_children
+entity_type: paragraph
+bundle: resource_for_children
+label: 'Resource - for children'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      resource: resource
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

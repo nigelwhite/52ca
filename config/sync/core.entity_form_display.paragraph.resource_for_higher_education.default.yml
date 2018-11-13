@@ -1,0 +1,30 @@
+uuid: 005cb853-8540-465b-9f2f-7c49d12af2b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.resource_for_higher_education.field_resource_higher_ed
+    - paragraphs.paragraphs_type.resource_for_higher_education
+  module:
+    - inline_entity_form
+id: paragraph.resource_for_higher_education.default
+targetEntityType: paragraph
+bundle: resource_for_higher_education
+mode: default
+content:
+  field_resource_higher_ed:
+    weight: 0
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      override_labels: false
+      collapsible: false
+      collapsed: false
+    third_party_settings: {  }
+    type: inline_entity_form_simple
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

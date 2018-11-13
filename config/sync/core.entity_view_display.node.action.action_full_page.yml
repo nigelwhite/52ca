@@ -21,10 +21,8 @@ dependencies:
     - field.field.node.action.field_image_block
     - field.field.node.action.field_intro_svg
     - field.field.node.action.field_people_self_care
-    - field.field.node.action.field_project_examples
     - field.field.node.action.field_radical_action
-    - field.field.node.action.field_references
-    - field.field.node.action.field_resources
+    - field.field.node.action.field_resource
     - field.field.node.action.field_sdg
     - field.field.node.action.field_season
     - field.field.node.action.field_simple_action
@@ -36,6 +34,7 @@ dependencies:
     - field_formatter_class
     - field_group
     - svg_image
+    - text
     - user
 third_party_settings:
   ds:
@@ -90,22 +89,21 @@ third_party_settings:
         - field_intro_svg
         - node_title
         - field_action_number
+        - field_card_text
         - field_image_block
       right:
         - field_family
         - group_families
         - field_action_svg
         - group_actions
-        - field_earth_care
         - field_simple_action
-        - field_people_self_care
+        - field_earth_care
         - field_radical_action
+        - field_people_self_care
         - field_fair_share
         - field_community_action
-        - field_resources
-        - field_project_examples
         - field_global_action
-        - field_references
+        - field_resource
     fields:
       node_title:
         plugin_id: node_title
@@ -121,7 +119,7 @@ third_party_settings:
       children:
         - field_family
       parent_name: ''
-      weight: 4
+      weight: 5
       format_type: html_element
       format_settings:
         label: Families
@@ -159,7 +157,7 @@ third_party_settings:
         - field_community_action
         - field_global_action
       parent_name: ''
-      weight: 6
+      weight: 7
       format_type: html_element
       format_settings:
         id: ''
@@ -187,7 +185,7 @@ content:
         class: action-number
   field_action_svg:
     type: image
-    weight: 5
+    weight: 6
     region: right
     label: hidden
     settings:
@@ -200,6 +198,22 @@ content:
     third_party_settings:
       field_formatter_class:
         class: actionfull-svg
+  field_card_text:
+    type: text_default
+    weight: 3
+    region: left
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: cardtext-on-fullpage
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
   field_community_action:
     weight: 10
     label: above
@@ -219,7 +233,7 @@ content:
     type: entity_reference_entity_view
     region: right
   field_earth_care:
-    weight: 7
+    weight: 8
     label: above
     settings:
       link_to_entity: false
@@ -227,7 +241,7 @@ content:
     type: string
     region: right
   field_fair_share:
-    weight: 9
+    weight: 10
     label: above
     settings:
       link_to_entity: false
@@ -282,7 +296,7 @@ content:
         class: ''
   field_image_block:
     type: entity_reference_revisions_entity_view
-    weight: 3
+    weight: 4
     region: left
     label: hidden
     settings:
@@ -315,15 +329,7 @@ content:
       field_formatter_class:
         class: intro-svg
   field_people_self_care:
-    weight: 8
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: right
-  field_project_examples:
-    weight: 11
+    weight: 9
     label: above
     settings:
       link_to_entity: false
@@ -348,24 +354,15 @@ content:
             classes: {  }
     type: entity_reference_entity_view
     region: right
-  field_references:
-    weight: 12
+  field_resource:
+    type: entity_reference_revisions_entity_view
+    weight: 11
+    region: right
     label: above
     settings:
-      link: true
       view_mode: default
+      link: ''
     third_party_settings: {  }
-    type: entity_reference_entity_view
-    region: right
-  field_resources:
-    weight: 10
-    label: above
-    settings:
-      link: true
-      view_mode: default
-    third_party_settings: {  }
-    type: entity_reference_entity_view
-    region: right
   field_simple_action:
     weight: 8
     label: above
@@ -388,7 +385,6 @@ hidden:
   body: true
   field_advanced_action_choose_me: true
   field_card_action: true
-  field_card_text: true
   field_community_action_choose_me: true
   field_global_action_choose_me: true
   field_sdg: true

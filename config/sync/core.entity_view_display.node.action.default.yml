@@ -20,10 +20,8 @@ dependencies:
     - field.field.node.action.field_image_block
     - field.field.node.action.field_intro_svg
     - field.field.node.action.field_people_self_care
-    - field.field.node.action.field_project_examples
     - field.field.node.action.field_radical_action
-    - field.field.node.action.field_references
-    - field.field.node.action.field_resources
+    - field.field.node.action.field_resource
     - field.field.node.action.field_sdg
     - field.field.node.action.field_season
     - field.field.node.action.field_simple_action
@@ -64,15 +62,15 @@ third_party_settings:
         - group_card_header
         - group_card_body
         - field_image
+        - group_families
+        - field_family
         - group_intro
         - group_card_footer
-        - field_family
-        - group_families
         - field_intro_svg
         - node_title
-        - field_action_number
         - field_card_text
         - field_action_svg
+        - field_action_number
         - field_card_action
         - 'dynamic_block_field:node-card_pager'
     fields:
@@ -284,10 +282,8 @@ hidden:
   field_global_action_choose_me: true
   field_image_block: true
   field_people_self_care: true
-  field_project_examples: true
   field_radical_action: true
-  field_references: true
-  field_resources: true
+  field_resource: true
   field_sdg: true
   field_season: true
   field_simple_action: true

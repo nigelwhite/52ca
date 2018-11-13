@@ -9736,14 +9736,14 @@ ul.entity-pager-list {
   margin-top: 2rem;
 }
 
-/* line 50, ../scss/custom/_fullpage.scss */
+/* line 43, ../scss/custom/_fullpage.scss */
 .action-group {
-  background-color: #fed905;
+  background-color: #fdd905;
   margin: 1em 0 1em 0;
   padding: 0.5em;
 }
 
-/* line 56, ../scss/custom/_fullpage.scss */
+/* line 49, ../scss/custom/_fullpage.scss */
 .field--name-field-simple-action,
 .field--name-field-radical-action,
 .field--name-field-community-action,
@@ -9751,7 +9751,7 @@ ul.entity-pager-list {
   margin-top: 1em;
 }
 
-/* line 63, ../scss/custom/_fullpage.scss */
+/* line 56, ../scss/custom/_fullpage.scss */
 .field--name-field-simple-action .field--label,
 .field--name-field-radical-action .field--label,
 .field--name-field-community-action .field--label,
@@ -9759,11 +9759,29 @@ ul.entity-pager-list {
   font-size: 1.25em;
   font-weight: 600;
   font-family: "Zilla Slab", sans-serif;
+  color: #165025;
 }
 
-/* line 72, ../scss/custom/_fullpage.scss */
+/* line 66, ../scss/custom/_fullpage.scss */
 .actions-fullpage {
   font-size: 1.25em;
+}
+
+/* line 70, ../scss/custom/_fullpage.scss */
+.cardtext-on-fullpage {
+  margin-bottom: 2em;
+}
+
+/* line 74, ../scss/custom/_fullpage.scss */
+.cardtext-on-fullpage p {
+  font-family: "Muli", sans-serif;
+  font-weight: 900;
+  font-size: 1.15em;
+}
+
+/* line 80, ../scss/custom/_fullpage.scss */
+.text-para {
+  margin: 1em 0 1em 0;
 }
 
 /* line 4, ../scss/custom/_navbar.scss */

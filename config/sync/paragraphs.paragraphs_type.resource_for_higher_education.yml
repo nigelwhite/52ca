@@ -1,0 +1,9 @@
+uuid: cdaee1de-a314-46fe-9fe6-588d7e296bd9
+langcode: en
+status: true
+dependencies: {  }
+id: resource_for_higher_education
+label: 'Resource for Higher Education'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

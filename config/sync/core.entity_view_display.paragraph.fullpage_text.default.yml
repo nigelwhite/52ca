@@ -6,6 +6,8 @@ dependencies:
     - field.field.paragraph.fullpage_text.field_text_block
     - paragraphs.paragraphs_type.fullpage_text
   module:
+    - ds
+    - field_formatter_class
     - text
 id: paragraph.fullpage_text.default
 targetEntityType: paragraph
@@ -16,7 +18,16 @@ content:
     weight: 0
     label: hidden
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: text-para
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: text_default
     region: content
 hidden: {  }
