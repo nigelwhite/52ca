@@ -9736,6 +9736,36 @@ ul.entity-pager-list {
   margin-top: 2rem;
 }
 
+/* line 50, ../scss/custom/_fullpage.scss */
+.action-group {
+  background-color: #fed905;
+  margin: 1em 0 1em 0;
+  padding: 0.5em;
+}
+
+/* line 56, ../scss/custom/_fullpage.scss */
+.field--name-field-simple-action,
+.field--name-field-radical-action,
+.field--name-field-community-action,
+.field--name-field-global-action {
+  margin-top: 1em;
+}
+
+/* line 63, ../scss/custom/_fullpage.scss */
+.field--name-field-simple-action .field--label,
+.field--name-field-radical-action .field--label,
+.field--name-field-community-action .field--label,
+.field--name-field-global-action .field--label {
+  font-size: 1.25em;
+  font-weight: 600;
+  font-family: "Zilla Slab", sans-serif;
+}
+
+/* line 72, ../scss/custom/_fullpage.scss */
+.actions-fullpage {
+  font-size: 1.25em;
+}
+
 /* line 4, ../scss/custom/_navbar.scss */
 .navbar-nav > li > a {
   text-transform: uppercase;

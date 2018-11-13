@@ -10,7 +10,7 @@ id: node.action.field_simple_action
 field_name: field_simple_action
 entity_type: node
 bundle: action
-label: 'Simple action'
+label: 'SIMPLE ACTION:'
 description: ''
 required: false
 translatable: false

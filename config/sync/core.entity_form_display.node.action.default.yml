@@ -41,14 +41,14 @@ bundle: action
 mode: default
 content:
   field_action_number:
-    weight: 23
+    weight: 1
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_advanced_action_choose_me:
-    weight: 10
+    weight: 12
     settings:
       size: 60
       placeholder: ''
@@ -56,7 +56,7 @@ content:
     type: string_textfield
     region: content
   field_card_action:
-    weight: 13
+    weight: 15
     settings:
       match_operator: CONTAINS
       size: 60
@@ -65,7 +65,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_card_text:
-    weight: 2
+    weight: 4
     settings:
       size: 300
       placeholder: ''
@@ -73,7 +73,7 @@ content:
     type: text_textfield
     region: content
   field_community_action:
-    weight: 16
+    weight: 18
     settings:
       match_operator: CONTAINS
       size: 60
@@ -82,7 +82,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_community_action_choose_me:
-    weight: 11
+    weight: 13
     settings:
       size: 60
       placeholder: ''
@@ -90,7 +90,7 @@ content:
     type: string_textfield
     region: content
   field_earth_care:
-    weight: 6
+    weight: 8
     settings:
       size: 60
       placeholder: ''
@@ -98,7 +98,7 @@ content:
     type: string_textfield
     region: content
   field_fair_share:
-    weight: 8
+    weight: 10
     settings:
       size: 60
       placeholder: ''
@@ -107,7 +107,7 @@ content:
     region: content
   field_family:
     type: entity_reference_paragraphs
-    weight: 22
+    weight: 3
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -118,7 +118,7 @@ content:
     third_party_settings: {  }
     region: content
   field_global_action:
-    weight: 17
+    weight: 19
     settings:
       match_operator: CONTAINS
       size: 60
@@ -127,7 +127,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_global_action_choose_me:
-    weight: 12
+    weight: 14
     settings:
       size: 60
       placeholder: ''
@@ -135,7 +135,7 @@ content:
     type: string_textfield
     region: content
   field_image:
-    weight: 1
+    weight: 2
     settings:
       show_default_crop: true
       warn_multiple_usages: true
@@ -151,7 +151,7 @@ content:
     region: content
   field_image_block:
     type: entity_reference_paragraphs
-    weight: 3
+    weight: 5
     settings:
       title: Chunk
       title_plural: Chunks
@@ -162,7 +162,7 @@ content:
     third_party_settings: {  }
     region: content
   field_people_self_care:
-    weight: 7
+    weight: 9
     settings:
       size: 60
       placeholder: ''
@@ -170,7 +170,7 @@ content:
     type: string_textfield
     region: content
   field_project_examples:
-    weight: 18
+    weight: 20
     settings:
       size: 60
       placeholder: ''
@@ -178,7 +178,7 @@ content:
     type: string_textfield
     region: content
   field_radical_action:
-    weight: 15
+    weight: 17
     settings:
       match_operator: CONTAINS
       size: 60
@@ -187,7 +187,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_references:
-    weight: 19
+    weight: 21
     settings:
       match_operator: CONTAINS
       size: 60
@@ -196,7 +196,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_resources:
-    weight: 20
+    weight: 22
     settings:
       match_operator: CONTAINS
       size: 60
@@ -205,19 +205,19 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_sdg:
-    weight: 5
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_season:
-    weight: 4
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_simple_action:
-    weight: 14
+    weight: 16
     settings:
       match_operator: CONTAINS
       size: 60
@@ -226,7 +226,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_simple_action_choose_me:
-    weight: 9
+    weight: 11
     settings:
       size: 60
       placeholder: ''
@@ -235,7 +235,7 @@ content:
     region: content
   path:
     type: path
-    weight: 21
+    weight: 23
     region: content
     settings: {  }
     third_party_settings: {  }

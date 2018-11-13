@@ -10,7 +10,7 @@ id: node.action.field_radical_action
 field_name: field_radical_action
 entity_type: node
 bundle: action
-label: 'Radical action'
+label: 'RADICAL ACTION:'
 description: ''
 required: false
 translatable: false

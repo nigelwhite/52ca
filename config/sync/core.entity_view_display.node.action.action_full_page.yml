@@ -95,15 +95,16 @@ third_party_settings:
         - field_family
         - group_families
         - field_action_svg
-        - field_simple_action
-        - field_radical_action
-        - field_community_action
-        - field_global_action
+        - group_actions
         - field_earth_care
+        - field_simple_action
         - field_people_self_care
+        - field_radical_action
         - field_fair_share
+        - field_community_action
         - field_resources
         - field_project_examples
+        - field_global_action
         - field_references
     fields:
       node_title:
@@ -151,6 +152,25 @@ third_party_settings:
         id: ''
         classes: 'intro-full clearfix'
       label: Intro
+    group_actions:
+      children:
+        - field_simple_action
+        - field_radical_action
+        - field_community_action
+        - field_global_action
+      parent_name: ''
+      weight: 6
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: action-group
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Actions
 id: node.action.action_full_page
 targetEntityType: node
 bundle: action
@@ -181,16 +201,25 @@ content:
       field_formatter_class:
         class: actionfull-svg
   field_community_action:
-    weight: 8
+    weight: 10
     label: above
     settings:
-      view_mode: default
+      view_mode: actions_on_fullpage
       link: false
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: entity_reference_entity_view
     region: right
   field_earth_care:
-    weight: 10
+    weight: 7
     label: above
     settings:
       link_to_entity: false
@@ -198,7 +227,7 @@ content:
     type: string
     region: right
   field_fair_share:
-    weight: 12
+    weight: 9
     label: above
     settings:
       link_to_entity: false
@@ -219,12 +248,21 @@ content:
       ds:
         ds_limit: ''
   field_global_action:
-    weight: 9
+    weight: 11
     label: above
     settings:
-      view_mode: default
+      view_mode: actions_on_fullpage
       link: false
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: entity_reference_entity_view
     region: right
   field_image:
@@ -277,7 +315,7 @@ content:
       field_formatter_class:
         class: intro-svg
   field_people_self_care:
-    weight: 11
+    weight: 8
     label: above
     settings:
       link_to_entity: false
@@ -285,7 +323,7 @@ content:
     type: string
     region: right
   field_project_examples:
-    weight: 14
+    weight: 11
     label: above
     settings:
       link_to_entity: false
@@ -293,16 +331,25 @@ content:
     type: string
     region: right
   field_radical_action:
-    weight: 7
+    weight: 9
     label: above
     settings:
-      view_mode: default
+      view_mode: actions_on_fullpage
       link: false
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: entity_reference_entity_view
     region: right
   field_references:
-    weight: 15
+    weight: 12
     label: above
     settings:
       link: true
@@ -311,7 +358,7 @@ content:
     type: entity_reference_entity_view
     region: right
   field_resources:
-    weight: 13
+    weight: 10
     label: above
     settings:
       link: true
@@ -320,12 +367,21 @@ content:
     type: entity_reference_entity_view
     region: right
   field_simple_action:
-    weight: 6
+    weight: 8
     label: above
     settings:
-      view_mode: default
+      view_mode: actions_on_fullpage
       link: false
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: entity_reference_entity_view
     region: right
 hidden:

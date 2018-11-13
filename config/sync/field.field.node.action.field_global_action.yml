@@ -10,7 +10,7 @@ id: node.action.field_global_action
 field_name: field_global_action
 entity_type: node
 bundle: action
-label: 'Global action'
+label: 'GLOBAL ACTION:'
 description: ''
 required: false
 translatable: false

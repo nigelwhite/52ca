@@ -9,7 +9,7 @@ id: node.action.field_fair_share
 field_name: field_fair_share
 entity_type: node
 bundle: action
-label: 'Fair Share'
+label: 'FAIR SHARE:'
 description: ''
 required: false
 translatable: false

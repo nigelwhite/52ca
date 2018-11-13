@@ -9,7 +9,7 @@ id: node.action.field_earth_care
 field_name: field_earth_care
 entity_type: node
 bundle: action
-label: 'Earth Care'
+label: 'EARTH CARE:'
 description: ''
 required: false
 translatable: false
