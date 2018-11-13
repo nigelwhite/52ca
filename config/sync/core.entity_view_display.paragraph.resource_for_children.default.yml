@@ -56,11 +56,11 @@ content:
     weight: 1
     label: hidden
     settings:
+      link: true
       view_mode: default
-      link: false
     third_party_settings:
       field_formatter_class:
-        class: resource-item
+        class: resource-item-fullpage
       ds:
         ds_limit: ''
         ft:
