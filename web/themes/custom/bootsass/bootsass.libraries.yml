@@ -15,6 +15,12 @@ framework:
     bootstrap/assets/javascripts/bootstrap/scrollspy.js: {}
     bootstrap/assets/javascripts/bootstrap/tab.js: {}
     bootstrap/assets/javascripts/bootstrap/transition.js: {}
+bootsass:
+  js:
+    javascripts/scripts.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
 fonts:
   css:
     theme:

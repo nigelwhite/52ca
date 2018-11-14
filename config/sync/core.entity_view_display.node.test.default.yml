@@ -8,39 +8,87 @@ dependencies:
     - field.field.node.test.field_revealed
     - node.type.test
   module:
+    - ds
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - node_title
+        - body
+        - field_clickable_bit
+        - field_revealed
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
 id: node.test.default
 targetEntityType: node
 bundle: test
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 101
+    weight: 1
+    region: main
+    label: above
     settings: {  }
     third_party_settings: {  }
-    region: content
   field_clickable_bit:
-    weight: 102
+    weight: 2
     label: hidden
     settings:
       link_to_entity: false
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: string
-    region: content
+    region: main
   field_revealed:
-    weight: 103
+    weight: 3
     label: hidden
     settings:
       link_to_entity: false
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: myClass
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: string
-    region: content
-  links:
-    weight: 100
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+    region: main
+hidden:
+  links: true

@@ -25,4 +25,5 @@ libraries-extend:
     - bootsass/framework
 
 libraries:
-  - bootsass/fonts
+  - 'bootsass/fonts'
+  - 'bootsass/bootsass'
