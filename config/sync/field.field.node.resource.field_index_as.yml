@@ -11,8 +11,8 @@ id: node.resource.field_index_as
 field_name: field_index_as
 entity_type: node
 bundle: resource
-label: 'Index as'
-description: 'Index this resource primarily as....... (you can use the resource in any category on a specific page)'
+label: 'Resource type'
+description: 'Index this resource primarily as....... (you can still use it in any resource section of a specific page)'
 required: true
 translatable: false
 default_value: {  }

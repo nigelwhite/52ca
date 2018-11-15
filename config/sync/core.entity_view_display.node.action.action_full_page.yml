@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.action_full_page
-    - field.field.node.action.body
     - field.field.node.action.field_action_number
     - field.field.node.action.field_action_svg
     - field.field.node.action.field_advanced_action_choose_me
@@ -480,7 +479,6 @@ content:
     type: entity_reference_entity_view
     region: right
 hidden:
-  body: true
   field_advanced_action_choose_me: true
   field_card_action: true
   field_community_action_choose_me: true

@@ -1,0 +1,33 @@
+uuid: ce095fd1-9f20-4f7a-97ad-615684886a46
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.resources
+  module:
+    - node
+    - views
+  theme:
+    - bootsass
+id: views_block__resources_block_2
+theme: bootsass
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'views_block:resources-block_2'
+settings:
+  id: 'views_block:resources-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      resource: resource
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

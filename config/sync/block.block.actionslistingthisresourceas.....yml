@@ -1,0 +1,33 @@
+uuid: c819d99e-51c9-4d4b-83d9-b41a379841d3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d951043d-85a4-4fdb-a518-bd68ffd556f4'
+  module:
+    - block_content
+    - node
+  theme:
+    - bootsass
+id: actionslistingthisresourceas....
+theme: bootsass
+region: sidebar_second
+weight: -9
+provider: null
+plugin: 'block_content:d951043d-85a4-4fdb-a518-bd68ffd556f4'
+settings:
+  id: 'block_content:d951043d-85a4-4fdb-a518-bd68ffd556f4'
+  label: 'Actions listing this resource as ....'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      resource: resource
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

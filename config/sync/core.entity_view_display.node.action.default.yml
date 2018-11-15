@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.action.body
     - field.field.node.action.field_action_number
     - field.field.node.action.field_action_svg
     - field.field.node.action.field_advanced_action_choose_me
@@ -275,7 +274,6 @@ content:
     type: image
     region: main
 hidden:
-  body: true
   field_advanced_action_choose_me: true
   field_community_action: true
   field_community_action_choose_me: true

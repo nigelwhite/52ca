@@ -9,7 +9,9 @@ dependencies:
     - node.type.resource
   module:
     - ds
+    - field_formatter_class
     - link
+    - options
     - text
     - user
 third_party_settings:
@@ -42,6 +44,7 @@ third_party_settings:
     regions:
       left:
         - node_title
+        - field_index_as
         - field_link2
       right:
         - body
@@ -57,24 +60,39 @@ bundle: resource
 mode: default
 content:
   body:
-    weight: 2
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: right
-  field_link2:
+  field_index_as:
+    type: list_default
     weight: 1
+    region: left
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_link2:
+    weight: 2
     label: hidden
     settings:
       trim_length: 80
       url_only: false
       url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: link
     region: left
 hidden:
-  field_index_as: true
   links: true
