@@ -1,4 +1,4 @@
-uuid: 35c16084-6a62-4dfb-b34f-0203da3cea64
+uuid: a2127010-21e0-45c9-82e8-33dc9bbcb1cd
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: views_block__resources_block_1
 theme: bootsass
 region: sidebar_second
-weight: -8
+weight: 0
 provider: null
 plugin: 'views_block:resources-block_1'
 settings:

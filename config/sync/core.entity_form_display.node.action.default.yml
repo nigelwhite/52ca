@@ -154,8 +154,8 @@ content:
     type: entity_reference_paragraphs
     weight: 5
     settings:
-      title: Chunk
-      title_plural: Chunks
+      title: 'Main Content Chunk'
+      title_plural: 'Main Content Chunks'
       edit_mode: preview
       add_mode: select
       form_display_mode: default
