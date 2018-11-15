@@ -24,16 +24,16 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      fullpage_image: fullpage_image
       fullpage_text: fullpage_text
+      fullpage_image: fullpage_image
     target_bundles_drag_drop:
       family_icons:
-        weight: 4
+        weight: -7
         enabled: false
-      fullpage_image:
-        enabled: true
-        weight: 5
       fullpage_text:
         enabled: true
-        weight: 6
+        weight: -6
+      fullpage_image:
+        enabled: true
+        weight: -5
 field_type: entity_reference_revisions
