@@ -8,7 +8,7 @@ dependencies:
     - field.field.node.action.field_action_svg
     - field.field.node.action.field_advanced_action_choose_me
     - field.field.node.action.field_card_action
-    - field.field.node.action.field_card_text
+    - field.field.node.action.field_card_text_new
     - field.field.node.action.field_community_action
     - field.field.node.action.field_community_action_choose_me
     - field.field.node.action.field_earth_care
@@ -47,7 +47,7 @@ hidden:
   field_action_svg: true
   field_advanced_action_choose_me: true
   field_card_action: true
-  field_card_text: true
+  field_card_text_new: true
   field_community_action: true
   field_community_action_choose_me: true
   field_earth_care: true

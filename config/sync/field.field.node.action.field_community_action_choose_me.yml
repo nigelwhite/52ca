@@ -10,8 +10,8 @@ field_name: field_community_action_choose_me
 entity_type: node
 bundle: action
 label: 'Community Action Choose me'
-description: 'Limited to 180 characters'
-required: false
+description: ''
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

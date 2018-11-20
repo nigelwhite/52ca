@@ -1,16 +1,15 @@
-uuid: c4f17b9f-f3df-4324-86c3-a47d89145c69
+uuid: 6f107bcd-9719-473d-9c88-8e81c3ec74a2
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - text
-id: node.field_card_text
-field_name: field_card_text
+id: node.field_card_text_new
+field_name: field_card_text_new
 entity_type: node
-type: text
-settings:
-  max_length: 300
+type: text_long
+settings: {  }
 module: text
 locked: false
 cardinality: 1

@@ -10,6 +10,7 @@ module:
   bootstrap_library: 0
   breakpoint: 0
   ckeditor: 0
+  ckeditorheight: 0
   coffee: 0
   color: 0
   comment: 0
@@ -46,6 +47,7 @@ module:
   inline_entity_form: 0
   layout_discovery: 0
   link: 0
+  maxlength: 0
   media: 0
   media_library: 0
   menu_ui: 0

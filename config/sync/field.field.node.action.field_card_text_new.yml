@@ -1,9 +1,9 @@
-uuid: f128a5bf-7f80-4fb8-b678-9f8c5b7bec08
+uuid: 3c2a4dc2-3bb4-4794-b2e2-fe0299866710
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_card_text
+    - field.storage.node.field_card_text_new
     - node.type.action
   module:
     - allowed_formats
@@ -14,15 +14,15 @@ third_party_settings:
     restricted_html: '0'
     full_html: '0'
     plain_text: '0'
-id: node.action.field_card_text
-field_name: field_card_text
+id: node.action.field_card_text_new
+field_name: field_card_text_new
 entity_type: node
 bundle: action
 label: 'Card text'
-description: '300 characters max'
+description: ''
 required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: text
+field_type: text_long

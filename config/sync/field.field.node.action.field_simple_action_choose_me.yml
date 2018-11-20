@@ -10,8 +10,8 @@ field_name: field_simple_action_choose_me
 entity_type: node
 bundle: action
 label: 'Simple action Choose me'
-description: 'Limited to 180 characters'
-required: false
+description: ''
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

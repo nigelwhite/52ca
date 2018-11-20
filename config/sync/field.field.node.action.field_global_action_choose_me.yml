@@ -10,8 +10,8 @@ field_name: field_global_action_choose_me
 entity_type: node
 bundle: action
 label: 'Global action Choose me'
-description: 'Limited to 180 characters'
-required: false
+description: ''
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

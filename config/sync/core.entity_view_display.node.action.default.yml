@@ -7,7 +7,7 @@ dependencies:
     - field.field.node.action.field_action_svg
     - field.field.node.action.field_advanced_action_choose_me
     - field.field.node.action.field_card_action
-    - field.field.node.action.field_card_text
+    - field.field.node.action.field_card_text_new
     - field.field.node.action.field_community_action
     - field.field.node.action.field_community_action_choose_me
     - field.field.node.action.field_earth_care
@@ -65,15 +65,16 @@ third_party_settings:
         - group_card_body
         - field_image
         - group_intro
-        - group_card_footer
         - field_family
         - group_families
+        - group_card_footer
         - field_intro_svg
         - node_title
-        - field_action_number
-        - field_card_text
         - field_action_svg
+        - field_card_text
+        - field_action_number
         - field_card_action
+        - field_card_text_new
         - 'dynamic_block_field:node-card_pager'
     fields:
       node_title:
@@ -114,6 +115,7 @@ third_party_settings:
         - group_intro
         - node_title
         - field_card_text
+        - field_card_text_new
       parent_name: ''
       weight: 1
       format_type: html_element
@@ -221,13 +223,20 @@ content:
         class: card-action
     type: entity_reference_label
     region: main
-  field_card_text:
-    weight: 4
+  field_card_text_new:
+    weight: 5
     label: hidden
     settings: {  }
     third_party_settings:
       field_formatter_class:
         class: text-card
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: text_default
     region: main
   field_family:
