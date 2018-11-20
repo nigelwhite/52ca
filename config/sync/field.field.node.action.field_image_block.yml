@@ -13,7 +13,7 @@ id: node.action.field_image_block
 field_name: field_image_block
 entity_type: node
 bundle: action
-label: 'Main Content Chunk'
+label: 'Main Content Chunks'
 description: 'A text or image chunk for the Full Page view of an Action'
 required: false
 translatable: false

@@ -86,24 +86,16 @@ third_party_settings:
     regions:
       top:
         - field_image
-      left:
-        - group_intro
-        - field_intro_svg
-        - node_title
-        - field_action_number
-        - field_card_text
-        - field_card_text_new
-        - field_image_block
       right:
         - field_family
         - group_families
         - field_action_svg
-        - field_simple_action
         - group_actions
-        - field_earth_care
+        - field_simple_action
         - field_radical_action
-        - field_people_self_care
+        - field_earth_care
         - field_community_action
+        - field_people_self_care
         - field_fair_share
         - field_global_action
         - group_resources
@@ -111,6 +103,13 @@ third_party_settings:
         - field_resources_for_higher_educa
         - field_project_example
         - field_reference
+      left:
+        - group_intro
+        - node_title
+        - field_intro_svg
+        - field_action_number
+        - field_card_text_new
+        - field_image_block
     fields:
       node_title:
         plugin_id: node_title
@@ -284,18 +283,24 @@ content:
     type: string
     region: right
   field_family:
-    type: entity_reference_revisions_entity_view
-    weight: 3
+    type: entity_reference_entity_view
+    weight: 0
     region: right
     label: hidden
     settings:
-      view_mode: preview
-      link: ''
+      view_mode: family_icon
+      link: false
     third_party_settings:
       field_formatter_class:
         class: family-fullpage
       ds:
         ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
   field_global_action:
     weight: 11
     label: above

@@ -32,7 +32,6 @@ dependencies:
     - node.type.action
   module:
     - ds
-    - entity_reference_revisions
     - field_formatter_class
     - field_group
     - svg_image
@@ -65,17 +64,16 @@ third_party_settings:
         - group_card_body
         - field_image
         - group_intro
-        - field_family
         - group_families
         - group_card_footer
-        - field_intro_svg
         - node_title
+        - field_intro_svg
         - field_action_svg
-        - field_card_text
         - field_action_number
         - field_card_action
         - field_card_text_new
         - 'dynamic_block_field:node-card_pager'
+        - field_family
     fields:
       node_title:
         plugin_id: node_title
@@ -114,7 +112,6 @@ third_party_settings:
       children:
         - group_intro
         - node_title
-        - field_card_text
         - field_card_text_new
       parent_name: ''
       weight: 1
@@ -240,17 +237,23 @@ content:
     type: text_default
     region: main
   field_family:
-    type: entity_reference_revisions_entity_view
-    weight: 2
+    weight: 6
     label: hidden
     settings:
-      view_mode: preview
-      link: ''
+      view_mode: family_icon
+      link: false
     third_party_settings:
       field_formatter_class:
-        class: family-card
+        class: 'family-icon family-card'
       ds:
         ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: entity_reference_entity_view
     region: main
   field_image:
     weight: 1

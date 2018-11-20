@@ -51,10 +51,10 @@ content:
     type: number
     region: content
   field_advanced_action_choose_me:
-    weight: 15
+    weight: 14
     settings:
       size: 180
-      placeholder: ''
+      placeholder: 'bespoke text on this action'
     third_party_settings:
       maxlength:
         maxlength_js: 180
@@ -62,7 +62,7 @@ content:
     type: string_textfield
     region: content
   field_card_action:
-    weight: 24
+    weight: 23
     settings:
       match_operator: CONTAINS
       size: 60
@@ -71,7 +71,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_card_text_new:
-    weight: 5
+    weight: 4
     settings:
       rows: 3
       placeholder: ''
@@ -87,7 +87,7 @@ content:
     type: text_textarea
     region: content
   field_community_action:
-    weight: 16
+    weight: 15
     settings:
       match_operator: CONTAINS
       size: 60
@@ -96,10 +96,10 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_community_action_choose_me:
-    weight: 17
+    weight: 16
     settings:
       size: 190
-      placeholder: ''
+      placeholder: 'bespoke text on this action'
     third_party_settings:
       maxlength:
         maxlength_js: 180
@@ -107,7 +107,7 @@ content:
     type: string_textfield
     region: content
   field_earth_care:
-    weight: 9
+    weight: 8
     settings:
       size: 60
       placeholder: ''
@@ -118,7 +118,7 @@ content:
     type: string_textfield
     region: content
   field_fair_share:
-    weight: 11
+    weight: 10
     settings:
       size: 60
       placeholder: ''
@@ -129,19 +129,13 @@ content:
     type: string_textfield
     region: content
   field_family:
-    type: entity_reference_paragraphs
     weight: 3
-    settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: preview
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: family_icons
+    settings: {  }
     third_party_settings: {  }
+    type: options_buttons
     region: content
   field_global_action:
-    weight: 18
+    weight: 17
     settings:
       match_operator: CONTAINS
       size: 60
@@ -150,10 +144,10 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_global_action_choose_me:
-    weight: 19
+    weight: 18
     settings:
       size: 190
-      placeholder: ''
+      placeholder: 'bespoke text on this action'
     third_party_settings:
       maxlength:
         maxlength_js: 180
@@ -177,7 +171,7 @@ content:
     region: content
   field_image_block:
     type: entity_reference_paragraphs
-    weight: 6
+    weight: 5
     settings:
       title: 'Main Content Chunk'
       title_plural: 'Main Content Chunks'
@@ -188,7 +182,7 @@ content:
     third_party_settings: {  }
     region: content
   field_people_self_care:
-    weight: 10
+    weight: 9
     settings:
       size: 60
       placeholder: ''
@@ -199,69 +193,6 @@ content:
     type: string_textfield
     region: content
   field_project_example:
-    weight: 22
-    settings:
-      form_mode: default
-      label_singular: ''
-      label_plural: ''
-      allow_new: true
-      allow_existing: true
-      match_operator: CONTAINS
-      override_labels: false
-      collapsible: false
-      collapsed: false
-      allow_duplicate: false
-    third_party_settings:
-      entity_browser_entity_form:
-        entity_browser_id: _none
-    type: inline_entity_form_complex
-    region: content
-  field_radical_action:
-    weight: 14
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: 'max 60 chars'
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
-  field_reference:
-    weight: 23
-    settings:
-      form_mode: default
-      label_singular: ''
-      label_plural: ''
-      allow_new: true
-      allow_existing: true
-      match_operator: CONTAINS
-      override_labels: false
-      collapsible: false
-      collapsed: false
-      allow_duplicate: false
-    third_party_settings:
-      entity_browser_entity_form:
-        entity_browser_id: _none
-    type: inline_entity_form_complex
-    region: content
-  field_resources_for_children_:
-    weight: 20
-    settings:
-      form_mode: default
-      label_singular: ''
-      label_plural: ''
-      allow_new: true
-      allow_existing: true
-      match_operator: CONTAINS
-      override_labels: false
-      collapsible: false
-      collapsed: false
-      allow_duplicate: false
-    third_party_settings:
-      entity_browser_entity_form:
-        entity_browser_id: _none
-    type: inline_entity_form_complex
-    region: content
-  field_resources_for_higher_educa:
     weight: 21
     settings:
       form_mode: default
@@ -279,20 +210,83 @@ content:
         entity_browser_id: _none
     type: inline_entity_form_complex
     region: content
+  field_radical_action:
+    weight: 13
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: 'max 60 chars'
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_reference:
+    weight: 22
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
+    region: content
+  field_resources_for_children_:
+    weight: 19
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
+    region: content
+  field_resources_for_higher_educa:
+    weight: 20
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
+    region: content
   field_sdg:
-    weight: 8
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_season:
-    weight: 7
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_simple_action:
-    weight: 12
+    weight: 11
     settings:
       match_operator: CONTAINS
       size: 60
@@ -301,10 +295,10 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_simple_action_choose_me:
-    weight: 13
+    weight: 12
     settings:
       size: 180
-      placeholder: ''
+      placeholder: 'bespoke text on this action'
     third_party_settings:
       maxlength:
         maxlength_js: 180

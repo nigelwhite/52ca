@@ -13,7 +13,6 @@ dependencies:
     - field.field.node.action.field_community_action_choose_me
     - field.field.node.action.field_earth_care
     - field.field.node.action.field_fair_share
-    - field.field.node.action.field_family
     - field.field.node.action.field_global_action
     - field.field.node.action.field_global_action_choose_me
     - field.field.node.action.field_image
@@ -52,7 +51,6 @@ hidden:
   field_community_action_choose_me: true
   field_earth_care: true
   field_fair_share: true
-  field_family: true
   field_global_action: true
   field_global_action_choose_me: true
   field_image: true
