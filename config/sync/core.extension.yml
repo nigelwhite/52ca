@@ -83,6 +83,7 @@ module:
   ds_extras: 2
   views: 10
   paragraphs: 11
+  linked_field: 100
   standard: 1000
 theme:
   stable: 0

@@ -44,7 +44,7 @@ content:
     label: hidden
     settings:
       image_style: ''
-      image_link: ''
+      image_link: content
       svg_render_as_image: '1'
       svg_attributes:
         width: '80'
@@ -52,6 +52,13 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: image
     region: main
 hidden:

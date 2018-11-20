@@ -31,6 +31,7 @@ dependencies:
     - image.style.thumbnail
     - node.type.action
   module:
+    - allowed_formats
     - entity_browser_entity_form
     - image_widget_crop
     - inline_entity_form
@@ -70,7 +71,10 @@ content:
     settings:
       size: 300
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
     type: text_textfield
     region: content
   field_community_action:

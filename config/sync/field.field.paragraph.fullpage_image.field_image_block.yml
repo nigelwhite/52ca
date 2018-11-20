@@ -12,7 +12,7 @@ field_name: field_image_block
 entity_type: paragraph
 bundle: fullpage_image
 label: 'Image block'
-description: ''
+description: '1 MB max. 750 x 421 px min.'
 required: false
 translatable: false
 default_value: {  }
@@ -22,7 +22,7 @@ settings:
   file_extensions: 'png gif jpg jpeg'
   max_filesize: '1 MB'
   max_resolution: ''
-  min_resolution: 750x455
+  min_resolution: 750x421
   alt_field: true
   alt_field_required: true
   title_field: false
