@@ -77,8 +77,8 @@ content:
       placeholder: ''
     third_party_settings:
       allowed_formats:
+        hide_help: '1'
         hide_guidelines: '1'
-        hide_help: '0'
       maxlength:
         maxlength_js: 300
         maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
