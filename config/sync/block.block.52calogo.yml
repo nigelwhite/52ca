@@ -10,8 +10,8 @@ dependencies:
     - bootsass
 id: 52calogo
 theme: bootsass
-region: attic
-weight: -5
+region: navigation_collapsible
+weight: -8
 provider: null
 plugin: 'block_content:4377c0d1-d4c5-4ec1-80e5-fa95c43c8e61'
 settings:

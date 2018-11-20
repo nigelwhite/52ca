@@ -1,4 +1,3 @@
-cdn_provider: jsdelivr
 _core:
   default_config_hash: _5qrDuRmWmRVjW00si3U1s1NrgrocA4N653EYGRfgEE
 favicon:
@@ -17,11 +16,10 @@ features:
 table_responsive: '-1'
 table: ''
 logo:
-  path: ''
+  path: themes/custom/bootsass/images/52CAlogo.svg
   url: ''
   use_default: false
 region_wells:
-  attic: ''
   navigation: ''
   navigation_collapsible: ''
   header: ''

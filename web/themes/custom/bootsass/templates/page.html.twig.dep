@@ -1,7 +1,7 @@
 {#
 /**
  * NW copied page.html.twig:
- * NW added attic region above nav
+ * NW added fluid to navbar bg, but not to navbar itself
  * @file
  * Default theme implementation to display a single page.
  *
@@ -55,11 +55,6 @@
 #}
 
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
-    {% if page.attic %}
-        <div class="{{ container}}">
-            {{ page.attic }}
-        {% endif %}
-    </div>
 
 <div class='container-fluid wideband'>
 {# Navbar #}
@@ -68,7 +63,6 @@
     {%
       set navbar_classes = [
         'navbar',
-        'navbar-right',
         theme.settings.navbar_inverse ? 'navbar-inverse' : 'navbar-default',
         theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
       ]
