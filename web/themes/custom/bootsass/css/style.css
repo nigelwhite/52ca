@@ -6051,8 +6051,8 @@ tbody.collapse.in {
 }
 /* line 397, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default {
-  background-color: white;
-  border-color: #eeeeee;
+  background-color: #efefef;
+  border-color: #efefef;
 }
 /* line 401, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-brand {
@@ -6079,7 +6079,7 @@ tbody.collapse.in {
 /* line 425, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #555;
-  background-color: #eeeeee;
+  background-color: #dedede;
 }
 /* line 433, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
@@ -6101,11 +6101,11 @@ tbody.collapse.in {
 /* line 453, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #eeeeee;
+  border-color: #efefef;
 }
 /* line 462, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #eeeeee;
+  background-color: #dedede;
   color: #555;
 }
 @media (max-width: 767px) {
@@ -6121,7 +6121,7 @@ tbody.collapse.in {
   /* line 482, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #555;
-    background-color: #eeeeee;
+    background-color: #dedede;
   }
   /* line 490, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
@@ -9697,7 +9697,7 @@ ul.entity-pager-list {
   margin-top: 30px;
   border-bottom: 10px solid;
   padding-bottom: 3rem;
-  border-image: linear-gradient(to right, yellow 5%, #d5d5d5 5%) 1;
+  border-image: linear-gradient(to right, #fdd905 5%, #d5d5d5 5%) 1;
 }
 
 /* line 12, ../scss/custom/_fullpage.scss */
@@ -9791,22 +9791,19 @@ ul.entity-pager-list {
   height: 3rem;
 }
 
+/* line 11, ../scss/custom/_navbar.scss */
+.wideband {
+  background-color: #efefef;
+}
+
 /* line 40, ../scss/custom/_navbar.scss */
 .logo > img {
   height: 70px;
 }
 
-/* line 1, ../scss/custom/_attic.scss */
-.search-block-form {
-  width: 25%;
-  float: right;
-  margin-top: 20px;
-}
-
-/* line 7, ../scss/custom/_attic.scss */
-.logo52 {
-  margin-bottom: 20px;
-  margin-top: 20px;
+/* line 1, ../scss/custom/_base-resets.scss */
+body {
+  margin-top: 0;
 }
 
 /* line 1, ../scss/custom/_family.scss */
