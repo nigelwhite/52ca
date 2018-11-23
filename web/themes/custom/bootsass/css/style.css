@@ -5625,7 +5625,7 @@ tbody.collapse.in {
 .navbar {
   position: relative;
   min-height: 100px;
-  margin-bottom: 25px;
+  margin-bottom: 0;
   border: 1px solid transparent;
 }
 /* line 14, ../bootstrap/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
@@ -9784,11 +9784,16 @@ ul.entity-pager-list {
   margin: 1em 0 1em 0;
 }
 
+/* line 84, ../scss/custom/_fullpage.scss */
+.mainimage-fullpage {
+  padding-top: 2em;
+}
+
 /* line 4, ../scss/custom/_navbar.scss */
 .navbar-nav > li > a {
   text-transform: uppercase;
   font-weight: 500;
-  height: 3rem;
+  line-height: 70px;
 }
 
 /* line 11, ../scss/custom/_navbar.scss */
