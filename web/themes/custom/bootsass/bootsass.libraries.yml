@@ -17,7 +17,7 @@ framework:
     bootstrap/assets/javascripts/bootstrap/transition.js: {}
 bootsass:
   js:
-    javascripts/scripts.js: {}
+    javascripts/fullpage.js: {}
   dependencies:
     - core/jquery
     - core/jquery.once
