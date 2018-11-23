@@ -3,7 +3,7 @@
 
   Drupal.behaviors.awesome = {
     attach: function(context, settings) {
-      $('myClass', context).once('awesome').append('<p>Hello world</p>');
+      $('.myClass', context).once('awesome').append('<p>Hello world</p>');
     }
   };
 

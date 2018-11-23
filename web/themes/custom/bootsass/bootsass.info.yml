@@ -25,4 +25,3 @@ libraries-extend:
 
 libraries:
   - 'bootsass/fonts'
-  - 'bootsass/bootsass'
