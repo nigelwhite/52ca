@@ -91,22 +91,22 @@ third_party_settings:
         - field_family
         - group_families
         - field_action_svg
-        - field_simple_action
         - group_actions
+        - field_simple_action
         - field_radical_action
         - field_earth_care
         - field_people_self_care
         - field_community_action
-        - field_fair_share
         - field_global_action
-        - field_resources_for_children_
+        - field_fair_share
         - group_resources
+        - field_resources_for_children_
         - field_resources_for_higher_educa
         - field_project_example
         - field_reference
       left:
-        - field_action_number
         - group_intro
+        - field_action_number
         - node_title
         - field_card_text_new
         - field_image_block
@@ -262,7 +262,16 @@ content:
     label: above
     settings:
       link_to_entity: false
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ethic
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: string
     region: right
   field_fair_share:
@@ -272,7 +281,7 @@ content:
       link_to_entity: false
     third_party_settings:
       field_formatter_class:
-        class: myClass
+        class: 'myClass ethic'
       ds:
         ft:
           id: default
@@ -365,7 +374,16 @@ content:
     label: above
     settings:
       link_to_entity: false
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ethic
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: string
     region: right
   field_project_example:

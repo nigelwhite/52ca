@@ -9588,23 +9588,24 @@ body.toolbar-loading.toolbar {
 /* line 59, ../scss/custom/_card.scss */
 .families-card {
   position: absolute;
-  top: 22%;
+  top: 26%;
   left: 50%;
   transform: translateX(-50%);
 }
 
 /* line 66, ../scss/custom/_card.scss */
 .intro-card {
-  margin: 1em auto;
+  margin: 0 auto;
   width: 60%;
+  padding-top: 1em;
 }
 
-/* line 71, ../scss/custom/_card.scss */
+/* line 72, ../scss/custom/_card.scss */
 .introsvg-card {
   max-width: 160px;
 }
 
-/* line 75, ../scss/custom/_card.scss */
+/* line 76, ../scss/custom/_card.scss */
 .number-card {
   display: inline-block;
   font-size: 6.5rem;
@@ -9616,7 +9617,7 @@ body.toolbar-loading.toolbar {
   border: none;
 }
 
-/* line 86, ../scss/custom/_card.scss */
+/* line 87, ../scss/custom/_card.scss */
 .title-card {
   font-family: "Zilla Slab", sans-serif;
   text-transform: uppercase;
@@ -9625,26 +9626,26 @@ body.toolbar-loading.toolbar {
   font-weight: 600;
 }
 
-/* line 94, ../scss/custom/_card.scss */
+/* line 95, ../scss/custom/_card.scss */
 .text-card {
   text-align: center;
 }
 
-/* line 99, ../scss/custom/_card.scss */
+/* line 100, ../scss/custom/_card.scss */
 .actionsvg-card {
-  margin: 2rem auto;
+  margin: 0 auto;
   max-width: 175px;
-  /* margin-top: 2em; */
+  padding-top: 1em;
 }
 
-/* line 105, ../scss/custom/_card.scss */
+/* line 106, ../scss/custom/_card.scss */
 .card-action {
   text-align: center;
-  font-size: 1.15em;
+  font-size: 1.5em;
   font-weight: 600;
 }
 
-/* line 111, ../scss/custom/_card.scss */
+/* line 112, ../scss/custom/_card.scss */
 .entity-pager-item-all {
   background-color: #fff;
   height: 40px;
@@ -9656,7 +9657,7 @@ body.toolbar-loading.toolbar {
   text-align: center;
 }
 
-/* line 122, ../scss/custom/_card.scss */
+/* line 123, ../scss/custom/_card.scss */
 .entity-pager-item-prev,
 .entity-pager-item-next {
   font-size: 30px;
@@ -9666,7 +9667,7 @@ body.toolbar-loading.toolbar {
   margin-bottom: 0;
 }
 
-/* line 131, ../scss/custom/_card.scss */
+/* line 132, ../scss/custom/_card.scss */
 .entity-pager-item-prev a:hover,
 .entity-pager-item-next a:hover,
 .entity-pager-item-prev a:active,
@@ -9676,15 +9677,21 @@ body.toolbar-loading.toolbar {
   text-decoration: none;
 }
 
-/* line 141, ../scss/custom/_card.scss */
+/* line 142, ../scss/custom/_card.scss */
 .entity-pager-list .entity-pager-item {
   margin-bottom: 0;
   margin-top: 0;
 }
 
-/* line 146, ../scss/custom/_card.scss */
+/* line 147, ../scss/custom/_card.scss */
 ul.entity-pager-list {
   margin-bottom: 0;
+}
+
+/* line 151, ../scss/custom/_card.scss */
+.ethic {
+  margin-bottom: 1.25em;
+  padding-left: 0.5em;
 }
 
 /* line 1, ../scss/custom/_fullpage.scss */
@@ -9759,7 +9766,7 @@ ul.entity-pager-list {
 
 /* line 66, ../scss/custom/_fullpage.scss */
 .actions-fullpage {
-  font-size: 1.25em;
+  font-size: 1em;
 }
 
 /* line 70, ../scss/custom/_fullpage.scss */
