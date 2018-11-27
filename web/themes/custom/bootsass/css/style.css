@@ -9622,30 +9622,33 @@ body.toolbar-loading.toolbar {
   font-family: "Zilla Slab", sans-serif;
   text-transform: uppercase;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 600;
+  line-height: 1;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
 }
 
-/* line 95, ../scss/custom/_card.scss */
+/* line 98, ../scss/custom/_card.scss */
 .text-card {
   text-align: center;
 }
 
-/* line 100, ../scss/custom/_card.scss */
+/* line 103, ../scss/custom/_card.scss */
 .actionsvg-card {
   margin: 0 auto;
   max-width: 175px;
   padding-top: 1em;
 }
 
-/* line 106, ../scss/custom/_card.scss */
+/* line 109, ../scss/custom/_card.scss */
 .card-action {
   text-align: center;
   font-size: 1.5em;
   font-weight: 600;
 }
 
-/* line 112, ../scss/custom/_card.scss */
+/* line 115, ../scss/custom/_card.scss */
 .entity-pager-item-all {
   background-color: #fff;
   height: 40px;
@@ -9657,7 +9660,7 @@ body.toolbar-loading.toolbar {
   text-align: center;
 }
 
-/* line 123, ../scss/custom/_card.scss */
+/* line 126, ../scss/custom/_card.scss */
 .entity-pager-item-prev,
 .entity-pager-item-next {
   font-size: 30px;
@@ -9667,7 +9670,7 @@ body.toolbar-loading.toolbar {
   margin-bottom: 0;
 }
 
-/* line 132, ../scss/custom/_card.scss */
+/* line 135, ../scss/custom/_card.scss */
 .entity-pager-item-prev a:hover,
 .entity-pager-item-next a:hover,
 .entity-pager-item-prev a:active,
@@ -9677,18 +9680,18 @@ body.toolbar-loading.toolbar {
   text-decoration: none;
 }
 
-/* line 142, ../scss/custom/_card.scss */
+/* line 145, ../scss/custom/_card.scss */
 .entity-pager-list .entity-pager-item {
   margin-bottom: 0;
   margin-top: 0;
 }
 
-/* line 147, ../scss/custom/_card.scss */
+/* line 150, ../scss/custom/_card.scss */
 ul.entity-pager-list {
   margin-bottom: 0;
 }
 
-/* line 151, ../scss/custom/_card.scss */
+/* line 154, ../scss/custom/_card.scss */
 .ethic {
   margin-bottom: 1.25em;
   padding-left: 0.5em;
