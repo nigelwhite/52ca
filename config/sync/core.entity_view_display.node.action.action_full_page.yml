@@ -29,6 +29,7 @@ dependencies:
     - field.field.node.action.field_season
     - field.field.node.action.field_simple_action
     - field.field.node.action.field_simple_action_choose_me
+    - image.style.main_image_style
     - node.type.action
   module:
     - ds
@@ -90,24 +91,23 @@ third_party_settings:
         - field_family
         - group_families
         - field_action_svg
-        - group_actions
         - field_simple_action
+        - group_actions
         - field_radical_action
         - field_earth_care
-        - field_community_action
         - field_people_self_care
+        - field_community_action
         - field_fair_share
         - field_global_action
-        - group_resources
         - field_resources_for_children_
+        - group_resources
         - field_resources_for_higher_educa
         - field_project_example
         - field_reference
       left:
+        - field_action_number
         - group_intro
         - node_title
-        - field_intro_svg
-        - field_action_number
         - field_card_text_new
         - field_image_block
     fields:
@@ -140,8 +140,8 @@ third_party_settings:
       label: Families
     group_intro:
       children:
-        - field_intro_svg
         - field_action_number
+        - node_title
       parent_name: ''
       weight: 1
       format_type: html_element
@@ -201,7 +201,7 @@ mode: action_full_page
 content:
   field_action_number:
     type: number_unformatted
-    weight: 3
+    weight: 1
     region: left
     label: hidden
     settings: {  }
@@ -360,21 +360,6 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-  field_intro_svg:
-    type: image
-    weight: 2
-    region: left
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
-      svg_render_as_image: '1'
-      svg_attributes:
-        width: '200'
-        height: ''
-    third_party_settings:
-      field_formatter_class:
-        class: intro-svg
   field_people_self_care:
     weight: 10
     label: above
@@ -496,6 +481,7 @@ hidden:
   field_card_action: true
   field_community_action_choose_me: true
   field_global_action_choose_me: true
+  field_intro_svg: true
   field_sdg: true
   field_season: true
   field_simple_action_choose_me: true

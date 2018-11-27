@@ -9694,25 +9694,20 @@ ul.entity-pager-list {
 
 /* line 5, ../scss/custom/_fullpage.scss */
 .intro-full {
-  margin-top: 30px;
+  margin-top: 1.5em;
   border-bottom: 10px solid;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
+  margin-bottom: 1em;
   border-image: linear-gradient(to right, #fdd905 5%, #d5d5d5 5%) 1;
 }
 
-/* line 12, ../scss/custom/_fullpage.scss */
+/* line 13, ../scss/custom/_fullpage.scss */
 .action-number {
-  display: inline-block;
-  font-size: 10rem;
-  font-family: "Muli", sans-serif;
-  line-height: 8rem;
-  font-weight: 1000;
-  margin-left: 0.2em;
-}
-
-/* line 21, ../scss/custom/_fullpage.scss */
-.intro-svg {
   float: left;
+  font-size: 5rem;
+  line-height: 5rem;
+  font-weight: 1000;
+  margin-right: 0.5em;
 }
 
 /* line 25, ../scss/custom/_fullpage.scss */
@@ -9721,8 +9716,8 @@ ul.entity-pager-list {
   text-transform: uppercase;
   font-weight: 600;
   font-family: "Zilla Slab", sans-serif;
-  margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+  line-height: 5rem;
 }
 
 /* line 34, ../scss/custom/_fullpage.scss */
@@ -9782,11 +9777,6 @@ ul.entity-pager-list {
 /* line 80, ../scss/custom/_fullpage.scss */
 .text-para {
   margin: 1em 0 1em 0;
-}
-
-/* line 84, ../scss/custom/_fullpage.scss */
-.mainimage-fullpage {
-  padding-top: 2em;
 }
 
 /* line 4, ../scss/custom/_navbar.scss */
