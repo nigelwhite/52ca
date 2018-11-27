@@ -5,7 +5,7 @@ dependencies: {  }
 label: 'Para chunk on Fullpage'
 id: para_chunk_on_fullpage
 description: ''
-aspect_ratio: '41:23'
+aspect_ratio: '750:421'
 soft_limit_width: null
 soft_limit_height: null
 hard_limit_width: 750

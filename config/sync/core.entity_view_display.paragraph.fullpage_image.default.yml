@@ -4,8 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.fullpage_image.field_image_block
+    - image.style.para_on_fullpage
     - paragraphs.paragraphs_type.fullpage_image
   module:
+    - ds
+    - field_formatter_class
     - svg_image
 id: paragraph.fullpage_image.default
 targetEntityType: paragraph
@@ -16,13 +19,22 @@ content:
     weight: 0
     label: hidden
     settings:
+      image_style: para_on_fullpage
+      image_link: ''
+      svg_render_as_image: '1'
       svg_attributes:
         width: ''
         height: ''
-      svg_render_as_image: true
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: image
     region: content
 hidden: {  }

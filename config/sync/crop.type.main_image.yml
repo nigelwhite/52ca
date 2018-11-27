@@ -2,7 +2,7 @@ uuid: 29cc6d2f-f011-42d0-9755-cf6c1573136e
 langcode: en
 status: true
 dependencies: {  }
-label: 'Main image crop type'
+label: 'old Main image crop type'
 id: main_image
 description: ''
 aspect_ratio: '300:143'

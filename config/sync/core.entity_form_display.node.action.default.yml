@@ -162,9 +162,12 @@ content:
       preview_image_style: thumbnail
       crop_preview_image_style: crop_thumbnail
       crop_list:
+        - card
+        - action_banner
+      crop_types_required:
+        - card
         - action_banner
       progress_indicator: throbber
-      crop_types_required: {  }
       show_crop_area: false
     third_party_settings: {  }
     type: image_widget_crop
