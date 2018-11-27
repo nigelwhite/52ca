@@ -6,6 +6,8 @@ dependencies:
     - field.field.paragraph.fullpage_text.field_text_block
     - paragraphs.paragraphs_type.fullpage_text
   module:
+    - allowed_formats
+    - maxlength
     - text
 id: paragraph.fullpage_text.default
 targetEntityType: paragraph
@@ -17,7 +19,15 @@ content:
     settings:
       rows: 5
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      maxlength:
+        maxlength_js: 2000
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+        maxlength_js_enforce: false
+        maxlength_js_truncate_html: false
+      allowed_formats:
+        hide_help: '0'
+        hide_guidelines: '0'
     type: text_textarea
     region: content
 hidden:

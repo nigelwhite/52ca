@@ -10,7 +10,7 @@ id: node.action.field_resources_for_higher_educa
 field_name: field_resources_for_higher_educa
 entity_type: node
 bundle: action
-label: 'Resources for higher education:'
+label: 'Resources for Adult Education:'
 description: ''
 required: false
 translatable: false
