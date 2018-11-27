@@ -2202,7 +2202,7 @@ dd {
 .dl-horizontal dd:after {
   clear: both;
 }
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
   /* line 211, ../bootstrap/assets/stylesheets/bootstrap/_type.scss */
   .dl-horizontal dt {
     float: left;
@@ -5023,7 +5023,7 @@ tbody.collapse.in {
   margin-bottom: 2px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
   /* line 207, ../bootstrap/assets/stylesheets/bootstrap/_dropdowns.scss */
   .navbar-right .dropdown-menu {
     right: 0;
@@ -5637,7 +5637,7 @@ tbody.collapse.in {
 .navbar:after {
   clear: both;
 }
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
   /* line 11, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar {
     border-radius: 4px;
@@ -5653,7 +5653,7 @@ tbody.collapse.in {
 .navbar-header:after {
   clear: both;
 }
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
   /* line 31, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-header {
     float: left;
@@ -5682,7 +5682,7 @@ tbody.collapse.in {
 .navbar-collapse.in {
   overflow-y: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
   /* line 50, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-collapse {
     width: auto;
@@ -5728,7 +5728,7 @@ tbody.collapse.in {
   margin-right: -15px;
   margin-left: -15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
   /* line 108, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
   .container > .navbar-header,
   .container > .navbar-collapse,
@@ -5744,7 +5744,7 @@ tbody.collapse.in {
   z-index: 1000;
   border-width: 0 0 1px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
   /* line 128, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-static-top {
     border-radius: 0;
@@ -5759,7 +5759,7 @@ tbody.collapse.in {
   left: 0;
   z-index: 1030;
 }
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
   /* line 138, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-fixed-top,
   .navbar-fixed-bottom {
@@ -5796,7 +5796,7 @@ tbody.collapse.in {
 .navbar-brand > img {
   display: block;
 }
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
   /* line 180, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
     margin-left: -15px;
@@ -5831,7 +5831,7 @@ tbody.collapse.in {
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
   /* line 193, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-toggle {
     display: none;
@@ -5848,7 +5848,7 @@ tbody.collapse.in {
   padding-bottom: 10px;
   line-height: 25px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1198px) {
   /* line 243, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav .open .dropdown-menu {
     position: static;
@@ -5873,7 +5873,7 @@ tbody.collapse.in {
     background-image: none;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
   /* line 232, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav {
     float: left;
@@ -5963,7 +5963,7 @@ tbody.collapse.in {
     top: 0;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1198px) {
   /* line 298, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-form .form-group {
     margin-bottom: 5px;
@@ -5973,7 +5973,7 @@ tbody.collapse.in {
     margin-bottom: 0;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
   /* line 286, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-form {
     width: auto;
@@ -6024,7 +6024,7 @@ tbody.collapse.in {
   margin-top: 37.5px;
   margin-bottom: 37.5px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
   /* line 359, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-text {
     float: left;
@@ -6033,7 +6033,7 @@ tbody.collapse.in {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
   /* line 379, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-left {
     float: left !important;
@@ -6051,8 +6051,8 @@ tbody.collapse.in {
 }
 /* line 397, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default {
-  background-color: #efefef;
-  border-color: #efefef;
+  background-color: #fff;
+  border-color: 0;
 }
 /* line 401, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-brand {
@@ -6079,7 +6079,7 @@ tbody.collapse.in {
 /* line 425, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #555;
-  background-color: #dedede;
+  background-color: #eeeeee;
 }
 /* line 433, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
@@ -6101,14 +6101,14 @@ tbody.collapse.in {
 /* line 453, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #efefef;
+  border-color: 0;
 }
 /* line 462, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #dedede;
+  background-color: #eeeeee;
   color: #555;
 }
-@media (max-width: 767px) {
+@media (max-width: 1198px) {
   /* line 473, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #000;
@@ -6121,7 +6121,7 @@ tbody.collapse.in {
   /* line 482, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #555;
-    background-color: #dedede;
+    background-color: #eeeeee;
   }
   /* line 490, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
@@ -6209,7 +6209,7 @@ tbody.collapse.in {
   background-color: #090909;
   color: #fff;
 }
-@media (max-width: 767px) {
+@media (max-width: 1198px) {
   /* line 607, ../bootstrap/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
     border-color: #090909;
@@ -9212,7 +9212,7 @@ body.navbar-is-fixed-bottom {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1199px) {
   /* line 60, ../scss/component/_navbar.scss */
   .navbar .logo {
     margin-right: 0;
@@ -9798,10 +9798,10 @@ ul.entity-pager-list {
 
 /* line 11, ../scss/custom/_navbar.scss */
 .wideband {
-  background-color: #efefef;
+  background-color: #fff;
 }
 
-/* line 40, ../scss/custom/_navbar.scss */
+/* line 16, ../scss/custom/_navbar.scss */
 .logo > img {
   height: 70px;
 }
@@ -9894,7 +9894,6 @@ ol, ul {
   margin-top: 45px;
   padding-top: 35px;
   padding-bottom: 36px;
-  border-top: 1px solid #E5E5E5;
 }
 
 /* line 47, ../scss/_overrides.scss */
