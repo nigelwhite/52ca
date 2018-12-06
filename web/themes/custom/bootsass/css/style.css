@@ -9622,11 +9622,11 @@ body.toolbar-loading.toolbar {
   font-family: "Zilla Slab", sans-serif;
   text-transform: uppercase;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 600;
   line-height: 1;
-  padding-top: 0.25em;
-  padding-bottom: 0.25em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
 }
 
 /* line 98, ../scss/custom/_card.scss */
@@ -9637,40 +9637,43 @@ body.toolbar-loading.toolbar {
 /* line 103, ../scss/custom/_card.scss */
 .actionsvg-card {
   margin: 0 auto;
-  max-width: 175px;
+  max-width: 150px;
   padding-top: 1em;
 }
 
 /* line 109, ../scss/custom/_card.scss */
 .card-action {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.1em;
+  line-height: 1;
   font-weight: 600;
+  margin-top: 0.75em;
+  margin-bottom: 1em;
 }
 
-/* line 115, ../scss/custom/_card.scss */
+/* line 118, ../scss/custom/_card.scss */
 .entity-pager-item-all {
   background-color: #fff;
-  height: 40px;
-  line-height: 30px;
+  height: 30px;
+  line-height: 20px;
   width: 130px;
   margin-bottom: 0;
-  padding: 5px 5px 5px 0;
+  padding: 5px 1px 1px 0;
   border-radius: 10px 10px 0 0;
   text-align: center;
 }
 
-/* line 126, ../scss/custom/_card.scss */
+/* line 129, ../scss/custom/_card.scss */
 .entity-pager-item-prev,
 .entity-pager-item-next {
   font-size: 30px;
   font-weight: 1000;
-  height: 40px;
-  line-height: 30px;
+  height: 30px;
+  line-height: 20px;
   margin-bottom: 0;
 }
 
-/* line 135, ../scss/custom/_card.scss */
+/* line 138, ../scss/custom/_card.scss */
 .entity-pager-item-prev a:hover,
 .entity-pager-item-next a:hover,
 .entity-pager-item-prev a:active,
@@ -9680,18 +9683,18 @@ body.toolbar-loading.toolbar {
   text-decoration: none;
 }
 
-/* line 145, ../scss/custom/_card.scss */
+/* line 148, ../scss/custom/_card.scss */
 .entity-pager-list .entity-pager-item {
   margin-bottom: 0;
   margin-top: 0;
 }
 
-/* line 150, ../scss/custom/_card.scss */
+/* line 153, ../scss/custom/_card.scss */
 ul.entity-pager-list {
   margin-bottom: 0;
 }
 
-/* line 154, ../scss/custom/_card.scss */
+/* line 157, ../scss/custom/_card.scss */
 .ethic {
   margin-bottom: 1.25em;
   padding-left: 0.5em;
