@@ -18,6 +18,7 @@ dependencies:
     - field.field.node.action.field_image
     - field.field.node.action.field_image_block
     - field.field.node.action.field_intro_svg
+    - field.field.node.action.field_link2
     - field.field.node.action.field_people_self_care
     - field.field.node.action.field_project_example
     - field.field.node.action.field_radical_action
@@ -34,6 +35,7 @@ dependencies:
     - ds
     - field_formatter_class
     - field_group
+    - link
     - svg_image
     - text
     - user
@@ -285,6 +287,18 @@ content:
         class: 'introsvg-card col-xs-8'
     type: image
     region: main
+  field_link2:
+    weight: 7
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
 hidden:
   field_advanced_action_choose_me: true
   field_community_action: true

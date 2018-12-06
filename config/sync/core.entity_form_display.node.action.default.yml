@@ -18,6 +18,7 @@ dependencies:
     - field.field.node.action.field_image
     - field.field.node.action.field_image_block
     - field.field.node.action.field_intro_svg
+    - field.field.node.action.field_link2
     - field.field.node.action.field_people_self_care
     - field.field.node.action.field_project_example
     - field.field.node.action.field_radical_action
@@ -35,8 +36,10 @@ dependencies:
     - entity_browser_entity_form
     - image_widget_crop
     - inline_entity_form
+    - link
     - maxlength
     - paragraphs
+    - path
     - text
 id: node.action.default
 targetEntityType: node
@@ -66,7 +69,7 @@ content:
     settings:
       match_operator: CONTAINS
       size: 60
-      placeholder: 'Save node first! (so you can pick the saved options)'
+      placeholder: 'Save first! (then come back and pick a saved action)'
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
@@ -179,10 +182,18 @@ content:
       title: 'Main Content Chunk'
       title_plural: 'Main Content Chunks'
       edit_mode: preview
-      add_mode: select
+      add_mode: button
       form_display_mode: default
-      default_paragraph_type: fullpage_image
+      default_paragraph_type: _none
     third_party_settings: {  }
+    region: content
+  field_link2:
+    weight: 26
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   field_people_self_care:
     weight: 9
@@ -308,6 +319,12 @@ content:
         maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
     type: string_textfield
     region: content
+  path:
+    type: path
+    weight: 24
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   title:
     type: string_textfield
     weight: 0
@@ -323,7 +340,6 @@ hidden:
   created: true
   field_action_svg: true
   field_intro_svg: true
-  path: true
   promote: true
   status: true
   sticky: true

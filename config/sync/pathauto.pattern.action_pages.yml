@@ -1,0 +1,22 @@
+uuid: c0eb0d94-e298-4542-a514-fe4d8693f21b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: action_pages
+label: 'Action pages'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  fef3db94-3d5f-4887-bf98-839ec9873beb:
+    id: node_type
+    bundles:
+      action: action
+    negate: false
+    context_mapping:
+      node: node
+    uuid: fef3db94-3d5f-4887-bf98-839ec9873beb
+selection_logic: and
+weight: -5
+relationships: {  }
