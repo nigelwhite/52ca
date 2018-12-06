@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d49567f9a8369dddd79eefaeec20e8e0",
+    "content-hash": "69a7074f40b5abb9218dcd9d62722e8c",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3575,6 +3575,53 @@
             "homepage": "https://www.drupal.org/project/inline_entity_form",
             "support": {
                 "source": "http://cgit.drupalcode.org/inline_entity_form"
+            }
+        },
+        {
+            "name": "drupal/js_confirm_pop_up",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/js_confirm_pop_up",
+                "reference": "8.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/js_confirm_pop_up-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "1ce4a5013be041c55649d9b1274cafecb6c4d7c9"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1542785580",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "sandipauti",
+                    "homepage": "https://www.drupal.org/user/3164897"
+                }
+            ],
+            "description": "Protect the user against navigating away from a form before saving their changes.",
+            "homepage": "https://www.drupal.org/project/js_confirm_pop_up",
+            "support": {
+                "source": "http://cgit.drupalcode.org/js_confirm_pop_up"
             }
         },
         {
