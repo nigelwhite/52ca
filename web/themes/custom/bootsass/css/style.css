@@ -9625,8 +9625,8 @@ body.toolbar-loading.toolbar {
   font-size: 1.8em;
   font-weight: 600;
   line-height: 1;
-  padding-top: 0.75em;
-  padding-bottom: 0.75em;
+  padding-top: 0.7em;
+  padding-bottom: 0.5em;
 }
 
 /* line 98, ../scss/custom/_card.scss */
