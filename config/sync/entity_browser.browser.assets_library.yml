@@ -26,10 +26,10 @@ widgets:
       media_type: image
       upload_location: 'public://'
       multiple: '1'
-      submit_text: 'Select files'
+      submit_text: 'Select image'
     uuid: fe4933b7-be48-4841-ad61-e2ab0cefa1b8
-    weight: 1
-    label: Upload
+    weight: 2
+    label: 'Upload image'
     id: media_image_upload
   90aadd1f-31a8-4c8f-8d89-2b190a96144e:
     settings:
@@ -38,7 +38,7 @@ widgets:
       submit_text: 'Select entities'
       auto_select: false
     uuid: 90aadd1f-31a8-4c8f-8d89-2b190a96144e
-    weight: 2
+    weight: 1
     label: Library
     id: view
   e6224b30-3a48-47cf-b54a-a812b1801683:
@@ -46,8 +46,18 @@ widgets:
       entity_type: media
       bundle: remote_video
       form_mode: embed
-      submit_text: 'Save entity'
+      submit_text: 'Select video'
     uuid: e6224b30-3a48-47cf-b54a-a812b1801683
+    weight: 4
+    label: 'Link to Youtube/Vimeo'
+    id: entity_form
+  14291299-89c6-4d59-9340-cc05033f40d0:
+    settings:
+      entity_type: media
+      bundle: file
+      form_mode: default
+      submit_text: 'Select file'
+    uuid: 14291299-89c6-4d59-9340-cc05033f40d0
     weight: 3
-    label: Youtube/Vimeo
+    label: 'Upload document'
     id: entity_form

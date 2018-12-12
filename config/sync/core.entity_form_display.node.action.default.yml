@@ -11,15 +11,20 @@ dependencies:
     - field.field.node.action.field_community_action
     - field.field.node.action.field_community_action_choose_me
     - field.field.node.action.field_earth_care
+    - field.field.node.action.field_earth_care2_
+    - field.field.node.action.field_earth_care_svg
     - field.field.node.action.field_fair_share
+    - field.field.node.action.field_fair_share2_
+    - field.field.node.action.field_fair_share_svg
     - field.field.node.action.field_family
     - field.field.node.action.field_global_action
     - field.field.node.action.field_global_action_choose_me
     - field.field.node.action.field_image
     - field.field.node.action.field_image_block
     - field.field.node.action.field_intro_svg
-    - field.field.node.action.field_link2
+    - field.field.node.action.field_people_care_svg
     - field.field.node.action.field_people_self_care
+    - field.field.node.action.field_people_self_care_
     - field.field.node.action.field_project_example
     - field.field.node.action.field_radical_action
     - field.field.node.action.field_reference
@@ -36,7 +41,6 @@ dependencies:
     - entity_browser_entity_form
     - image_widget_crop
     - inline_entity_form
-    - link
     - maxlength
     - paragraphs
     - path
@@ -120,6 +124,17 @@ content:
         maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
     type: string_textfield
     region: content
+  field_earth_care2_:
+    weight: 8
+    settings:
+      size: 90
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 90
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+    type: string_textfield
+    region: content
   field_fair_share:
     weight: 10
     settings:
@@ -128,6 +143,17 @@ content:
     third_party_settings:
       maxlength:
         maxlength_js: 60
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+    type: string_textfield
+    region: content
+  field_fair_share2_:
+    weight: 10
+    settings:
+      size: 90
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 90
         maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
     type: string_textfield
     region: content
@@ -187,14 +213,6 @@ content:
       default_paragraph_type: _none
     third_party_settings: {  }
     region: content
-  field_link2:
-    weight: 26
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
-    region: content
   field_people_self_care:
     weight: 9
     settings:
@@ -203,6 +221,17 @@ content:
     third_party_settings:
       maxlength:
         maxlength_js: 60
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+    type: string_textfield
+    region: content
+  field_people_self_care_:
+    weight: 9
+    settings:
+      size: 90
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 90
         maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
     type: string_textfield
     region: content
@@ -339,7 +368,10 @@ content:
 hidden:
   created: true
   field_action_svg: true
+  field_earth_care_svg: true
+  field_fair_share_svg: true
   field_intro_svg: true
+  field_people_care_svg: true
   promote: true
   status: true
   sticky: true

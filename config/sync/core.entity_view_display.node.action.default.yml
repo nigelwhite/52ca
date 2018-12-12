@@ -11,15 +11,20 @@ dependencies:
     - field.field.node.action.field_community_action
     - field.field.node.action.field_community_action_choose_me
     - field.field.node.action.field_earth_care
+    - field.field.node.action.field_earth_care2_
+    - field.field.node.action.field_earth_care_svg
     - field.field.node.action.field_fair_share
+    - field.field.node.action.field_fair_share2_
+    - field.field.node.action.field_fair_share_svg
     - field.field.node.action.field_family
     - field.field.node.action.field_global_action
     - field.field.node.action.field_global_action_choose_me
     - field.field.node.action.field_image
     - field.field.node.action.field_image_block
     - field.field.node.action.field_intro_svg
-    - field.field.node.action.field_link2
+    - field.field.node.action.field_people_care_svg
     - field.field.node.action.field_people_self_care
+    - field.field.node.action.field_people_self_care_
     - field.field.node.action.field_project_example
     - field.field.node.action.field_radical_action
     - field.field.node.action.field_reference
@@ -35,7 +40,6 @@ dependencies:
     - ds
     - field_formatter_class
     - field_group
-    - link
     - svg_image
     - text
     - user
@@ -65,17 +69,17 @@ third_party_settings:
         - group_card_header
         - group_card_body
         - field_image
-        - group_intro
         - group_families
         - group_card_footer
-        - node_title
+        - group_intro
         - field_intro_svg
+        - node_title
         - field_action_svg
         - field_action_number
-        - field_card_action
         - field_card_text_new
-        - 'dynamic_block_field:node-card_pager'
+        - field_card_action
         - field_family
+        - 'dynamic_block_field:node-card_pager'
     fields:
       node_title:
         plugin_id: node_title
@@ -287,28 +291,22 @@ content:
         class: 'introsvg-card col-xs-8'
     type: image
     region: main
-  field_link2:
-    weight: 7
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
 hidden:
   field_advanced_action_choose_me: true
   field_community_action: true
   field_community_action_choose_me: true
   field_earth_care: true
+  field_earth_care2_: true
+  field_earth_care_svg: true
   field_fair_share: true
+  field_fair_share2_: true
+  field_fair_share_svg: true
   field_global_action: true
   field_global_action_choose_me: true
   field_image_block: true
+  field_people_care_svg: true
   field_people_self_care: true
+  field_people_self_care_: true
   field_project_example: true
   field_radical_action: true
   field_reference: true

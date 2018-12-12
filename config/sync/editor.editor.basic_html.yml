@@ -19,6 +19,8 @@ settings:
           items:
             - Bold
             - Italic
+            - Subscript
+            - Table
         -
           name: Linking
           items:

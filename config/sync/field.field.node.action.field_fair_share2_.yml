@@ -1,0 +1,19 @@
+uuid: d3eeefb7-bc19-463a-9414-ae4c252fa9c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fair_share2_
+    - node.type.action
+id: node.action.field_fair_share2_
+field_name: field_fair_share2_
+entity_type: node
+bundle: action
+label: 'FAIR SHARE2:'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

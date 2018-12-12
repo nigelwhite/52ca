@@ -12,7 +12,9 @@ dependencies:
     - field.field.node.action.field_community_action
     - field.field.node.action.field_community_action_choose_me
     - field.field.node.action.field_earth_care
+    - field.field.node.action.field_earth_care2_
     - field.field.node.action.field_fair_share
+    - field.field.node.action.field_fair_share2_
     - field.field.node.action.field_family
     - field.field.node.action.field_global_action
     - field.field.node.action.field_global_action_choose_me
@@ -20,6 +22,7 @@ dependencies:
     - field.field.node.action.field_image_block
     - field.field.node.action.field_intro_svg
     - field.field.node.action.field_people_self_care
+    - field.field.node.action.field_people_self_care_
     - field.field.node.action.field_project_example
     - field.field.node.action.field_radical_action
     - field.field.node.action.field_reference
@@ -91,12 +94,15 @@ third_party_settings:
         - field_family
         - group_families
         - field_action_svg
-        - group_actions
         - field_simple_action
-        - field_radical_action
+        - group_actions
+        - field_earth_care2_
         - field_earth_care
-        - field_people_self_care
+        - field_radical_action
         - field_community_action
+        - field_people_self_care_
+        - field_people_self_care
+        - field_fair_share2_
         - field_global_action
         - field_fair_share
         - group_resources
@@ -274,6 +280,23 @@ content:
             classes: {  }
     type: string
     region: right
+  field_earth_care2_:
+    type: string
+    weight: 9
+    region: right
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      field_formatter_class:
+        class: ethic
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
   field_fair_share:
     weight: 11
     label: above
@@ -291,6 +314,23 @@ content:
             classes: {  }
     type: string
     region: right
+  field_fair_share2_:
+    type: string
+    weight: 11
+    region: right
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      field_formatter_class:
+        class: ethic
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
   field_family:
     type: entity_reference_entity_view
     weight: 0
@@ -386,6 +426,23 @@ content:
             classes: {  }
     type: string
     region: right
+  field_people_self_care_:
+    type: string
+    weight: 10
+    region: right
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      field_formatter_class:
+        class: ethic
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
   field_project_example:
     type: entity_reference_label
     weight: 14

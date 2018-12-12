@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "69a7074f40b5abb9218dcd9d62722e8c",
+    "content-hash": "eb4a7d1e1851e1bb3869eb3ce7d99d34",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3085,20 +3085,14 @@
         },
         {
             "name": "drupal/entity_embed",
-            "version": "1.0.0-beta2",
+            "version": "dev-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/entity_embed",
-                "reference": "8.x-1.0-beta2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_embed-8.x-1.0-beta2.zip",
-                "reference": "8.x-1.0-beta2",
-                "shasum": "21cdeb2b058efce461683aed9a8951053512dca7"
+                "reference": "4826d6469fb43695c33609ef474384a5e87727bf"
             },
             "require": {
-                "drupal/core": "*",
+                "drupal/core": "^8.4.0",
                 "drupal/embed": "*"
             },
             "require-dev": {
@@ -3110,11 +3104,11 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta2",
-                    "datestamp": "1476698339",
+                    "version": "8.x-1.0-beta2+21-dev",
+                    "datestamp": "1544013784",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -3136,8 +3130,16 @@
                     "homepage": "https://www.drupal.org/user/3260690"
                 },
                 {
+                    "name": "Wim Leers",
+                    "homepage": "https://www.drupal.org/user/99777"
+                },
+                {
                     "name": "cs_shadow",
                     "homepage": "https://www.drupal.org/user/2828287"
+                },
+                {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
                 },
                 {
                     "name": "slashrsm",
@@ -3150,7 +3152,8 @@
                 "source": "http://cgit.drupalcode.org/entity_embed",
                 "issues": "https://www.drupal.org/project/issues/entity_embed",
                 "irc": "irc://irc.freenode.org/drupal-media"
-            }
+            },
+            "time": "2018-12-05T17:16:48+00:00"
         },
         {
             "name": "drupal/entity_pager",
@@ -10009,7 +10012,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/coffee": 10,
-        "drupal/entity_embed": 10,
+        "drupal/entity_embed": 20,
         "drupal/entity_pager": 10,
         "drupal/inline_entity_form": 5,
         "drupal/maxlength": 10,
