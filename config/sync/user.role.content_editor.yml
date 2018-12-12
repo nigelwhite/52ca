@@ -33,6 +33,7 @@ permissions:
   - 'delete own video media'
   - 'delete terms in action'
   - 'edit any action content'
+  - 'edit any resource content'
   - 'edit own action content'
   - 'edit own audio media'
   - 'edit own file media'

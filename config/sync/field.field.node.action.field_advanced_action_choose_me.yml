@@ -9,7 +9,7 @@ id: node.action.field_advanced_action_choose_me
 field_name: field_advanced_action_choose_me
 entity_type: node
 bundle: action
-label: 'Radical action Choose me'
+label: 'Everyday action Choose me'
 description: ''
 required: false
 translatable: false

@@ -11,17 +11,17 @@ dependencies:
     - field.field.node.action.field_card_text_new
     - field.field.node.action.field_community_action
     - field.field.node.action.field_community_action_choose_me
-    - field.field.node.action.field_earth_care
     - field.field.node.action.field_earth_care2_
-    - field.field.node.action.field_fair_share
+    - field.field.node.action.field_earth_care_svg
     - field.field.node.action.field_fair_share2_
+    - field.field.node.action.field_fair_share_svg
     - field.field.node.action.field_family
     - field.field.node.action.field_global_action
     - field.field.node.action.field_global_action_choose_me
     - field.field.node.action.field_image
     - field.field.node.action.field_image_block
     - field.field.node.action.field_intro_svg
-    - field.field.node.action.field_people_self_care
+    - field.field.node.action.field_people_care_svg
     - field.field.node.action.field_people_self_care_
     - field.field.node.action.field_project_example
     - field.field.node.action.field_radical_action
@@ -32,7 +32,6 @@ dependencies:
     - field.field.node.action.field_season
     - field.field.node.action.field_simple_action
     - field.field.node.action.field_simple_action_choose_me
-    - image.style.main_image_style
     - node.type.action
   module:
     - ds
@@ -90,36 +89,39 @@ third_party_settings:
     regions:
       top:
         - field_image
-      right:
-        - field_family
-        - group_families
-        - field_action_svg
-        - field_simple_action
-        - group_actions
-        - field_earth_care2_
-        - field_earth_care
-        - field_radical_action
-        - field_community_action
-        - field_people_self_care_
-        - field_people_self_care
-        - field_fair_share2_
-        - field_global_action
-        - field_fair_share
-        - group_resources
-        - field_resources_for_children_
-        - field_resources_for_higher_educa
-        - field_project_example
-        - field_reference
       left:
         - group_intro
         - field_action_number
         - node_title
         - field_card_text_new
         - field_image_block
+      right:
+        - group_families
+        - field_family
+        - field_action_svg
+        - group_actions
+        - field_simple_action
+        - field_radical_action
+        - field_community_action
+        - field_global_action
+        - group_earth_div
+        - field_earth_care_svg
+        - field_earth_care2_
+        - group_fair_div
+        - field_fair_share_svg
+        - field_fair_share2_
+        - group_people_div
+        - field_people_care_svg
+        - field_people_self_care_
+        - group_resources
+        - field_resources_for_children_
+        - field_resources_for_higher_educa
+        - field_project_example
+        - field_reference
     fields:
       node_title:
         plugin_id: node_title
-        weight: 2
+        weight: 3
         label: hidden
         formatter: default
         settings:
@@ -169,7 +171,7 @@ third_party_settings:
         - field_community_action
         - field_global_action
       parent_name: ''
-      weight: 8
+      weight: 9
       format_type: html_element
       format_settings:
         id: ''
@@ -188,7 +190,7 @@ third_party_settings:
         - field_project_example
         - field_reference
       parent_name: ''
-      weight: 12
+      weight: 23
       format_type: html_element
       format_settings:
         id: ''
@@ -200,6 +202,57 @@ third_party_settings:
         effect: none
         speed: fast
       label: RESOURCES
+    group_earth_div:
+      children:
+        - field_earth_care_svg
+        - field_earth_care2_
+      parent_name: ''
+      weight: 14
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: row
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Earth div'
+    group_fair_div:
+      children:
+        - field_fair_share_svg
+        - field_fair_share2_
+      parent_name: ''
+      weight: 17
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: row
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Fair div'
+    group_people_div:
+      children:
+        - field_people_care_svg
+        - field_people_self_care_
+      parent_name: ''
+      weight: 20
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: row
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'People div'
 id: node.action.action_full_page
 targetEntityType: node
 bundle: action
@@ -207,7 +260,7 @@ mode: action_full_page
 content:
   field_action_number:
     type: number_unformatted
-    weight: 1
+    weight: 2
     region: left
     label: hidden
     settings: {  }
@@ -216,7 +269,7 @@ content:
         class: action-number
   field_action_svg:
     type: image
-    weight: 7
+    weight: 8
     region: right
     label: hidden
     settings:
@@ -246,7 +299,7 @@ content:
             lb-col: false
             classes: {  }
   field_community_action:
-    weight: 10
+    weight: 12
     label: above
     settings:
       view_mode: actions_on_fullpage
@@ -263,33 +316,16 @@ content:
             classes: {  }
     type: entity_reference_entity_view
     region: right
-  field_earth_care:
-    weight: 9
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings:
-      field_formatter_class:
-        class: ethic
-      ds:
-        ft:
-          id: default
-          settings:
-            lb: ''
-            lb-col: false
-            classes: {  }
-    type: string
-    region: right
   field_earth_care2_:
     type: string
-    weight: 9
+    weight: 16
     region: right
     label: above
     settings:
       link_to_entity: false
     third_party_settings:
       field_formatter_class:
-        class: ethic
+        class: 'ethic col-sm-8'
       ds:
         ft:
           id: default
@@ -297,14 +333,21 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-  field_fair_share:
-    weight: 11
-    label: above
+  field_earth_care_svg:
+    type: image
+    weight: 15
+    region: right
+    label: hidden
     settings:
-      link_to_entity: false
+      image_style: ''
+      image_link: ''
+      svg_render_as_image: '1'
+      svg_attributes:
+        width: ''
+        height: ''
     third_party_settings:
       field_formatter_class:
-        class: 'myClass ethic'
+        class: 'col-sm-4 ethic-svg'
       ds:
         ft:
           id: default
@@ -312,18 +355,38 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-    type: string
-    region: right
   field_fair_share2_:
     type: string
-    weight: 11
+    weight: 19
     region: right
     label: above
     settings:
       link_to_entity: false
     third_party_settings:
       field_formatter_class:
-        class: ethic
+        class: 'ethic col-sm-8'
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+  field_fair_share_svg:
+    type: image
+    weight: 18
+    region: right
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+      svg_render_as_image: '1'
+      svg_attributes:
+        width: ''
+        height: ''
+    third_party_settings:
+      field_formatter_class:
+        class: 'col-sm-4 ethic-svg'
       ds:
         ft:
           id: default
@@ -333,7 +396,7 @@ content:
             classes: {  }
   field_family:
     type: entity_reference_entity_view
-    weight: 0
+    weight: 7
     region: right
     label: hidden
     settings:
@@ -351,7 +414,7 @@ content:
             lb-col: false
             classes: {  }
   field_global_action:
-    weight: 11
+    weight: 13
     label: above
     settings:
       view_mode: actions_on_fullpage
@@ -409,14 +472,21 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-  field_people_self_care:
-    weight: 10
-    label: above
+  field_people_care_svg:
+    type: image
+    weight: 21
+    region: right
+    label: hidden
     settings:
-      link_to_entity: false
+      image_style: ''
+      image_link: ''
+      svg_render_as_image: '1'
+      svg_attributes:
+        width: ''
+        height: ''
     third_party_settings:
       field_formatter_class:
-        class: ethic
+        class: 'col-sm-4 ethic-svg'
       ds:
         ft:
           id: default
@@ -424,18 +494,16 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-    type: string
-    region: right
   field_people_self_care_:
     type: string
-    weight: 10
+    weight: 22
     region: right
     label: above
     settings:
       link_to_entity: false
     third_party_settings:
       field_formatter_class:
-        class: ethic
+        class: 'ethic col-sm-8'
       ds:
         ft:
           id: default
@@ -445,7 +513,7 @@ content:
             classes: {  }
   field_project_example:
     type: entity_reference_label
-    weight: 14
+    weight: 26
     region: right
     label: above
     settings:
@@ -462,7 +530,7 @@ content:
             lb-col: false
             classes: {  }
   field_radical_action:
-    weight: 9
+    weight: 11
     label: above
     settings:
       view_mode: actions_on_fullpage
@@ -481,7 +549,7 @@ content:
     region: right
   field_reference:
     type: entity_reference_label
-    weight: 15
+    weight: 27
     region: right
     label: above
     settings:
@@ -499,7 +567,7 @@ content:
             classes: {  }
   field_resources_for_children_:
     type: entity_reference_label
-    weight: 12
+    weight: 24
     region: right
     label: above
     settings:
@@ -517,7 +585,7 @@ content:
             classes: {  }
   field_resources_for_higher_educa:
     type: entity_reference_label
-    weight: 13
+    weight: 25
     region: right
     label: above
     settings:
@@ -534,7 +602,7 @@ content:
             lb-col: false
             classes: {  }
   field_simple_action:
-    weight: 8
+    weight: 10
     label: above
     settings:
       view_mode: actions_on_fullpage

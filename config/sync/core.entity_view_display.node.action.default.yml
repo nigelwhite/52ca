@@ -10,10 +10,8 @@ dependencies:
     - field.field.node.action.field_card_text_new
     - field.field.node.action.field_community_action
     - field.field.node.action.field_community_action_choose_me
-    - field.field.node.action.field_earth_care
     - field.field.node.action.field_earth_care2_
     - field.field.node.action.field_earth_care_svg
-    - field.field.node.action.field_fair_share
     - field.field.node.action.field_fair_share2_
     - field.field.node.action.field_fair_share_svg
     - field.field.node.action.field_family
@@ -23,7 +21,6 @@ dependencies:
     - field.field.node.action.field_image_block
     - field.field.node.action.field_intro_svg
     - field.field.node.action.field_people_care_svg
-    - field.field.node.action.field_people_self_care
     - field.field.node.action.field_people_self_care_
     - field.field.node.action.field_project_example
     - field.field.node.action.field_radical_action
@@ -295,17 +292,14 @@ hidden:
   field_advanced_action_choose_me: true
   field_community_action: true
   field_community_action_choose_me: true
-  field_earth_care: true
   field_earth_care2_: true
   field_earth_care_svg: true
-  field_fair_share: true
   field_fair_share2_: true
   field_fair_share_svg: true
   field_global_action: true
   field_global_action_choose_me: true
   field_image_block: true
   field_people_care_svg: true
-  field_people_self_care: true
   field_people_self_care_: true
   field_project_example: true
   field_radical_action: true
