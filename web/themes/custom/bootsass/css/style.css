@@ -9748,7 +9748,7 @@ ul.entity-pager-list {
 .action-group {
   background-color: #fdd905;
   margin: 1em 0 1em 0;
-  padding: 0.5em;
+  padding: 0.1em 1em 1em 1em;
 }
 
 /* line 49, ../scss/custom/_fullpage.scss */
@@ -9790,6 +9790,13 @@ ul.entity-pager-list {
 /* line 80, ../scss/custom/_fullpage.scss */
 .text-para {
   margin: 1em 0 1em 0;
+}
+
+/* line 84, ../scss/custom/_fullpage.scss */
+.ethic-svg {
+  max-width: 80px;
+  max-height: 80px;
+  padding-top: 5px;
 }
 
 /* line 4, ../scss/custom/_navbar.scss */
