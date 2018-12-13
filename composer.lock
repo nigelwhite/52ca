@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eb4a7d1e1851e1bb3869eb3ce7d99d34",
+    "content-hash": "9a722a3abcbe6d16ffcea8a56796c40e",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3436,6 +3436,53 @@
             "homepage": "https://www.drupal.org/project/field_group",
             "support": {
                 "source": "http://cgit.drupalcode.org/field_group"
+            }
+        },
+        {
+            "name": "drupal/gdoc_field",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/gdoc_field",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/gdoc_field-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "eb80990487b6547056cfec56a1de132a8b2f3338"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1537293780",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "jmarkel",
+                    "homepage": "https://www.drupal.org/user/15171"
+                }
+            ],
+            "description": "An embedded Document viewer field using Google Docs",
+            "homepage": "https://www.drupal.org/project/gdoc_field",
+            "support": {
+                "source": "http://cgit.drupalcode.org/gdoc_field"
             }
         },
         {
