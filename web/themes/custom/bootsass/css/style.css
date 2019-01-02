@@ -9936,4 +9936,26 @@ p:last-child,
   margin-top: 0;
 }
 
+.simple .field--label::after,
+.global .field--label::after,
+.community .field--label::after,
+.every .field--label::after {
+  content: "V";
+  font-family: Muli;
+  font-weight: 1000;
+  text-align: right;
+    float: right;
+}
+
+.simple-ch,
+.every-ch,
+.community-ch,
+.global-ch {
+    display: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.2rem;
+    padding: 0.3rem 0.3rem 0 0.3rem;
+}
+
 /*# sourceMappingURL=style.css.map */
