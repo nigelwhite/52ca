@@ -28,7 +28,7 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: 714eed82-c48b-4c9f-ae5e-e9d752092c29
+    uuid: b2897105-d45b-4de2-918c-34a68615d97d
     alt: 'People Care icon'
     title: ''
     width: null

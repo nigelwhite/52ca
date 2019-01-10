@@ -41,7 +41,6 @@ dependencies:
     - maxlength
     - paragraphs
     - path
-    - svg_image
     - text
 id: node.action.default
 targetEntityType: node
@@ -122,14 +121,6 @@ content:
         maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
     type: string_textfield
     region: content
-  field_earth_care_svg:
-    type: image_image
-    weight: 25
-    region: content
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
   field_fair_share2_:
     weight: 10
     settings:
@@ -141,14 +132,6 @@ content:
         maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
     type: string_textfield
     region: content
-  field_fair_share_svg:
-    type: image_image
-    weight: 26
-    region: content
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
   field_family:
     weight: 3
     settings: {  }
@@ -199,20 +182,12 @@ content:
     settings:
       title: 'Main Content Chunk'
       title_plural: 'Main Content Chunks'
-      edit_mode: preview
+      edit_mode: open
       add_mode: button
       form_display_mode: default
       default_paragraph_type: _none
     third_party_settings: {  }
     region: content
-  field_people_care_svg:
-    type: image_image
-    weight: 27
-    region: content
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
   field_people_self_care_:
     weight: 9
     settings:
@@ -357,7 +332,10 @@ content:
 hidden:
   created: true
   field_action_svg: true
+  field_earth_care_svg: true
+  field_fair_share_svg: true
   field_intro_svg: true
+  field_people_care_svg: true
   promote: true
   status: true
   sticky: true

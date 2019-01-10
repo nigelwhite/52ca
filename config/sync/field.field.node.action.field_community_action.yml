@@ -10,7 +10,7 @@ id: node.action.field_community_action
 field_name: field_community_action
 entity_type: node
 bundle: action
-label: 'COMMUNITY ACTION:'
+label: 'COMMUNITY ACTION'
 description: ''
 required: false
 translatable: false

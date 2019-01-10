@@ -28,7 +28,7 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: dd0caf46-731c-4637-acfb-9d33af90d802
+    uuid: 14994010-3b7a-429f-8189-b3255fb87c33
     alt: 'Earth Care icon'
     title: ''
     width: null

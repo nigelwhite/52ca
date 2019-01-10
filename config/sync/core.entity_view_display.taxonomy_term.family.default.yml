@@ -6,6 +6,8 @@ dependencies:
     - field.field.taxonomy_term.family.field_icon
     - taxonomy.vocabulary.family
   module:
+    - ds
+    - field_formatter_class
     - svg_image
     - text
 id: taxonomy_term.family.default
@@ -19,18 +21,36 @@ content:
     weight: 0
     region: content
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: family-listing-title
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
   field_icon:
     weight: 1
-    label: above
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
+      svg_render_as_image: '1'
       svg_attributes:
-        width: ''
-        height: ''
-      svg_render_as_image: true
-    third_party_settings: {  }
+        width: '150'
+        height: '150'
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: image
     region: content
 hidden: {  }

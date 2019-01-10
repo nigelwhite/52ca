@@ -28,7 +28,7 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: 25522579-fb70-44d7-8bfe-4c65fabb189f
+    uuid: a6c27051-6c79-4299-9e1c-a75b1422300a
     alt: 'Fair Share icon'
     title: ''
     width: null

@@ -9958,4 +9958,7 @@ p:last-child,
     padding: 0.3rem 0.3rem 0 0.3rem;
 }
 
+.family-listing-title p {
+    font-size: 4rem;
+}
 /*# sourceMappingURL=style.css.map */
