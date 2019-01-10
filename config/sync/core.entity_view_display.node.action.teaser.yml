@@ -34,17 +34,53 @@ dependencies:
     - field.field.node.action.field_simple_action_choose_me
     - node.type.action
   module:
+    - ds
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: id|teaser
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - node_title
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: p
+          class: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
 id: node.action.teaser
 targetEntityType: node
 bundle: action
 mode: teaser
-content:
-  links:
-    weight: 100
-    region: content
-    settings: {  }
-    third_party_settings: {  }
+content: {  }
 hidden:
   field_action_number: true
   field_action_svg: true
@@ -74,3 +110,4 @@ hidden:
   field_season: true
   field_simple_action: true
   field_simple_action_choose_me: true
+  links: true
