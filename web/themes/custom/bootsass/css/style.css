@@ -9830,10 +9830,9 @@ body {
 }
 
 /* line 8, ../scss/custom/_family.scss */
-.family-icon > img {
+.family-icon > a img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 /**

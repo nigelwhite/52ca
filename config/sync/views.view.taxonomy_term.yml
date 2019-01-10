@@ -303,6 +303,9 @@ display:
         options: {  }
       path: taxonomy/term/%
       display_extenders: {  }
+      show_admin_links: true
+      defaults:
+        show_admin_links: false
     cache_metadata:
       contexts:
         - 'languages:language_interface'
