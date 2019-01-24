@@ -23,3 +23,37 @@ function bootsass_theme_suggestions_taxonomy_term_alter(array &$suggestions, arr
   $suggestions[] = 'taxonomy_term__' . $term->bundle() . '__' . $sanitized_view_mode;
   $suggestions[] = 'taxonomy_term__' . $term->id() . '__' . $sanitized_view_mode;
 }
+
+/**
+ * Implements hook_preprocess_node() to use value of field_season as a class.
+ * syntax of function is themename_preprocess_node__contenttype__viewmode
+ */
+function bootsass_preprocess_node__bs_2col_stacked(&$vars) {
+    $node = $vars['elements']['#node'];
+    $view_mode = $vars['elements']['#view_mode'];
+    $type = $node->getType();
+  // Check if field exists and has value.
+  if ($node->hasField('field_season') && !$node->field_season->isEmpty()) {
+    // get value of field and convert to string
+    $season = strtolower($node->get('field_season')->value);
+    // use the value of the field as a class
+    $vars['attributes']['class'][] = $season;
+  }
+}
+
+/**
+ * Implements hook_preprocess_node() to use value of field_season as a class.
+ * syntax of function is themename_preprocess_node__contenttype__viewmode
+ */
+function bootsass_preprocess_node__mycontenttype__full(&$vars) {
+    $node = $vars['elements']['#node'];
+    $view_mode = $vars['elements']['#view_mode'];
+    $type = $node->getType();
+  // Check if field exists and has value.
+  if ($node->hasField('field_season2') && !$node->field_season2->isEmpty()) {
+    // get value of field and convert to string
+    $season = strtolower($node->get('field_season2')->value);
+    // use the value of the field as a class
+    $vars['attributes']['class'][] = $season;
+  }
+}
