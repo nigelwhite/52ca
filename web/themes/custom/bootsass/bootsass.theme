@@ -28,7 +28,7 @@ function bootsass_theme_suggestions_taxonomy_term_alter(array &$suggestions, arr
  * Implements hook_preprocess_node() to use value of field_season as a class.
  * syntax of function is themename_preprocess_node__contenttype__viewmode
  */
-function bootsass_preprocess_node__bs_2col_stacked(&$vars) {
+function bootsass_preprocess__bs_1col(&$vars) {
     $node = $vars['elements']['#node'];
     $view_mode = $vars['elements']['#view_mode'];
     $type = $node->getType();
@@ -44,6 +44,7 @@ function bootsass_preprocess_node__bs_2col_stacked(&$vars) {
 /**
  * Implements hook_preprocess_node() to use value of field_season as a class.
  * syntax of function is themename_preprocess_node__contenttype__viewmode
+ * This works with a test node/71
  */
 function bootsass_preprocess_node__mycontenttype__full(&$vars) {
     $node = $vars['elements']['#node'];
