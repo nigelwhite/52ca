@@ -9690,35 +9690,36 @@ body.toolbar-loading.toolbar {
 /* line 150, ../scss/custom/_card.scss */
 ul.entity-pager-list {
   margin-bottom: 0;
+  margin-top: 0;
   font-size: 1.5rem;
 }
 
-/* line 155, ../scss/custom/_card.scss */
+/* line 156, ../scss/custom/_card.scss */
 .ethic {
   margin-bottom: 1.25em;
   padding-left: 0.5em;
 }
 
 @media screen and (min-width: 520px) {
-  /* line 161, ../scss/custom/_card.scss */
+  /* line 162, ../scss/custom/_card.scss */
   .main-container-card {
     box-shadow: 10px 10px 5px #888888;
   }
 
-  /* line 164, ../scss/custom/_card.scss */
+  /* line 165, ../scss/custom/_card.scss */
   .card-body {
     margin-left: 5%;
     margin-right: 5%;
   }
 
-  /* line 168, ../scss/custom/_card.scss */
+  /* line 169, ../scss/custom/_card.scss */
   .number-card {
     font-size: 6.5rem;
     line-height: 5.2rem;
     height: 5.2rem;
   }
 
-  /* line 173, ../scss/custom/_card.scss */
+  /* line 174, ../scss/custom/_card.scss */
   .title-card {
     font-family: "Zilla Slab", sans-serif;
     text-transform: uppercase;
@@ -9730,19 +9731,19 @@ ul.entity-pager-list {
     padding-bottom: 0.5em;
   }
 
-  /* line 183, ../scss/custom/_card.scss */
+  /* line 184, ../scss/custom/_card.scss */
   .actionsvg-card {
     margin: 0 auto;
     max-width: 150px;
     padding-top: 1em;
   }
 
-  /* line 188, ../scss/custom/_card.scss */
+  /* line 189, ../scss/custom/_card.scss */
   .text-card {
     font-size: 1.2em;
   }
 
-  /* line 191, ../scss/custom/_card.scss */
+  /* line 192, ../scss/custom/_card.scss */
   .card-footer {
     background-color: #fed905;
     position: absolute;
@@ -9889,9 +9890,15 @@ ul.entity-pager-list {
 
 /* line 16, ../scss/custom/_navbar.scss */
 .logo > img {
-  height: 70px;
+  height: 50px;
 }
 
+@media screen and (min-width: 520px) {
+  /* line 21, ../scss/custom/_navbar.scss */
+  .logo > img {
+    height: 70px;
+  }
+}
 /* line 1, ../scss/custom/_base-resets.scss */
 body {
   margin-top: 0;
