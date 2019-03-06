@@ -37,7 +37,7 @@
         "drupal/ctools": "^3.0",
         "drupal/ds": "^3.1",
         "drupal/embed": "^1.0",
-        "drupal/entity_browser": "2.0.0",
+        "drupal/entity_browser": "^2.1",
         "drupal/entity_embed": "1.x-dev",
         "drupal/entity_pager": "^1.0@beta",
         "drupal/environment_indicator": "^3.3",
