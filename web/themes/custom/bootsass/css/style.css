@@ -9530,8 +9530,6 @@ body.toolbar-loading.toolbar {
   border-width: 3px;
   border-color: #008d41;
   border-radius: 35px;
-  /* padding: 5px 10px 5px 10px; */
-  box-shadow: 10px 10px 5px #888888;
   position: relative;
   width: 100%;
   /* padding-top: 140%; /* 3.5:2.5 Aspect Ratio */
@@ -9541,51 +9539,50 @@ body.toolbar-loading.toolbar {
   /* a guess */
 }
 
-/* line 21, ../scss/custom/_card.scss */
+/* line 19, ../scss/custom/_card.scss */
 .inner-container-card {
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  /* margin: 5%; */
   height: 100%;
   overflow: hidden;
 }
 
-/* line 32, ../scss/custom/_card.scss */
+/* line 29, ../scss/custom/_card.scss */
 .card-body {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
-/* line 37, ../scss/custom/_card.scss */
+/* line 34, ../scss/custom/_card.scss */
 .card-footer {
   background-color: #fed905;
   position: absolute;
   bottom: 0;
   width: 100%;
-  max-height: 150px;
+  max-height: 90px;
   border-radius: 0 0 32px 32px;
 }
 
-/* line 46, ../scss/custom/_card.scss */
+/* line 43, ../scss/custom/_card.scss */
 .family-card .field--item {
   float: left;
   max-width: 50px;
 }
 
-/* line 51, ../scss/custom/_card.scss */
+/* line 48, ../scss/custom/_card.scss */
 .mainimage-card {
   position: relative;
 }
 
-/* line 55, ../scss/custom/_card.scss */
+/* line 52, ../scss/custom/_card.scss */
 .mainimage-card .img-responsive {
   border-radius: 32px 32px 0 0;
 }
 
-/* line 59, ../scss/custom/_card.scss */
+/* line 56, ../scss/custom/_card.scss */
 .families-card {
   position: absolute;
   top: 26%;
@@ -9593,69 +9590,70 @@ body.toolbar-loading.toolbar {
   transform: translateX(-50%);
 }
 
-/* line 66, ../scss/custom/_card.scss */
+/* line 63, ../scss/custom/_card.scss */
 .intro-card {
   margin: 0 auto;
   width: 60%;
   padding-top: 1em;
 }
 
-/* line 72, ../scss/custom/_card.scss */
+/* line 69, ../scss/custom/_card.scss */
 .introsvg-card {
-  max-width: 160px;
+  max-width: 120px;
 }
 
-/* line 76, ../scss/custom/_card.scss */
+/* line 73, ../scss/custom/_card.scss */
+.actionsvg-card {
+  margin: 0 auto;
+  max-width: 80px;
+  padding-top: 1rem;
+}
+
+/* line 79, ../scss/custom/_card.scss */
 .number-card {
   display: inline-block;
-  font-size: 6.5rem;
-  line-height: 5.2rem;
-  height: 5.2rem;
+  font-size: 4.5rem;
+  line-height: 1;
+  height: 4rem;
   font-weight: 1000;
   margin: 0;
   padding: 0;
   border: none;
 }
 
-/* line 87, ../scss/custom/_card.scss */
+/* line 90, ../scss/custom/_card.scss */
 .title-card {
   font-family: "Zilla Slab", sans-serif;
   text-transform: uppercase;
   text-align: center;
-  font-size: 1.8em;
+  font-size: 2.2rem;
   font-weight: 600;
-  line-height: 1;
-  padding-top: 0.7em;
-  padding-bottom: 0.5em;
+  line-height: 1.4;
+  padding-top: 0.5rem;
+  padding-bottom: 0.75rem;
 }
 
-/* line 98, ../scss/custom/_card.scss */
+/* line 101, ../scss/custom/_card.scss */
 .text-card {
   text-align: center;
+  font-size: 1.3rem;
 }
 
-/* line 103, ../scss/custom/_card.scss */
-.actionsvg-card {
-  margin: 0 auto;
-  max-width: 150px;
-  padding-top: 1em;
-}
-
-/* line 109, ../scss/custom/_card.scss */
+/* line 106, ../scss/custom/_card.scss */
 .card-action {
   text-align: center;
-  font-size: 1.1em;
+  font-size: 1.5rem;
   line-height: 1;
   font-weight: 600;
-  margin-top: 0.75em;
-  margin-bottom: 1em;
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
-/* line 118, ../scss/custom/_card.scss */
+/* line 115, ../scss/custom/_card.scss */
 .entity-pager-item-all {
   background-color: #fff;
-  height: 30px;
-  line-height: 20px;
+  height: 27px;
+  line-height: 1;
   width: 130px;
   margin-bottom: 0;
   padding: 5px 1px 1px 0;
@@ -9663,7 +9661,7 @@ body.toolbar-loading.toolbar {
   text-align: center;
 }
 
-/* line 129, ../scss/custom/_card.scss */
+/* line 126, ../scss/custom/_card.scss */
 .entity-pager-item-prev,
 .entity-pager-item-next {
   font-size: 30px;
@@ -9673,7 +9671,7 @@ body.toolbar-loading.toolbar {
   margin-bottom: 0;
 }
 
-/* line 138, ../scss/custom/_card.scss */
+/* line 135, ../scss/custom/_card.scss */
 .entity-pager-item-prev a:hover,
 .entity-pager-item-next a:hover,
 .entity-pager-item-prev a:active,
@@ -9683,23 +9681,77 @@ body.toolbar-loading.toolbar {
   text-decoration: none;
 }
 
-/* line 148, ../scss/custom/_card.scss */
+/* line 145, ../scss/custom/_card.scss */
 .entity-pager-list .entity-pager-item {
   margin-bottom: 0;
   margin-top: 0;
 }
 
-/* line 153, ../scss/custom/_card.scss */
+/* line 150, ../scss/custom/_card.scss */
 ul.entity-pager-list {
   margin-bottom: 0;
+  font-size: 1.5rem;
 }
 
-/* line 157, ../scss/custom/_card.scss */
+/* line 155, ../scss/custom/_card.scss */
 .ethic {
   margin-bottom: 1.25em;
   padding-left: 0.5em;
 }
 
+@media screen and (min-width: 520px) {
+  /* line 161, ../scss/custom/_card.scss */
+  .main-container-card {
+    box-shadow: 10px 10px 5px #888888;
+  }
+
+  /* line 164, ../scss/custom/_card.scss */
+  .card-body {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  /* line 168, ../scss/custom/_card.scss */
+  .number-card {
+    font-size: 6.5rem;
+    line-height: 5.2rem;
+    height: 5.2rem;
+  }
+
+  /* line 173, ../scss/custom/_card.scss */
+  .title-card {
+    font-family: "Zilla Slab", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 600;
+    line-height: 1;
+    padding-top: 0.7em;
+    padding-bottom: 0.5em;
+  }
+
+  /* line 183, ../scss/custom/_card.scss */
+  .actionsvg-card {
+    margin: 0 auto;
+    max-width: 150px;
+    padding-top: 1em;
+  }
+
+  /* line 188, ../scss/custom/_card.scss */
+  .text-card {
+    font-size: 1.2em;
+  }
+
+  /* line 191, ../scss/custom/_card.scss */
+  .card-footer {
+    background-color: #fed905;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-height: 150px;
+    border-radius: 0 0 32px 32px;
+  }
+}
 /* line 1, ../scss/custom/_fullpage.scss */
 .family-fullpage .field--item {
   float: left;
@@ -9843,6 +9895,12 @@ ul.entity-pager-list {
 /* line 1, ../scss/custom/_base-resets.scss */
 body {
   margin-top: 0;
+  min-width: 350px;
+  /* Suppose you want minimum width of 350px */
+  width: auto !important;
+  /* Firefox will set width as auto */
+  width: 350px;
+  /* As IE6 ignores !important it will set width as 350px; */
 }
 
 /* line 1, ../scss/custom/_family.scss */
