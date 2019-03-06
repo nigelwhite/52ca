@@ -17,7 +17,7 @@
 # Ignore Drupal's file directory
 /web/sites/*/files/
 
-# Ignore db storage
+# Ignore local storage
 /app/
 
 # Ignore theming tools
