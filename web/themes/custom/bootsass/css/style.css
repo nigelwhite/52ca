@@ -9931,6 +9931,17 @@ ul.entity-pager-list {
   padding: 0.3rem 0.3rem 0 0.3rem;
 }
 
+/* line 115, ../scss/custom/_fullpage.scss */
+.linked-action > .field--item {
+  float: left;
+}
+
+/* line 119, ../scss/custom/_fullpage.scss */
+.linked-actions {
+  background-color: lightgreen;
+  padding: 1rem 1rem;
+}
+
 /* line 4, ../scss/custom/_navbar.scss */
 .navbar-nav > li > a {
   text-transform: uppercase;
