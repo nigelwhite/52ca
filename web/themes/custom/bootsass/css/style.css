@@ -9934,12 +9934,25 @@ ul.entity-pager-list {
 /* line 115, ../scss/custom/_fullpage.scss */
 .linked-action > .field--item {
   float: left;
+  background-color: #fff;
+  max-width: 340px;
+  margin-right: 15px;
 }
 
-/* line 119, ../scss/custom/_fullpage.scss */
+/* line 122, ../scss/custom/_fullpage.scss */
 .linked-actions {
   background-color: lightgreen;
   padding: 1rem 1rem;
+}
+
+/* line 131, ../scss/custom/_fullpage.scss */
+.family-icon-bottom > .field--item {
+  float: left;
+}
+
+/* line 135, ../scss/custom/_fullpage.scss */
+.family-icon-bottom {
+  max-width: 40px;
 }
 
 /* line 4, ../scss/custom/_navbar.scss */
