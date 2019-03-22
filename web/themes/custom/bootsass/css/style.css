@@ -9629,14 +9629,14 @@ body.toolbar-loading.toolbar {
   font-size: 2.2rem;
   font-weight: 600;
   line-height: 1.4;
-  padding-top: 0.5rem;
-  padding-bottom: 0.75rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.2rem;
 }
 
 /* line 101, ../scss/custom/_card.scss */
 .text-card {
   text-align: center;
-  font-size: 3.8vw;
+  font-size: 1.27rem;
 }
 
 /* line 106, ../scss/custom/_card.scss */
@@ -9711,7 +9711,7 @@ ul.entity-pager-list {
 @media screen and (min-width: 400px) {
   /* line 169, ../scss/custom/_card.scss */
   .text-card {
-    font-size: 3.8vw;
+    font-size: calc(8px + 1.6vw);
   }
 
   /* line 172, ../scss/custom/_card.scss */
@@ -9795,7 +9795,7 @@ ul.entity-pager-list {
 
   /* line 229, ../scss/custom/_card.scss */
   .text-card {
-    font-size: 1.85rem;
+    font-size: 1.7rem;
   }
 
   /* line 232, ../scss/custom/_card.scss */
