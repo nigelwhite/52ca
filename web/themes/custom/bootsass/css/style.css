@@ -9931,28 +9931,44 @@ ul.entity-pager-list {
   padding: 0.3rem 0.3rem 0 0.3rem;
 }
 
-/* line 111, ../scss/custom/_fullpage.scss */
-.linked-action > .field--item {
-  float: left;
-  background-color: #fff;
-  max-width: 340px;
-  margin-right: 15px;
-}
-
 /* line 118, ../scss/custom/_fullpage.scss */
-.linked-actions {
-  background-color: #ecf2f7;
-  padding: 1rem 1rem;
+.linked-action {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* line 123, ../scss/custom/_fullpage.scss */
-.family-icon-bottom > .field--item {
-  float: left;
+.linked-action {
+  background-color: #ecf2f7;
+  padding: 4rem 0 6rem 0;
 }
 
 /* line 127, ../scss/custom/_fullpage.scss */
-.family-icon-bottom {
+.linked-action .field--item {
+  background-color: #fff;
+}
+
+/* line 131, ../scss/custom/_fullpage.scss */
+.family-icon-bottom > .field--item {
+  float: left;
   max-width: 40px;
+}
+
+/* line 136, ../scss/custom/_fullpage.scss */
+.bottom-title {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+/* line 141, ../scss/custom/_fullpage.scss */
+.families-fullpage-bottom {
+  margin-left: 1rem;
+}
+
+/* line 145, ../scss/custom/_fullpage.scss */
+.bottom-title a {
+  text-transform: uppercase;
+  font-family: 'Zilla Slab', sans-serif;
 }
 
 /* line 4, ../scss/custom/_navbar.scss */
