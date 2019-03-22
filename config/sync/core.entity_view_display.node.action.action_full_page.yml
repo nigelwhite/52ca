@@ -21,6 +21,7 @@ dependencies:
     - field.field.node.action.field_image
     - field.field.node.action.field_image_block
     - field.field.node.action.field_intro_svg
+    - field.field.node.action.field_linked_actions
     - field.field.node.action.field_people_care_svg
     - field.field.node.action.field_people_self_care_
     - field.field.node.action.field_project_example
@@ -92,36 +93,39 @@ third_party_settings:
       left:
         - group_intro
         - field_action_number
-        - node_title
         - field_card_text_new
+        - node_title
         - field_image_block
       right:
         - group_families
-        - field_family
         - field_action_svg
         - group_actions
+        - field_family
+        - group_earth_div
+        - group_fair_div
+        - group_people_div
+        - group_resources
         - field_simple_action
         - field_simple_action_choose_me
         - field_radical_action
         - field_advanced_action_choose_me
-        - group_earth_div
         - field_community_action
-        - field_earth_care_svg
         - field_community_action_choose_me
+        - field_earth_care_svg
         - field_earth_care2_
         - field_global_action
-        - group_fair_div
         - field_global_action_choose_me
         - field_fair_share_svg
         - field_fair_share2_
-        - group_people_div
         - field_people_care_svg
         - field_people_self_care_
-        - group_resources
         - field_resources_for_children_
         - field_resources_for_higher_educa
         - field_project_example
         - field_reference
+      bottom:
+        - group_linked_actions_container
+        - field_linked_actions
     fields:
       node_title:
         plugin_id: node_title
@@ -137,7 +141,7 @@ third_party_settings:
       children:
         - field_family
       parent_name: ''
-      weight: 6
+      weight: 4
       format_type: html_element
       format_settings:
         label: Families
@@ -179,7 +183,7 @@ third_party_settings:
         - field_global_action
         - field_global_action_choose_me
       parent_name: ''
-      weight: 9
+      weight: 6
       format_type: html_element
       format_settings:
         label: Actions
@@ -199,7 +203,7 @@ third_party_settings:
         - field_project_example
         - field_reference
       parent_name: ''
-      weight: 23
+      weight: 10
       format_type: html_element
       format_settings:
         id: ''
@@ -216,7 +220,7 @@ third_party_settings:
         - field_earth_care_svg
         - field_earth_care2_
       parent_name: ''
-      weight: 14
+      weight: 7
       format_type: html_element
       format_settings:
         id: ''
@@ -233,7 +237,7 @@ third_party_settings:
         - field_fair_share_svg
         - field_fair_share2_
       parent_name: ''
-      weight: 17
+      weight: 8
       format_type: html_element
       format_settings:
         id: ''
@@ -250,7 +254,7 @@ third_party_settings:
         - field_people_care_svg
         - field_people_self_care_
       parent_name: ''
-      weight: 20
+      weight: 9
       format_type: html_element
       format_settings:
         id: ''
@@ -262,6 +266,23 @@ third_party_settings:
         effect: none
         speed: fast
       label: 'People div'
+    group_linked_actions_container:
+      children:
+        - field_linked_actions
+      parent_name: ''
+      weight: 11
+      format_type: html_element
+      format_settings:
+        label: 'Linked actions container'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'linked-actions clearfix'
+      label: 'Linked actions container'
 id: node.action.action_full_page
 targetEntityType: node
 bundle: action
@@ -278,7 +299,7 @@ content:
         class: action-number
   field_action_svg:
     type: image
-    weight: 8
+    weight: 5
     region: right
     label: hidden
     settings:
@@ -310,7 +331,7 @@ content:
             classes: {  }
   field_card_text_new:
     type: text_default
-    weight: 4
+    weight: 2
     region: left
     label: hidden
     settings: {  }
@@ -515,7 +536,7 @@ content:
             classes: {  }
   field_image_block:
     type: entity_reference_revisions_entity_view
-    weight: 5
+    weight: 3
     region: left
     label: hidden
     settings:
@@ -524,6 +545,25 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+  field_linked_actions:
+    type: entity_reference_entity_view
+    weight: 12
+    region: bottom
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: linked-action
       ds:
         ds_limit: ''
         ft:

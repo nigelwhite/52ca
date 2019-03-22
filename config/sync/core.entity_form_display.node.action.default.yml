@@ -20,6 +20,7 @@ dependencies:
     - field.field.node.action.field_image
     - field.field.node.action.field_image_block
     - field.field.node.action.field_intro_svg
+    - field.field.node.action.field_linked_actions
     - field.field.node.action.field_people_care_svg
     - field.field.node.action.field_people_self_care_
     - field.field.node.action.field_project_example
@@ -187,6 +188,15 @@ content:
       form_display_mode: default
       default_paragraph_type: _none
     third_party_settings: {  }
+    region: content
+  field_linked_actions:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_people_self_care_:
     weight: 9

@@ -1,0 +1,19 @@
+uuid: 5ab63c19-a1b5-4456-9474-3f38a5a02b76
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_linked_actions
+field_name: field_linked_actions
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

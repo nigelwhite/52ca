@@ -21,6 +21,7 @@ dependencies:
     - field.field.node.action.field_image
     - field.field.node.action.field_image_block
     - field.field.node.action.field_intro_svg
+    - field.field.node.action.field_linked_actions
     - field.field.node.action.field_people_care_svg
     - field.field.node.action.field_people_self_care_
     - field.field.node.action.field_project_example
@@ -32,9 +33,13 @@ dependencies:
     - field.field.node.action.field_season
     - field.field.node.action.field_simple_action
     - field.field.node.action.field_simple_action_choose_me
+    - image.style.main_image_bottom_of_page
     - node.type.action
   module:
     - ds
+    - field_formatter_class
+    - field_group
+    - svg_image
     - user
 third_party_settings:
   ds:
@@ -59,11 +64,15 @@ third_party_settings:
             attributes: ''
     regions:
       main:
+        - group_linked_actions_item
+        - field_image
         - node_title
+        - group_families
+        - field_family
     fields:
       node_title:
         plugin_id: node_title
-        weight: 0
+        weight: 2
         label: hidden
         formatter: default
         settings:
@@ -76,11 +85,70 @@ third_party_settings:
             lb: ''
             lb-col: false
             classes: {  }
+  field_group:
+    group_families:
+      children:
+        - field_family
+      parent_name: ''
+      weight: 3
+      format_type: html_element
+      format_settings:
+        label: Families
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'families-fullpage-bottom clearfix'
+      label: Families
 id: node.action.teaser
 targetEntityType: node
 bundle: action
 mode: teaser
-content: {  }
+content:
+  field_family:
+    type: entity_reference_entity_view
+    weight: 3
+    region: main
+    label: hidden
+    settings:
+      view_mode: family_icon
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: family-icon-bottom
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+  field_image:
+    type: image
+    weight: 1
+    region: main
+    label: hidden
+    settings:
+      image_style: main_image_bottom_of_page
+      image_link: content
+      svg_render_as_image: '1'
+      svg_attributes:
+        width: ''
+        height: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
 hidden:
   field_action_number: true
   field_action_svg: true
@@ -93,12 +161,11 @@ hidden:
   field_earth_care_svg: true
   field_fair_share2_: true
   field_fair_share_svg: true
-  field_family: true
   field_global_action: true
   field_global_action_choose_me: true
-  field_image: true
   field_image_block: true
   field_intro_svg: true
+  field_linked_actions: true
   field_people_care_svg: true
   field_people_self_care_: true
   field_project_example: true

@@ -1,0 +1,25 @@
+uuid: e236c55b-197c-4ad9-8722-29b78c7ea17a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_linked_actions
+    - node.type.action
+id: node.action.field_linked_actions
+field_name: field_linked_actions
+entity_type: node
+bundle: action
+label: 'Linked Actions'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: link_actions
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

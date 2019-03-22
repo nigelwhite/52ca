@@ -1,0 +1,15 @@
+uuid: 35e06019-db03-41e7-b992-00717f566a36
+langcode: en
+status: true
+dependencies: {  }
+name: main_image_bottom_of_page
+label: 'Main image - bottom of page'
+effects:
+  6e3eaad3-baf6-4b75-bb20-1608dc7b3657:
+    uuid: 6e3eaad3-baf6-4b75-bb20-1608dc7b3657
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 340
+      height: 162
+      anchor: center-center
