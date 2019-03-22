@@ -64,11 +64,10 @@ third_party_settings:
             attributes: ''
     regions:
       main:
-        - group_linked_actions_item
         - field_image
         - node_title
-        - group_families
         - field_family
+        - group_families
     fields:
       node_title:
         plugin_id: node_title
@@ -78,7 +77,7 @@ third_party_settings:
         settings:
           link: true
           wrapper: p
-          class: ''
+          class: bottom-title
         ft:
           id: default
           settings:
