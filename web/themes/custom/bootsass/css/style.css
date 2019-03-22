@@ -9831,7 +9831,7 @@ ul.entity-pager-list {
   margin-right: 0.5em;
 }
 
-/* line 25, ../scss/custom/_fullpage.scss */
+/* line 21, ../scss/custom/_fullpage.scss */
 .title-fullpage {
   font-size: 5rem;
   text-transform: uppercase;
@@ -9841,25 +9841,25 @@ ul.entity-pager-list {
   line-height: 5rem;
 }
 
-/* line 34, ../scss/custom/_fullpage.scss */
+/* line 30, ../scss/custom/_fullpage.scss */
 .families-fullpage {
   margin-top: 3rem;
 }
 
-/* line 38, ../scss/custom/_fullpage.scss */
+/* line 34, ../scss/custom/_fullpage.scss */
 .actionfull-svg {
   max-width: 200px;
   margin-top: 2rem;
 }
 
-/* line 43, ../scss/custom/_fullpage.scss */
+/* line 39, ../scss/custom/_fullpage.scss */
 .action-group {
   background-color: #fdd905;
   margin: 1em 0 1em 0;
   padding: 0.1em 1em 1em 1em;
 }
 
-/* line 49, ../scss/custom/_fullpage.scss */
+/* line 45, ../scss/custom/_fullpage.scss */
 .field--name-field-simple-action,
 .field--name-field-radical-action,
 .field--name-field-community-action,
@@ -9867,7 +9867,7 @@ ul.entity-pager-list {
   margin-top: 1em;
 }
 
-/* line 56, ../scss/custom/_fullpage.scss */
+/* line 52, ../scss/custom/_fullpage.scss */
 .field--name-field-simple-action .field--label,
 .field--name-field-radical-action .field--label,
 .field--name-field-community-action .field--label,
@@ -9878,36 +9878,36 @@ ul.entity-pager-list {
   color: #165025;
 }
 
-/* line 66, ../scss/custom/_fullpage.scss */
+/* line 62, ../scss/custom/_fullpage.scss */
 .actions-fullpage {
   font-size: 1em;
 }
 
-/* line 70, ../scss/custom/_fullpage.scss */
+/* line 66, ../scss/custom/_fullpage.scss */
 .cardtext-on-fullpage {
   margin-bottom: 2em;
 }
 
-/* line 74, ../scss/custom/_fullpage.scss */
+/* line 70, ../scss/custom/_fullpage.scss */
 .cardtext-on-fullpage p {
   font-family: "Muli", sans-serif;
   font-weight: 900;
   font-size: 1.15em;
 }
 
-/* line 80, ../scss/custom/_fullpage.scss */
+/* line 76, ../scss/custom/_fullpage.scss */
 .text-para {
   margin: 1em 0 1em 0;
 }
 
-/* line 84, ../scss/custom/_fullpage.scss */
+/* line 80, ../scss/custom/_fullpage.scss */
 .ethic-svg {
   max-width: 80px;
   max-height: 80px;
   padding-top: 5px;
 }
 
-/* line 91, ../scss/custom/_fullpage.scss */
+/* line 87, ../scss/custom/_fullpage.scss */
 .simple .field--label::after,
 .global .field--label::after,
 .community .field--label::after,
@@ -9919,7 +9919,7 @@ ul.entity-pager-list {
   float: right;
 }
 
-/* line 102, ../scss/custom/_fullpage.scss */
+/* line 98, ../scss/custom/_fullpage.scss */
 .simple-ch,
 .every-ch,
 .community-ch,
@@ -9931,7 +9931,7 @@ ul.entity-pager-list {
   padding: 0.3rem 0.3rem 0 0.3rem;
 }
 
-/* line 115, ../scss/custom/_fullpage.scss */
+/* line 111, ../scss/custom/_fullpage.scss */
 .linked-action > .field--item {
   float: left;
   background-color: #fff;
@@ -9939,18 +9939,18 @@ ul.entity-pager-list {
   margin-right: 15px;
 }
 
-/* line 122, ../scss/custom/_fullpage.scss */
+/* line 118, ../scss/custom/_fullpage.scss */
 .linked-actions {
-  background-color: lightgreen;
+  background-color: #ecf2f7;
   padding: 1rem 1rem;
 }
 
-/* line 131, ../scss/custom/_fullpage.scss */
+/* line 123, ../scss/custom/_fullpage.scss */
 .family-icon-bottom > .field--item {
   float: left;
 }
 
-/* line 135, ../scss/custom/_fullpage.scss */
+/* line 127, ../scss/custom/_fullpage.scss */
 .family-icon-bottom {
   max-width: 40px;
 }
