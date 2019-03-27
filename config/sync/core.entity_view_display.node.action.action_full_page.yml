@@ -22,6 +22,7 @@ dependencies:
     - field.field.node.action.field_image_block
     - field.field.node.action.field_intro_svg
     - field.field.node.action.field_linked_actions
+    - field.field.node.action.field_more_actions
     - field.field.node.action.field_people_care_svg
     - field.field.node.action.field_people_self_care_
     - field.field.node.action.field_project_example
@@ -100,8 +101,8 @@ third_party_settings:
         - group_families
         - field_action_svg
         - group_actions
-        - field_family
         - group_earth_div
+        - field_family
         - group_fair_div
         - group_people_div
         - group_resources
@@ -110,8 +111,8 @@ third_party_settings:
         - field_radical_action
         - field_advanced_action_choose_me
         - field_community_action
-        - field_community_action_choose_me
         - field_earth_care_svg
+        - field_community_action_choose_me
         - field_earth_care2_
         - field_global_action
         - field_global_action_choose_me
@@ -124,8 +125,9 @@ third_party_settings:
         - field_project_example
         - field_reference
       bottom:
-        - group_linked_actions_container
+        - field_more_actions
         - field_linked_actions
+        - group_linked_actions_container
     fields:
       node_title:
         plugin_id: node_title
@@ -270,7 +272,7 @@ third_party_settings:
       children:
         - field_linked_actions
       parent_name: ''
-      weight: 11
+      weight: 12
       format_type: html_element
       format_settings:
         label: 'Linked actions container'
@@ -572,6 +574,14 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
+  field_more_actions:
+    type: string
+    weight: 11
+    region: bottom
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   field_people_care_svg:
     type: image
     weight: 21

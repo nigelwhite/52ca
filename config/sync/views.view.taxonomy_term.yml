@@ -8,6 +8,7 @@ dependencies:
     - node
     - taxonomy
     - user
+    - views_bootstrap
 _core:
   default_config_hash: Gy5PaLdfFhtFSRqJxV-DBTF5AocKgNA2CsCNNEbvx4c
 id: taxonomy_term
@@ -214,12 +215,16 @@ display:
             group_items: {  }
           plugin_id: boolean
       style:
-        type: default
+        type: views_bootstrap_grid
         options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
+          row_class: family-grid
+          default_row_class: false
           uses_fields: false
+          alignment: horizontal
+          col_xs: col-xs-12
+          col_sm: col-sm-6
+          col_md: col-md-6
+          col_lg: col-lg-6
       row:
         type: 'entity:node'
         options:
@@ -245,6 +250,7 @@ display:
       display_extenders: {  }
       link_url: ''
       link_display: page_1
+      css_class: ''
     cache_metadata:
       contexts:
         - 'languages:language_interface'

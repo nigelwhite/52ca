@@ -21,6 +21,7 @@ dependencies:
     - field.field.node.action.field_image_block
     - field.field.node.action.field_intro_svg
     - field.field.node.action.field_linked_actions
+    - field.field.node.action.field_more_actions
     - field.field.node.action.field_people_care_svg
     - field.field.node.action.field_people_self_care_
     - field.field.node.action.field_project_example
@@ -301,6 +302,7 @@ hidden:
   field_global_action_choose_me: true
   field_image_block: true
   field_linked_actions: true
+  field_more_actions: true
   field_people_care_svg: true
   field_people_self_care_: true
   field_project_example: true

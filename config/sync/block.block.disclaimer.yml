@@ -1,0 +1,25 @@
+uuid: 6f8f80a0-d156-4f72-ad61-137a31f2ac20
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:cc41cc20-e43b-49d2-9b29-67b62843ec7e'
+  module:
+    - block_content
+  theme:
+    - bootsass
+id: disclaimer
+theme: bootsass
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:cc41cc20-e43b-49d2-9b29-67b62843ec7e'
+settings:
+  id: 'block_content:cc41cc20-e43b-49d2-9b29-67b62843ec7e'
+  label: Disclaimer
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
