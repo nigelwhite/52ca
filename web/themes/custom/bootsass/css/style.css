@@ -9977,14 +9977,16 @@ ul.entity-pager-list {
 .bottom-title {
   margin-top: 1rem;
   margin-left: 1rem;
+  line-height: 2rem;
+  min-height: 50px;
 }
 
-/* line 151, ../scss/custom/_fullpage.scss */
+/* line 153, ../scss/custom/_fullpage.scss */
 .families-fullpage-bottom {
   margin-left: 1rem;
 }
 
-/* line 155, ../scss/custom/_fullpage.scss */
+/* line 157, ../scss/custom/_fullpage.scss */
 .bottom-title a {
   text-transform: uppercase;
   font-family: 'Zilla Slab', sans-serif;
@@ -10063,8 +10065,15 @@ body {
   font-weight: 600;
   font-size: 2rem;
   vertical-align: top;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+}
+
+/* line 19, ../scss/custom/_family.scss */
+.family-grid #teaser {
+  margin: 2rem 0;
+  border: 1px black solid;
+  border-radius: 20px;
+  padding: 2rem 0;
+  max-width: 340px;
 }
 
 /* line 1, ../scss/custom/_lists.scss */
