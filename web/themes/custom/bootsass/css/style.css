@@ -9931,41 +9931,41 @@ ul.entity-pager-list {
   padding: 0.3rem 0.3rem 0 0.3rem;
 }
 
-/* line 118, ../scss/custom/_fullpage.scss */
+/* line 111, ../scss/custom/_fullpage.scss */
 .linked-action {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 123, ../scss/custom/_fullpage.scss */
+/* line 116, ../scss/custom/_fullpage.scss */
 .linked-action {
   background-color: #ecf2f7;
   padding: 4rem 0 6rem 0;
 }
 
-/* line 127, ../scss/custom/_fullpage.scss */
+/* line 120, ../scss/custom/_fullpage.scss */
 .linked-action .field--item {
   background-color: #fff;
 }
 
-/* line 131, ../scss/custom/_fullpage.scss */
+/* line 124, ../scss/custom/_fullpage.scss */
 .family-icon-bottom > .field--item {
   float: left;
   max-width: 40px;
 }
 
-/* line 136, ../scss/custom/_fullpage.scss */
+/* line 129, ../scss/custom/_fullpage.scss */
 .bottom-title {
   margin-top: 1rem;
   margin-left: 1rem;
 }
 
-/* line 141, ../scss/custom/_fullpage.scss */
+/* line 134, ../scss/custom/_fullpage.scss */
 .families-fullpage-bottom {
   margin-left: 1rem;
 }
 
-/* line 145, ../scss/custom/_fullpage.scss */
+/* line 138, ../scss/custom/_fullpage.scss */
 .bottom-title a {
   text-transform: uppercase;
   font-family: 'Zilla Slab', sans-serif;
@@ -10053,6 +10053,26 @@ body {
   font-size: 4rem;
 }
 
+/* line 1, ../scss/custom/_footer.scss */
+.footer {
+  background-image: linear-gradient(#2b2424 80%, #00a45c 20%);
+}
+
+/* line 5, ../scss/custom/_footer.scss */
+.menu--footer > li {
+  float: left;
+}
+
+/* line 9, ../scss/custom/_footer.scss */
+.menu--footer > li > a {
+  display: block;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-family: 'Zilla Slab', sans-serif;
+  color: #fff;
+  font-size: 2rem;
+}
+
 /**
  * jQuery UI autocomplete widget style overrides.
  *
@@ -10102,53 +10122,53 @@ body {
   color: #fff;
 }
 
-/* line 27, ../scss/_overrides.scss */
+/* line 28, ../scss/_overrides.scss */
 ol, ul {
   padding-left: 1.5em;
 }
-/* line 29, ../scss/_overrides.scss */
+/* line 30, ../scss/_overrides.scss */
 .popover ol:last-child, .popover ul:last-child {
   margin-bottom: 0;
 }
 
-/* line 35, ../scss/_overrides.scss */
+/* line 36, ../scss/_overrides.scss */
 .page-header {
   margin-top: 0;
 }
 
-/* line 40, ../scss/_overrides.scss */
+/* line 41, ../scss/_overrides.scss */
 .footer {
   margin-top: 45px;
   padding-top: 35px;
   padding-bottom: 36px;
 }
 
-/* line 48, ../scss/_overrides.scss */
+/* line 49, ../scss/_overrides.scss */
 p:last-child,
 .form-group:last-child,
 .panel:last-child {
   margin-bottom: 0;
 }
 
-/* line 56, ../scss/_overrides.scss */
+/* line 57, ../scss/_overrides.scss */
 .region-help > .glyphicon {
   font-size: 22px;
   float: left;
   margin: -0.05em 0.5em 0 0;
 }
-/* line 61, ../scss/_overrides.scss */
+/* line 62, ../scss/_overrides.scss */
 .region-help .block {
   overflow: hidden;
 }
 
-/* line 67, ../scss/_overrides.scss */
+/* line 68, ../scss/_overrides.scss */
 .help-block, .control-group .help-inline {
   color: #777777;
   font-size: 12px;
   margin: 5px 0 10px;
   padding: 0;
 }
-/* line 72, ../scss/_overrides.scss */
+/* line 73, ../scss/_overrides.scss */
 .help-block:first-child, .control-group .help-inline:first-child {
   margin-top: 0;
 }
