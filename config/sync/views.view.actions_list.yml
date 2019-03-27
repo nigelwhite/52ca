@@ -214,9 +214,13 @@ display:
       path: actions-list
       menu:
         type: normal
-        title: 'List Actions'
+        title: Actions
         menu_name: main
         weight: -49
+        description: ''
+        parent: ''
+        expanded: false
+        enabled: true
       display_description: ''
       arguments: {  }
       defaults:

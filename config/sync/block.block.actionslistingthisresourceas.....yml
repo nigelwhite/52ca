@@ -12,7 +12,7 @@ dependencies:
 id: actionslistingthisresourceas....
 theme: bootsass
 region: sidebar_second
-weight: -9
+weight: -8
 provider: null
 plugin: 'block_content:d951043d-85a4-4fdb-a518-bd68ffd556f4'
 settings:
