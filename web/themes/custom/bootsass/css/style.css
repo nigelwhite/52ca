@@ -9932,40 +9932,59 @@ ul.entity-pager-list {
 }
 
 /* line 111, ../scss/custom/_fullpage.scss */
+.bs-region--bottom {
+  background-color: #ecf2f7;
+}
+
+/* line 115, ../scss/custom/_fullpage.scss */
+.field--name-field-more-actions {
+  text-transform: uppercase;
+  font-family: 'Zilla Slab', sans-serif;
+  font-size: 3rem;
+  color: #00a45c;
+  text-align: center;
+  margin-top: 3rem;
+  border-bottom: 8px solid;
+  padding-bottom: 2rem;
+  border-image: linear-gradient(to right, #165025 10%, #d5d5d5 5%) 1;
+  width: 40%;
+  margin: 2rem auto;
+}
+
+/* line 129, ../scss/custom/_fullpage.scss */
 .linked-action {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 116, ../scss/custom/_fullpage.scss */
+/* line 134, ../scss/custom/_fullpage.scss */
 .linked-action {
-  background-color: #ecf2f7;
   padding: 4rem 0 6rem 0;
 }
 
-/* line 120, ../scss/custom/_fullpage.scss */
+/* line 137, ../scss/custom/_fullpage.scss */
 .linked-action .field--item {
   background-color: #fff;
 }
 
-/* line 124, ../scss/custom/_fullpage.scss */
+/* line 141, ../scss/custom/_fullpage.scss */
 .family-icon-bottom > .field--item {
   float: left;
   max-width: 40px;
 }
 
-/* line 129, ../scss/custom/_fullpage.scss */
+/* line 146, ../scss/custom/_fullpage.scss */
 .bottom-title {
   margin-top: 1rem;
   margin-left: 1rem;
 }
 
-/* line 134, ../scss/custom/_fullpage.scss */
+/* line 151, ../scss/custom/_fullpage.scss */
 .families-fullpage-bottom {
   margin-left: 1rem;
 }
 
-/* line 138, ../scss/custom/_fullpage.scss */
+/* line 155, ../scss/custom/_fullpage.scss */
 .bottom-title a {
   text-transform: uppercase;
   font-family: 'Zilla Slab', sans-serif;
