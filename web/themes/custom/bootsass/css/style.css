@@ -10039,6 +10039,15 @@ body {
   margin: 0 auto;
 }
 
+/* line 13, ../scss/custom/_family.scss */
+.family-grid {
+  font-weight: 600;
+  font-size: 2rem;
+  vertical-align: top;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
 /* line 1, ../scss/custom/_lists.scss */
 .family-listing-title p {
   font-size: 4rem;
