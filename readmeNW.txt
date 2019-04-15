@@ -1,3 +1,5 @@
+15.4.19 changed Resource Type to a taxonomy. Resources types listed on a Resource need to connect to the resource page at /resources. This is a view and should filter by the category selected. Failed so far.
+
 6.3.19 transferred from lando to ddev as lando kept losing drush
 
 top backup
