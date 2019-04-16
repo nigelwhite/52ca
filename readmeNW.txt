@@ -1,3 +1,8 @@
+ON LIVE: delete field resource type_old (and all its data)
+
+16.4.19 Got entity browser to insert fields from Resource node.
+Next: change icon in toolbar, hide fields and show again on click, icon to show "can expand". Style classes resource-xyz-embedded for title author and summary.
+
 15.4.19 changed Resource Type to a taxonomy. Resources types listed on a Resource need to connect to the resource page at /resources. This is a view and should filter by the category selected. Failed so far.
 
 6.3.19 transferred from lando to ddev as lando kept losing drush
