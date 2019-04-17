@@ -1,6 +1,8 @@
 (function ($) {
   'use strict';
 
+// This lot is for rollovers on the 4 sidebar Action fields
+
   Drupal.behaviors.fourHidden = {
     attach: function(context, settings) {
       $('div.simple-ch').hide();
@@ -53,5 +55,13 @@
             });
         }
     };
+
+
+// This is for jumping out the details of an embedded resource on the main page
+
+    $("#embedded-reference").click(function () {
+        $(".summary, .author, .readmore").toggleClass("initial");
+        $("#embedded-reference").toggleClass("embedded");
+    });
 
 }(jQuery));
