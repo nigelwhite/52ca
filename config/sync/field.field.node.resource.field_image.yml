@@ -1,0 +1,38 @@
+uuid: 900dd410-6533-4d70-b013-0284b8c97015
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.resource
+  module:
+    - image
+id: node.resource.field_image
+field_name: field_image
+entity_type: node
+bundle: resource
+label: 'Resource image'
+description: 'Will be a square in our site'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '400 KB'
+  max_resolution: ''
+  min_resolution: 400x400
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: c5aee073-2678-4b3e-b2ce-bb4d27935f1d
+    alt: Logs
+    title: ''
+    width: 640
+    height: 425
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

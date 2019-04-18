@@ -1,23 +1,23 @@
-uuid: 24726a67-2448-4e53-9674-8986e5a4dd46
+uuid: d37d835e-5331-44e9-9aa7-83587a23b158
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_link2
+    - field.storage.node.field_read_more
     - node.type.resource
   module:
     - link
-id: node.resource.field_link2
-field_name: field_link2
+id: node.resource.field_read_more
+field_name: field_read_more
 entity_type: node
 bundle: resource
-label: Link
-description: 'Full URL ie. must have http:// or https:// in front'
+label: 'Read more'
+description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  link_type: 16
-  title: 0
+  link_type: 1
+  title: 1
 field_type: link

@@ -1,0 +1,15 @@
+uuid: b90948d4-0648-459b-8ad6-9a3cbde6c5f2
+langcode: en
+status: true
+dependencies: {  }
+name: square_60
+label: 'square 60'
+effects:
+  c6762d2b-b346-4cc9-a03d-d385e3d2ec3e:
+    uuid: c6762d2b-b346-4cc9-a03d-d385e3d2ec3e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 60
+      height: 60
+      anchor: center-center

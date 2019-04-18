@@ -216,7 +216,7 @@ display:
         type: normal
         title: Actions
         menu_name: main
-        weight: -49
+        weight: -48
         description: ''
         parent: ''
         expanded: false

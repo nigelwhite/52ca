@@ -12,6 +12,7 @@ permissions:
   - 'access files overview'
   - 'access media overview'
   - 'administer media form display'
+  - 'administer taxonomy'
   - 'create action content'
   - 'create audio media'
   - 'create file media'

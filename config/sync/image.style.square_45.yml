@@ -1,0 +1,15 @@
+uuid: 5c8285ad-b5b0-4276-9032-f7fbe77d8840
+langcode: en
+status: true
+dependencies: {  }
+name: square_45
+label: 'square 45'
+effects:
+  ba5f2cfa-abc1-4e4f-a16a-1128a8284254:
+    uuid: ba5f2cfa-abc1-4e4f-a16a-1128a8284254
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 45
+      height: 45
+      anchor: center-center

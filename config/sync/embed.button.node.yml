@@ -2,16 +2,25 @@ uuid: 8cf5e5b0-38be-44f8-ab88-9ff2241799e4
 langcode: en
 status: true
 dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - entity_browser.browser.resources
+    - node.type.resource
   module:
     - entity_embed
     - node
 _core:
   default_config_hash: xgvZUh-eaMilacE1XYCQ9nLH-2-meOjCyofXSO82gqg
-label: Node
+label: 'Embed Resource'
 id: node
 type_id: entity
 type_settings:
   entity_type: node
-  bundles: {  }
-  display_plugins: {  }
+  bundles:
+    - resource
+  display_plugins:
+    - 'view_mode:node.teaser'
+  entity_browser: resources
+  entity_browser_settings:
+    display_review: false
 icon_uuid: null

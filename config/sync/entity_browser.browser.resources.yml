@@ -1,0 +1,31 @@
+uuid: 609b50cc-b391-4cd8-a9d4-4f8ceaf110d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.resource_embed_widget
+  module:
+    - views
+name: resources
+label: Resources
+display: iframe
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select Resource'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  09989663-ac24-4f3b-a898-dd143622e61c:
+    settings:
+      view: resource_embed_widget
+      view_display: entity_browser_1
+      submit_text: 'Select resource'
+      auto_select: false
+    uuid: 09989663-ac24-4f3b-a898-dd143622e61c
+    weight: 1
+    label: 'Select Resource'
+    id: view

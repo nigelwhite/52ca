@@ -26,7 +26,7 @@ widgets:
       media_type: image
       upload_location: 'public://'
       multiple: '1'
-      submit_text: 'Select image'
+      submit_text: 'Upload image'
     uuid: fe4933b7-be48-4841-ad61-e2ab0cefa1b8
     weight: 2
     label: 'Upload image'
@@ -35,7 +35,7 @@ widgets:
     settings:
       view: assets_library
       view_display: entity_browser_1
-      submit_text: 'Select entities'
+      submit_text: 'Select from library'
       auto_select: false
     uuid: 90aadd1f-31a8-4c8f-8d89-2b190a96144e
     weight: 1
@@ -56,7 +56,7 @@ widgets:
       entity_type: media
       bundle: file
       form_mode: default
-      submit_text: 'Select file'
+      submit_text: 'Upload document'
     uuid: 14291299-89c6-4d59-9340-cc05033f40d0
     weight: 3
     label: 'Upload document'

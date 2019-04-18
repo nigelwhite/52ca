@@ -1,9 +1,9 @@
-uuid: 23a2cae1-d6ab-45a5-8557-bc4ef6bae166
+uuid: b9fd8d34-f85e-40d9-ab06-e596369610b5
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.resource_listing
     - field.field.node.resource.body
     - field.field.node.resource.field_image
     - field.field.node.resource.field_index_as
@@ -12,14 +12,17 @@ dependencies:
     - field.field.node.resource.field_resource_type
     - field.field.node.resource.field_simple_action_choose_me
     - field.field.node.resource.field_summary
+    - image.style.square_45
     - node.type.resource
   module:
     - ds
+    - field_formatter_class
+    - svg_image
     - user
 third_party_settings:
   ds:
     layout:
-      id: bs_1col
+      id: bs_2col
       library: null
       disable_css: false
       entity_classes: all_classes
@@ -29,84 +32,61 @@ third_party_settings:
           classes:
             row: row
           add_layout_class: 1
-          attributes: id|embedded-reference
+          attributes: no-pad
         regions:
-          main:
+          left:
             wrapper: div
             classes:
-              col-sm-12: col-sm-12
-            add_region_classes: 1
+              col-md-3: col-md-3
+            add_region_classes: 0
+            attributes: id|resource-list-img
+          right:
+            wrapper: div
+            classes:
+              col-md-9: col-md-9
+            add_region_classes: 0
             attributes: ''
     regions:
-      main:
+      left:
+        - field_image
+      right:
         - node_title
-        - field_simple_action_choose_me
-        - field_summary
-        - node_link
     fields:
-      node_link:
-        plugin_id: node_link
-        weight: 3
-        label: hidden
-        formatter: default
-        settings:
-          'link text': 'Read more'
-          'link class': 'initial readmore'
-          wrapper: ''
-          class: 'initial readmore'
-        ft:
-          id: default
-          settings:
-            lb: ''
-            lb-col: false
-            classes: {  }
       node_title:
         plugin_id: node_title
-        weight: 0
+        weight: 1
         label: hidden
         formatter: default
         settings:
+          link: true
           wrapper: p
-          class: 'resource-item-fullpage resource-title-embedded'
-          link: false
+          class: ''
         ft:
           id: default
           settings:
             lb: ''
             lb-col: false
             classes: {  }
-id: node.resource.teaser
+id: node.resource.resource_listing
 targetEntityType: node
 bundle: resource
-mode: teaser
+mode: resource_listing
 content:
-  field_simple_action_choose_me:
-    type: string
-    weight: 1
-    region: main
+  field_image:
+    type: image
+    weight: 0
+    region: left
     label: hidden
     settings:
-      link_to_entity: false
+      image_style: square_45
+      image_link: ''
+      svg_render_as_image: '1'
+      svg_attributes:
+        width: ''
+        height: ''
     third_party_settings:
       field_formatter_class:
-        class: 'initial author'
-      ds:
-        ft:
-          id: default
-          settings:
-            lb: ''
-            lb-col: false
-            classes: {  }
-  field_summary:
-    type: string
-    weight: 2
-    region: main
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings:
-      field_formatter_class:
-        class: 'initial summary'
+        class: resource-thumbnail
       ds:
         ft:
           id: default
@@ -116,9 +96,10 @@ content:
             classes: {  }
 hidden:
   body: true
-  field_image: true
   field_index_as: true
   field_link2: true
   field_read_more: true
   field_resource_type: true
+  field_simple_action_choose_me: true
+  field_summary: true
   links: true

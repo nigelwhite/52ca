@@ -1,0 +1,21 @@
+uuid: b9706b42-559c-471c-a3c2-291e50213fe9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.action
+id: node.action.field_summary
+field_name: field_summary
+entity_type: node
+bundle: action
+label: Resources
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: Resources
+default_value_callback: ''
+settings: {  }
+field_type: string

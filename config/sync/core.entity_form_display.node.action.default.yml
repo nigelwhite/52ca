@@ -33,6 +33,7 @@ dependencies:
     - field.field.node.action.field_season
     - field.field.node.action.field_simple_action
     - field.field.node.action.field_simple_action_choose_me
+    - field.field.node.action.field_summary
     - image.style.thumbnail
     - node.type.action
   module:
@@ -50,25 +51,14 @@ bundle: action
 mode: default
 content:
   field_action_number:
-    weight: 2
+    weight: 1
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
-  field_advanced_action_choose_me:
-    weight: 15
-    settings:
-      size: 180
-      placeholder: 'bespoke text on this action'
-    third_party_settings:
-      maxlength:
-        maxlength_js: 180
-        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
-    type: string_textfield
-    region: content
   field_card_action:
-    weight: 24
+    weight: 19
     settings:
       match_operator: CONTAINS
       size: 60
@@ -77,7 +67,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_card_text_new:
-    weight: 5
+    weight: 4
     settings:
       rows: 3
       placeholder: ''
@@ -93,7 +83,7 @@ content:
     type: text_textarea
     region: content
   field_community_action:
-    weight: 16
+    weight: 13
     settings:
       match_operator: CONTAINS
       size: 60
@@ -101,19 +91,8 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_community_action_choose_me:
-    weight: 17
-    settings:
-      size: 190
-      placeholder: 'bespoke text on this action'
-    third_party_settings:
-      maxlength:
-        maxlength_js: 180
-        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
-    type: string_textfield
-    region: content
   field_earth_care2_:
-    weight: 9
+    weight: 8
     settings:
       size: 90
       placeholder: ''
@@ -124,7 +103,7 @@ content:
     type: string_textfield
     region: content
   field_fair_share2_:
-    weight: 11
+    weight: 10
     settings:
       size: 90
       placeholder: ''
@@ -135,13 +114,13 @@ content:
     type: string_textfield
     region: content
   field_family:
-    weight: 4
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_global_action:
-    weight: 18
+    weight: 14
     settings:
       match_operator: CONTAINS
       size: 60
@@ -149,19 +128,8 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_global_action_choose_me:
-    weight: 19
-    settings:
-      size: 190
-      placeholder: 'bespoke text on this action'
-    third_party_settings:
-      maxlength:
-        maxlength_js: 180
-        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
-    type: string_textfield
-    region: content
   field_image:
-    weight: 3
+    weight: 2
     settings:
       show_default_crop: true
       warn_multiple_usages: true
@@ -180,7 +148,7 @@ content:
     region: content
   field_image_block:
     type: entity_reference_paragraphs
-    weight: 6
+    weight: 5
     settings:
       title: 'Main Content Chunk'
       title_plural: 'Main Content Chunks'
@@ -191,7 +159,7 @@ content:
     third_party_settings: {  }
     region: content
   field_linked_actions:
-    weight: 26
+    weight: 21
     settings:
       match_operator: CONTAINS
       size: 60
@@ -199,16 +167,8 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_more_actions:
-    type: string_textfield
-    weight: 0
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
   field_people_self_care_:
-    weight: 10
+    weight: 9
     settings:
       size: 90
       placeholder: ''
@@ -219,7 +179,7 @@ content:
     type: string_textfield
     region: content
   field_project_example:
-    weight: 22
+    weight: 17
     settings:
       form_mode: default
       label_singular: ''
@@ -237,7 +197,7 @@ content:
     type: inline_entity_form_complex
     region: content
   field_radical_action:
-    weight: 14
+    weight: 12
     settings:
       match_operator: CONTAINS
       size: 60
@@ -246,7 +206,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_reference:
-    weight: 23
+    weight: 18
     settings:
       form_mode: default
       label_singular: ''
@@ -264,7 +224,7 @@ content:
     type: inline_entity_form_complex
     region: content
   field_resources_for_children_:
-    weight: 20
+    weight: 15
     settings:
       form_mode: default
       label_singular: ''
@@ -282,7 +242,7 @@ content:
     type: inline_entity_form_complex
     region: content
   field_resources_for_higher_educa:
-    weight: 21
+    weight: 16
     settings:
       form_mode: default
       label_singular: ''
@@ -300,19 +260,19 @@ content:
     type: inline_entity_form_complex
     region: content
   field_sdg:
-    weight: 8
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_season:
-    weight: 7
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_simple_action:
-    weight: 12
+    weight: 11
     settings:
       match_operator: CONTAINS
       size: 60
@@ -320,26 +280,23 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_simple_action_choose_me:
-    weight: 13
+  field_summary:
+    weight: 26
     settings:
-      size: 180
-      placeholder: 'bespoke text on this action'
-    third_party_settings:
-      maxlength:
-        maxlength_js: 180
-        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
     type: string_textfield
     region: content
   path:
     type: path
-    weight: 25
+    weight: 20
     region: content
     settings: {  }
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 1
+    weight: 0
     region: content
     settings:
       size: 50
@@ -351,10 +308,15 @@ content:
 hidden:
   created: true
   field_action_svg: true
+  field_advanced_action_choose_me: true
+  field_community_action_choose_me: true
   field_earth_care_svg: true
   field_fair_share_svg: true
+  field_global_action_choose_me: true
   field_intro_svg: true
+  field_more_actions: true
   field_people_care_svg: true
+  field_simple_action_choose_me: true
   promote: true
   status: true
   sticky: true

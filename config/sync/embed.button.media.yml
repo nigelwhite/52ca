@@ -2,16 +2,26 @@ uuid: 3dfb80b4-0a44-4162-ad36-99b21ee6f585
 langcode: en
 status: true
 dependencies:
+  config:
+    - core.entity_view_mode.media.full
+    - entity_browser.browser.assets_library
+    - media.type.file
+    - media.type.image
+    - media.type.remote_video
   module:
     - entity_embed
     - media
-label: Media
+label: 'Embed Media'
 id: media
 type_id: entity
 type_settings:
   entity_type: media
-  bundles: {  }
-  display_plugins: {  }
+  bundles:
+    - file
+    - image
+    - remote_video
+  display_plugins:
+    - 'view_mode:media.full'
   entity_browser: assets_library
   entity_browser_settings:
     display_review: false

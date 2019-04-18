@@ -1,0 +1,10 @@
+uuid: 6c2f2b2a-0d8e-491d-a184-e839ae1466c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.resource_listing
+label: 'Resource listing'
+targetEntityType: node
+cache: true

@@ -18,9 +18,9 @@ id: node.resource.body
 field_name: body
 entity_type: node
 bundle: resource
-label: Description
+label: 'Full Description'
 description: ''
-required: false
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''

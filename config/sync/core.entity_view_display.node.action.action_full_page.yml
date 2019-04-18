@@ -34,6 +34,7 @@ dependencies:
     - field.field.node.action.field_season
     - field.field.node.action.field_simple_action
     - field.field.node.action.field_simple_action_choose_me
+    - field.field.node.action.field_summary
     - node.type.action
   module:
     - ds
@@ -91,13 +92,12 @@ third_party_settings:
     regions:
       top:
         - field_image
-      left:
-        - group_intro
-        - field_action_number
-        - field_card_text_new
-        - node_title
-        - field_image_block
       right:
+        - field_summary
+        - field_resources_for_children_
+        - field_resources_for_higher_educa
+        - field_project_example
+        - field_reference
         - group_families
         - field_action_svg
         - group_actions
@@ -105,25 +105,23 @@ third_party_settings:
         - field_family
         - group_fair_div
         - group_people_div
-        - group_resources
         - field_simple_action
-        - field_simple_action_choose_me
+        - group_resources
         - field_radical_action
-        - field_advanced_action_choose_me
         - field_community_action
         - field_earth_care_svg
-        - field_community_action_choose_me
-        - field_earth_care2_
         - field_global_action
-        - field_global_action_choose_me
+        - field_earth_care2_
         - field_fair_share_svg
         - field_fair_share2_
         - field_people_care_svg
         - field_people_self_care_
-        - field_resources_for_children_
-        - field_resources_for_higher_educa
-        - field_project_example
-        - field_reference
+      left:
+        - group_intro
+        - field_action_number
+        - field_card_text_new
+        - node_title
+        - field_image_block
       bottom:
         - field_more_actions
         - field_linked_actions
@@ -177,13 +175,9 @@ third_party_settings:
     group_actions:
       children:
         - field_simple_action
-        - field_simple_action_choose_me
         - field_radical_action
-        - field_advanced_action_choose_me
         - field_community_action
-        - field_community_action_choose_me
         - field_global_action
-        - field_global_action_choose_me
       parent_name: ''
       weight: 6
       format_type: html_element
@@ -200,6 +194,7 @@ third_party_settings:
       label: Actions
     group_resources:
       children:
+        - field_summary
         - field_resources_for_children_
         - field_resources_for_higher_educa
         - field_project_example
@@ -314,23 +309,6 @@ content:
     third_party_settings:
       field_formatter_class:
         class: actionfull-svg
-  field_advanced_action_choose_me:
-    type: string
-    weight: 13
-    region: right
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings:
-      field_formatter_class:
-        class: every-ch
-      ds:
-        ft:
-          id: default
-          settings:
-            lb: ''
-            lb-col: false
-            classes: {  }
   field_card_text_new:
     type: text_default
     weight: 2
@@ -365,23 +343,6 @@ content:
             classes: {  }
     type: entity_reference_entity_view
     region: right
-  field_community_action_choose_me:
-    type: string
-    weight: 15
-    region: right
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings:
-      field_formatter_class:
-        class: community-ch
-      ds:
-        ft:
-          id: default
-          settings:
-            lb: ''
-            lb-col: false
-            classes: {  }
   field_earth_care2_:
     type: string
     weight: 16
@@ -497,23 +458,6 @@ content:
             classes: {  }
     type: entity_reference_entity_view
     region: right
-  field_global_action_choose_me:
-    type: string
-    weight: 17
-    region: right
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings:
-      field_formatter_class:
-        class: global-ch
-      ds:
-        ft:
-          id: default
-          settings:
-            lb: ''
-            lb-col: false
-            classes: {  }
   field_image:
     type: image
     weight: 0
@@ -622,12 +566,13 @@ content:
             lb-col: false
             classes: {  }
   field_project_example:
-    type: entity_reference_label
-    weight: 26
+    type: entity_reference_entity_view
+    weight: 3
     region: right
     label: above
     settings:
-      link: true
+      view_mode: resource_listing
+      link: false
     third_party_settings:
       field_formatter_class:
         class: ''
@@ -658,12 +603,13 @@ content:
     type: entity_reference_entity_view
     region: right
   field_reference:
-    type: entity_reference_label
-    weight: 27
+    type: entity_reference_entity_view
+    weight: 4
     region: right
     label: above
     settings:
-      link: true
+      view_mode: resource_listing
+      link: false
     third_party_settings:
       field_formatter_class:
         class: ''
@@ -676,12 +622,13 @@ content:
             lb-col: false
             classes: {  }
   field_resources_for_children_:
-    type: entity_reference_label
-    weight: 24
+    type: entity_reference_entity_view
+    weight: 1
     region: right
     label: above
     settings:
-      link: true
+      view_mode: resource_listing
+      link: false
     third_party_settings:
       field_formatter_class:
         class: ''
@@ -694,12 +641,13 @@ content:
             lb-col: false
             classes: {  }
   field_resources_for_higher_educa:
-    type: entity_reference_label
-    weight: 25
+    type: entity_reference_entity_view
+    weight: 2
     region: right
     label: above
     settings:
-      link: true
+      view_mode: resource_listing
+      link: false
     third_party_settings:
       field_formatter_class:
         class: ''
@@ -729,16 +677,16 @@ content:
             classes: {  }
     type: entity_reference_entity_view
     region: right
-  field_simple_action_choose_me:
+  field_summary:
     type: string
-    weight: 11
+    weight: 0
     region: right
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings:
       field_formatter_class:
-        class: simple-ch
+        class: resources-header
       ds:
         ft:
           id: default
@@ -747,8 +695,12 @@ content:
             lb-col: false
             classes: {  }
 hidden:
+  field_advanced_action_choose_me: true
   field_card_action: true
+  field_community_action_choose_me: true
+  field_global_action_choose_me: true
   field_intro_svg: true
   field_sdg: true
   field_season: true
+  field_simple_action_choose_me: true
   links: true

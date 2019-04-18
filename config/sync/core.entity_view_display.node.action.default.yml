@@ -33,6 +33,7 @@ dependencies:
     - field.field.node.action.field_season
     - field.field.node.action.field_simple_action
     - field.field.node.action.field_simple_action_choose_me
+    - field.field.node.action.field_summary
     - image.style.medium
     - node.type.action
   module:
@@ -290,6 +291,14 @@ content:
         class: 'introsvg-card col-xs-8'
     type: image
     region: main
+  field_summary:
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
 hidden:
   field_advanced_action_choose_me: true
   field_community_action: true

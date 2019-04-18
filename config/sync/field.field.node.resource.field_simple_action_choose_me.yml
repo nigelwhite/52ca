@@ -1,0 +1,19 @@
+uuid: fb499f41-4673-49ff-aa4c-a1ab304bcc0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_simple_action_choose_me
+    - node.type.resource
+id: node.resource.field_simple_action_choose_me
+field_name: field_simple_action_choose_me
+entity_type: node
+bundle: resource
+label: Author(s)
+description: Optional
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
