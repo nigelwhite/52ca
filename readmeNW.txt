@@ -1,4 +1,4 @@
-ON LIVE: delete field resource type_old (and all its data)
+
 
 16.4.19 Got entity browser to insert fields from Resource node.
 Next: change icon in toolbar, hide fields and show again on click, icon to show "can expand". Style classes resource-xyz-embedded for title author and summary.
@@ -8,9 +8,9 @@ Next: change icon in toolbar, hide fields and show again on click, icon to show 
 6.3.19 transferred from lando to ddev as lando kept losing drush
 
 top backup
-echo3 28.3.19 end of changes.
-52ca_echo2 - 6.3.19 fresh copy from prod, before any work
-echo 11.1.19 start of day
+echo3 18.4.19 end of early morning changes
+echo2 18.4.19 after cim, before any config changes
+echo 18.4.19 start of day. Before cim and pull.
 
 30.1.19
 finding out what I can do to change classes in twig, for the seasons colours
