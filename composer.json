@@ -52,7 +52,7 @@
         "drupal/module_filter": "^3.1",
         "drupal/paragraphs": "1.8",
         "drupal/pathauto": "1.4",
-        "drupal/stage_file_proxy": "^1.0@alpha",
+        "drupal/stage_file_proxy": "1.0-beta1",
         "drupal/svg_image": "^1.8",
         "drupal/video_embed_field": "^2.0",
         "drupal/view_mode_page": "^3.1",
