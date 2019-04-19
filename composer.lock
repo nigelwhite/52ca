@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9297528a637df5f4ae080cacd8f32862",
+    "content-hash": "46e90eaf804e0b17ef82c5a180dbf808",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3523,17 +3523,17 @@
         },
         {
             "name": "drupal/entity_pager",
-            "version": "1.0.0-beta1",
+            "version": "1.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_pager.git",
-                "reference": "8.x-1.0-beta1"
+                "reference": "8.x-1.0-beta2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_pager-8.x-1.0-beta1.zip",
-                "reference": "8.x-1.0-beta1",
-                "shasum": "5357e5e350f657617bbb914d5a71a3c4b257c8b8"
+                "url": "https://ftp.drupal.org/files/projects/entity_pager-8.x-1.0-beta2.zip",
+                "reference": "8.x-1.0-beta2",
+                "shasum": "b6eb9a04774d1a13b29590dcfc924d81ea56fddd"
             },
             "require": {
                 "drupal/core": "*",
@@ -3545,8 +3545,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta1",
-                    "datestamp": "1533156780",
+                    "version": "8.x-1.0-beta2",
+                    "datestamp": "1553315287",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -3570,7 +3570,7 @@
             "description": "Entity Pager",
             "homepage": "https://github.com/TopFloorTech/drupal-entity_pager",
             "support": {
-                "source": "http://cgit.drupalcode.org/entity_pager"
+                "source": "https://git.drupalcode.org/project/entity_pager"
             }
         },
         {
@@ -3633,17 +3633,17 @@
         },
         {
             "name": "drupal/environment_indicator",
-            "version": "3.5.0",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/environment_indicator.git",
-                "reference": "8.x-3.5"
+                "reference": "8.x-3.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/environment_indicator-8.x-3.5.zip",
-                "reference": "8.x-3.5",
-                "shasum": "637ceea8bc1dc690f12cdcc5d1285986b6037c92"
+                "url": "https://ftp.drupal.org/files/projects/environment_indicator-8.x-3.6.zip",
+                "reference": "8.x-3.6",
+                "shasum": "a27e3ab20273cda039610156ab9b9267b5c46b9f"
             },
             "require": {
                 "drupal/core": "*"
@@ -3654,8 +3654,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.5",
-                    "datestamp": "1546540980",
+                    "version": "8.x-3.6",
+                    "datestamp": "1553405885",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3679,7 +3679,7 @@
             "description": "Adds a color indicator for the different environments.",
             "homepage": "https://www.drupal.org/project/environment_indicator",
             "support": {
-                "source": "http://cgit.drupalcode.org/environment_indicator"
+                "source": "https://git.drupalcode.org/project/environment_indicator"
             }
         },
         {
@@ -10165,7 +10165,6 @@
     "stability-flags": {
         "drupal/coffee": 10,
         "drupal/entity_embed": 20,
-        "drupal/entity_pager": 10,
         "drupal/inline_entity_form": 5,
         "drupal/maxlength": 10,
         "drupal/stage_file_proxy": 15,
