@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5e90d0a296392952f6c8336c0e636a0b",
+    "content-hash": "c3a01bacd4dd7c3d773182230e370211",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3523,17 +3523,17 @@
         },
         {
             "name": "drupal/entity_pager",
-            "version": "1.0.0-beta2",
+            "version": "1.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_pager.git",
-                "reference": "8.x-1.0-beta2"
+                "reference": "8.x-1.0-beta1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_pager-8.x-1.0-beta2.zip",
-                "reference": "8.x-1.0-beta2",
-                "shasum": "b6eb9a04774d1a13b29590dcfc924d81ea56fddd"
+                "url": "https://ftp.drupal.org/files/projects/entity_pager-8.x-1.0-beta1.zip",
+                "reference": "8.x-1.0-beta1",
+                "shasum": "5357e5e350f657617bbb914d5a71a3c4b257c8b8"
             },
             "require": {
                 "drupal/core": "*",
@@ -3545,7 +3545,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta2",
+                    "version": "8.x-1.0-beta1",
                     "datestamp": "1553315287",
                     "security-coverage": {
                         "status": "not-covered",
