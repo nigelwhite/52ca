@@ -1,4 +1,4 @@
-
+19.4.19 updated core and modules on local and pushed to repo. Have not pulled to Digital Ocean.
 
 16.4.19 Got entity browser to insert fields from Resource node.
 Next: change icon in toolbar, hide fields and show again on click, icon to show "can expand". Style classes resource-xyz-embedded for title author and summary.
