@@ -1,3 +1,6 @@
+24.4.19 updated remote sites to drupal and module updates.
+On local - added a new content type for Source, added to embed button, trying to get popup working.
+
 19.4.19 updated core and modules on local and pushed to repo. Have not pulled to Digital Ocean.
 
 16.4.19 Got entity browser to insert fields from Resource node.
