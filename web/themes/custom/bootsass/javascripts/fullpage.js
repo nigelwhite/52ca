@@ -59,9 +59,21 @@
 
 // This is for jumping out the details of an embedded source on the main page
 
-    $("#embedded-reference").click(function () {
-        $(".summary, .author, .link").toggleClass("initial");
-        $("#embedded-reference").toggleClass("embedded");
+    // $("#embedded-reference").click(function () {
+    //     $(".summary, .author, .link").toggleClass("initial");
+    //     $("#embedded-reference").toggleClass("embedded");
+    // });
+
+//   $(".source-container").click(function () {
+//     // $(".summary, .author, .link").toggleClass("initial");
+//     // $(this).find('.summary').toggleClass("show");
+//     //   $(this).find('.author').toggleClass("show");
+//     //   $(this).find('.link').toggleClass("show");
+//       $(this).children('.popup-container').toggleClass("show");
+//   });
+
+    $(".popup").click(function () {
+        $(this).children(".myPopup").toggleClass("show");
     });
 
 }(jQuery));

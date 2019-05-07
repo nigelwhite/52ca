@@ -10129,16 +10129,84 @@ body {
   font-size: 2rem;
 }
 
-/* line 1, ../scss/custom/_embedded.scss */
-.initial {
-  display: none;
+/* Popup container */
+/* line 2, ../scss/custom/_embedded.scss */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
 }
 
-/* line 3, ../scss/custom/_embedded.scss */
-.embedded {
-  border: solid black 1px;
-  margin: 4rem;
-  padding-left: 2rem;
+/* The actual popup (appears on top) */
+/* line 9, ../scss/custom/_embedded.scss */
+.popup .popuptext {
+  visibility: hidden;
+  width: 600px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+/* line 25, ../scss/custom/_embedded.scss */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+/* line 37, ../scss/custom/_embedded.scss */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* line 54, ../scss/custom/_embedded.scss */
+.team-popup-close {
+  position: absolute;
+  z-index: 999;
+  top: 5px;
+  right: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* line 64, ../scss/custom/_embedded.scss */
+.popup-title::after {
+  font-family: 'Glyphicons Halflings';
+  content: "\e066";
 }
 
 /**
