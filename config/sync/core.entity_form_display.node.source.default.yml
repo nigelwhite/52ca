@@ -1,0 +1,66 @@
+uuid: 93e74c3a-a837-42cc-a99d-ee031e76d639
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.source.field_advanced_action_choose_me
+    - field.field.node.source.field_link2
+    - field.field.node.source.field_long_title
+    - field.field.node.source.field_popup_close
+    - field.field.node.source.field_summary
+    - node.type.source
+  module:
+    - link
+id: node.source.default
+targetEntityType: node
+bundle: source
+mode: default
+content:
+  field_advanced_action_choose_me:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_link2:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_long_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_summary:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_popup_close: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

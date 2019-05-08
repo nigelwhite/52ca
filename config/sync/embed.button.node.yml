@@ -3,24 +3,24 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
-    - entity_browser.browser.resources
-    - node.type.resource
+    - entity_browser.browser.sources
+    - node.type.source
+  content:
+    - 'file:file:f7007694-7b92-4212-8027-fb53d91b7909'
   module:
     - entity_embed
     - node
 _core:
   default_config_hash: xgvZUh-eaMilacE1XYCQ9nLH-2-meOjCyofXSO82gqg
-label: 'Embed Resource'
+label: 'Embed Source'
 id: node
 type_id: entity
 type_settings:
   entity_type: node
   bundles:
-    - resource
-  display_plugins:
-    - 'view_mode:node.teaser'
-  entity_browser: resources
+    - source
+  display_plugins: {  }
+  entity_browser: sources
   entity_browser_settings:
-    display_review: false
-icon_uuid: null
+    display_review: true
+icon_uuid: f7007694-7b92-4212-8027-fb53d91b7909

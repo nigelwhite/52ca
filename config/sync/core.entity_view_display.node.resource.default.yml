@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.node.resource.body
     - field.field.node.resource.field_image
-    - field.field.node.resource.field_index_as
     - field.field.node.resource.field_link2
     - field.field.node.resource.field_read_more
     - field.field.node.resource.field_resource_type
@@ -166,6 +165,5 @@ content:
     type: string
     region: top
 hidden:
-  field_index_as: true
   field_read_more: true
   links: true

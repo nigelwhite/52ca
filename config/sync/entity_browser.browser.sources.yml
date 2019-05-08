@@ -1,0 +1,42 @@
+uuid: 6e0fb0af-8d95-46d7-af7b-406d2de0b325
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sources
+  module:
+    - entity_browser_entity_form
+    - views
+name: sources
+label: Sources
+display: iframe
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select Source'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  c478243e-fe9b-4435-a597-340059064186:
+    settings:
+      entity_type: node
+      bundle: source
+      form_mode: default
+      submit_text: Save
+    uuid: c478243e-fe9b-4435-a597-340059064186
+    weight: 1
+    label: 'Add new source'
+    id: entity_form
+  611027f3-0185-481c-9bd1-1cb95abcdac1:
+    settings:
+      view: sources
+      view_display: entity_browser_1
+      submit_text: Select
+      auto_select: false
+    uuid: 611027f3-0185-481c-9bd1-1cb95abcdac1
+    weight: 2
+    label: 'Select existing source'
+    id: view

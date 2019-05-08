@@ -1,0 +1,191 @@
+uuid: 77b68615-6e45-4737-85be-52b4cfe0d52e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.source.field_advanced_action_choose_me
+    - field.field.node.source.field_link2
+    - field.field.node.source.field_long_title
+    - field.field.node.source.field_popup_close
+    - field.field.node.source.field_summary
+    - node.type.source
+  module:
+    - ds
+    - field_formatter_class
+    - field_group
+    - link
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - group_source_container
+        - node_title
+        - group_popup_container
+        - field_long_title
+        - field_summary
+        - field_advanced_action_choose_me
+        - field_link2
+        - field_popup_close
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 26
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: p
+          class: popup-title
+          link: false
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+  field_group:
+    group_source_container:
+      children:
+        - node_title
+        - group_popup_container
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        label: source-container
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: popup
+      label: source-container
+    group_popup_container:
+      children:
+        - field_long_title
+        - field_summary
+        - field_advanced_action_choose_me
+        - field_link2
+        - field_popup_close
+      parent_name: group_source_container
+      weight: 27
+      format_type: html_element
+      format_settings:
+        label: 'popup container'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'myPopup popuptext'
+      label: 'popup container'
+id: node.source.default
+targetEntityType: node
+bundle: source
+mode: default
+content:
+  field_advanced_action_choose_me:
+    weight: 33
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      field_formatter_class:
+        class: popup-summary
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: string
+    region: main
+  field_link2:
+    weight: 34
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      field_formatter_class:
+        class: popup-link
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: link
+    region: main
+  field_long_title:
+    weight: 31
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: main
+  field_popup_close:
+    weight: 35
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      field_formatter_class:
+        class: popup-close
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: string
+    region: main
+  field_summary:
+    weight: 32
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      field_formatter_class:
+        class: popup-author
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: string
+    region: main
+hidden:
+  links: true

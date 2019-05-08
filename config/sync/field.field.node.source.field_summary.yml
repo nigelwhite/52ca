@@ -1,0 +1,19 @@
+uuid: 7a3ec89e-4718-4023-8a45-ced453b144ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.source
+id: node.source.field_summary
+field_name: field_summary
+entity_type: node
+bundle: source
+label: 'Details eg Author, Publication'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

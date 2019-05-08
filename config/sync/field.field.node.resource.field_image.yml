@@ -12,7 +12,7 @@ field_name: field_image
 entity_type: node
 bundle: resource
 label: 'Resource image'
-description: 'Will be a square in our site'
+description: 'Will be a rendered square in our site'
 required: false
 translatable: true
 default_value: {  }
@@ -28,7 +28,7 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: c5aee073-2678-4b3e-b2ce-bb4d27935f1d
+    uuid: 7b3dd72c-9b1c-464b-ac55-927cb564e794
     alt: Logs
     title: ''
     width: 640

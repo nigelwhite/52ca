@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.node.resource.body
     - field.field.node.resource.field_image
-    - field.field.node.resource.field_index_as
     - field.field.node.resource.field_link2
     - field.field.node.resource.field_read_more
     - field.field.node.resource.field_resource_type
@@ -23,7 +22,7 @@ bundle: resource
 mode: default
 content:
   body:
-    weight: 3
+    weight: 4
     settings:
       rows: 9
       summary_rows: 3
@@ -32,7 +31,7 @@ content:
     type: text_textarea_with_summary
     region: content
   field_image:
-    weight: 27
+    weight: 1
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -40,15 +39,7 @@ content:
     type: image_image
     region: content
   field_link2:
-    weight: 4
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
-    region: content
-  field_read_more:
-    weight: 26
+    weight: 5
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -56,13 +47,13 @@ content:
     type: link_default
     region: content
   field_resource_type:
-    weight: 5
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_simple_action_choose_me:
-    weight: 1
+    weight: 2
     settings:
       size: 60
       placeholder: ''
@@ -70,7 +61,7 @@ content:
     type: string_textfield
     region: content
   field_summary:
-    weight: 2
+    weight: 3
     settings:
       size: 60
       placeholder: ''
@@ -87,7 +78,7 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
-  field_index_as: true
+  field_read_more: true
   path: true
   promote: true
   status: true

@@ -1,0 +1,21 @@
+uuid: 578d4a78-43b2-4a70-ab3a-9e250f306892
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_popup_close
+    - node.type.source
+id: node.source.field_popup_close
+field_name: field_popup_close
+entity_type: node
+bundle: source
+label: 'popup close'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: X
+default_value_callback: ''
+settings: {  }
+field_type: string

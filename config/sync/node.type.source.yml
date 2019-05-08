@@ -1,0 +1,18 @@
+uuid: 350cdbc7-49f8-4056-b4b1-9fac7f208ed2
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Source
+type: source
+description: 'Reference to source, eg an academic paper'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

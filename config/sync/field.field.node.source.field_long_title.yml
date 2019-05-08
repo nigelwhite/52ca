@@ -1,0 +1,19 @@
+uuid: 9d1da488-3599-4b42-a630-61d9e20eae4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_long_title
+    - node.type.source
+id: node.source.field_long_title
+field_name: field_long_title
+entity_type: node
+bundle: source
+label: 'Long title'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
