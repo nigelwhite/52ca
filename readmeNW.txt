@@ -11,9 +11,9 @@ Next: change icon in toolbar, hide fields and show again on click, icon to show 
 6.3.19 transferred from lando to ddev as lando kept losing drush
 
 top backup
+echo 8.5.19 before cim of new popup config
 echo3 18.4.19 end of early morning changes
 echo2 18.4.19 after cim, before any config changes
-echo 18.4.19 start of day. Before cim and pull.
 
 30.1.19
 finding out what I can do to change classes in twig, for the seasons colours
