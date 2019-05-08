@@ -10193,7 +10193,14 @@ body {
   }
 }
 /* line 54, ../scss/custom/_embedded.scss */
-.team-popup-close {
+.popup-link a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* line 59, ../scss/custom/_embedded.scss */
+.popup-close {
+  width: 20px;
   position: absolute;
   z-index: 999;
   top: 5px;
@@ -10203,7 +10210,7 @@ body {
   text-decoration: none;
 }
 
-/* line 64, ../scss/custom/_embedded.scss */
+/* line 70, ../scss/custom/_embedded.scss */
 .popup-title::after {
   font-family: 'Glyphicons Halflings';
   content: "\e066";
