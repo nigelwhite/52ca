@@ -128,6 +128,11 @@
                 ".editorconfig": "../.editorconfig",
                 ".gitattributes": "../.gitattributes"
             }
+        },
+        "patches": {
+            "drupal/entity_pager": {
+                "Pager not correctly determining current node/entity after beta2 update": "https://www.drupal.org/files/issues/2019-03-27/3043003-issue-with-class.diff"
+            }
         }
     }
 }
