@@ -9585,31 +9585,32 @@ body.toolbar-loading.toolbar {
 /* line 56, ../scss/custom/_card.scss */
 .families-card {
   position: absolute;
-  top: 26%;
+  top: 24%;
   left: 50%;
+  min-width: 200px;
   transform: translateX(-50%);
 }
 
-/* line 63, ../scss/custom/_card.scss */
+/* line 64, ../scss/custom/_card.scss */
 .intro-card {
   margin: 0 auto;
   width: 60%;
   padding-top: 1em;
 }
 
-/* line 69, ../scss/custom/_card.scss */
+/* line 70, ../scss/custom/_card.scss */
 .introsvg-card {
   max-width: 120px;
 }
 
-/* line 73, ../scss/custom/_card.scss */
+/* line 74, ../scss/custom/_card.scss */
 .actionsvg-card {
   margin: 0 auto;
   max-width: 80px;
   padding-top: 1rem;
 }
 
-/* line 79, ../scss/custom/_card.scss */
+/* line 80, ../scss/custom/_card.scss */
 .number-card {
   display: inline-block;
   font-size: 4rem;
@@ -9621,7 +9622,7 @@ body.toolbar-loading.toolbar {
   border: none;
 }
 
-/* line 90, ../scss/custom/_card.scss */
+/* line 91, ../scss/custom/_card.scss */
 .title-card {
   font-family: "Zilla Slab", sans-serif;
   text-transform: uppercase;
@@ -9633,19 +9634,19 @@ body.toolbar-loading.toolbar {
   padding-bottom: 0.2rem;
 }
 
-/* line 101, ../scss/custom/_card.scss */
+/* line 102, ../scss/custom/_card.scss */
 .text-card {
   text-align: center;
   font-size: 1.27rem;
 }
 
-/* line 106, ../scss/custom/_card.scss */
+/* line 107, ../scss/custom/_card.scss */
 .card-body {
   margin-left: 1%;
   margin-right: 1%;
 }
 
-/* line 111, ../scss/custom/_card.scss */
+/* line 112, ../scss/custom/_card.scss */
 .card-action {
   text-align: center;
   font-size: 1.5rem;
@@ -9657,7 +9658,7 @@ body.toolbar-loading.toolbar {
   margin-right: 3%;
 }
 
-/* line 122, ../scss/custom/_card.scss */
+/* line 123, ../scss/custom/_card.scss */
 .entity-pager-item-all {
   background-color: #fff;
   height: 27px;
@@ -9669,7 +9670,7 @@ body.toolbar-loading.toolbar {
   text-align: center;
 }
 
-/* line 133, ../scss/custom/_card.scss */
+/* line 134, ../scss/custom/_card.scss */
 .entity-pager-item-prev,
 .entity-pager-item-next {
   font-size: 30px;
@@ -9679,7 +9680,7 @@ body.toolbar-loading.toolbar {
   margin-bottom: 0;
 }
 
-/* line 142, ../scss/custom/_card.scss */
+/* line 143, ../scss/custom/_card.scss */
 .entity-pager-item-prev a:hover,
 .entity-pager-item-next a:hover,
 .entity-pager-item-prev a:active,
@@ -9689,97 +9690,97 @@ body.toolbar-loading.toolbar {
   text-decoration: none;
 }
 
-/* line 152, ../scss/custom/_card.scss */
+/* line 153, ../scss/custom/_card.scss */
 .entity-pager-list .entity-pager-item {
   margin-bottom: 0;
   margin-top: 0;
 }
 
-/* line 157, ../scss/custom/_card.scss */
+/* line 158, ../scss/custom/_card.scss */
 ul.entity-pager-list {
   margin-bottom: 0;
   margin-top: 0;
   font-size: 1.5rem;
 }
 
-/* line 163, ../scss/custom/_card.scss */
+/* line 164, ../scss/custom/_card.scss */
 .ethic {
   margin-bottom: 1.25em;
   padding-left: 0.5em;
 }
 
-/* line 168, ../scss/custom/_card.scss */
+/* line 169, ../scss/custom/_card.scss */
 .region-sidebar-second {
   display: none;
 }
 
 @media screen and (min-width: 400px) {
-  /* line 173, ../scss/custom/_card.scss */
+  /* line 174, ../scss/custom/_card.scss */
   .text-card {
     font-size: calc(8px + 1.6vw);
   }
 
-  /* line 176, ../scss/custom/_card.scss */
+  /* line 177, ../scss/custom/_card.scss */
   .introsvg-card {
     max-width: 130px;
   }
 
-  /* line 179, ../scss/custom/_card.scss */
+  /* line 180, ../scss/custom/_card.scss */
   .actionsvg-card {
     margin: 0 auto;
     max-width: 110px;
     padding-top: 1rem;
   }
 
-  /* line 184, ../scss/custom/_card.scss */
+  /* line 185, ../scss/custom/_card.scss */
   .title-card {
     font-size: 6vw;
   }
 
-  /* line 187, ../scss/custom/_card.scss */
+  /* line 188, ../scss/custom/_card.scss */
   .number-card {
     font-size: 5rem;
     line-height: 4rem;
     height: 4rem;
   }
 
-  /* line 192, ../scss/custom/_card.scss */
+  /* line 193, ../scss/custom/_card.scss */
   .card-footer {
     max-height: 25vw;
   }
 
-  /* line 195, ../scss/custom/_card.scss */
+  /* line 196, ../scss/custom/_card.scss */
   .card-action {
     font-size: 3.9vw;
     margin: 3%;
   }
 
-  /* line 199, ../scss/custom/_card.scss */
+  /* line 200, ../scss/custom/_card.scss */
   .card-body {
     margin-left: 3%;
     margin-right: 3%;
   }
 }
 @media screen and (min-width: 520px) {
-  /* line 208, ../scss/custom/_card.scss */
+  /* line 209, ../scss/custom/_card.scss */
   .main-container-card {
     box-shadow: 10px 10px 5px #888888;
   }
 
-  /* line 211, ../scss/custom/_card.scss */
+  /* line 212, ../scss/custom/_card.scss */
   .card-body {
     margin-left: 5%;
     margin-right: 5%;
   }
 
-  /* line 215, ../scss/custom/_card.scss */
+  /* line 216, ../scss/custom/_card.scss */
   .number-card {
     font-size: 6.5rem;
     line-height: 5.2rem;
     height: 5.2rem;
   }
 
-  /* line 220, ../scss/custom/_card.scss */
+  /* line 221, ../scss/custom/_card.scss */
   .title-card {
     font-size: 1.8em;
     line-height: 1;
@@ -9787,34 +9788,34 @@ ul.entity-pager-list {
     padding-bottom: 0.4em;
   }
 
-  /* line 226, ../scss/custom/_card.scss */
+  /* line 227, ../scss/custom/_card.scss */
   .introsvg-card {
     max-width: 180px;
   }
 
-  /* line 229, ../scss/custom/_card.scss */
+  /* line 230, ../scss/custom/_card.scss */
   .actionsvg-card {
     max-width: 140px;
     padding-top: 1em;
   }
 
-  /* line 233, ../scss/custom/_card.scss */
+  /* line 234, ../scss/custom/_card.scss */
   .text-card {
     font-size: 1.7rem;
   }
 
-  /* line 236, ../scss/custom/_card.scss */
+  /* line 237, ../scss/custom/_card.scss */
   .card-footer {
     max-height: 180px;
   }
 
-  /* line 239, ../scss/custom/_card.scss */
+  /* line 240, ../scss/custom/_card.scss */
   .card-action {
     font-size: 2rem;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 245, ../scss/custom/_card.scss */
+  /* line 246, ../scss/custom/_card.scss */
   .region-sidebar-second {
     display: block;
   }
