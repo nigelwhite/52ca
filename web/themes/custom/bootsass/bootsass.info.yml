@@ -25,3 +25,5 @@ libraries-extend:
 
 libraries:
   - 'bootsass/fonts'
+  - 'bootsass/custom'
+  - 'bootsass/isotope'

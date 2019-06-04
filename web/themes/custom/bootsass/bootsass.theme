@@ -58,3 +58,8 @@ function bootsass_preprocess_node__mycontenttype__full(&$vars) {
     $vars['attributes']['class'][] = $season;
   }
 }
+
+function bootsass_preprocess_views_view__family_sorter (&$variables) {
+$variables['#attached']['library'][] = 'bootsass/isotope'; 
+$variables['#attached']['library'][] = 'bootsass/custom'; 
+}
