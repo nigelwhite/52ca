@@ -104,7 +104,6 @@ third_party_settings:
       weight: 2
       format_type: html_element
       format_settings:
-        label: Intro
         element: div
         show_label: false
         label_element: h3
@@ -114,6 +113,7 @@ third_party_settings:
         id: ''
         classes: 'intro-card row'
       label: Intro
+      region: hidden
     group_card_body:
       children:
         - group_intro
@@ -132,6 +132,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: 'Card body'
+      region: hidden
     group_card_footer:
       children:
         - field_action_svg
@@ -150,6 +151,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: 'Card footer'
+      region: hidden
     group_families:
       children:
         - field_family
@@ -157,7 +159,6 @@ third_party_settings:
       weight: 2
       format_type: html_element
       format_settings:
-        label: Families
         element: div
         show_label: false
         label_element: h3
@@ -167,6 +168,7 @@ third_party_settings:
         id: ''
         classes: 'families-card clearfix'
       label: Families
+      region: hidden
     group_card_header:
       children:
         - field_image
@@ -175,7 +177,6 @@ third_party_settings:
       weight: 0
       format_type: html_element
       format_settings:
-        label: 'Card header'
         element: div
         show_label: false
         label_element: h3
@@ -185,6 +186,7 @@ third_party_settings:
         id: ''
         classes: 'card-header clearfix'
       label: 'Card header'
+      region: hidden
 id: node.action.default
 targetEntityType: node
 bundle: action
@@ -291,14 +293,6 @@ content:
         class: 'introsvg-card col-xs-8'
     type: image
     region: main
-  field_summary:
-    weight: 7
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
 hidden:
   field_advanced_action_choose_me: true
   field_community_action: true
@@ -323,4 +317,5 @@ hidden:
   field_season: true
   field_simple_action: true
   field_simple_action_choose_me: true
+  field_summary: true
   links: true

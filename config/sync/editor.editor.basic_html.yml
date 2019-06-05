@@ -35,6 +35,7 @@ settings:
           name: Media
           items:
             - media
+            - node
             - Blockquote
         -
           name: 'Block Formatting'
@@ -44,10 +45,6 @@ settings:
           name: Tools
           items:
             - Source
-        -
-          name: Resource
-          items:
-            - node
   plugins:
     stylescombo:
       styles: ''

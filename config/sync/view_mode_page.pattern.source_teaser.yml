@@ -1,0 +1,23 @@
+uuid: 990d6167-35ed-4cc1-9762-c5edad2c01fa
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: source_teaser
+label: 'Source teaser'
+type: 'canonical_entities:node'
+pattern: /%/teaser
+view_mode: teaser
+selection_criteria:
+  687e6def-fe32-4324-a33c-ef7530e41c34:
+    id: node_type
+    bundles:
+      source: source
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 687e6def-fe32-4324-a33c-ef7530e41c34
+selection_logic: and
+weight: -5
+relationships: {  }

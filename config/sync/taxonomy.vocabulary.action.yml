@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Sub action'
 vid: action
 description: 'Concise version of action'
-hierarchy: 0
 weight: 0

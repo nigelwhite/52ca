@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Resource type'
 vid: resource_type
 description: ''
-hierarchy: 0
 weight: 0

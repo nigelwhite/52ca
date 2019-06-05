@@ -3,10 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - entity_browser.browser.sources
     - node.type.source
   content:
-    - 'file:file:f7007694-7b92-4212-8027-fb53d91b7909'
+    - 'file:file:0cd4812a-2c45-4e5f-ab00-ff559d3167b2'
   module:
     - entity_embed
     - node
@@ -19,8 +20,9 @@ type_settings:
   entity_type: node
   bundles:
     - source
-  display_plugins: {  }
+  display_plugins:
+    - 'view_mode:node.full'
   entity_browser: sources
   entity_browser_settings:
     display_review: true
-icon_uuid: f7007694-7b92-4212-8027-fb53d91b7909
+icon_uuid: 0cd4812a-2c45-4e5f-ab00-ff559d3167b2

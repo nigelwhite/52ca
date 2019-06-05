@@ -1,0 +1,28 @@
+uuid: 8d43ed8e-6b70-40a6-9ad6-6437c2082e7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_announcement
+    - node.type.page
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: '0'
+    restricted_html: '0'
+    full_html: '0'
+    plain_text: '0'
+id: node.page.field_announcement
+field_name: field_announcement
+entity_type: node
+bundle: page
+label: Announcement
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

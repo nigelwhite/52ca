@@ -4,10 +4,75 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_announcement
+    - field.field.node.page.field_image
     - node.type.page
   module:
+    - ds
+    - field_formatter_class
+    - field_group
+    - svg_image
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - field_image
+        - field_announcement
+        - 'dynamic_block_field:node-icon_strip'
+        - group_families_group
+        - 'dynamic_block_field:node-action_teaser'
+        - body
+    fields:
+      'dynamic_block_field:node-action_teaser':
+        plugin_id: 'dynamic_block_field:node-action_teaser'
+        weight: 4
+        label: hidden
+        formatter: default
+      'dynamic_block_field:node-icon_strip':
+        plugin_id: 'dynamic_block_field:node-icon_strip'
+        weight: 2
+        label: hidden
+        formatter: default
+  field_group:
+    group_families_group:
+      children:
+        - 'dynamic_block_field:node-action_teaser'
+      parent_name: ''
+      weight: 3
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: families-group-387
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'families group'
+      region: hidden
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
 id: node.page.default
@@ -18,13 +83,38 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 100
-    region: content
+    weight: 5
+    region: main
     settings: {  }
     third_party_settings: {  }
-  links:
-    weight: 101
-    region: content
+  field_announcement:
+    weight: 1
+    label: hidden
     settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: announcement
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: text_default
+    region: main
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      svg_attributes:
+        width: ''
+        height: ''
+      svg_render_as_image: true
+      image_style: ''
+      image_link: ''
     third_party_settings: {  }
-hidden: {  }
+    type: image
+    region: main
+hidden:
+  links: true

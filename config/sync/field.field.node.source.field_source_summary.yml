@@ -1,0 +1,19 @@
+uuid: 5978918f-167e-4664-8d3d-add722d8755f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_source_summary
+    - node.type.source
+id: node.source.field_source_summary
+field_name: field_source_summary
+entity_type: node
+bundle: source
+label: Summary
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

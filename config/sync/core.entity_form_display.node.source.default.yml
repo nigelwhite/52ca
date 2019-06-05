@@ -3,10 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.source.field_advanced_action_choose_me
     - field.field.node.source.field_link2
     - field.field.node.source.field_long_title
     - field.field.node.source.field_popup_close
+    - field.field.node.source.field_source_summary
     - field.field.node.source.field_summary
     - node.type.source
   module:
@@ -16,14 +16,6 @@ targetEntityType: node
 bundle: source
 mode: default
 content:
-  field_advanced_action_choose_me:
-    weight: 3
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_link2:
     weight: 4
     settings:
@@ -39,6 +31,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_source_summary:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
     region: content
   field_summary:
     weight: 2

@@ -4,9 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_announcement
+    - field.field.node.page.field_image
+    - image.style.thumbnail
     - node.type.page
   module:
     - path
+    - svg_image
     - text
 _core:
   default_config_hash: sb0qCkzU_8mNq29NehYAU8jCBXWPLeX0UN8sYFVGVcw
@@ -30,6 +34,22 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_announcement:
+    weight: 122
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_image:
+    weight: 121
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
   path:
     type: path
     weight: 30

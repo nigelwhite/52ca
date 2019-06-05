@@ -7,8 +7,8 @@ dependencies:
     - image.style.thumbnail
     - taxonomy.vocabulary.family
   module:
-    - image
     - path
+    - svg_image
     - text
 id: taxonomy_term.family.default
 targetEntityType: taxonomy_term

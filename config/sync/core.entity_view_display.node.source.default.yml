@@ -3,10 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.source.field_advanced_action_choose_me
     - field.field.node.source.field_link2
     - field.field.node.source.field_long_title
     - field.field.node.source.field_popup_close
+    - field.field.node.source.field_source_summary
     - field.field.node.source.field_summary
     - node.type.source
   module:
@@ -43,7 +43,7 @@ third_party_settings:
         - group_popup_container
         - field_long_title
         - field_summary
-        - field_advanced_action_choose_me
+        - field_source_summary
         - field_link2
         - field_popup_close
     fields:
@@ -81,11 +81,12 @@ third_party_settings:
         id: ''
         classes: popup
       label: source-container
+      region: content
     group_popup_container:
       children:
         - field_long_title
         - field_summary
-        - field_advanced_action_choose_me
+        - field_source_summary
         - field_link2
         - field_popup_close
       parent_name: group_source_container
@@ -102,28 +103,12 @@ third_party_settings:
         id: ''
         classes: 'myPopup popuptext'
       label: 'popup container'
+      region: content
 id: node.source.default
 targetEntityType: node
 bundle: source
 mode: default
 content:
-  field_advanced_action_choose_me:
-    weight: 33
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings:
-      field_formatter_class:
-        class: popup-summary
-      ds:
-        ft:
-          id: default
-          settings:
-            lb: ''
-            lb-col: false
-            classes: {  }
-    type: string
-    region: main
   field_link2:
     weight: 34
     label: hidden
@@ -169,6 +154,13 @@ content:
             lb-col: false
             classes: {  }
     type: string
+    region: main
+  field_source_summary:
+    weight: 33
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
     region: main
   field_summary:
     weight: 32

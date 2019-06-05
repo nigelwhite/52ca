@@ -154,6 +154,7 @@ third_party_settings:
         id: ''
         classes: 'families-fullpage clearfix'
       label: Families
+      region: content
     group_intro:
       children:
         - field_action_number
@@ -172,6 +173,7 @@ third_party_settings:
         id: ''
         classes: 'intro-full clearfix'
       label: Intro
+      region: content
     group_actions:
       children:
         - field_simple_action
@@ -192,6 +194,7 @@ third_party_settings:
         id: ''
         classes: action-group
       label: Actions
+      region: content
     group_resources:
       children:
         - field_summary
@@ -212,6 +215,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: RESOURCES
+      region: content
     group_earth_div:
       children:
         - field_earth_care_svg
@@ -229,6 +233,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: 'Earth div'
+      region: content
     group_fair_div:
       children:
         - field_fair_share_svg
@@ -246,6 +251,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: 'Fair div'
+      region: content
     group_people_div:
       children:
         - field_people_care_svg
@@ -263,6 +269,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: 'People div'
+      region: content
     group_linked_actions_container:
       children:
         - field_linked_actions
@@ -280,6 +287,7 @@ third_party_settings:
         id: ''
         classes: 'linked-actions clearfix'
       label: 'Linked actions container'
+      region: content
 id: node.action.action_full_page
 targetEntityType: node
 bundle: action

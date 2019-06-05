@@ -4,23 +4,90 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.source.field_advanced_action_choose_me
     - field.field.node.source.field_link2
+    - field.field.node.source.field_long_title
+    - field.field.node.source.field_popup_close
+    - field.field.node.source.field_source_summary
     - field.field.node.source.field_summary
     - node.type.source
   module:
+    - ds
+    - link
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - node_title
+        - field_long_title
+        - field_summary
+        - field_source_summary
+        - field_link2
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
 id: node.source.teaser
 targetEntityType: node
 bundle: source
 mode: teaser
 content:
-  links:
-    weight: 100
+  field_link2:
+    type: link
+    weight: 4
+    region: main
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_long_title:
+    type: string
+    weight: 1
+    region: main
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_source_summary:
+    type: basic_string
+    weight: 3
+    region: main
+    label: above
     settings: {  }
     third_party_settings: {  }
-    region: content
+  field_summary:
+    type: string
+    weight: 2
+    region: main
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
 hidden:
-  field_advanced_action_choose_me: true
-  field_link2: true
-  field_summary: true
+  field_popup_close: true
+  links: true
