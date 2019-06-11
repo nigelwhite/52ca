@@ -10243,6 +10243,11 @@ body {
   margin: 2rem auto;
 }
 
+/* line 31, ../scss/custom/_node387.scss */
+.iconstrip-family-icon {
+  margin-top: 2rem;
+}
+
 /**
  * jQuery UI autocomplete widget style overrides.
  *
