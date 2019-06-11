@@ -326,7 +326,7 @@ display:
           entity_field: status
           plugin_id: boolean
       sorts: {  }
-      title: Families
+      title: Themes
       header: {  }
       footer: {  }
       empty: {  }
@@ -342,6 +342,21 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.taxonomy_term.field_icon'
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: Block
+    position: 2
+    display_options:
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - user.permissions
+      tags:
+        - 'config:field.storage.taxonomy_term.field_icon'
   page_1:
     display_plugin: page
     id: page_1
@@ -349,7 +364,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: families
+      path: themes
       fields: {  }
       sorts: {  }
       filters:

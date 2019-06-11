@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_action_svg
     - field.field.node.page.field_announcement
     - field.field.node.page.field_image
     - node.type.page
@@ -39,9 +40,10 @@ third_party_settings:
       main:
         - field_image
         - field_announcement
+        - field_action_svg
         - 'dynamic_block_field:node-icon_strip'
-        - group_families_group
         - 'dynamic_block_field:node-action_teaser'
+        - group_families_group
         - body
     fields:
       'dynamic_block_field:node-action_teaser':
@@ -51,7 +53,7 @@ third_party_settings:
         formatter: default
       'dynamic_block_field:node-icon_strip':
         plugin_id: 'dynamic_block_field:node-icon_strip'
-        weight: 2
+        weight: 3
         label: hidden
         formatter: default
   field_group:
@@ -59,7 +61,7 @@ third_party_settings:
       children:
         - 'dynamic_block_field:node-action_teaser'
       parent_name: ''
-      weight: 3
+      weight: 4
       format_type: html_element
       format_settings:
         id: ''
@@ -87,6 +89,28 @@ content:
     region: main
     settings: {  }
     third_party_settings: {  }
+  field_action_svg:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+      svg_render_as_image: '1'
+      svg_attributes:
+        width: '250'
+        height: ''
+    third_party_settings:
+      field_formatter_class:
+        class: act
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: image
+    region: main
   field_announcement:
     weight: 1
     label: hidden

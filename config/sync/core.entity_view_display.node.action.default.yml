@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.action.field_family
     - field.field.node.action.field_global_action
     - field.field.node.action.field_global_action_choose_me
+    - field.field.node.action.field_homepage
     - field.field.node.action.field_image
     - field.field.node.action.field_image_block
     - field.field.node.action.field_intro_svg
@@ -69,15 +70,15 @@ third_party_settings:
         - group_card_header
         - group_card_body
         - field_image
-        - group_card_footer
         - group_families
         - group_intro
+        - group_card_footer
         - field_intro_svg
         - node_title
-        - field_action_svg
         - field_action_number
-        - field_card_text_new
+        - field_action_svg
         - field_card_action
+        - field_card_text_new
         - 'dynamic_block_field:node-card_pager'
         - field_family
     fields:
@@ -303,6 +304,7 @@ hidden:
   field_fair_share_svg: true
   field_global_action: true
   field_global_action_choose_me: true
+  field_homepage: true
   field_image_block: true
   field_linked_actions: true
   field_more_actions: true

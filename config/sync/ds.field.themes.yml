@@ -1,0 +1,18 @@
+id: themes
+label: Themes
+ui_limit: ''
+properties:
+  block: 'views_block:families-block_1'
+  use_block_title: false
+  add_block_wrappers: false
+  config:
+    id: 'views_block:families-block_1'
+    label: ''
+    provider: views
+    label_display: visible
+    views_label: ''
+    items_per_page: '16'
+type: block
+type_label: 'Block field'
+entities:
+  taxonomy_term: taxonomy_term

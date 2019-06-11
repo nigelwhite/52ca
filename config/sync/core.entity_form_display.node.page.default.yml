@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_action_svg
     - field.field.node.page.field_announcement
     - field.field.node.page.field_image
     - image.style.thumbnail
@@ -34,6 +35,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_action_svg:
+    weight: 123
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
   field_announcement:
     weight: 122
     settings:

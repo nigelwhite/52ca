@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.action.field_family
     - field.field.node.action.field_global_action
     - field.field.node.action.field_global_action_choose_me
+    - field.field.node.action.field_homepage
     - field.field.node.action.field_image
     - field.field.node.action.field_image_block
     - field.field.node.action.field_intro_svg
@@ -305,6 +306,7 @@ hidden:
   field_earth_care_svg: true
   field_fair_share_svg: true
   field_global_action_choose_me: true
+  field_homepage: true
   field_intro_svg: true
   field_more_actions: true
   field_people_care_svg: true
