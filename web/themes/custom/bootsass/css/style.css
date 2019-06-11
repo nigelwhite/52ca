@@ -10244,7 +10244,7 @@ body {
 }
 
 /* line 31, ../scss/custom/_node387.scss */
-.iconstrip-family-icon {
+.iconstrip-family-icon.family-icon a img {
   margin-top: 2rem;
 }
 
