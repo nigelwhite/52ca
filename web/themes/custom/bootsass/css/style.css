@@ -10216,7 +10216,7 @@ body {
   text-transform: uppercase;
   font-weight: 600;
   font-family: "Zilla Slab", sans-serif;
-  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 
 /* line 10, ../scss/custom/_node387.scss */
@@ -10224,17 +10224,23 @@ body {
   margin-bottom: 4rem;
   background-color: #efefef;
   padding: 3rem 0;
+  margin-top: 4rem;
 }
 
-/* line 16, ../scss/custom/_node387.scss */
+/* line 17, ../scss/custom/_node387.scss */
 .families-group-387 {
   background-color: rgba(162, 198, 53, 0.8);
   padding: 2rem 1rem 2rem 1rem;
 }
 
-/* line 21, ../scss/custom/_node387.scss */
+/* line 22, ../scss/custom/_node387.scss */
 .family-grid #teaser {
   background-color: #fff;
+}
+
+/* line 27, ../scss/custom/_node387.scss */
+.act img {
+  margin: 2rem auto;
 }
 
 /**
