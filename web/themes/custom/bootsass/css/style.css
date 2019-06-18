@@ -9972,7 +9972,7 @@ ul.entity-pager-list {
   padding-bottom: 2rem;
   border-image: linear-gradient(to right, #165025 10%, #d5d5d5 5%) 1;
   width: 40%;
-  margin: 2rem auto;
+  margin: 3rem auto;
 }
 
 /* line 167, ../scss/custom/_fullpage.scss */
@@ -10008,6 +10008,23 @@ ul.entity-pager-list {
 .bottom-title a {
   text-transform: uppercase;
   font-family: 'Zilla Slab', sans-serif;
+}
+
+/* line 198, ../scss/custom/_fullpage.scss */
+#more-actions-bottom {
+  padding-bottom: 3.5rem;
+  background-color: #efefef;
+}
+
+/* line 203, ../scss/custom/_fullpage.scss */
+.family-icon-moreactions .field--item {
+  float: left;
+  width: 50px;
+}
+
+/* line 208, ../scss/custom/_fullpage.scss */
+.title-moreactions {
+  font-size: 2rem;
 }
 
 /* line 4, ../scss/custom/_navbar.scss */
@@ -10243,6 +10260,12 @@ body {
 /* line 31, ../scss/custom/_node387.scss */
 .iconstrip-family-icon.family-icon a img {
   margin-top: 2rem;
+}
+
+/* line 35, ../scss/custom/_node387.scss */
+.teaser2-title {
+  font-family: "Muli", sans-serif;
+  font-size: 1.75rem;
 }
 
 /**
