@@ -6,6 +6,7 @@ dependencies:
     - system.menu.account
   module:
     - system
+    - user
   theme:
     - bootsass
 _core:
@@ -27,6 +28,13 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "<front>\r\n/user/*"
+    pages: "/node/422\r\n/user/*"
     negate: false
     context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      content_editor: content_editor
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

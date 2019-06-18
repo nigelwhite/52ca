@@ -18,6 +18,7 @@ dependencies:
     - field.field.node.action.field_family
     - field.field.node.action.field_global_action
     - field.field.node.action.field_global_action_choose_me
+    - field.field.node.action.field_homepage
     - field.field.node.action.field_image
     - field.field.node.action.field_image_block
     - field.field.node.action.field_intro_svg
@@ -94,19 +95,19 @@ third_party_settings:
         - field_image
       right:
         - field_summary
+        - group_families
         - field_resources_for_children_
         - field_resources_for_higher_educa
-        - field_project_example
-        - field_reference
-        - group_families
         - field_action_svg
+        - field_project_example
         - group_actions
+        - field_reference
         - group_earth_div
-        - field_family
         - group_fair_div
         - group_people_div
-        - field_simple_action
+        - field_family
         - group_resources
+        - field_simple_action
         - field_radical_action
         - field_community_action
         - field_earth_care_svg
@@ -119,13 +120,13 @@ third_party_settings:
       left:
         - group_intro
         - field_action_number
-        - field_card_text_new
         - node_title
+        - field_card_text_new
         - field_image_block
       bottom:
+        - group_linked_actions_container
         - field_more_actions
         - field_linked_actions
-        - group_linked_actions_container
     fields:
       node_title:
         plugin_id: node_title
@@ -141,10 +142,9 @@ third_party_settings:
       children:
         - field_family
       parent_name: ''
-      weight: 4
+      weight: 1
       format_type: html_element
       format_settings:
-        label: Families
         element: div
         show_label: false
         label_element: h3
@@ -154,7 +154,7 @@ third_party_settings:
         id: ''
         classes: 'families-fullpage clearfix'
       label: Families
-      region: content
+      region: hidden
     group_intro:
       children:
         - field_action_number
@@ -163,7 +163,6 @@ third_party_settings:
       weight: 1
       format_type: html_element
       format_settings:
-        label: Intro
         element: div
         show_label: false
         label_element: h3
@@ -173,7 +172,7 @@ third_party_settings:
         id: ''
         classes: 'intro-full clearfix'
       label: Intro
-      region: content
+      region: hidden
     group_actions:
       children:
         - field_simple_action
@@ -181,10 +180,9 @@ third_party_settings:
         - field_community_action
         - field_global_action
       parent_name: ''
-      weight: 6
+      weight: 3
       format_type: html_element
       format_settings:
-        label: Actions
         element: div
         show_label: false
         label_element: h3
@@ -194,7 +192,7 @@ third_party_settings:
         id: ''
         classes: action-group
       label: Actions
-      region: content
+      region: hidden
     group_resources:
       children:
         - field_summary
@@ -203,7 +201,7 @@ third_party_settings:
         - field_project_example
         - field_reference
       parent_name: ''
-      weight: 10
+      weight: 7
       format_type: html_element
       format_settings:
         id: ''
@@ -215,13 +213,13 @@ third_party_settings:
         effect: none
         speed: fast
       label: RESOURCES
-      region: content
+      region: hidden
     group_earth_div:
       children:
         - field_earth_care_svg
         - field_earth_care2_
       parent_name: ''
-      weight: 7
+      weight: 4
       format_type: html_element
       format_settings:
         id: ''
@@ -233,13 +231,13 @@ third_party_settings:
         effect: none
         speed: fast
       label: 'Earth div'
-      region: content
+      region: hidden
     group_fair_div:
       children:
         - field_fair_share_svg
         - field_fair_share2_
       parent_name: ''
-      weight: 8
+      weight: 5
       format_type: html_element
       format_settings:
         id: ''
@@ -251,13 +249,13 @@ third_party_settings:
         effect: none
         speed: fast
       label: 'Fair div'
-      region: content
+      region: hidden
     group_people_div:
       children:
         - field_people_care_svg
         - field_people_self_care_
       parent_name: ''
-      weight: 9
+      weight: 6
       format_type: html_element
       format_settings:
         id: ''
@@ -269,25 +267,26 @@ third_party_settings:
         effect: none
         speed: fast
       label: 'People div'
-      region: content
+      region: hidden
     group_linked_actions_container:
       children:
+        - field_more_actions
         - field_linked_actions
       parent_name: ''
-      weight: 12
+      weight: 8
       format_type: html_element
       format_settings:
-        label: 'Linked actions container'
         element: div
         show_label: false
         label_element: h3
+        label_element_classes: ''
         attributes: ''
         effect: none
         speed: fast
         id: ''
-        classes: 'linked-actions clearfix'
+        classes: linked-actions
       label: 'Linked actions container'
-      region: content
+      region: hidden
 id: node.action.action_full_page
 targetEntityType: node
 bundle: action
@@ -304,7 +303,7 @@ content:
         class: action-number
   field_action_svg:
     type: image
-    weight: 5
+    weight: 2
     region: right
     label: hidden
     settings:
@@ -319,7 +318,7 @@ content:
         class: actionfull-svg
   field_card_text_new:
     type: text_default
-    weight: 2
+    weight: 9
     region: left
     label: hidden
     settings: {  }
@@ -490,7 +489,7 @@ content:
             classes: {  }
   field_image_block:
     type: entity_reference_revisions_entity_view
-    weight: 3
+    weight: 10
     region: left
     label: hidden
     settings:
@@ -509,7 +508,7 @@ content:
             classes: {  }
   field_linked_actions:
     type: entity_reference_entity_view
-    weight: 12
+    weight: 13
     region: bottom
     label: hidden
     settings:
@@ -528,7 +527,7 @@ content:
             classes: {  }
   field_more_actions:
     type: string
-    weight: 11
+    weight: 12
     region: bottom
     label: hidden
     settings:
@@ -707,6 +706,7 @@ hidden:
   field_card_action: true
   field_community_action_choose_me: true
   field_global_action_choose_me: true
+  field_homepage: true
   field_intro_svg: true
   field_sdg: true
   field_season: true
