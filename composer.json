@@ -135,6 +135,9 @@
             },
             "drupal/paragraphs": {
                 "Make paragraphs module working with field_group version 3.x with support for the field_layout module": "https://www.drupal.org/files/issues/2019-06-06/2907094-37.patch"
+            },
+            "drupal/field_group": {
+                "The region part of entity view config isn't set for old installs": "https://www.drupal.org/files/issues/2018-11-29/2968184-16.patch"
             }
         }
     }
