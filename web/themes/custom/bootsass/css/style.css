@@ -10081,6 +10081,12 @@ body {
   /* As IE6 ignores !important it will set width as 350px; */
 }
 
+/* line 8, ../scss/custom/_base-resets.scss */
+a,
+a:hover {
+  color: #165025;
+}
+
 /* line 1, ../scss/custom/_family.scss */
 .family-title {
   font-family: 'Zilla Slab', sans-serif;
@@ -10243,8 +10249,8 @@ body {
 
 /* line 17, ../scss/custom/_node387.scss */
 .families-group-387 {
-  background-color: rgba(162, 198, 53, 0.8);
-  padding: 2rem 1rem 2rem 1rem;
+  background-color: rgba(162, 198, 53, 0.5);
+  padding: 3rem 1rem 3rem 1rem;
 }
 
 /* line 22, ../scss/custom/_node387.scss */
@@ -10266,6 +10272,8 @@ body {
 .teaser2-title {
   font-family: "Muli", sans-serif;
   font-size: 1.75rem;
+  text-align: center;
+  padding-top: 0.5rem;
 }
 
 /**
