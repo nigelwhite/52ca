@@ -132,6 +132,9 @@
         "patches": {
             "drupal/entity_pager": {
                 "Pager not correctly determining current node/entity after beta2 update": "https://www.drupal.org/files/issues/2019-03-27/3043003-issue-with-class.diff"
+            },
+            "drupal/paragraphs": {
+                "Make paragraphs module working with field_group version 3.x with support for the field_layout module": "https://www.drupal.org/files/issues/2019-06-06/2907094-37.patch"
             }
         }
     }
