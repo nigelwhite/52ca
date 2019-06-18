@@ -10261,28 +10261,32 @@ a:hover {
   padding: 3rem 1rem 3rem 1rem;
 }
 
-/* line 22, ../scss/custom/_node387.scss */
-.family-grid #teaser {
+/* line 23, ../scss/custom/_node387.scss */
+.node--view-mode-teaser2 {
   background-color: #fff;
+  margin: 2rem 0;
+  border: 1px solid black;
+  padding: 1.5rem;
+  max-width: 340px;
 }
 
-/* line 27, ../scss/custom/_node387.scss */
+/* line 31, ../scss/custom/_node387.scss */
 .act img {
   margin: 2rem auto;
 }
 
-/* line 31, ../scss/custom/_node387.scss */
+/* line 35, ../scss/custom/_node387.scss */
 .iconstrip-family-icon.family-icon a img {
   margin-top: 2rem;
 }
 
-/* line 35, ../scss/custom/_node387.scss */
+/* line 39, ../scss/custom/_node387.scss */
 .teaser2-title {
-  font-family: "Muli", sans-serif;
-  font-size: 1.75rem;
+  font-family: "Zilla Slab", sans-serif;
   text-align: center;
   padding-top: 0.5rem;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 /**
