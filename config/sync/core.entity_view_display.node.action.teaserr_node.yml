@@ -1,9 +1,9 @@
-uuid: e4a0d3f4-6112-40a2-8a71-43656b57177f
+uuid: 4a651ad7-748d-48d2-917f-3b9867714251
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.teaserr_node
     - field.field.node.action.field_action_number
     - field.field.node.action.field_action_svg
     - field.field.node.action.field_advanced_action_choose_me
@@ -55,32 +55,32 @@ third_party_settings:
         layout:
           wrapper: div
           classes:
-            row: row
+            col-sm-4: col-sm-4
           add_layout_class: 1
-          attributes: id|teaser
+          attributes: ''
         regions:
           main:
             wrapper: div
             classes:
-              col-sm-12: col-sm-12
+              row: row
             add_region_classes: 1
             attributes: ''
     regions:
       main:
         - field_image
         - node_title
-        - field_family
         - group_families
+        - field_family
     fields:
       node_title:
         plugin_id: node_title
-        weight: 2
+        weight: -1
         label: hidden
         formatter: default
         settings:
           link: true
           wrapper: p
-          class: bottom-title
+          class: title-moreactions
         ft:
           id: default
           settings:
@@ -88,11 +88,10 @@ third_party_settings:
             lb-col: false
             classes: {  }
   field_group:
-    group_families:
-      children:
-        - field_family
-      parent_name: ''
-      weight: 3
+    group_intro:
+      children: {  }
+      parent_name: group_card_body
+      weight: 2
       format_type: html_element
       format_settings:
         element: div
@@ -102,25 +101,91 @@ third_party_settings:
         effect: none
         speed: fast
         id: ''
-        classes: 'families-fullpage-bottom clearfix'
+        classes: 'intro-card row'
+      label: Intro
+      region: hidden
+    group_card_body:
+      children:
+        - group_intro
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: card-body
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Card body'
+      region: hidden
+    group_card_footer:
+      children:
+        - 'dynamic_block_field:node-card_pager'
+      parent_name: ''
+      weight: 2
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: card-footer
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Card footer'
+      region: hidden
+    group_families:
+      children:
+        - field_family
+      parent_name: ''
+      weight: 2
+      format_type: html_element
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'families-moreactions clearfix'
       label: Families
       region: hidden
-id: node.action.teaser
+    group_card_header:
+      children: {  }
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'card-header clearfix'
+      label: 'Card header'
+      region: hidden
+id: node.action.teaserr_node
 targetEntityType: node
 bundle: action
-mode: teaser
+mode: teaserr_node
 content:
   field_family:
-    type: entity_reference_entity_view
-    weight: 3
-    region: main
+    weight: 6
     label: hidden
     settings:
       view_mode: family_icon
       link: false
     third_party_settings:
       field_formatter_class:
-        class: family-icon-bottom
+        class: family-icon-moreactions
       ds:
         ds_limit: ''
         ft:
@@ -129,10 +194,10 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-  field_image:
-    type: image
-    weight: 1
+    type: entity_reference_entity_view
     region: main
+  field_image:
+    weight: -2
     label: hidden
     settings:
       image_style: main_image_bottom_of_page
@@ -143,7 +208,7 @@ content:
         height: ''
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: mainimage-moreactions
       ds:
         ft:
           id: default
@@ -151,6 +216,8 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
+    type: image
+    region: main
 hidden:
   field_action_number: true
   field_action_svg: true

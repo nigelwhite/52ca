@@ -196,8 +196,8 @@ display:
             image_link: content
             svg_render_as_image: 1
             svg_attributes:
-              width: '70'
-              height: '70'
+              width: '125'
+              height: '125'
           group_column: ''
           group_columns: {  }
           group_rows: true

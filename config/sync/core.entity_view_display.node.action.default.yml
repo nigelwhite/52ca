@@ -70,17 +70,17 @@ third_party_settings:
         - group_card_header
         - group_card_body
         - field_image
-        - group_families
         - group_intro
         - group_card_footer
-        - field_intro_svg
+        - group_families
         - node_title
-        - field_action_number
+        - field_intro_svg
         - field_action_svg
-        - field_card_action
+        - field_action_number
         - field_card_text_new
-        - 'dynamic_block_field:node-card_pager'
+        - field_card_action
         - field_family
+        - 'dynamic_block_field:node-card_pager'
     fields:
       node_title:
         plugin_id: node_title

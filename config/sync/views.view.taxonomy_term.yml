@@ -228,6 +228,7 @@ display:
       row:
         type: 'entity:node'
         options:
+          relationship: none
           view_mode: teaser
       header:
         entity_taxonomy_term:

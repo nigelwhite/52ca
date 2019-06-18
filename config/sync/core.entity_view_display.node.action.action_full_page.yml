@@ -89,20 +89,20 @@ third_party_settings:
             classes:
               col-sm-12: col-sm-12
             add_region_classes: 1
-            attributes: ''
+            attributes: id|more-actions-bottom
     regions:
       top:
         - field_image
       right:
         - field_summary
-        - group_families
         - field_resources_for_children_
+        - group_families
         - field_resources_for_higher_educa
         - field_action_svg
         - field_project_example
         - group_actions
-        - field_reference
         - group_earth_div
+        - field_reference
         - group_fair_div
         - group_people_div
         - field_family
@@ -111,8 +111,8 @@ third_party_settings:
         - field_radical_action
         - field_community_action
         - field_earth_care_svg
-        - field_global_action
         - field_earth_care2_
+        - field_global_action
         - field_fair_share_svg
         - field_fair_share2_
         - field_people_care_svg
@@ -512,11 +512,11 @@ content:
     region: bottom
     label: hidden
     settings:
-      view_mode: teaser
+      view_mode: teaserr_node
       link: false
     third_party_settings:
       field_formatter_class:
-        class: linked-action
+        class: more-action
       ds:
         ds_limit: ''
         ft:
@@ -532,7 +532,16 @@ content:
     label: hidden
     settings:
       link_to_entity: false
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
   field_people_care_svg:
     type: image
     weight: 21

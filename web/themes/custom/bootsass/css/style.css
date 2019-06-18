@@ -9673,7 +9673,7 @@ body.toolbar-loading.toolbar {
 /* line 134, ../scss/custom/_card.scss */
 .entity-pager-item-prev,
 .entity-pager-item-next {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 1000;
   height: 30px;
   line-height: 20px;
@@ -9691,96 +9691,106 @@ body.toolbar-loading.toolbar {
 }
 
 /* line 153, ../scss/custom/_card.scss */
+.entity-pager-item-prev {
+  padding-right: 4rem;
+}
+
+/* line 157, ../scss/custom/_card.scss */
+.entity-pager-item-next {
+  padding-left: 4rem;
+}
+
+/* line 161, ../scss/custom/_card.scss */
 .entity-pager-list .entity-pager-item {
   margin-bottom: 0;
   margin-top: 0;
 }
 
-/* line 158, ../scss/custom/_card.scss */
+/* line 166, ../scss/custom/_card.scss */
 ul.entity-pager-list {
   margin-bottom: 0;
   margin-top: 0;
   font-size: 1.5rem;
 }
 
-/* line 164, ../scss/custom/_card.scss */
+/* line 172, ../scss/custom/_card.scss */
 .ethic {
   margin-bottom: 1.25em;
   padding-left: 0.5em;
 }
 
-/* line 169, ../scss/custom/_card.scss */
+/* line 177, ../scss/custom/_card.scss */
 .region-sidebar-second {
   display: none;
 }
 
 @media screen and (min-width: 400px) {
-  /* line 174, ../scss/custom/_card.scss */
+  /* line 182, ../scss/custom/_card.scss */
   .text-card {
     font-size: calc(8px + 1.6vw);
   }
 
-  /* line 177, ../scss/custom/_card.scss */
+  /* line 185, ../scss/custom/_card.scss */
   .introsvg-card {
     max-width: 130px;
   }
 
-  /* line 180, ../scss/custom/_card.scss */
+  /* line 188, ../scss/custom/_card.scss */
   .actionsvg-card {
     margin: 0 auto;
     max-width: 110px;
     padding-top: 1rem;
   }
 
-  /* line 185, ../scss/custom/_card.scss */
+  /* line 193, ../scss/custom/_card.scss */
   .title-card {
     font-size: 6vw;
   }
 
-  /* line 188, ../scss/custom/_card.scss */
+  /* line 196, ../scss/custom/_card.scss */
   .number-card {
     font-size: 5rem;
     line-height: 4rem;
     height: 4rem;
   }
 
-  /* line 193, ../scss/custom/_card.scss */
+  /* line 201, ../scss/custom/_card.scss */
   .card-footer {
     max-height: 25vw;
   }
 
-  /* line 196, ../scss/custom/_card.scss */
+  /* line 204, ../scss/custom/_card.scss */
   .card-action {
     font-size: 3.9vw;
     margin: 3%;
   }
 
-  /* line 200, ../scss/custom/_card.scss */
+  /* line 208, ../scss/custom/_card.scss */
   .card-body {
     margin-left: 3%;
     margin-right: 3%;
   }
 }
 @media screen and (min-width: 520px) {
-  /* line 209, ../scss/custom/_card.scss */
+  /* line 217, ../scss/custom/_card.scss */
   .main-container-card {
     box-shadow: 10px 10px 5px #888888;
   }
 
-  /* line 212, ../scss/custom/_card.scss */
+  /* line 220, ../scss/custom/_card.scss */
   .card-body {
     margin-left: 5%;
     margin-right: 5%;
   }
 
-  /* line 216, ../scss/custom/_card.scss */
+  /* line 224, ../scss/custom/_card.scss */
   .number-card {
     font-size: 6.5rem;
     line-height: 5.2rem;
     height: 5.2rem;
   }
 
-  /* line 221, ../scss/custom/_card.scss */
+  /* line 229, ../scss/custom/_card.scss */
   .title-card {
     font-size: 1.8em;
     line-height: 1;
@@ -9788,34 +9798,34 @@ ul.entity-pager-list {
     padding-bottom: 0.4em;
   }
 
-  /* line 227, ../scss/custom/_card.scss */
+  /* line 235, ../scss/custom/_card.scss */
   .introsvg-card {
     max-width: 180px;
   }
 
-  /* line 230, ../scss/custom/_card.scss */
+  /* line 238, ../scss/custom/_card.scss */
   .actionsvg-card {
     max-width: 140px;
     padding-top: 1em;
   }
 
-  /* line 234, ../scss/custom/_card.scss */
+  /* line 242, ../scss/custom/_card.scss */
   .text-card {
     font-size: 1.7rem;
   }
 
-  /* line 237, ../scss/custom/_card.scss */
+  /* line 245, ../scss/custom/_card.scss */
   .card-footer {
     max-height: 180px;
   }
 
-  /* line 240, ../scss/custom/_card.scss */
+  /* line 248, ../scss/custom/_card.scss */
   .card-action {
     font-size: 2rem;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 246, ../scss/custom/_card.scss */
+  /* line 254, ../scss/custom/_card.scss */
   .region-sidebar-second {
     display: block;
   }
@@ -9967,31 +9977,30 @@ ul.entity-pager-list {
   font-size: 3rem;
   color: #00a45c;
   text-align: center;
-  margin-top: 3rem;
   border-bottom: 8px solid;
   padding-bottom: 2rem;
   border-image: linear-gradient(to right, #165025 10%, #d5d5d5 5%) 1;
   width: 40%;
-  margin: 3rem auto;
+  margin: 4rem auto;
 }
 
-/* line 167, ../scss/custom/_fullpage.scss */
+/* line 166, ../scss/custom/_fullpage.scss */
 .linked-action {
   padding: 4rem 0 6rem 0;
 }
 
-/* line 173, ../scss/custom/_fullpage.scss */
+/* line 172, ../scss/custom/_fullpage.scss */
 .linked-action .field--item {
   background-color: #fff;
 }
 
-/* line 177, ../scss/custom/_fullpage.scss */
+/* line 176, ../scss/custom/_fullpage.scss */
 .family-icon-bottom > .field--item {
   float: left;
   max-width: 40px;
 }
 
-/* line 182, ../scss/custom/_fullpage.scss */
+/* line 181, ../scss/custom/_fullpage.scss */
 .bottom-title {
   margin-top: 1rem;
   margin-left: 1rem;
@@ -9999,30 +10008,30 @@ ul.entity-pager-list {
   min-height: 50px;
 }
 
-/* line 189, ../scss/custom/_fullpage.scss */
+/* line 188, ../scss/custom/_fullpage.scss */
 .families-fullpage-bottom {
   margin-left: 1rem;
 }
 
-/* line 193, ../scss/custom/_fullpage.scss */
+/* line 192, ../scss/custom/_fullpage.scss */
 .bottom-title a {
   text-transform: uppercase;
   font-family: 'Zilla Slab', sans-serif;
 }
 
-/* line 198, ../scss/custom/_fullpage.scss */
+/* line 197, ../scss/custom/_fullpage.scss */
 #more-actions-bottom {
   padding-bottom: 3.5rem;
   background-color: #efefef;
 }
 
-/* line 203, ../scss/custom/_fullpage.scss */
+/* line 202, ../scss/custom/_fullpage.scss */
 .family-icon-moreactions .field--item {
   float: left;
   width: 50px;
 }
 
-/* line 208, ../scss/custom/_fullpage.scss */
+/* line 207, ../scss/custom/_fullpage.scss */
 .title-moreactions {
   font-size: 2rem;
 }
@@ -10112,7 +10121,6 @@ a:hover {
 .family-grid #teaser {
   margin: 2rem 0;
   border: 1px black solid;
-  border-radius: 20px;
   padding: 2rem 0;
   max-width: 340px;
 }
@@ -10274,6 +10282,7 @@ a:hover {
   font-size: 1.75rem;
   text-align: center;
   padding-top: 0.5rem;
+  font-weight: bold;
 }
 
 /**

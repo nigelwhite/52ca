@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.teaser2
     - node.type.action
     - system.menu.main
     - taxonomy.vocabulary.family
@@ -230,30 +230,10 @@ display:
         type: 'ds_entity:node'
         options:
           relationship: none
-          view_mode: teaser
+          view_mode: teaser2
           alternating_fieldset:
             alternating: false
             allpages: false
-            item_0: teaser
-            item_1: teaser
-            item_2: teaser
-            item_3: teaser
-            item_4: teaser
-            item_5: teaser
-            item_6: teaser
-            item_7: teaser
-            item_8: teaser
-            item_9: teaser
-            item_10: teaser
-            item_11: teaser
-            item_12: teaser
-            item_13: teaser
-            item_14: teaser
-            item_15: teaser
-            item_16: teaser
-            item_17: teaser
-            item_18: teaser
-            item_19: teaser
           grouping_fieldset:
             group: false
             group_field: node_field_data|created

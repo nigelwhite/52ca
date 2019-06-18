@@ -18,6 +18,7 @@ dependencies:
     - field.field.node.action.field_family
     - field.field.node.action.field_global_action
     - field.field.node.action.field_global_action_choose_me
+    - field.field.node.action.field_homepage
     - field.field.node.action.field_image
     - field.field.node.action.field_image_block
     - field.field.node.action.field_intro_svg
@@ -54,14 +55,14 @@ third_party_settings:
         layout:
           wrapper: div
           classes:
-            row: row
+            clearfix: clearfix
           add_layout_class: 1
           attributes: ''
         regions:
           main:
             wrapper: div
             classes:
-              col-sm-12: col-sm-12
+              clearfix: clearfix
             add_region_classes: 1
             attributes: ''
     regions:
@@ -75,9 +76,9 @@ third_party_settings:
         label: hidden
         formatter: default
         settings:
-          wrapper: h5
+          link: true
+          wrapper: p
           class: teaser2-title
-          link: false
         ft:
           id: default
           settings:
@@ -210,6 +211,7 @@ hidden:
   field_family: true
   field_global_action: true
   field_global_action_choose_me: true
+  field_homepage: true
   field_image_block: true
   field_intro_svg: true
   field_linked_actions: true
