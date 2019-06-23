@@ -10162,6 +10162,13 @@ a:hover {
   grid-template-columns: auto auto auto auto auto;
   justify-items: center;
   align-items: end;
+  margin-bottom: 2rem;
+}
+
+/* line 31, ../scss/custom/_footer.scss */
+.pa-logo {
+  margin-top: 3rem;
+  width: 300px;
 }
 
 /* Popup container */
