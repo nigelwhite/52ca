@@ -1,0 +1,30 @@
+uuid: e3c7a002-c372-4e94-af9c-e69b0a76cb8f
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.field_logo_image
+field_name: field_logo_image
+entity_type: node
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: 97ddb047-f323-4f80-b1b7-296a4817d4ad
+    alt: Dared
+    title: Dared
+    width: 787
+    height: 787
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: bfdc1ff6-a4c7-4d27-aa14-b1e330aa75af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.logo
+  module:
+    - link
+id: node.logo.field_link
+field_name: field_link
+entity_type: node
+bundle: logo
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 2
+field_type: link
