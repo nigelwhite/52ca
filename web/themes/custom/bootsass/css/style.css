@@ -10132,31 +10132,26 @@ a:hover {
 
 /* line 1, ../scss/custom/_footer.scss */
 .footer {
-  background-image: linear-gradient(#fdd905 80%, #165025 20%);
+  background-image: linear-gradient(#a2c635 60%, #165025 30%);
 }
 
 /* line 5, ../scss/custom/_footer.scss */
-.menu--footer > li {
-  float: left;
-}
-
-/* line 9, ../scss/custom/_footer.scss */
 .menu--footer > li > a {
   display: block;
-  padding: 1rem 2rem;
+  padding: 0 2rem;
   text-transform: uppercase;
   font-family: 'Zilla Slab', sans-serif;
-  color: black;
-  font-size: 2rem;
+  color: #fff;
+  font-size: 1.5rem;
 }
 
-/* line 18, ../scss/custom/_footer.scss */
+/* line 14, ../scss/custom/_footer.scss */
 .block-views-blocklogos-block-1 {
   width: 90%;
   margin: 0 auto;
 }
 
-/* line 23, ../scss/custom/_footer.scss */
+/* line 19, ../scss/custom/_footer.scss */
 .logos-container .view-content {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
@@ -10165,7 +10160,7 @@ a:hover {
   margin-bottom: 2rem;
 }
 
-/* line 31, ../scss/custom/_footer.scss */
+/* line 27, ../scss/custom/_footer.scss */
 .pa-logo {
   margin-top: 3rem;
   width: 300px;
