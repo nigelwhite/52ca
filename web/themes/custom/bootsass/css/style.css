@@ -10150,6 +10150,20 @@ a:hover {
   font-size: 2rem;
 }
 
+/* line 18, ../scss/custom/_footer.scss */
+.block-views-blocklogos-block-1 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 23, ../scss/custom/_footer.scss */
+.logos-container .view-content {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-items: center;
+  align-items: end;
+}
+
 /* Popup container */
 /* line 2, ../scss/custom/_embedded.scss */
 .popup {
