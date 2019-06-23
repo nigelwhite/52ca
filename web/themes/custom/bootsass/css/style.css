@@ -10036,6 +10036,14 @@ ul.entity-pager-list {
   font-size: 2rem;
 }
 
+/* line 211, ../scss/custom/_fullpage.scss */
+.teaching-link {
+  margin-top: 1.75em;
+  padding: 0 1em 0 0.8em;
+  font-size: 17px;
+  font-weight: bold;
+}
+
 /* line 4, ../scss/custom/_navbar.scss */
 .navbar-nav > li > a {
   text-transform: uppercase;
