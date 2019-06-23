@@ -1,0 +1,25 @@
+uuid: 7afb624d-8836-4ed4-b2ff-4a0edc240d03
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e6fa83e0-32e3-4a5d-aa9c-852287e7eff0'
+  module:
+    - block_content
+  theme:
+    - bootsass
+id: permlogo
+theme: bootsass
+region: footer
+weight: -9
+provider: null
+plugin: 'block_content:e6fa83e0-32e3-4a5d-aa9c-852287e7eff0'
+settings:
+  id: 'block_content:e6fa83e0-32e3-4a5d-aa9c-852287e7eff0'
+  label: 'Perm logo'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
