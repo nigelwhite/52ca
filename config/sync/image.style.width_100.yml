@@ -1,0 +1,15 @@
+uuid: fe37867b-293c-4347-9e41-4a2a5ca94c5d
+langcode: en
+status: true
+dependencies: {  }
+name: width_100
+label: width-100
+effects:
+  34572e55-bcbf-490c-88f4-e849f43492f4:
+    uuid: 34572e55-bcbf-490c-88f4-e849f43492f4
+    id: image_scale
+    weight: 1
+    data:
+      width: 100
+      height: null
+      upscale: false

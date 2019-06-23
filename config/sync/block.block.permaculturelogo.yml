@@ -1,0 +1,25 @@
+uuid: 5fa3545a-7561-4c93-a0ef-cde715c99881
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d0ad0ea3-73f2-439d-b5e9-02ff9427c568'
+  module:
+    - block_content
+  theme:
+    - bootsass
+id: permaculturelogo
+theme: bootsass
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:d0ad0ea3-73f2-439d-b5e9-02ff9427c568'
+settings:
+  id: 'block_content:d0ad0ea3-73f2-439d-b5e9-02ff9427c568'
+  label: 'Permaculture logo'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

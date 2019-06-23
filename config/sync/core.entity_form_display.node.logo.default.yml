@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.logo.body
     - field.field.node.logo.field_link
     - field.field.node.logo.field_logo_image
+    - field.field.node.logo.field_order
     - image.style.thumbnail
     - node.type.logo
   module:
@@ -48,6 +49,13 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_order:
+    weight: 124
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
     region: content
   path:
     type: path

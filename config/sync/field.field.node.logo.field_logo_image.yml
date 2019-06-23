@@ -28,9 +28,9 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: 4031be36-b07c-4793-a79e-e461e2d6ebd5
-    alt: Dared
-    title: Dared
+    uuid: ''
+    alt: ''
+    title: ''
     width: 400
     height: 400
   handler: 'default:file'

@@ -1,0 +1,15 @@
+uuid: 80323e58-842c-4e70-b1c7-508bf89caf9a
+langcode: en
+status: true
+dependencies: {  }
+name: width_150
+label: 'width 150'
+effects:
+  2018dde3-b8b9-4452-b2aa-4af8661aa563:
+    uuid: 2018dde3-b8b9-4452-b2aa-4af8661aa563
+    id: image_scale
+    weight: 1
+    data:
+      width: 150
+      height: null
+      upscale: false

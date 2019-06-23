@@ -1,0 +1,15 @@
+uuid: c18ce6e1-792b-4718-bc45-81ccfc39920d
+langcode: en
+status: true
+dependencies: {  }
+name: width_250
+label: 'width 250'
+effects:
+  104725fe-acda-4395-aace-b4f7db947f2f:
+    uuid: 104725fe-acda-4395-aace-b4f7db947f2f
+    id: image_scale
+    weight: 1
+    data:
+      width: 250
+      height: null
+      upscale: false
