@@ -37,6 +37,7 @@ permissions:
   - 'delete own source content'
   - 'delete own video media'
   - 'edit any action content'
+  - 'edit any article content'
   - 'edit any resource content'
   - 'edit any source content'
   - 'edit own action content'

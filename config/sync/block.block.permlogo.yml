@@ -11,7 +11,7 @@ dependencies:
 id: permlogo
 theme: bootsass
 region: footer
-weight: -9
+weight: -10
 provider: null
 plugin: 'block_content:e6fa83e0-32e3-4a5d-aa9c-852287e7eff0'
 settings:

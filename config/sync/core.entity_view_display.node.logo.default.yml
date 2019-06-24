@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.logo.body
+    - field.field.node.logo.field_display
     - field.field.node.logo.field_link
     - field.field.node.logo.field_logo_image
     - field.field.node.logo.field_order
@@ -24,6 +25,16 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_display:
+    weight: 105
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
   field_link:
     weight: 102

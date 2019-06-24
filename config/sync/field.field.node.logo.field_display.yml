@@ -1,0 +1,23 @@
+uuid: 2d9a7a1b-74de-4cfe-92ac-954136340400
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display
+    - node.type.logo
+id: node.logo.field_display
+field_name: field_display
+entity_type: node
+bundle: logo
+label: Display
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

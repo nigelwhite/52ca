@@ -9,7 +9,7 @@ id: node.action.field_people_self_care_
 field_name: field_people_self_care_
 entity_type: node
 bundle: action
-label: 'PEOPLE/SELF CARE:'
+label: 'PEOPLE CARE:'
 description: ''
 required: false
 translatable: false

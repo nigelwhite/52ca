@@ -1,0 +1,20 @@
+uuid: 6e702449-add3-4a12-9b42-3fa8018aa03a
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_media
+  theme:
+    - bootsass
+id: socialsharingblock
+theme: bootsass
+region: footer
+weight: 0
+provider: null
+plugin: social_sharing_block
+settings:
+  id: social_sharing_block
+  label: 'Social Sharing block'
+  provider: social_media
+  label_display: '0'
+visibility: {  }
