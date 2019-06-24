@@ -10140,7 +10140,7 @@ a:hover {
 
 /* line 1, ../scss/custom/_footer.scss */
 .footer {
-  background-image: linear-gradient(#a2c635 60%, #165025 30%);
+  background-image: linear-gradient(#a2c635 95%, black 5%);
 }
 
 /* line 5, ../scss/custom/_footer.scss */
@@ -10160,8 +10160,8 @@ a:hover {
   padding: 0 2rem;
   text-transform: uppercase;
   font-family: 'Zilla Slab', sans-serif;
-  color: #fff;
-  font-size: 1.5rem;
+  color: #165025;
+  font-size: 2rem;
 }
 
 /* line 23, ../scss/custom/_footer.scss */
@@ -10183,6 +10183,12 @@ a:hover {
 .pa-logo {
   margin-top: 3rem;
   width: 300px;
+}
+
+/* line 41, ../scss/custom/_footer.scss */
+#block-socialsharingblock {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* Popup container */
