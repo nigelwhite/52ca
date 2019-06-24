@@ -25,16 +25,3 @@ fonts:
   css:
     theme:
       '//fonts.googleapis.com/css?family=Muli:600,800,1000|Zilla+Slab:600': { type: external }
-isotope:
-  version: 3.0.6
-  js:
-    javascripts/isotope/isotope.pkgd.min.js: {}
-  dependencies:
-    - core/jquery
-
-custom:
-  version: VERSION
-  js:
-    javascripts/custom/start-isotope.js: {}
-  dependencies:
-    - core/jquery
