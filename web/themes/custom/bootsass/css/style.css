@@ -10140,7 +10140,7 @@ a:hover {
 
 /* line 1, ../scss/custom/_footer.scss */
 .footer {
-  background-image: linear-gradient(#a2c635 95%, black 5%);
+  background-image: linear-gradient(#a2c635 95%, #165025 5%);
 }
 
 /* line 5, ../scss/custom/_footer.scss */
@@ -10189,6 +10189,7 @@ a:hover {
 #block-socialsharingblock {
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 3rem;
 }
 
 /* Popup container */
