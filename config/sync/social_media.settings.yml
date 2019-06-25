@@ -44,7 +44,7 @@ social_media:
     library: ''
     img: ''
   pinterest:
-    enable: 0
+    enable: 1
     api_url: 'https://www.pinterest.com/pin/create/button/?url=[current-page:url]&description=[current-page:title]'
     api_event: href
     text: Pinterest
@@ -55,7 +55,7 @@ social_media:
     library: ''
     img: ''
   google_plus:
-    enable: 0
+    enable: 1
     text: 'Google Plus'
     api_url: 'https://plus.google.com/share?url=[current-page:url]'
     api_event: href
