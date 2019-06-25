@@ -11,10 +11,10 @@ Next: change icon in toolbar, hide fields and show again on click, icon to show 
 6.3.19 transferred from lando to ddev as lando kept losing drush
 
 top backup
+echo4 25.6.19 10.07. Before any work started.
 echo 24.6.19 10.10. With db download and 52-190623e.tar.gz.
 echo3 23.6.19 after addition of CT Logo and 5 content items
 echo2 23.6.19 start of day - all backups taken
-echo4 19.6.19 ok again after files restored
 
 30.1.19
 finding out what I can do to change classes in twig, for the seasons colours
@@ -25,3 +25,5 @@ not done cex or git commit
 
 Webwash and drupalize.me have tutorials
 https://www.drupal.org/project/twig_field_value
+
+addition here
