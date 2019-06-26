@@ -10319,15 +10319,10 @@ a:hover {
 
 /* line 1, ../scss/custom/_hero.scss */
 #block-hero {
-  width: 400px;
-  position: absolute;
-  z-index: 999;
   background-color: white;
-  border-top: 1px black solid;
-  border-left: 1px black solid;
 }
 
-/* line 10, ../scss/custom/_hero.scss */
+/* line 5, ../scss/custom/_hero.scss */
 .announcement {
   text-align: center;
   font-size: 5rem;
@@ -10337,7 +10332,7 @@ a:hover {
   margin-top: 2rem;
 }
 
-/* line 19, ../scss/custom/_hero.scss */
+/* line 14, ../scss/custom/_hero.scss */
 .act img {
   margin: 1.5rem auto;
   display: block;
@@ -10346,11 +10341,23 @@ a:hover {
   margin-bottom: 3rem;
 }
 
-/* line 27, ../scss/custom/_hero.scss */
-.home-img {
-  position: relative;
-}
+@media (min-width: 768px) {
+  /* Target devices wider than 768px. */
+  /* line 24, ../scss/custom/_hero.scss */
+  #block-hero {
+    width: 400px;
+    position: absolute;
+    z-index: 999;
+    background-color: white;
+    border-top: 1px black solid;
+    border-left: 1px black solid;
+  }
 
+  /* line 33, ../scss/custom/_hero.scss */
+  .home-img {
+    position: relative;
+  }
+}
 /**
  * jQuery UI autocomplete widget style overrides.
  *
