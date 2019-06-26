@@ -10023,25 +10023,33 @@ ul.entity-pager-list {
 #more-actions-bottom {
   padding-bottom: 3.5rem;
   background-color: #efefef;
+  overflow: hidden;
 }
 
-/* line 202, ../scss/custom/_fullpage.scss */
+/* line 203, ../scss/custom/_fullpage.scss */
+.families-moreactions {
+  margin-bottom: 1.5rem;
+}
+
+/* line 207, ../scss/custom/_fullpage.scss */
 .family-icon-moreactions .field--item {
   float: left;
   width: 50px;
 }
 
-/* line 207, ../scss/custom/_fullpage.scss */
+/* line 212, ../scss/custom/_fullpage.scss */
 .title-moreactions {
   font-size: 2rem;
+  margin-top: 1rem;
 }
 
-/* line 211, ../scss/custom/_fullpage.scss */
+/* line 217, ../scss/custom/_fullpage.scss */
 .teaching-link {
   margin-top: 1.75em;
   padding: 0 1em 0 0.8em;
   font-size: 17px;
   font-weight: bold;
+  margin-bottom: 4rem;
 }
 
 /* line 4, ../scss/custom/_navbar.scss */
@@ -10140,7 +10148,7 @@ a:hover {
 
 /* line 1, ../scss/custom/_footer.scss */
 .footer {
-  background-image: linear-gradient(#a2c635 95%, #165025 5%);
+  background-image: linear-gradient(#a2c635 90%, #165025 10%);
 }
 
 /* line 5, ../scss/custom/_footer.scss */
@@ -10189,11 +10197,10 @@ a:hover {
 #block-socialsharingblock {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: rem;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 
-/* line 48, ../scss/custom/_footer.scss */
+/* line 47, ../scss/custom/_footer.scss */
 .social-media-sharing .share img {
   width: 30px;
 }
@@ -10429,7 +10436,7 @@ ol, ul {
 /* line 44, ../scss/_overrides.scss */
 .footer {
   margin-top: 45px;
-  padding-top: 35px;
+  padding-top: 20px;
   padding-bottom: 36px;
 }
 
