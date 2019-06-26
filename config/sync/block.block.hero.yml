@@ -1,0 +1,31 @@
+uuid: 5c2b8483-daf3-4f8b-8a1a-40692565b01b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bbb0521f-a6bc-4ba1-9c34-bccec53d9301'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootsass
+id: hero
+theme: bootsass
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:bbb0521f-a6bc-4ba1-9c34-bccec53d9301'
+settings:
+  id: 'block_content:bbb0521f-a6bc-4ba1-9c34-bccec53d9301'
+  label: Hero
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

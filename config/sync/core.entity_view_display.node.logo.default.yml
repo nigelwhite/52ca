@@ -10,6 +10,8 @@ dependencies:
     - field.field.node.logo.field_order
     - node.type.logo
   module:
+    - ds
+    - field_formatter_class
     - link
     - svg_image
     - text
@@ -41,11 +43,20 @@ content:
     label: above
     settings:
       trim_length: 80
-      url_only: false
+      url_only: true
       url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: link
     region: content
   field_logo_image:
@@ -72,7 +83,7 @@ content:
     region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }
