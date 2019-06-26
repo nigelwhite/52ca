@@ -10193,6 +10193,11 @@ a:hover {
   margin-top: 3rem;
 }
 
+/* line 48, ../scss/custom/_footer.scss */
+.social-media-sharing .share img {
+  width: 30px;
+}
+
 /* Popup container */
 /* line 2, ../scss/custom/_embedded.scss */
 .popup {
