@@ -10281,16 +10281,6 @@ a:hover {
 }
 
 /* line 1, ../scss/custom/_node387.scss */
-.announcement {
-  text-align: center;
-  font-size: 5rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-family: "Zilla Slab", sans-serif;
-  margin-top: 3rem;
-}
-
-/* line 10, ../scss/custom/_node387.scss */
 .iconstrip {
   margin-bottom: 4rem;
   background-color: #efefef;
@@ -10298,13 +10288,13 @@ a:hover {
   margin-top: 4rem;
 }
 
-/* line 17, ../scss/custom/_node387.scss */
+/* line 8, ../scss/custom/_node387.scss */
 .families-group-387 {
   background-color: rgba(162, 198, 53, 0.5);
   padding: 3rem 1rem 3rem 1rem;
 }
 
-/* line 23, ../scss/custom/_node387.scss */
+/* line 14, ../scss/custom/_node387.scss */
 .node--view-mode-teaser2 {
   background-color: #fff;
   margin: 2rem 0;
@@ -10313,23 +10303,43 @@ a:hover {
   max-width: 340px;
 }
 
-/* line 31, ../scss/custom/_node387.scss */
-.act img {
-  margin: 2rem auto;
-}
-
-/* line 35, ../scss/custom/_node387.scss */
+/* line 22, ../scss/custom/_node387.scss */
 .iconstrip-family-icon.family-icon a img {
   margin-top: 2rem;
 }
 
-/* line 39, ../scss/custom/_node387.scss */
+/* line 26, ../scss/custom/_node387.scss */
 .teaser2-title {
   font-family: "Zilla Slab", sans-serif;
   text-align: center;
   padding-top: 0.5rem;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+/* line 1, ../scss/custom/_hero.scss */
+#block-hero {
+  width: 400px;
+  border: black 1px solid;
+}
+
+/* line 6, ../scss/custom/_hero.scss */
+.announcement {
+  text-align: center;
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Zilla Slab", sans-serif;
+  margin-top: 2rem;
+}
+
+/* line 15, ../scss/custom/_hero.scss */
+.act img {
+  margin: 1.5rem auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 3rem;
 }
 
 /**
@@ -10381,53 +10391,53 @@ a:hover {
   color: #fff;
 }
 
-/* line 30, ../scss/_overrides.scss */
+/* line 31, ../scss/_overrides.scss */
 ol, ul {
   padding-left: 1.5em;
 }
-/* line 32, ../scss/_overrides.scss */
+/* line 33, ../scss/_overrides.scss */
 .popover ol:last-child, .popover ul:last-child {
   margin-bottom: 0;
 }
 
-/* line 38, ../scss/_overrides.scss */
+/* line 39, ../scss/_overrides.scss */
 .page-header {
   margin-top: 0;
 }
 
-/* line 43, ../scss/_overrides.scss */
+/* line 44, ../scss/_overrides.scss */
 .footer {
   margin-top: 45px;
   padding-top: 35px;
   padding-bottom: 36px;
 }
 
-/* line 51, ../scss/_overrides.scss */
+/* line 52, ../scss/_overrides.scss */
 p:last-child,
 .form-group:last-child,
 .panel:last-child {
   margin-bottom: 0;
 }
 
-/* line 59, ../scss/_overrides.scss */
+/* line 60, ../scss/_overrides.scss */
 .region-help > .glyphicon {
   font-size: 22px;
   float: left;
   margin: -0.05em 0.5em 0 0;
 }
-/* line 64, ../scss/_overrides.scss */
+/* line 65, ../scss/_overrides.scss */
 .region-help .block {
   overflow: hidden;
 }
 
-/* line 70, ../scss/_overrides.scss */
+/* line 71, ../scss/_overrides.scss */
 .help-block, .control-group .help-inline {
   color: #777777;
   font-size: 12px;
   margin: 5px 0 10px;
   padding: 0;
 }
-/* line 75, ../scss/_overrides.scss */
+/* line 76, ../scss/_overrides.scss */
 .help-block:first-child, .control-group .help-inline:first-child {
   margin-top: 0;
 }
