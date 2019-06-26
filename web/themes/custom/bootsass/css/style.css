@@ -10320,10 +10320,14 @@ a:hover {
 /* line 1, ../scss/custom/_hero.scss */
 #block-hero {
   width: 400px;
-  border: black 1px solid;
+  position: absolute;
+  z-index: 999;
+  background-color: white;
+  border-top: 1px black solid;
+  border-left: 1px black solid;
 }
 
-/* line 6, ../scss/custom/_hero.scss */
+/* line 10, ../scss/custom/_hero.scss */
 .announcement {
   text-align: center;
   font-size: 5rem;
@@ -10333,13 +10337,18 @@ a:hover {
   margin-top: 2rem;
 }
 
-/* line 15, ../scss/custom/_hero.scss */
+/* line 19, ../scss/custom/_hero.scss */
 .act img {
   margin: 1.5rem auto;
   display: block;
   max-width: 100%;
   height: auto;
   margin-bottom: 3rem;
+}
+
+/* line 27, ../scss/custom/_hero.scss */
+.home-img {
+  position: relative;
 }
 
 /**
