@@ -10329,6 +10329,21 @@ a:hover {
   text-transform: uppercase;
 }
 
+/* line 34, ../scss/custom/_node387.scss */
+.strapline {
+  font-family: "Muli", sans-serif;
+  font-size: 2rem;
+  color: #165025;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  /* line 44, ../scss/custom/_node387.scss */
+  .strapline {
+    font-size: 3rem;
+  }
+}
 /* line 1, ../scss/custom/_hero.scss */
 #block-hero {
   background-color: white;
@@ -10370,6 +10385,12 @@ a:hover {
     position: relative;
   }
 }
+/* line 1, ../scss/custom/_misc.scss */
+.before-feedback {
+  padding-bottom: 4rem;
+  font-size: 2.5rem;
+}
+
 /**
  * jQuery UI autocomplete widget style overrides.
  *
@@ -10419,53 +10440,53 @@ a:hover {
   color: #fff;
 }
 
-/* line 31, ../scss/_overrides.scss */
+/* line 32, ../scss/_overrides.scss */
 ol, ul {
   padding-left: 1.5em;
 }
-/* line 33, ../scss/_overrides.scss */
+/* line 34, ../scss/_overrides.scss */
 .popover ol:last-child, .popover ul:last-child {
   margin-bottom: 0;
 }
 
-/* line 39, ../scss/_overrides.scss */
+/* line 40, ../scss/_overrides.scss */
 .page-header {
   margin-top: 0;
 }
 
-/* line 44, ../scss/_overrides.scss */
+/* line 45, ../scss/_overrides.scss */
 .footer {
   margin-top: 45px;
   padding-top: 20px;
   padding-bottom: 36px;
 }
 
-/* line 52, ../scss/_overrides.scss */
+/* line 53, ../scss/_overrides.scss */
 p:last-child,
 .form-group:last-child,
 .panel:last-child {
   margin-bottom: 0;
 }
 
-/* line 60, ../scss/_overrides.scss */
+/* line 61, ../scss/_overrides.scss */
 .region-help > .glyphicon {
   font-size: 22px;
   float: left;
   margin: -0.05em 0.5em 0 0;
 }
-/* line 65, ../scss/_overrides.scss */
+/* line 66, ../scss/_overrides.scss */
 .region-help .block {
   overflow: hidden;
 }
 
-/* line 71, ../scss/_overrides.scss */
+/* line 72, ../scss/_overrides.scss */
 .help-block, .control-group .help-inline {
   color: #777777;
   font-size: 12px;
   margin: 5px 0 10px;
   padding: 0;
 }
-/* line 76, ../scss/_overrides.scss */
+/* line 77, ../scss/_overrides.scss */
 .help-block:first-child, .control-group .help-inline:first-child {
   margin-top: 0;
 }
