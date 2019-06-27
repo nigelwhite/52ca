@@ -10075,38 +10075,42 @@ ul.entity-pager-list {
 .navbar-nav > li > a {
   text-transform: uppercase;
   font-weight: 500;
-  line-height: 70px;
+  text-align: center;
 }
 
-/* line 11, ../scss/custom/_navbar.scss */
-.navbar-btn,
-.navbar-toggle {
-  margin-bottom: 0;
+@media (min-width: 1100px) {
+  /* Target devices wider than 1200px. Pads and bigger. */
+  /* line 14, ../scss/custom/_navbar.scss */
+  .navbar-nav > li > a {
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 70px;
+    font-size: 2.2rem;
+  }
 }
-
-/* line 16, ../scss/custom/_navbar.scss */
+/* line 28, ../scss/custom/_navbar.scss */
 .wideband {
   background-color: #fff;
 }
 
-/* line 21, ../scss/custom/_navbar.scss */
+/* line 33, ../scss/custom/_navbar.scss */
 .logo > img {
   height: 50px;
 }
 
 @media screen and (min-width: 520px) {
-  /* line 26, ../scss/custom/_navbar.scss */
+  /* line 38, ../scss/custom/_navbar.scss */
   .logo > img {
     height: 70px;
   }
 }
-/* line 32, ../scss/custom/_navbar.scss */
+/* line 44, ../scss/custom/_navbar.scss */
 #block-bootsass-account-menu-menu {
   text-align: right;
   font-size: 2.5rem;
 }
 
-/* line 38, ../scss/custom/_navbar.scss */
+/* line 50, ../scss/custom/_navbar.scss */
 .menu--account > li > a {
   text-transform: lowercase;
   font-weight: 200;
@@ -10114,7 +10118,7 @@ ul.entity-pager-list {
   padding: 0;
 }
 
-/* line 46, ../scss/custom/_navbar.scss */
+/* line 58, ../scss/custom/_navbar.scss */
 .menu--account li {
   float: left;
   clear: left;
@@ -10123,11 +10127,11 @@ ul.entity-pager-list {
 /* line 1, ../scss/custom/_base-resets.scss */
 body {
   margin-top: 0;
-  min-width: 350px;
+  min-width: 320px;
   /* Suppose you want minimum width of 350px */
   width: auto !important;
   /* Firefox will set width as auto */
-  width: 350px;
+  width: 320px;
   /* As IE6 ignores !important it will set width as 350px; */
 }
 
