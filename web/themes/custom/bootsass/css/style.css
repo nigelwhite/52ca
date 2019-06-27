@@ -10338,10 +10338,28 @@ a:hover {
   margin-top: 2rem;
 }
 
+/* line 42, ../scss/custom/_node387.scss */
+.not-sure {
+  font-family: "Muli", sans-serif;
+  font-size: 1.5rem;
+  color: #165025;
+  text-align: center;
+}
+
 @media (min-width: 768px) {
-  /* line 44, ../scss/custom/_node387.scss */
+  /* line 51, ../scss/custom/_node387.scss */
   .strapline {
     font-size: 3rem;
+  }
+
+  /* line 55, ../scss/custom/_node387.scss */
+  .not-sure {
+    font-size: 2.5rem;
+  }
+
+  /* line 59, ../scss/custom/_node387.scss */
+  .node--view-mode-teaser2 {
+    min-height: 205px;
   }
 }
 /* line 1, ../scss/custom/_hero.scss */
