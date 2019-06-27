@@ -10370,7 +10370,7 @@ a:hover {
 /* line 5, ../scss/custom/_hero.scss */
 .announcement {
   text-align: center;
-  font-size: 5rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   font-weight: 600;
   font-family: "Zilla Slab", sans-serif;
@@ -10381,16 +10381,16 @@ a:hover {
 .act img {
   margin: 1.5rem auto;
   display: block;
-  max-width: 100%;
+  width: 100px;
   height: auto;
   margin-bottom: 3rem;
 }
 
 @media (min-width: 768px) {
-  /* Target devices wider than 768px. */
+  /* Target devices wider than 768px. Pads. */
   /* line 24, ../scss/custom/_hero.scss */
   #block-hero {
-    width: 400px;
+    width: 250px;
     position: absolute;
     z-index: 999;
     background-color: white;
@@ -10401,6 +10401,97 @@ a:hover {
   /* line 33, ../scss/custom/_hero.scss */
   .home-img {
     position: relative;
+  }
+
+  /* line 37, ../scss/custom/_hero.scss */
+  .announcement {
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Zilla Slab", sans-serif;
+    margin-top: 2rem;
+  }
+
+  /* line 46, ../scss/custom/_hero.scss */
+  .act img {
+    margin: 1.5rem auto;
+    display: block;
+    width: 100px;
+    height: auto;
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 1000px) {
+  /* Target devices wider than 1000px. Larger screens */
+  /* line 58, ../scss/custom/_hero.scss */
+  #block-hero {
+    width: 350px;
+    position: absolute;
+    z-index: 999;
+    background-color: white;
+    border-top: 1px black solid;
+    border-left: 1px black solid;
+  }
+
+  /* line 67, ../scss/custom/_hero.scss */
+  .home-img {
+    position: relative;
+  }
+
+  /* line 71, ../scss/custom/_hero.scss */
+  .announcement {
+    text-align: center;
+    font-size: 3.25rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Zilla Slab", sans-serif;
+    margin-top: 2rem;
+  }
+
+  /* line 80, ../scss/custom/_hero.scss */
+  .act img {
+    margin: 1.5rem auto;
+    display: block;
+    width: 175px;
+    height: auto;
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 1300px) {
+  /* Target devices wider than 1300px. Largest screens */
+  /* line 91, ../scss/custom/_hero.scss */
+  #block-hero {
+    width: 475px;
+    position: absolute;
+    z-index: 999;
+    background-color: white;
+    border-top: 1px black solid;
+    border-left: 1px black solid;
+  }
+
+  /* line 100, ../scss/custom/_hero.scss */
+  .home-img {
+    position: relative;
+  }
+
+  /* line 104, ../scss/custom/_hero.scss */
+  .announcement {
+    text-align: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Zilla Slab", sans-serif;
+    margin-top: 2rem;
+  }
+
+  /* line 113, ../scss/custom/_hero.scss */
+  .act img {
+    margin: 1.5rem auto;
+    display: block;
+    width: 200px;
+    height: auto;
+    margin-bottom: 3rem;
   }
 }
 /* line 1, ../scss/custom/_misc.scss */
