@@ -9644,7 +9644,7 @@ body.toolbar-loading.toolbar {
 /* line 108, ../scss/custom/_card.scss */
 .text-card {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 /* line 113, ../scss/custom/_card.scss */
@@ -9699,12 +9699,12 @@ body.toolbar-loading.toolbar {
 
 /* line 159, ../scss/custom/_card.scss */
 .entity-pager-item-prev {
-  padding-right: 4rem;
+  padding-right: 3rem;
 }
 
 /* line 163, ../scss/custom/_card.scss */
 .entity-pager-item-next {
-  padding-left: 4rem;
+  padding-left: 3rem;
 }
 
 /* line 167, ../scss/custom/_card.scss */
