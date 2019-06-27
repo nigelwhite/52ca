@@ -10136,6 +10136,13 @@ body {
 }
 
 /* line 8, ../scss/custom/_base-resets.scss */
+.container-fluid {
+  /*removes margins in footer in mobile*/
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 12, ../scss/custom/_base-resets.scss */
 a,
 a:hover {
   color: #165025;
