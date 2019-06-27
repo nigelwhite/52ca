@@ -9550,13 +9550,20 @@ body.toolbar-loading.toolbar {
   overflow: hidden;
 }
 
-/* line 29, ../scss/custom/_card.scss */
+/* Recent addition (27.6.19) to remove side margins in mobile view */
+/* line 30, ../scss/custom/_card.scss */
+#card > .col-sm-12 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 35, ../scss/custom/_card.scss */
 .card-body {
   margin-left: 0;
   margin-right: 0;
 }
 
-/* line 34, ../scss/custom/_card.scss */
+/* line 40, ../scss/custom/_card.scss */
 .card-footer {
   background-color: #fed905;
   position: absolute;
@@ -9566,23 +9573,23 @@ body.toolbar-loading.toolbar {
   border-radius: 0 0 32px 32px;
 }
 
-/* line 43, ../scss/custom/_card.scss */
+/* line 49, ../scss/custom/_card.scss */
 .family-card .field--item {
   float: left;
   max-width: 50px;
 }
 
-/* line 48, ../scss/custom/_card.scss */
+/* line 54, ../scss/custom/_card.scss */
 .mainimage-card {
   position: relative;
 }
 
-/* line 52, ../scss/custom/_card.scss */
+/* line 58, ../scss/custom/_card.scss */
 .mainimage-card .img-responsive {
   border-radius: 32px 32px 0 0;
 }
 
-/* line 56, ../scss/custom/_card.scss */
+/* line 62, ../scss/custom/_card.scss */
 .families-card {
   position: absolute;
   top: 24%;
@@ -9591,26 +9598,26 @@ body.toolbar-loading.toolbar {
   transform: translateX(-50%);
 }
 
-/* line 64, ../scss/custom/_card.scss */
+/* line 70, ../scss/custom/_card.scss */
 .intro-card {
   margin: 0 auto;
   width: 60%;
   padding-top: 1em;
 }
 
-/* line 70, ../scss/custom/_card.scss */
+/* line 76, ../scss/custom/_card.scss */
 .introsvg-card {
   max-width: 120px;
 }
 
-/* line 74, ../scss/custom/_card.scss */
+/* line 80, ../scss/custom/_card.scss */
 .actionsvg-card {
   margin: 0 auto;
   max-width: 80px;
   padding-top: 1rem;
 }
 
-/* line 80, ../scss/custom/_card.scss */
+/* line 86, ../scss/custom/_card.scss */
 .number-card {
   display: inline-block;
   font-size: 4rem;
@@ -9622,7 +9629,7 @@ body.toolbar-loading.toolbar {
   border: none;
 }
 
-/* line 91, ../scss/custom/_card.scss */
+/* line 97, ../scss/custom/_card.scss */
 .title-card {
   font-family: "Zilla Slab", sans-serif;
   text-transform: uppercase;
@@ -9634,19 +9641,19 @@ body.toolbar-loading.toolbar {
   padding-bottom: 0.2rem;
 }
 
-/* line 102, ../scss/custom/_card.scss */
+/* line 108, ../scss/custom/_card.scss */
 .text-card {
   text-align: center;
-  font-size: 1.27rem;
+  font-size: 1.5rem;
 }
 
-/* line 107, ../scss/custom/_card.scss */
+/* line 113, ../scss/custom/_card.scss */
 .card-body {
   margin-left: 1%;
   margin-right: 1%;
 }
 
-/* line 112, ../scss/custom/_card.scss */
+/* line 118, ../scss/custom/_card.scss */
 .card-action {
   text-align: center;
   font-size: 1.5rem;
@@ -9658,7 +9665,7 @@ body.toolbar-loading.toolbar {
   margin-right: 3%;
 }
 
-/* line 123, ../scss/custom/_card.scss */
+/* line 129, ../scss/custom/_card.scss */
 .entity-pager-item-all {
   background-color: #fff;
   height: 27px;
@@ -9670,7 +9677,7 @@ body.toolbar-loading.toolbar {
   text-align: center;
 }
 
-/* line 134, ../scss/custom/_card.scss */
+/* line 140, ../scss/custom/_card.scss */
 .entity-pager-item-prev,
 .entity-pager-item-next {
   font-size: 40px;
@@ -9680,7 +9687,7 @@ body.toolbar-loading.toolbar {
   margin-bottom: 0;
 }
 
-/* line 143, ../scss/custom/_card.scss */
+/* line 149, ../scss/custom/_card.scss */
 .entity-pager-item-prev a:hover,
 .entity-pager-item-next a:hover,
 .entity-pager-item-prev a:active,
@@ -9690,107 +9697,107 @@ body.toolbar-loading.toolbar {
   text-decoration: none;
 }
 
-/* line 153, ../scss/custom/_card.scss */
+/* line 159, ../scss/custom/_card.scss */
 .entity-pager-item-prev {
   padding-right: 4rem;
 }
 
-/* line 157, ../scss/custom/_card.scss */
+/* line 163, ../scss/custom/_card.scss */
 .entity-pager-item-next {
   padding-left: 4rem;
 }
 
-/* line 161, ../scss/custom/_card.scss */
+/* line 167, ../scss/custom/_card.scss */
 .entity-pager-list .entity-pager-item {
   margin-bottom: 0;
   margin-top: 0;
 }
 
-/* line 166, ../scss/custom/_card.scss */
+/* line 172, ../scss/custom/_card.scss */
 ul.entity-pager-list {
   margin-bottom: 0;
   margin-top: 0;
   font-size: 1.5rem;
 }
 
-/* line 172, ../scss/custom/_card.scss */
+/* line 178, ../scss/custom/_card.scss */
 .ethic {
   margin-bottom: 1.25em;
   padding-left: 0.5em;
 }
 
-/* line 177, ../scss/custom/_card.scss */
+/* line 183, ../scss/custom/_card.scss */
 .region-sidebar-second {
   display: none;
 }
 
 @media screen and (min-width: 400px) {
-  /* line 182, ../scss/custom/_card.scss */
+  /* line 188, ../scss/custom/_card.scss */
   .text-card {
     font-size: calc(8px + 1.6vw);
   }
 
-  /* line 185, ../scss/custom/_card.scss */
+  /* line 191, ../scss/custom/_card.scss */
   .introsvg-card {
     max-width: 130px;
   }
 
-  /* line 188, ../scss/custom/_card.scss */
+  /* line 194, ../scss/custom/_card.scss */
   .actionsvg-card {
     margin: 0 auto;
     max-width: 110px;
     padding-top: 1rem;
   }
 
-  /* line 193, ../scss/custom/_card.scss */
+  /* line 199, ../scss/custom/_card.scss */
   .title-card {
     font-size: 6vw;
   }
 
-  /* line 196, ../scss/custom/_card.scss */
+  /* line 202, ../scss/custom/_card.scss */
   .number-card {
     font-size: 5rem;
     line-height: 4rem;
     height: 4rem;
   }
 
-  /* line 201, ../scss/custom/_card.scss */
+  /* line 207, ../scss/custom/_card.scss */
   .card-footer {
     max-height: 25vw;
   }
 
-  /* line 204, ../scss/custom/_card.scss */
+  /* line 210, ../scss/custom/_card.scss */
   .card-action {
     font-size: 3.9vw;
     margin: 3%;
   }
 
-  /* line 208, ../scss/custom/_card.scss */
+  /* line 214, ../scss/custom/_card.scss */
   .card-body {
     margin-left: 3%;
     margin-right: 3%;
   }
 }
 @media screen and (min-width: 520px) {
-  /* line 217, ../scss/custom/_card.scss */
+  /* line 223, ../scss/custom/_card.scss */
   .main-container-card {
     box-shadow: 10px 10px 5px #888888;
   }
 
-  /* line 220, ../scss/custom/_card.scss */
+  /* line 226, ../scss/custom/_card.scss */
   .card-body {
     margin-left: 5%;
     margin-right: 5%;
   }
 
-  /* line 224, ../scss/custom/_card.scss */
+  /* line 230, ../scss/custom/_card.scss */
   .number-card {
     font-size: 6.5rem;
     line-height: 5.2rem;
     height: 5.2rem;
   }
 
-  /* line 229, ../scss/custom/_card.scss */
+  /* line 235, ../scss/custom/_card.scss */
   .title-card {
     font-size: 1.8em;
     line-height: 1;
@@ -9798,34 +9805,34 @@ ul.entity-pager-list {
     padding-bottom: 0.4em;
   }
 
-  /* line 235, ../scss/custom/_card.scss */
+  /* line 241, ../scss/custom/_card.scss */
   .introsvg-card {
     max-width: 180px;
   }
 
-  /* line 238, ../scss/custom/_card.scss */
+  /* line 244, ../scss/custom/_card.scss */
   .actionsvg-card {
     max-width: 140px;
     padding-top: 1em;
   }
 
-  /* line 242, ../scss/custom/_card.scss */
+  /* line 248, ../scss/custom/_card.scss */
   .text-card {
     font-size: 1.7rem;
   }
 
-  /* line 245, ../scss/custom/_card.scss */
+  /* line 251, ../scss/custom/_card.scss */
   .card-footer {
     max-height: 180px;
   }
 
-  /* line 248, ../scss/custom/_card.scss */
+  /* line 254, ../scss/custom/_card.scss */
   .card-action {
     font-size: 2rem;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 254, ../scss/custom/_card.scss */
+  /* line 260, ../scss/custom/_card.scss */
   .region-sidebar-second {
     display: block;
   }
@@ -9847,7 +9854,7 @@ ul.entity-pager-list {
 /* line 13, ../scss/custom/_fullpage.scss */
 .action-number {
   float: left;
-  font-size: 5rem;
+  font-size: 3rem;
   line-height: 5rem;
   font-weight: 1000;
   margin-right: 0.5em;
@@ -9855,7 +9862,7 @@ ul.entity-pager-list {
 
 /* line 21, ../scss/custom/_fullpage.scss */
 .title-fullpage {
-  font-size: 5rem;
+  font-size: 3rem;
   text-transform: uppercase;
   font-weight: 600;
   font-family: "Zilla Slab", sans-serif;
@@ -9863,25 +9870,37 @@ ul.entity-pager-list {
   line-height: 5rem;
 }
 
-/* line 30, ../scss/custom/_fullpage.scss */
+@media (min-width: 768px) {
+  /* Target devices wider than 768px. Pads and larger. */
+  /* line 32, ../scss/custom/_fullpage.scss */
+  .title-fullpage {
+    font-size: 5rem;
+  }
+
+  /* line 35, ../scss/custom/_fullpage.scss */
+  .action-number {
+    font-size: 5rem;
+  }
+}
+/* line 40, ../scss/custom/_fullpage.scss */
 .families-fullpage {
   margin-top: 3rem;
 }
 
-/* line 34, ../scss/custom/_fullpage.scss */
+/* line 44, ../scss/custom/_fullpage.scss */
 .actionfull-svg {
   max-width: 200px;
   margin-top: 2rem;
 }
 
-/* line 39, ../scss/custom/_fullpage.scss */
+/* line 49, ../scss/custom/_fullpage.scss */
 .action-group {
   background-color: #fdd905;
   margin: 1em 0 1em 0;
   padding: 0.1em 1em 1em 1em;
 }
 
-/* line 45, ../scss/custom/_fullpage.scss */
+/* line 55, ../scss/custom/_fullpage.scss */
 .field--name-field-simple-action,
 .field--name-field-radical-action,
 .field--name-field-community-action,
@@ -9889,7 +9908,7 @@ ul.entity-pager-list {
   margin-top: 1em;
 }
 
-/* line 52, ../scss/custom/_fullpage.scss */
+/* line 62, ../scss/custom/_fullpage.scss */
 .field--name-field-simple-action .field--label,
 .field--name-field-radical-action .field--label,
 .field--name-field-community-action .field--label,
@@ -9900,36 +9919,36 @@ ul.entity-pager-list {
   color: #165025;
 }
 
-/* line 62, ../scss/custom/_fullpage.scss */
+/* line 72, ../scss/custom/_fullpage.scss */
 .actions-fullpage {
   font-size: 1em;
 }
 
-/* line 66, ../scss/custom/_fullpage.scss */
+/* line 76, ../scss/custom/_fullpage.scss */
 .cardtext-on-fullpage {
   margin-bottom: 2em;
 }
 
-/* line 70, ../scss/custom/_fullpage.scss */
+/* line 80, ../scss/custom/_fullpage.scss */
 .cardtext-on-fullpage p {
   font-family: "Muli", sans-serif;
   font-weight: 900;
   font-size: 1.15em;
 }
 
-/* line 76, ../scss/custom/_fullpage.scss */
+/* line 86, ../scss/custom/_fullpage.scss */
 .text-para {
   margin: 1em 0 1em 0;
 }
 
-/* line 80, ../scss/custom/_fullpage.scss */
+/* line 90, ../scss/custom/_fullpage.scss */
 .ethic-svg {
   max-width: 80px;
   max-height: 80px;
   padding-top: 5px;
 }
 
-/* line 111, ../scss/custom/_fullpage.scss */
+/* line 121, ../scss/custom/_fullpage.scss */
 .resources-header {
   text-transform: uppercase;
   font-size: 2em;
@@ -9942,7 +9961,7 @@ ul.entity-pager-list {
   margin-bottom: 1em;
 }
 
-/* line 123, ../scss/custom/_fullpage.scss */
+/* line 133, ../scss/custom/_fullpage.scss */
 .field--name-field-resources-for-children-,
 .field--name-field-resources-for-higher-educa,
 .field--name-field-project-example,
@@ -9951,7 +9970,7 @@ ul.entity-pager-list {
   padding: 0.1em 1em 0 0.8em;
 }
 
-/* line 131, ../scss/custom/_fullpage.scss */
+/* line 141, ../scss/custom/_fullpage.scss */
 .field--name-field-resources-for-children- .field--label,
 .field--name-field-resources-for-higher-educa .field--label,
 .field--name-field-project-example .field--label,
@@ -9959,18 +9978,18 @@ ul.entity-pager-list {
   margin-bottom: 0.5em;
 }
 
-/* line 138, ../scss/custom/_fullpage.scss */
+/* line 148, ../scss/custom/_fullpage.scss */
 #resource-list-img .col-md-3 {
   padding-right: 0;
 }
 
-/* line 142, ../scss/custom/_fullpage.scss */
+/* line 152, ../scss/custom/_fullpage.scss */
 #resource-list-img {
   padding-bottom: 1rem;
   float: right;
 }
 
-/* line 153, ../scss/custom/_fullpage.scss */
+/* line 163, ../scss/custom/_fullpage.scss */
 .field--name-field-more-actions {
   text-transform: uppercase;
   font-family: 'Zilla Slab', sans-serif;
@@ -9984,23 +10003,23 @@ ul.entity-pager-list {
   margin: 4rem auto;
 }
 
-/* line 166, ../scss/custom/_fullpage.scss */
+/* line 176, ../scss/custom/_fullpage.scss */
 .linked-action {
   padding: 4rem 0 6rem 0;
 }
 
-/* line 172, ../scss/custom/_fullpage.scss */
+/* line 182, ../scss/custom/_fullpage.scss */
 .linked-action .field--item {
   background-color: #fff;
 }
 
-/* line 176, ../scss/custom/_fullpage.scss */
+/* line 186, ../scss/custom/_fullpage.scss */
 .family-icon-bottom > .field--item {
   float: left;
   max-width: 40px;
 }
 
-/* line 181, ../scss/custom/_fullpage.scss */
+/* line 191, ../scss/custom/_fullpage.scss */
 .bottom-title {
   margin-top: 1rem;
   margin-left: 1rem;
@@ -10008,42 +10027,42 @@ ul.entity-pager-list {
   min-height: 50px;
 }
 
-/* line 188, ../scss/custom/_fullpage.scss */
+/* line 198, ../scss/custom/_fullpage.scss */
 .families-fullpage-bottom {
   margin-left: 1rem;
 }
 
-/* line 192, ../scss/custom/_fullpage.scss */
+/* line 202, ../scss/custom/_fullpage.scss */
 .bottom-title a {
   text-transform: uppercase;
   font-family: 'Zilla Slab', sans-serif;
 }
 
-/* line 197, ../scss/custom/_fullpage.scss */
+/* line 207, ../scss/custom/_fullpage.scss */
 #more-actions-bottom {
   padding-bottom: 3.5rem;
   background-color: #efefef;
   overflow: hidden;
 }
 
-/* line 203, ../scss/custom/_fullpage.scss */
+/* line 213, ../scss/custom/_fullpage.scss */
 .families-moreactions {
   margin-bottom: 1.5rem;
 }
 
-/* line 207, ../scss/custom/_fullpage.scss */
+/* line 217, ../scss/custom/_fullpage.scss */
 .family-icon-moreactions .field--item {
   float: left;
   width: 50px;
 }
 
-/* line 212, ../scss/custom/_fullpage.scss */
+/* line 222, ../scss/custom/_fullpage.scss */
 .title-moreactions {
   font-size: 2rem;
   margin-top: 1rem;
 }
 
-/* line 217, ../scss/custom/_fullpage.scss */
+/* line 227, ../scss/custom/_fullpage.scss */
 .teaching-link {
   margin-top: 1.75em;
   padding: 0 1em 0 0.8em;
@@ -10060,28 +10079,34 @@ ul.entity-pager-list {
 }
 
 /* line 11, ../scss/custom/_navbar.scss */
+.navbar-btn,
+.navbar-toggle {
+  margin-bottom: 0;
+}
+
+/* line 16, ../scss/custom/_navbar.scss */
 .wideband {
   background-color: #fff;
 }
 
-/* line 16, ../scss/custom/_navbar.scss */
+/* line 21, ../scss/custom/_navbar.scss */
 .logo > img {
   height: 50px;
 }
 
 @media screen and (min-width: 520px) {
-  /* line 21, ../scss/custom/_navbar.scss */
+  /* line 26, ../scss/custom/_navbar.scss */
   .logo > img {
     height: 70px;
   }
 }
-/* line 27, ../scss/custom/_navbar.scss */
+/* line 32, ../scss/custom/_navbar.scss */
 #block-bootsass-account-menu-menu {
   text-align: right;
   font-size: 2.5rem;
 }
 
-/* line 33, ../scss/custom/_navbar.scss */
+/* line 38, ../scss/custom/_navbar.scss */
 .menu--account > li > a {
   text-transform: lowercase;
   font-weight: 200;
@@ -10089,7 +10114,7 @@ ul.entity-pager-list {
   padding: 0;
 }
 
-/* line 41, ../scss/custom/_navbar.scss */
+/* line 46, ../scss/custom/_navbar.scss */
 .menu--account li {
   float: left;
   clear: left;
