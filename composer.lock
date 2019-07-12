@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4132ef2a6a595235e9b415a5543ca01c",
+    "content-hash": "7fb3150f662c126c584d35915c1ebc63",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2197,7 +2197,7 @@
             "description": "Limit which text formats are available for each field instance.",
             "homepage": "https://www.drupal.org/project/allowed_formats",
             "support": {
-                "source": "http://cgit.drupalcode.org/allowed_formats"
+                "source": "https://git.drupalcode.org/project/allowed_formats"
             }
         },
         {
@@ -2378,7 +2378,7 @@
             "description": "This module is going to generate layouts with Bootstrap grid system.",
             "homepage": "https://www.drupal.org/project/bootstrap_layouts",
             "support": {
-                "source": "http://cgit.drupalcode.org/bootstrap_layouts"
+                "source": "https://git.drupalcode.org/project/bootstrap_layouts"
             }
         },
         {
@@ -2426,7 +2426,7 @@
             "description": "Provides Bootstrap Integration.",
             "homepage": "http://drupal.org/project/bootstrap_library",
             "support": {
-                "source": "http://cgit.drupalcode.org/bootstrap_library"
+                "source": "https://git.drupalcode.org/project/bootstrap_library"
             }
         },
         {
@@ -2473,7 +2473,7 @@
             "description": "Adjusts CKEditor height until https://www.drupal.org/node/2788905.",
             "homepage": "https://www.drupal.org/project/ckeditorheight",
             "support": {
-                "source": "http://cgit.drupalcode.org/ckeditorheight"
+                "source": "https://git.drupalcode.org/project/ckeditorheight"
             }
         },
         {
@@ -3136,7 +3136,7 @@
             "description": "Provides storage and API for image crops.",
             "homepage": "https://www.drupal.org/project/crop",
             "support": {
-                "source": "http://cgit.drupalcode.org/crop",
+                "source": "https://git.drupalcode.org/project/crop",
                 "issues": "https://www.drupal.org/project/issues/crop"
             }
         },
@@ -3366,7 +3366,7 @@
             "description": "Provide a framework for various different types of embeds in WYSIWYG editors, common functionality, interfaces, and standards.",
             "homepage": "https://www.drupal.org/project/embed",
             "support": {
-                "source": "http://cgit.drupalcode.org/embed",
+                "source": "https://git.drupalcode.org/project/embed",
                 "issues": "https://www.drupal.org/project/issues/embed",
                 "irc": "irc://irc.freenode.org/drupal-media"
             }
@@ -3643,7 +3643,7 @@
             "description": "Adds a Entity Reference field type with revision support.",
             "homepage": "https://www.drupal.org/project/entity_reference_revisions",
             "support": {
-                "source": "http://cgit.drupalcode.org/entity_reference_revisions"
+                "source": "https://git.drupalcode.org/project/entity_reference_revisions"
             }
         },
         {
@@ -3808,7 +3808,7 @@
             "description": "Provides custom HTML class settings for field formatters.",
             "homepage": "https://www.drupal.org/project/field_formatter_class",
             "support": {
-                "source": "http://cgit.drupalcode.org/field_formatter_class"
+                "source": "https://git.drupalcode.org/project/field_formatter_class"
             }
         },
         {
@@ -3921,7 +3921,7 @@
             "description": "An embedded Document viewer field using Google Docs",
             "homepage": "https://www.drupal.org/project/gdoc_field",
             "support": {
-                "source": "http://cgit.drupalcode.org/gdoc_field"
+                "source": "https://git.drupalcode.org/project/gdoc_field"
             }
         },
         {
@@ -4048,6 +4048,14 @@
                     "homepage": "https://www.drupal.org/user/99340"
                 },
                 {
+                    "name": "joachim",
+                    "homepage": "https://www.drupal.org/user/107701"
+                },
+                {
+                    "name": "kaythay",
+                    "homepage": "https://www.drupal.org/user/2182186"
+                },
+                {
                     "name": "rszrama",
                     "homepage": "https://www.drupal.org/user/49344"
                 },
@@ -4063,7 +4071,7 @@
             "description": "Provides a widget for inline management (creation, modification, removal) of referenced entities.",
             "homepage": "https://www.drupal.org/project/inline_entity_form",
             "support": {
-                "source": "http://cgit.drupalcode.org/inline_entity_form"
+                "source": "https://git.drupalcode.org/project/inline_entity_form"
             }
         },
         {
@@ -4110,7 +4118,7 @@
             "description": "Protect the user against navigating away from a form before saving their changes.",
             "homepage": "https://www.drupal.org/project/js_confirm_pop_up",
             "support": {
-                "source": "http://cgit.drupalcode.org/js_confirm_pop_up"
+                "source": "https://git.drupalcode.org/project/js_confirm_pop_up"
             }
         },
         {
@@ -4161,7 +4169,74 @@
             "description": "Adds the functionality to link fields to a specific destination.",
             "homepage": "https://www.drupal.org/project/linked_field",
             "support": {
-                "source": "http://cgit.drupalcode.org/linked_field"
+                "source": "https://git.drupalcode.org/project/linked_field"
+            }
+        },
+        {
+            "name": "drupal/mailsystem",
+            "version": "4.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/mailsystem.git",
+                "reference": "8.x-4.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/mailsystem-8.x-4.1.zip",
+                "reference": "8.x-4.1",
+                "shasum": "318b87f1fdf96e6db30b04a98108af02a0fc3dcc"
+            },
+            "require": {
+                "drupal/core": "^8.0.5"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-4.x": "4.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-4.1",
+                    "datestamp": "1467993646",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Les Lim",
+                    "homepage": "https://www.drupal.org/user/84263"
+                },
+                {
+                    "name": "Manuel Garcia",
+                    "homepage": "https://www.drupal.org/user/213194"
+                },
+                {
+                    "name": "Nafes",
+                    "homepage": "https://www.drupal.org/user/2489926"
+                },
+                {
+                    "name": "miro_dietiker",
+                    "homepage": "https://www.drupal.org/user/227761"
+                },
+                {
+                    "name": "pillarsdotnet",
+                    "homepage": "https://www.drupal.org/user/36148"
+                }
+            ],
+            "description": "Mail System",
+            "homepage": "https://www.drupal.org/project/mailsystem",
+            "support": {
+                "source": "https://git.drupalcode.org/project/mailsystem"
             }
         },
         {
@@ -4268,7 +4343,7 @@
             "description": "Limit the number of characters in textfields and textareas and shows the amount of characters left.",
             "homepage": "https://www.drupal.org/project/maxlength",
             "support": {
-                "source": "http://cgit.drupalcode.org/maxlength"
+                "source": "https://git.drupalcode.org/project/maxlength"
             }
         },
         {
@@ -4323,7 +4398,7 @@
             "description": "Filter the modules list.",
             "homepage": "https://www.drupal.org/project/module_filter",
             "support": {
-                "source": "http://cgit.drupalcode.org/module_filter"
+                "source": "https://git.drupalcode.org/project/module_filter"
             }
         },
         {
@@ -4468,6 +4543,70 @@
             "homepage": "https://www.drupal.org/project/pathauto",
             "support": {
                 "source": "https://git.drupalcode.org/project/pathauto"
+            }
+        },
+        {
+            "name": "drupal/sendgrid_integration",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/sendgrid_integration.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/sendgrid_integration-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "a3d9baea4389a6f8804adc5f736c9920ae200131"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/mailsystem": "^4",
+                "fastglass/sendgrid": ">=1.0.6",
+                "html2text/html2text": "~4.0.1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1528941232",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL v2"
+            ],
+            "authors": [
+                {
+                    "name": "Brady Owens (perignon)",
+                    "homepage": "https://www.drupal.org/u/perignon",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "exlin",
+                    "homepage": "https://www.drupal.org/user/695136"
+                }
+            ],
+            "description": "Drupal module for integrating with the SendGrid API.",
+            "homepage": "https://www.drupal.org/project/sendgrid_integration",
+            "keywords": [
+                "SendGrid",
+                "email",
+                "grid",
+                "php",
+                "send",
+                "sendgrid"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/sendgrid_integration",
+                "issues": "https://drupal.org/project/issues/sendgrid_integration"
             }
         },
         {
@@ -4638,7 +4777,7 @@
             "description": "Overrides the standard image formatter and widget to support SVG files.",
             "homepage": "https://www.drupal.org/project/svg_image",
             "support": {
-                "source": "http://cgit.drupalcode.org/svg_image"
+                "source": "https://git.drupalcode.org/project/svg_image"
             }
         },
         {
@@ -4705,7 +4844,7 @@
             "description": "Provides a user interface for the Token API and some missing core tokens.",
             "homepage": "https://www.drupal.org/project/token",
             "support": {
-                "source": "http://cgit.drupalcode.org/token"
+                "source": "https://git.drupalcode.org/project/token"
             }
         },
         {
@@ -4737,7 +4876,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.1",
-                    "datestamp": "1557726644",
+                    "datestamp": "1557724385",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4818,7 +4957,7 @@
             "description": "Makes it possible to create (additional) paths where entities will be shown in a given view_mode",
             "homepage": "https://www.drupal.org/project/view_mode_page",
             "support": {
-                "source": "http://cgit.drupalcode.org/view_mode_page"
+                "source": "https://git.drupalcode.org/project/view_mode_page"
             }
         },
         {
@@ -4838,8 +4977,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0+6-dev",
-                    "datestamp": "1534680784",
+                    "version": "8.x-3.1+1-dev",
+                    "datestamp": "1539451684",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -4874,7 +5013,7 @@
                 "Drupal"
             ],
             "support": {
-                "source": "http://cgit.drupalcode.org/views_bootstrap"
+                "source": "https://git.drupalcode.org/project/views_bootstrap"
             },
             "time": "2018-10-13T17:27:27+00:00"
         },
@@ -4915,6 +5054,10 @@
             ],
             "authors": [
                 {
+                    "name": "Bobík",
+                    "homepage": "https://www.drupal.org/user/123612"
+                },
+                {
                     "name": "Remon",
                     "homepage": "https://www.drupal.org/user/143827"
                 },
@@ -4926,7 +5069,7 @@
             "description": "A pager which allows an infinite scroll effect for views.",
             "homepage": "https://www.drupal.org/project/views_infinite_scroll",
             "support": {
-                "source": "http://cgit.drupalcode.org/views_infinite_scroll"
+                "source": "https://git.drupalcode.org/project/views_infinite_scroll"
             }
         },
         {
@@ -5267,6 +5410,60 @@
             "time": "2018-06-29T15:13:57+00:00"
         },
         {
+            "name": "fastglass/sendgrid",
+            "version": "1.0.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/taz77/sendgrid-php-ng.git",
+                "reference": "95f16f748d609f8455b7c4be74fdd1a8febacaea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/taz77/sendgrid-php-ng/zipball/95f16f748d609f8455b7c4be74fdd1a8febacaea",
+                "reference": "95f16f748d609f8455b7c4be74fdd1a8febacaea",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": ">=6.2.1",
+                "php": ">=5.5.0",
+                "sendgrid/smtpapi": "~0.5"
+            },
+            "replace": {
+                "sendgrid/sendgrid-php": "*"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~7.3",
+                "vlucas/phpdotenv": "~1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SendGrid\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brady Owens",
+                    "email": "brady@fastglass.net",
+                    "homepage": "https://github.com/taz77"
+                }
+            ],
+            "description": "This library allows you to send emails through SendGrid using PHP and Guzzle 6.x.",
+            "homepage": "https://github.com/taz77/sendgrid-php-ng",
+            "keywords": [
+                "email",
+                "grid",
+                "send",
+                "sendgrid"
+            ],
+            "time": "2019-01-16T00:58:24+00:00"
+        },
+        {
             "name": "grasmash/expander",
             "version": "1.0.0",
             "source": {
@@ -5543,6 +5740,43 @@
                 "url"
             ],
             "time": "2018-12-04T20:46:45+00:00"
+        },
+        {
+            "name": "html2text/html2text",
+            "version": "4.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mtibben/html2text.git",
+                "reference": "f55104b7c9f99b0937f0e20fe051b19f9c0ecad1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mtibben/html2text/zipball/f55104b7c9f99b0937f0e20fe051b19f9c0ecad1",
+                "reference": "f55104b7c9f99b0937f0e20fe051b19f9c0ecad1",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance",
+                "symfony/polyfill-mbstring": "If you can't install ext-mbstring"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Html2Text\\": [
+                        "src/",
+                        "test/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPLv2"
+            ],
+            "description": "Converts HTML to formatted plain text",
+            "time": "2016-03-16T23:24:34+00:00"
         },
         {
             "name": "instaclick/php-webdriver",
@@ -7934,6 +8168,57 @@
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
             "time": "2016-10-03T07:35:21+00:00"
+        },
+        {
+            "name": "sendgrid/smtpapi",
+            "version": "0.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sendgrid/smtpapi-php.git",
+                "reference": "1c835388c11dc5e792260ae3e9662d6a661ace30"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sendgrid/smtpapi-php/zipball/1c835388c11dc5e792260ae3e9662d6a661ace30",
+                "reference": "1c835388c11dc5e792260ae3e9662d6a661ace30",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "replace": {
+                "sendgrid/smtpapi-php": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "suggest": {
+                "swiftmailer/swiftmailer": "^5.4 - Needed to run the example scripts"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Smtpapi": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Build SendGrid X-SMTPAPI headers in PHP.",
+            "homepage": "http://github.com/sendgrid/smtpapi-php",
+            "keywords": [
+                "X-SMTP",
+                "api",
+                "email",
+                "grid",
+                "send",
+                "sendgrid",
+                "smtp",
+                "smtpapi",
+                "xsmtp"
+            ],
+            "time": "2017-07-06T22:11:41+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
