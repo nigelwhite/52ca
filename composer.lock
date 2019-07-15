@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dace0e4ddb2f88b403e31fa6ef8497d5",
+    "content-hash": "e9de94f4c8ca3dc3b02b73ed62dece93",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3537,17 +3537,17 @@
         },
         {
             "name": "drupal/entity_pager",
-            "version": "1.0.0-beta2",
+            "version": "1.0.0-beta3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_pager.git",
-                "reference": "8.x-1.0-beta2"
+                "reference": "8.x-1.0-beta3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_pager-8.x-1.0-beta2.zip",
-                "reference": "8.x-1.0-beta2",
-                "shasum": "b6eb9a04774d1a13b29590dcfc924d81ea56fddd"
+                "url": "https://ftp.drupal.org/files/projects/entity_pager-8.x-1.0-beta3.zip",
+                "reference": "8.x-1.0-beta3",
+                "shasum": "22783a66f574bb571b27a6d892238866e2e9508d"
             },
             "require": {
                 "drupal/core": "*",
@@ -3559,15 +3559,12 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta2",
-                    "datestamp": "1553315287",
+                    "version": "8.x-1.0-beta3",
+                    "datestamp": "1560373681",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
                     }
-                },
-                "patches_applied": {
-                    "Pager not correctly determining current node/entity after beta2 update": "https://www.drupal.org/files/issues/2019-03-27/3043003-issue-with-class.diff"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
