@@ -10080,6 +10080,12 @@ ul.entity-pager-list {
   margin-bottom: 4rem;
 }
 
+/* line 237, ../scss/custom/_fullpage.scss */
+.social-media-sharing {
+  float: right;
+  margin-top: 1.5rem;
+}
+
 /* line 4, ../scss/custom/_navbar.scss */
 .navbar-nav > li > a {
   text-transform: uppercase;
