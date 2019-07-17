@@ -26,6 +26,7 @@
         "drupal/admin_toolbar": "^1.24",
         "drupal/allowed_formats": "^1.1",
         "drupal/backup_migrate": "^4.0",
+        "drupal/blockgroup": "^1.1",
         "drupal/bootstrap": "^3.13",
         "drupal/bootstrap_layouts": "^5.1",
         "drupal/bootstrap_library": "^1.11",
