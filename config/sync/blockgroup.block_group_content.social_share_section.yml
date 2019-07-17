@@ -1,0 +1,6 @@
+uuid: faa8fe43-a341-46ba-b96d-5fccc8564c10
+langcode: en
+status: true
+dependencies: {  }
+id: social_share_section
+label: 'Social share section'

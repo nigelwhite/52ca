@@ -1,0 +1,22 @@
+uuid: ee7a02c6-3f3f-4753-9d87-061d4dc53fb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - blockgroup.block_group_content.social_share_section
+  module:
+    - blockgroup
+  theme:
+    - bootsass
+id: socialsharesection
+theme: bootsass
+region: footer
+weight: 0
+provider: null
+plugin: 'block_group:faa8fe43-a341-46ba-b96d-5fccc8564c10'
+settings:
+  id: 'block_group:faa8fe43-a341-46ba-b96d-5fccc8564c10'
+  label: 'Social share section'
+  provider: blockgroup
+  label_display: '0'
+visibility: {  }

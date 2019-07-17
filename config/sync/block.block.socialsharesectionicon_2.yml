@@ -1,0 +1,25 @@
+uuid: 41ffeacc-ffb6-4e96-87a3-78bc326cf26d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c58cc0fd-c5e7-4bdf-b084-bbe94b29993d'
+  module:
+    - block_content
+  theme:
+    - bootsass
+id: socialsharesectionicon_2
+theme: bootsass
+region: social_share_section
+weight: -12
+provider: null
+plugin: 'block_content:c58cc0fd-c5e7-4bdf-b084-bbe94b29993d'
+settings:
+  id: 'block_content:c58cc0fd-c5e7-4bdf-b084-bbe94b29993d'
+  label: 'Social share section icon'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

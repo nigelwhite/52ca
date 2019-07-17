@@ -8,8 +8,8 @@ dependencies:
     - bootsass
 id: socialsharingblock
 theme: bootsass
-region: footer
-weight: 0
+region: social_share_section
+weight: -11
 provider: null
 plugin: social_sharing_block
 settings:

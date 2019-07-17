@@ -104,7 +104,7 @@ third_party_settings:
         - group_families
         - field_link
         - field_action_svg
-        - 'dynamic_block_field:node-social_sharing_icons'
+        - 'dynamic_block_field:node-social_section_block'
         - field_family
         - group_actions
         - group_earth_div
@@ -141,8 +141,8 @@ third_party_settings:
           wrapper: p
           class: title-fullpage
           link: false
-      'dynamic_block_field:node-social_sharing_icons':
-        plugin_id: 'dynamic_block_field:node-social_sharing_icons'
+      'dynamic_block_field:node-social_section_block':
+        plugin_id: 'dynamic_block_field:node-social_section_block'
         weight: 6
         label: hidden
         formatter: default

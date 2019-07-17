@@ -1,0 +1,11 @@
+id: social_section_block
+label: 'Social sharing section blockfield'
+ui_limit: ''
+properties:
+  block: 'block_group:faa8fe43-a341-46ba-b96d-5fccc8564c10'
+  use_block_title: false
+  add_block_wrappers: false
+type: block
+type_label: 'Block field'
+entities:
+  node: node
