@@ -2,8 +2,8 @@ _core:
   default_config_hash: _5qrDuRmWmRVjW00si3U1s1NrgrocA4N653EYGRfgEE
 favicon:
   mimetype: image/vnd.microsoft.icon
-  path: ''
-  url: 'http://localhost:32772/themes/custom/bootsass/favicon.ico'
+  path: 'public://favicon.ico'
+  url: 'https://www.52climateactions.com/sites/default/files/favicon.ico'
   use_default: false
 schemas:
   bootstrap: 8000
@@ -11,7 +11,7 @@ schemas:
 features:
   comment_user_picture: false
   comment_user_verification: false
-  favicon: false
+  favicon: true
   node_user_picture: false
 table_responsive: '-1'
 table: ''
@@ -30,3 +30,9 @@ region_wells:
   sidebar_second: ''
   footer: ''
 cdn_provider: ''
+cdn_theme: ''
+cdn_cache_ttl_versions: 0
+cdn_cache_ttl_themes: 0
+cdn_cache_ttl_assets: 0
+cdn_cache_ttl_library: 0
+reset_http_request_cache: ''

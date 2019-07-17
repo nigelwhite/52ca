@@ -1,0 +1,10 @@
+uuid: 500842e5-f4ce-47ff-874e-0258115a620a
+langcode: en
+status: true
+dependencies: {  }
+id: project_owner
+label: 'Project Owner'
+weight: 4
+is_admin: null
+permissions:
+  - 'administer contact forms'

@@ -7,7 +7,6 @@ dependencies:
     - taxonomy.vocabulary.resource_type
   module:
     - node
-    - options
     - taxonomy
     - user
 id: resources
@@ -236,7 +235,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
@@ -621,7 +619,7 @@ display:
         fields: false
         relationships: false
       display_description: ''
-      title: 'as Examples'
+      title: Examples
       filters:
         status:
           value: '1'

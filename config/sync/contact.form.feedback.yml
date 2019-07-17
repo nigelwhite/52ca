@@ -7,8 +7,9 @@ _core:
 id: feedback
 label: 'Website feedback'
 recipients:
-  - xm2@btinternet.com
+  - research@permaculture.org.uk
+  - digital@permaculture.org.uk
 reply: ''
 weight: 0
-message: 'Your message has been sent.'
+message: 'Thank you for contacting us. We''ll be in touch soon.'
 redirect: ''

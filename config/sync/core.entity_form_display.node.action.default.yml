@@ -162,7 +162,7 @@ content:
     third_party_settings: {  }
     region: content
   field_link:
-    weight: 26
+    weight: 22
     settings:
       placeholder_url: ''
       placeholder_title: ''

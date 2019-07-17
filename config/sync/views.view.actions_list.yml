@@ -226,6 +226,7 @@ display:
         sorts: false
         filters: false
         filter_groups: false
+        header: false
       row:
         type: 'ds_entity:node'
         options:
@@ -250,17 +251,17 @@ display:
           id: created
           table: node_field_data
           field: created
-          order: DESC
-          entity_type: node
-          entity_field: created
-          plugin_id: date
           relationship: none
           group_type: group
           admin_label: ''
+          order: ASC
           exposed: false
           expose:
             label: ''
           granularity: second
+          entity_type: node
+          entity_field: created
+          plugin_id: date
       filters:
         status:
           value: '1'
@@ -322,6 +323,25 @@ display:
         operator: AND
         groups:
           1: AND
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<div class="not-sure">Not sure where to start? Try these first</div>'
+            format: full_html
+          plugin_id: text
+        entity_taxonomy_term:
+          id: entity_taxonomy_term
+          table: views
+          field: entity_taxonomy_term
+          plugin_id: entity
     cache_metadata:
       max-age: -1
       contexts:

@@ -1,5 +1,5 @@
 hotlink: false
-origin: 'http://178.128.162.13/52ca/web'
+origin: 'https://www.52climateactions.com'
 origin_dir: sites/default/files
 use_imagecache_root: true
 verify: false

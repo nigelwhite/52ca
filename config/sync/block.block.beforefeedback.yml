@@ -1,0 +1,31 @@
+uuid: 9457622f-7369-4313-a7a2-0434e44ec8e2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:34a3cb1d-0422-4878-affc-965c43dc1150'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootsass
+id: beforefeedback
+theme: bootsass
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:34a3cb1d-0422-4878-affc-965c43dc1150'
+settings:
+  id: 'block_content:34a3cb1d-0422-4878-affc-965c43dc1150'
+  label: 'Before feedback'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact
+    negate: false
+    context_mapping: {  }

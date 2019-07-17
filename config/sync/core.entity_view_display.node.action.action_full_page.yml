@@ -98,19 +98,20 @@ third_party_settings:
       right:
         - field_summary
         - field_resources_for_children_
-        - group_families
         - field_resources_for_higher_educa
-        - field_action_svg
         - field_project_example
+        - field_reference
+        - group_families
+        - field_link
+        - field_action_svg
+        - 'dynamic_block_field:node-social_sharing_icons'
+        - field_family
         - group_actions
         - group_earth_div
-        - field_reference
-        - field_link
         - group_fair_div
         - group_people_div
-        - field_family
-        - group_resources
         - field_simple_action
+        - group_resources
         - field_radical_action
         - field_community_action
         - field_earth_care_svg
@@ -122,10 +123,10 @@ third_party_settings:
         - field_people_self_care_
       left:
         - group_intro
-        - field_action_number
-        - node_title
         - field_card_text_new
+        - field_action_number
         - field_image_block
+        - node_title
       bottom:
         - group_linked_actions_container
         - field_more_actions
@@ -140,12 +141,17 @@ third_party_settings:
           wrapper: p
           class: title-fullpage
           link: false
+      'dynamic_block_field:node-social_sharing_icons':
+        plugin_id: 'dynamic_block_field:node-social_sharing_icons'
+        weight: 6
+        label: hidden
+        formatter: default
   field_group:
     group_families:
       children:
         - field_family
       parent_name: ''
-      weight: 1
+      weight: 4
       format_type: html_element
       format_settings:
         element: div
@@ -183,7 +189,7 @@ third_party_settings:
         - field_community_action
         - field_global_action
       parent_name: ''
-      weight: 3
+      weight: 7
       format_type: html_element
       format_settings:
         element: div
@@ -205,7 +211,7 @@ third_party_settings:
         - field_reference
         - field_link
       parent_name: ''
-      weight: 7
+      weight: 11
       format_type: html_element
       format_settings:
         id: ''
@@ -223,7 +229,7 @@ third_party_settings:
         - field_earth_care_svg
         - field_earth_care2_
       parent_name: ''
-      weight: 4
+      weight: 8
       format_type: html_element
       format_settings:
         id: ''
@@ -241,7 +247,7 @@ third_party_settings:
         - field_fair_share_svg
         - field_fair_share2_
       parent_name: ''
-      weight: 5
+      weight: 9
       format_type: html_element
       format_settings:
         id: ''
@@ -259,7 +265,7 @@ third_party_settings:
         - field_people_care_svg
         - field_people_self_care_
       parent_name: ''
-      weight: 6
+      weight: 10
       format_type: html_element
       format_settings:
         id: ''
@@ -277,7 +283,7 @@ third_party_settings:
         - field_more_actions
         - field_linked_actions
       parent_name: ''
-      weight: 8
+      weight: 12
       format_type: html_element
       format_settings:
         element: div
@@ -307,7 +313,7 @@ content:
         class: action-number
   field_action_svg:
     type: image
-    weight: 2
+    weight: 5
     region: right
     label: hidden
     settings:
@@ -322,7 +328,7 @@ content:
         class: actionfull-svg
   field_card_text_new:
     type: text_default
-    weight: 9
+    weight: 2
     region: left
     label: hidden
     settings: {  }
@@ -493,7 +499,7 @@ content:
             classes: {  }
   field_image_block:
     type: entity_reference_revisions_entity_view
-    weight: 10
+    weight: 3
     region: left
     label: hidden
     settings:

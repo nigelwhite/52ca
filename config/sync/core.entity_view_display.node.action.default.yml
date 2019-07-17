@@ -69,20 +69,25 @@ third_party_settings:
     regions:
       main:
         - group_card_header
-        - field_image
         - group_card_body
-        - group_families
-        - group_card_footer
+        - field_image
         - group_intro
+        - group_card_footer
+        - group_families
         - node_title
         - field_intro_svg
         - field_action_svg
         - field_action_number
-        - field_card_action
         - field_card_text_new
-        - 'dynamic_block_field:node-card_pager'
+        - field_card_action
         - field_family
+        - 'dynamic_block_field:node-card_pager'
     fields:
+      'dynamic_block_field:node-card_pager':
+        plugin_id: 'dynamic_block_field:node-card_pager'
+        weight: 6
+        label: hidden
+        formatter: default
       node_title:
         plugin_id: node_title
         weight: 3
@@ -92,11 +97,6 @@ third_party_settings:
           wrapper: p
           class: title-card
           link: false
-      'dynamic_block_field:node-card_pager':
-        plugin_id: 'dynamic_block_field:node-card_pager'
-        weight: 6
-        label: hidden
-        formatter: default
   field_group:
     group_intro:
       children:
@@ -224,10 +224,17 @@ content:
     weight: 5
     label: hidden
     settings:
-      link: true
+      link: false
     third_party_settings:
       field_formatter_class:
         class: card-action
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: entity_reference_label
     region: main
   field_card_text_new:

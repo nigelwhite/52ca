@@ -22,7 +22,7 @@ social_media:
     attributes: "target|_blank\r\nclass|facebook-msg"
     img: ''
   linkedin:
-    enable: 1
+    enable: 0
     api_url: 'http://www.linkedin.com/shareArticle?mini=true&url=[current-page:url]&title=[current-page:title]&source=[current-page:url]'
     api_event: href
     text: Linkedin
@@ -44,7 +44,7 @@ social_media:
     library: ''
     img: ''
   pinterest:
-    enable: 1
+    enable: 0
     api_url: 'https://www.pinterest.com/pin/create/button/?url=[current-page:url]&description=[current-page:title]'
     api_event: href
     text: Pinterest
@@ -55,7 +55,7 @@ social_media:
     library: ''
     img: ''
   google_plus:
-    enable: 1
+    enable: 0
     text: 'Google Plus'
     api_url: 'https://plus.google.com/share?url=[current-page:url]'
     api_event: href
