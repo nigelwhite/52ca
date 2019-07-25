@@ -72,8 +72,17 @@
 //       $(this).children('.popup-container').toggleClass("show");
 //   });
 
+    // ok
+    // $(".popup").click(function () {
+    //     $(this).children(".myPopup").toggleClass("show");
+    // });
+
     $(".popup").click(function () {
-        $(this).children(".myPopup").toggleClass("show");
+        $(this).children(".myPopup").addClass("show").delay(5000).queue(function(next) {
+            $(this).removeClass("show");
+            next();
+        });
     });
+
 
 }(jQuery));

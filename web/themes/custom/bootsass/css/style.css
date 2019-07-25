@@ -10263,8 +10263,8 @@ body {
 .popup .popuptext {
   visibility: hidden;
   width: 600px;
-  background-color: #555;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   text-align: center;
   border-radius: 6px;
   padding: 8px 0;
@@ -10273,10 +10273,12 @@ body {
   bottom: 125%;
   left: 50%;
   margin-left: -80px;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Popup arrow */
-/* line 25, ../scss/custom/_embedded.scss */
+/* line 27, ../scss/custom/_embedded.scss */
 .popup .popuptext::after {
   content: "";
   position: absolute;
@@ -10289,7 +10291,7 @@ body {
 }
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
-/* line 37, ../scss/custom/_embedded.scss */
+/* line 39, ../scss/custom/_embedded.scss */
 .popup .show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
@@ -10313,25 +10315,18 @@ body {
     opacity: 1;
   }
 }
-/* line 54, ../scss/custom/_embedded.scss */
+/* line 57, ../scss/custom/_embedded.scss */
 .popup-link a {
-  color: #fff;
+  color: #000;
   text-decoration: underline;
 }
 
-/* line 59, ../scss/custom/_embedded.scss */
+/* line 63, ../scss/custom/_embedded.scss */
 .popup-close {
-  width: 20px;
-  position: absolute;
-  z-index: 999;
-  top: 5px;
-  right: 10px;
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
+  display: none;
 }
 
-/* line 70, ../scss/custom/_embedded.scss */
+/* line 76, ../scss/custom/_embedded.scss */
 .popup-title::after {
   font-family: 'Glyphicons Halflings';
   content: "\e066";
