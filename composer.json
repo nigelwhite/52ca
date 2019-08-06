@@ -57,6 +57,7 @@
         "drupal/paragraphs": "1.8",
         "drupal/pathauto": "1.4",
         "drupal/recreate_block_content": "^2.0",
+        "drupal/search_api": "^1.14",
         "drupal/search_exclude": "^1.2",
         "drupal/sendgrid_integration": "^1.2",
         "drupal/social_media": "^1.3",
