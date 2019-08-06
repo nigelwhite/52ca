@@ -95,18 +95,18 @@ third_party_settings:
     regions:
       top:
         - field_image
+        - 'dynamic_block_field:node-social_section_block'
       right:
         - field_summary
         - field_resources_for_children_
         - field_resources_for_higher_educa
         - field_project_example
-        - field_reference
         - group_families
+        - field_reference
         - field_link
         - field_action_svg
-        - 'dynamic_block_field:node-social_section_block'
-        - field_family
         - group_actions
+        - field_family
         - group_earth_div
         - group_fair_div
         - group_people_div
@@ -128,10 +128,15 @@ third_party_settings:
         - field_image_block
         - node_title
       bottom:
-        - group_linked_actions_container
         - field_more_actions
+        - group_linked_actions_container
         - field_linked_actions
     fields:
+      'dynamic_block_field:node-social_section_block':
+        plugin_id: 'dynamic_block_field:node-social_section_block'
+        weight: 5
+        label: hidden
+        formatter: default
       node_title:
         plugin_id: node_title
         weight: 3
@@ -141,11 +146,6 @@ third_party_settings:
           wrapper: p
           class: title-fullpage
           link: false
-      'dynamic_block_field:node-social_section_block':
-        plugin_id: 'dynamic_block_field:node-social_section_block'
-        weight: 6
-        label: hidden
-        formatter: default
   field_group:
     group_families:
       children:
@@ -313,7 +313,7 @@ content:
         class: action-number
   field_action_svg:
     type: image
-    weight: 5
+    weight: 6
     region: right
     label: hidden
     settings:

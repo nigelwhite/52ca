@@ -1,0 +1,5 @@
+entity_type_groups:
+  media:
+    image:
+      open_graph: open_graph
+      twitter_cards: twitter_cards

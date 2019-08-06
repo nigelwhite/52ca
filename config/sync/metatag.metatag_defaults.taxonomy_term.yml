@@ -1,0 +1,30 @@
+uuid: 9c5292be-0e32-445d-8d51-9020baf7dbc4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 92bXZdyYJ5xqukdfmGRr_CYcwm1vfuS8b8aJ7X_G7E0
+id: taxonomy_term
+label: 'Taxonomy term'
+tags:
+  description: '[term:description]'
+  canonical_url: '[term:url]'
+  title: '[term:name] | [site:name]'
+  og_image_height: '500'
+  og_url: '[term:url]'
+  og_title: '[term:name]'
+  og_type: website
+  og_description: '[term:description]'
+  og_site_name: '52 Climate Actions'
+  og_image_width: '500'
+  og_image_url: '[term:field_icon:square_400:entity:url]'
+  og_image_alt: '[term:name]'
+  og_image: '[term:field_icon:square_400:entity:url]'
+  twitter_cards_description: '[term:description]'
+  twitter_cards_title: '[term:name]'
+  twitter_cards_image: '[term:field_icon:square_400:entity:url]'
+  twitter_cards_image_height: '500'
+  twitter_cards_type: summary_large_image
+  twitter_cards_image_width: '500'
+  twitter_cards_image_alt: '[term:name]'
+  twitter_cards_page_url: '[term:url]'

@@ -1,0 +1,28 @@
+uuid: 9d59891d-1eed-4c6d-b34d-9e850dd8c06d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1noCXlegCr5HFehQRF1ViXy1jhU1jZ_sNN99a8Sj5jo
+id: front
+label: 'Front page'
+tags:
+  canonical_url: '[site:url]'
+  shortlink: '[site:url]'
+  og_url: '[node:url]'
+  og_title: '[node:title]'
+  og_type: website
+  og_video_width: '1200'
+  og_description: '52 Climate Actions homepage'
+  og_site_name: '52 Climate Actions'
+  og_image_width: '1200'
+  og_image_alt: '[node:field_image:alt]'
+  og_image: '[node:field_image:entity:url]'
+  twitter_cards_description: '52 Climate Actions homepage'
+  twitter_cards_title: '[node:title]'
+  twitter_cards_image: '[node:field_image:url]'
+  twitter_cards_image_height: '1200'
+  twitter_cards_type: summary_large_image
+  twitter_cards_image_width: '1200'
+  twitter_cards_image_alt: '[node:field_image:alt]'
+  twitter_cards_page_url: '[node:url]'

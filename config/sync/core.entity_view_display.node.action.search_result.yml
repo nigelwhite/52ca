@@ -1,8 +1,9 @@
-uuid: 4e2dc2e0-6a6e-4f0c-a106-2636af0cbe08
+uuid: 77fabc3e-c71c-4cab-b4d4-336fbfd2e423
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.search_result
     - field.field.node.action.field_action_number
     - field.field.node.action.field_action_svg
     - field.field.node.action.field_advanced_action_choose_me
@@ -36,7 +37,7 @@ dependencies:
     - field.field.node.action.field_simple_action
     - field.field.node.action.field_simple_action_choose_me
     - field.field.node.action.field_summary
-    - image.style.medium
+    - image.style.main_image_icon
     - node.type.action
   module:
     - ds
@@ -48,7 +49,7 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: bs_1col
+      id: bs_2col
       library: null
       disable_css: false
       entity_classes: all_classes
@@ -58,30 +59,26 @@ third_party_settings:
           classes:
             row: row
           add_layout_class: 1
-          attributes: id|card
+          attributes: ''
         regions:
-          main:
+          left:
             wrapper: div
             classes:
-              col-sm-12: col-sm-12
+              col-md-9: col-md-9
+            add_region_classes: 1
+            attributes: ''
+          right:
+            wrapper: div
+            classes:
+              col-md-3: col-md-3
             add_region_classes: 1
             attributes: ''
     regions:
-      main:
-        - group_card_header
-        - group_card_body
+      right:
         - field_image
-        - group_intro
-        - group_card_footer
-        - group_families
+      left:
         - node_title
-        - field_intro_svg
-        - field_action_svg
-        - field_action_number
         - field_card_text_new
-        - field_card_action
-        - field_family
-        - 'dynamic_block_field:node-card_pager'
     fields:
       node_title:
         plugin_id: node_title
@@ -89,19 +86,18 @@ third_party_settings:
         label: hidden
         formatter: default
         settings:
-          wrapper: p
-          class: title-card
-          link: false
-      'dynamic_block_field:node-card_pager':
-        plugin_id: 'dynamic_block_field:node-card_pager'
-        weight: 6
-        label: hidden
-        formatter: default
+          link: true
+          wrapper: h4
+          class: search-title
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
   field_group:
     group_intro:
-      children:
-        - field_intro_svg
-        - field_action_number
+      children: {  }
       parent_name: group_card_body
       weight: 2
       format_type: html_element
@@ -119,8 +115,6 @@ third_party_settings:
     group_card_body:
       children:
         - group_intro
-        - node_title
-        - field_card_text_new
       parent_name: ''
       weight: 1
       format_type: html_element
@@ -137,8 +131,6 @@ third_party_settings:
       region: hidden
     group_card_footer:
       children:
-        - field_action_svg
-        - field_card_action
         - 'dynamic_block_field:node-card_pager'
       parent_name: ''
       weight: 2
@@ -155,8 +147,7 @@ third_party_settings:
       label: 'Card footer'
       region: hidden
     group_families:
-      children:
-        - field_family
+      children: {  }
       parent_name: group_card_header
       weight: 2
       format_type: html_element
@@ -173,7 +164,6 @@ third_party_settings:
       region: hidden
     group_card_header:
       children:
-        - field_image
         - group_families
       parent_name: ''
       weight: 0
@@ -189,61 +179,18 @@ third_party_settings:
         classes: 'card-header clearfix'
       label: 'Card header'
       region: hidden
-id: node.action.default
+id: node.action.search_result
 targetEntityType: node
 bundle: action
-mode: default
+mode: search_result
 content:
-  field_action_number:
-    weight: 4
-    label: hidden
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings:
-      field_formatter_class:
-        class: 'number-card col-xs-4'
-    type: number_integer
-    region: main
-  field_action_svg:
-    type: image
-    weight: 4
-    region: main
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
-      svg_render_as_image: '1'
-      svg_attributes:
-        width: ''
-        height: ''
-    third_party_settings:
-      field_formatter_class:
-        class: actionsvg-card
-  field_card_action:
-    weight: 5
-    label: hidden
-    settings:
-      link: false
-    third_party_settings:
-      field_formatter_class:
-        class: card-action
-      ds:
-        ft:
-          id: default
-          settings:
-            lb: ''
-            lb-col: false
-            classes: {  }
-    type: entity_reference_label
-    region: main
   field_card_text_new:
     weight: 5
     label: hidden
     settings: {  }
     third_party_settings:
       field_formatter_class:
-        class: text-card
+        class: search-text
       ds:
         ft:
           id: default
@@ -252,68 +199,46 @@ content:
             lb-col: false
             classes: {  }
     type: text_default
-    region: main
-  field_family:
-    weight: 6
+    region: left
+  field_image:
+    type: image
+    weight: 0
+    region: right
     label: hidden
     settings:
-      view_mode: family_icon
-      link: false
+      image_style: main_image_icon
+      image_link: content
+      svg_render_as_image: '1'
+      svg_attributes:
+        width: ''
+        height: ''
     third_party_settings:
       field_formatter_class:
-        class: 'family-icon family-card'
+        class: search-icon
       ds:
-        ds_limit: ''
         ft:
           id: default
           settings:
             lb: ''
             lb-col: false
             classes: {  }
-    type: entity_reference_entity_view
-    region: main
-  field_image:
-    weight: 1
-    label: hidden
-    settings:
-      image_style: action_card_image
-      image_link: ''
-      svg_render_as_image: '1'
-      svg_attributes:
-        width: ''
-        height: ''
-    third_party_settings:
-      field_formatter_class:
-        class: mainimage-card
-    type: image
-    region: main
-  field_intro_svg:
-    weight: 3
-    label: hidden
-    settings:
-      image_style: medium
-      image_link: ''
-      svg_render_as_image: '1'
-      svg_attributes:
-        width: ''
-        height: ''
-    third_party_settings:
-      field_formatter_class:
-        class: 'introsvg-card col-xs-8'
-    type: image
-    region: main
 hidden:
+  field_action_number: true
+  field_action_svg: true
   field_advanced_action_choose_me: true
+  field_card_action: true
   field_community_action: true
   field_community_action_choose_me: true
   field_earth_care2_: true
   field_earth_care_svg: true
   field_fair_share2_: true
   field_fair_share_svg: true
+  field_family: true
   field_global_action: true
   field_global_action_choose_me: true
   field_homepage: true
   field_image_block: true
+  field_intro_svg: true
   field_link: true
   field_linked_actions: true
   field_more_actions: true

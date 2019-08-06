@@ -1,0 +1,23 @@
+uuid: 0a6a4140-9bb3-429c-be5a-05ca8094e8b5
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: family_terms
+label: 'Family terms'
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:name]'
+selection_criteria:
+  e9c6dd4b-b42e-4626-b0d6-3f0c449f8502:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      family: family
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: e9c6dd4b-b42e-4626-b0d6-3f0c449f8502
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,15 @@
+uuid: 24fbc6c6-956a-425d-81f2-2915790c3ed3
+langcode: en
+status: true
+dependencies: {  }
+name: main_image_icon
+label: 'Main image - icon'
+effects:
+  3a4a212b-abea-40b9-b6da-535fa7af1c63:
+    uuid: 3a4a212b-abea-40b9-b6da-535fa7af1c63
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 150
+      height: 71
+      anchor: center-center

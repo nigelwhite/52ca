@@ -1,12 +1,12 @@
-apikey: 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
+apikey: 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
 test_defaults:
-  to: webdev@permaculture.org.uk
+  to: dwoods@encircle.co.uk
   subject: 'Test Email from SendGrid Module'
   body:
     value: 'Test Message for SendGrid.'
     format: plain_text
   from_name: Me
-  to_name: Nigel
+  to_name: 'Darren Woods'
   reply_to: ''
 _core:
   default_config_hash: g4qz7cPnloXFwtnLYfIKI2VS0gf_UFOz_I2uQiiulC8
