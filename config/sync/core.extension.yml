@@ -68,7 +68,6 @@ module:
   quickedit: 0
   rdf: 0
   recreate_block_content: 0
-  search: 0
   search_api: 0
   search_api_db: 0
   sendgrid_integration: 0
