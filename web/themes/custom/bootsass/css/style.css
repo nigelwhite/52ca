@@ -10586,6 +10586,11 @@ body {
   margin-top: 4rem;
 }
 
+/* line 9, ../scss/custom/_search.scss */
+.search-text {
+  padding-left: 2vw;
+}
+
 /**
  * jQuery UI autocomplete widget style overrides.
  *
