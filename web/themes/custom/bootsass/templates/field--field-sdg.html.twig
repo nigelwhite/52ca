@@ -48,31 +48,31 @@
 %}
 {%
   set title_classes = [
-    'field--label--sdg',
+    'sdg--field--label',
     label_display == 'visually_hidden' ? 'sr-only',
   ]
 %}
 
 {% if label_hidden %}
     {% if multiple %}
-        <ul{{attributes.addClass(classes,'field--items--ul')}}>
+        <ul{{attributes.addClass(classes,'sdg--field--items--ul')}}>
             {% for item in items %}
-                <li{{item.attributes.addClass('field--item--li')}}>{{ item.content }}</li>
+                <li{{item.attributes.addClass('sdg--field--item--li')}}>{{ item.content }}</li>
             {% endfor %}
         </ul>
     {% else %}
         {% for item in items %}
-            <ul><li>{{attributes.addClass(classes,'field--item--li')}}>{{ item.content }}</li></ul>
+            <ul><li>{{attributes.addClass(classes,'sdg--field--item--li')}}>{{ item.content }}</li></ul>
         {% endfor %}
     {% endif %}
 {% else %}
     <div{{attributes.addClass(classes)}}>
         <div{{title_attributes.addClass(title_classes)}}>{{ label }}</div>
         {% if multiple %}
-            <ul class="field--items--ul">
+            <ul class="sdg--field--items--ul">
             {% endif %}
             {% for item in items %}
-                <li{{item.attributes.addClass('field--item--li')}}>{{ item.content }}</li>
+                <li{{item.attributes.addClass('sdg--field--item--li')}}>{{ item.content }}</li>
             {% endfor %}
             {% if multiple %}
             </ul>

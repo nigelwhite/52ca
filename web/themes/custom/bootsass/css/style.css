@@ -10080,6 +10080,36 @@ ul.entity-pager-list {
   margin-bottom: 4rem;
 }
 
+/* line 239, ../scss/custom/_fullpage.scss */
+.sdg--field--label {
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 600;
+  font-family: "Zilla Slab", sans-serif;
+  color: #165025;
+  border-bottom: 10px solid;
+  border-image: linear-gradient(to right, #fdd905 5%, #d5d5d5 5%) 1;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+/* line 253, ../scss/custom/_fullpage.scss */
+.sdg--field--items--ul {
+  list-style-type: none;
+  padding-left: 12px;
+  margin-bottom: 20px;
+}
+
+/* line 259, ../scss/custom/_fullpage.scss */
+.sdg--field--item--li h2 {
+  font-size: 17px;
+  padding: 5px;
+  margin: 0;
+  line-height: 1;
+}
+
 /* line 4, ../scss/custom/_navbar.scss */
 .navbar-nav > li > a {
   text-transform: uppercase;
