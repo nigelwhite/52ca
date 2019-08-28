@@ -10110,6 +10110,19 @@ ul.entity-pager-list {
   line-height: 1;
 }
 
+/* line 267, ../scss/custom/_fullpage.scss */
+.resource-heading-flex {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* line 273, ../scss/custom/_fullpage.scss */
+.resource-heading {
+  font-weight: bold;
+  font-size: 17px;
+}
+
 /* line 4, ../scss/custom/_navbar.scss */
 .navbar-nav > li > a {
   text-transform: uppercase;
