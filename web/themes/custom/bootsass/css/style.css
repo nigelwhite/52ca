@@ -10114,10 +10114,11 @@ ul.entity-pager-list {
 .resource-heading-flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 100%;
 }
 
-/* line 273, ../scss/custom/_fullpage.scss */
+/* line 274, ../scss/custom/_fullpage.scss */
 .resource-heading {
   font-weight: bold;
   font-size: 17px;
