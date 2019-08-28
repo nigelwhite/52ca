@@ -26,11 +26,17 @@
  * @ingroup themeable
  */
 #}
-<div{{ attributes }}>
-  {{ title_prefix }}
-  {# {% if not page %} #}
-    <h2>{{ name }}</h2>
-  {# {% endif %} #}
-  {{ title_suffix }}
-  {{ content }}
+<div{{attributes}}>
+    {{ title_prefix }}
+    {% if not page %}
+        <h2>
+            <a href="{{ url }}">{{ name }}</a>
+        </h2>
+    {% else %}
+        <h2>
+            {{ name }}
+        </h2>
+    {% endif %}
+    {{ title_suffix }}
+    {{ content }}
 </div>
