@@ -111,12 +111,13 @@ third_party_settings:
         - group_fair_div
         - group_people_div
         - field_simple_action
+        - field_sdg
         - group_resources
         - field_radical_action
         - field_community_action
         - field_earth_care_svg
-        - field_global_action
         - field_earth_care2_
+        - field_global_action
         - field_fair_share_svg
         - field_fair_share2_
         - field_people_care_svg
@@ -132,11 +133,6 @@ third_party_settings:
         - group_linked_actions_container
         - field_linked_actions
     fields:
-      'dynamic_block_field:node-social_section_block':
-        plugin_id: 'dynamic_block_field:node-social_section_block'
-        weight: 5
-        label: hidden
-        formatter: default
       node_title:
         plugin_id: node_title
         weight: 3
@@ -146,6 +142,11 @@ third_party_settings:
           wrapper: p
           class: title-fullpage
           link: false
+      'dynamic_block_field:node-social_section_block':
+        plugin_id: 'dynamic_block_field:node-social_section_block'
+        weight: 5
+        label: hidden
+        formatter: default
   field_group:
     group_families:
       children:
@@ -211,7 +212,7 @@ third_party_settings:
         - field_reference
         - field_link
       parent_name: ''
-      weight: 11
+      weight: 12
       format_type: html_element
       format_settings:
         id: ''
@@ -706,6 +707,15 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
+  field_sdg:
+    type: entity_reference_entity_view
+    weight: 11
+    region: right
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
   field_simple_action:
     weight: 10
     label: above
@@ -748,7 +758,7 @@ hidden:
   field_global_action_choose_me: true
   field_homepage: true
   field_intro_svg: true
-  field_sdg: true
   field_season: true
   field_simple_action_choose_me: true
   links: true
+  search_api_excerpt: true

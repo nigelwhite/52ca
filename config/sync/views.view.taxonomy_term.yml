@@ -252,6 +252,7 @@ display:
       link_url: ''
       link_display: page_1
       css_class: ''
+      title: ''
     cache_metadata:
       contexts:
         - 'languages:language_interface'

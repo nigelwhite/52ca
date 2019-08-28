@@ -10,7 +10,7 @@ id: node.action.field_sdg
 field_name: field_sdg
 entity_type: node
 bundle: action
-label: SDG
+label: 'Sustainable Development Goals'
 description: 'max 4'
 required: false
 translatable: false
