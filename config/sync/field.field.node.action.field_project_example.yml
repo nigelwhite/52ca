@@ -10,7 +10,7 @@ id: node.action.field_project_example
 field_name: field_project_example
 entity_type: node
 bundle: action
-label: 'Project example'
+label: 'Project examples:'
 description: ''
 required: false
 translatable: false

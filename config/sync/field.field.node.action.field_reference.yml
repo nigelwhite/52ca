@@ -10,7 +10,7 @@ id: node.action.field_reference
 field_name: field_reference
 entity_type: node
 bundle: action
-label: Reference
+label: 'References:'
 description: ''
 required: false
 translatable: false

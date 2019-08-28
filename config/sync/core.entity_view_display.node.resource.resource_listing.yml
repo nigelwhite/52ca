@@ -11,12 +11,9 @@ dependencies:
     - field.field.node.resource.field_resource_type
     - field.field.node.resource.field_simple_action_choose_me
     - field.field.node.resource.field_summary
-    - image.style.square_45
     - node.type.resource
   module:
     - ds
-    - field_formatter_class
-    - svg_image
     - user
 third_party_settings:
   ds:
@@ -46,8 +43,6 @@ third_party_settings:
             add_region_classes: 0
             attributes: ''
     regions:
-      left:
-        - field_image
       right:
         - node_title
     fields:
@@ -70,34 +65,14 @@ id: node.resource.resource_listing
 targetEntityType: node
 bundle: resource
 mode: resource_listing
-content:
-  field_image:
-    type: image
-    weight: 0
-    region: left
-    label: hidden
-    settings:
-      image_style: square_45
-      image_link: ''
-      svg_render_as_image: '1'
-      svg_attributes:
-        width: ''
-        height: ''
-    third_party_settings:
-      field_formatter_class:
-        class: resource-thumbnail
-      ds:
-        ft:
-          id: default
-          settings:
-            lb: ''
-            lb-col: false
-            classes: {  }
+content: {  }
 hidden:
   body: true
+  field_image: true
   field_link2: true
   field_read_more: true
   field_resource_type: true
   field_simple_action_choose_me: true
   field_summary: true
   links: true
+  search_api_excerpt: true

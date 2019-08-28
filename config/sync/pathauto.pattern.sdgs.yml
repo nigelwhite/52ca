@@ -1,0 +1,23 @@
+uuid: 28c38229-530d-402c-8843-531eb3c93cfc
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: sdgs
+label: SDGs
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:name]'
+selection_criteria:
+  da90c63b-8acb-4e1d-9828-4c400e42b245:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      sdg: sdg
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: da90c63b-8acb-4e1d-9828-4c400e42b245
+selection_logic: and
+weight: -5
+relationships: {  }
