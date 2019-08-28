@@ -70,6 +70,7 @@
         "drupal/views_slideshow": "^4.6",
         "drupal/webform": "^5.4",
         "drush/drush": "^9.0.0",
+        "phpmailer/phpmailer": "^6.0",
         "twig/twig": "1.38.2",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-core-require-dev": "~8.7.5",
