@@ -10241,6 +10241,12 @@ body {
   font-size: 4rem;
 }
 
+/* line 5, ../scss/custom/_lists.scss */
+.actions-list-item {
+  font-size: 2rem;
+  line-height: 3.5rem;
+}
+
 /* line 1, ../scss/custom/_footer.scss */
 .footer {
   background-image: linear-gradient(#a2c635 90%, #165025 10%);
