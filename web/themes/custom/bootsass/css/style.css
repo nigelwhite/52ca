@@ -10612,6 +10612,17 @@ body {
     margin: 0 auto;
   }
 }
+/* line 14, ../scss/custom/_misc.scss */
+#block-actionslistingthisresourceas {
+  font-size: 2rem;
+  margin-top: 125px;
+}
+
+/* line 19, ../scss/custom/_misc.scss */
+.resource-category-label .field--label {
+  margin-bottom: 10px;
+}
+
 /* line 1, ../scss/custom/_social-icons.scss */
 .field--name-dynamic-block-fieldnode-social-section-block,
 #block-socialsharesection {
