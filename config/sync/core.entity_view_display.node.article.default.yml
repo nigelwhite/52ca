@@ -8,18 +8,16 @@ dependencies:
     - field.field.node.article.field_files
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
-    - image.style.large
     - node.type.article
   module:
     - ds
     - file
-    - svg_image
     - text
     - user
 third_party_settings:
   ds:
     layout:
-      id: bs_2col_stacked
+      id: bs_1col
       library: null
       disable_css: false
       entity_classes: all_classes
@@ -56,12 +54,9 @@ third_party_settings:
             add_region_classes: 1
             attributes: ''
     regions:
-      left:
-        - field_image
-        - body
-      top:
+      main:
         - node_title
-      right:
+        - body
         - field_files
     fields:
       node_title:
@@ -78,33 +73,22 @@ mode: default
 content:
   body:
     type: text_default
-    weight: 0
+    weight: 1
     region: left
     settings: {  }
     third_party_settings: {  }
     label: hidden
   field_files:
-    weight: 111
+    weight: 2
     label: hidden
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
     type: file_default
     region: right
-  field_image:
-    type: image
-    weight: -1
-    region: left
-    settings:
-      image_style: large
-      image_link: ''
-      svg_attributes:
-        width: ''
-        height: ''
-      svg_render_as_image: true
-    third_party_settings: {  }
-    label: hidden
 hidden:
   comment: true
+  field_image: true
   field_tags: true
   links: true
+  search_api_excerpt: true

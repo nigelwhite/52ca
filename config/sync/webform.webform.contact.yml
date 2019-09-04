@@ -17,17 +17,17 @@ id: contact
 title: Contact
 description: 'Basic email contact webform.'
 category: ''
-elements: "intro_text:\n  '#type': webform_markup\n  '#markup': 'Please give us feedack about the site.'\nname:\n  '#title': 'Your Name'\n  '#type': textfield\n  '#required': true\n  '#default_value': '[current-user:display-name]'\nemail:\n  '#title': 'Your Email'\n  '#type': email\n  '#required': true\n  '#default_value': '[current-user:mail]'\nsubject:\n  '#type': textfield\n  '#title': Subject\n  '#required': true\n  '#test': 'Testing contact webform from [site:name]'\nmessage:\n  '#title': Message\n  '#type': textarea\n  '#required': true\n  '#test': 'Please ignore this email.'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send message'"
+elements: "intro_text:\n  '#type': webform_markup\n  '#markup': 'Please give us feedack about the site.'\nname:\n  '#title': 'Your Name'\n  '#type': textfield\n  '#required': true\n  '#default_value': '[current-user:display-name]'\nemail:\n  '#title': 'Your Email'\n  '#type': email\n  '#required': true\n  '#default_value': '[current-user:mail]'\nsubject:\n  '#type': textfield\n  '#title': Subject\n  '#required': true\n  '#test': 'Testing contact webform from [site:name]'\nmessage:\n  '#title': Message\n  '#type': textarea\n  '#required': true\n  '#test': 'Please ignore this email.'\ncaptcha_contact_webform:\n  '#type': captcha\n  '#captcha_type': recaptcha/reCAPTCHA\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send message'"
 css: ''
 javascript: ''
 settings:
   ajax: false
-  ajax_scroll_top: form
+  ajax_scroll_top: ''
   ajax_progress_type: ''
   ajax_effect: ''
   ajax_speed: null
   page: true
-  page_submit_path: ''
+  page_submit_path: feedback
   page_confirm_path: ''
   page_admin_theme: false
   form_title: source_entity_webform
@@ -35,7 +35,7 @@ settings:
   form_exception_message: ''
   form_open_message: ''
   form_close_message: ''
-  form_previous_submissions: true
+  form_previous_submissions: false
   form_confidential: false
   form_confidential_message: ''
   form_remote_addr: true
@@ -60,9 +60,11 @@ settings:
   form_access_denied_attributes: {  }
   form_file_limit: ''
   submission_label: ''
-  submission_log: false
+  submission_log: true
   submission_views: {  }
-  submission_views_replace: {  }
+  submission_views_replace:
+    webform_routes: {  }
+    node_routes: {  }
   submission_user_columns: {  }
   submission_user_duplicate: false
   submission_access_denied: default
@@ -217,9 +219,9 @@ handlers:
       sender_name: ''
   email_notification:
     id: email
-    label: 'Feedback submitted on 52 Climate Actions'
+    label: '52CA Feedback form'
     handler_id: email_notification
-    status: false
+    status: true
     conditions: {  }
     weight: 2
     settings:
@@ -227,15 +229,15 @@ handlers:
         - completed
       to_mail: 52climateactions@gmail.com
       to_options: {  }
-      cc_mail: _default
+      cc_mail: ''
       cc_options: {  }
-      bcc_mail: ''
+      bcc_mail: webdev@permaculture.org.uk
       bcc_options: {  }
-      from_mail: '[webform_submission:values:email:raw]'
+      from_mail: noreply@52climateactions.com
       from_options: {  }
-      from_name: '[webform_submission:values:name:raw]'
-      subject: '[webform_submission:values:subject:raw]'
-      body: '[webform_submission:values:message:value]'
+      from_name: 'The feedback form on the web site'
+      subject: 'Feedback from a reader on 52CA'
+      body: "<p>Feedback from:&nbsp;[webform_submission:values:name]</p>\r\n\r\n<p>Reader&#39;s email:&nbsp;[webform_submission:values:email]</p>\r\n\r\n<p>Subject of feedback:&nbsp;[webform_submission:values:subject]</p>\r\n\r\n<p>Message: [webform_submission:values:message]</p>"
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true

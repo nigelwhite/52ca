@@ -1,8 +1,20 @@
 theme: current
 defaults:
-  sender: php_mail
-  formatter: php_mail
+  sender: webform_php_mail
+  formatter: webform_php_mail
 _core:
   default_config_hash: IhwTepsVwtbtbcT5GzQKhCXDCRvbk3MNkWqPiuiZ10s
 modules:
   sendgrid_integration: {  }
+  system:
+    none:
+      formatter: php_mail
+      sender: php_mail
+  user:
+    none:
+      formatter: php_mail
+      sender: php_mail
+  webform:
+    none:
+      formatter: webform_php_mail
+      sender: webform_php_mail

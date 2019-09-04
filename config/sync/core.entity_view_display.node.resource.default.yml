@@ -41,13 +41,19 @@ third_party_settings:
           left:
             wrapper: div
             classes:
-              col-sm-6: col-sm-6
+              col-xs-12: col-xs-12
+              col-sm-12: col-sm-12
+              col-md-8: col-md-8
+              col-lg-8: col-lg-8
             add_region_classes: 1
             attributes: ''
           right:
             wrapper: div
             classes:
-              col-sm-6: col-sm-6
+              col-xs-12: col-xs-12
+              col-sm-12: col-sm-12
+              col-md-4: col-md-4
+              col-lg-4: col-lg-4
             add_region_classes: 1
             attributes: ''
           bottom:
@@ -61,9 +67,9 @@ third_party_settings:
         - node_title
         - field_simple_action_choose_me
       left:
+        - field_summary
         - body
       right:
-        - field_summary
         - field_link2
         - field_resource_type
     fields:
@@ -78,7 +84,7 @@ bundle: resource
 mode: default
 content:
   body:
-    weight: 2
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
@@ -107,12 +113,12 @@ content:
     region: right
   field_resource_type:
     weight: 5
-    label: hidden
+    label: above
     settings:
       link: true
     third_party_settings:
       field_formatter_class:
-        class: h5
+        class: 'h5 resource-category-label'
       ds:
         ds_limit: ''
         ft:
@@ -132,14 +138,15 @@ content:
     type: string
     region: top
   field_summary:
-    weight: 3
+    weight: 2
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: right
+    region: left
 hidden:
   field_image: true
   field_read_more: true
   links: true
+  search_api_excerpt: true
