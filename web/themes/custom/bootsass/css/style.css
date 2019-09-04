@@ -10242,7 +10242,8 @@ body {
 }
 
 /* line 5, ../scss/custom/_lists.scss */
-.actions-list-item {
+.actions-list-item,
+.sdg-list-item {
   font-size: 2rem;
   line-height: 3.5rem;
 }
