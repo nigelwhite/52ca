@@ -10243,7 +10243,8 @@ body {
 
 /* line 5, ../scss/custom/_lists.scss */
 .actions-list-item,
-.sdg-list-item {
+.sdg-list-item,
+.resources-list-item {
   font-size: 2rem;
   line-height: 3.5rem;
 }
@@ -10603,6 +10604,14 @@ body {
   font-size: 2.5rem;
 }
 
+@media (min-width: 768px) {
+  /* Target devices wider than 768px. Pads and larger. */
+  /* line 8, ../scss/custom/_misc.scss */
+  .webform-submission-contact-add-form {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
 /* line 1, ../scss/custom/_social-icons.scss */
 .field--name-dynamic-block-fieldnode-social-section-block,
 #block-socialsharesection {
