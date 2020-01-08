@@ -8,7 +8,7 @@ require('./src/navigatorLanguage');
 
 var createAutocompleteDataset = require('./src/createAutocompleteDataset')["default"];
 
-var css = require('./src/places.css')["default"];
+var css = require('./babel-css')["default"];
 
 var insertCss = require('insert-css');
 

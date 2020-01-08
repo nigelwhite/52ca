@@ -1,7 +1,7 @@
 #### IMPORTANT: since v14 we have removed the jQuery dependency. See below for how to initialise and use the plugin with pure JavaScript. If you want to stick with the jQuery version, there is now a separate jQuery wrapped version.
 ---
 
-# International Telephone Input [![Build Status](https://travis-ci.org/jackocnr/intl-tel-input.svg?branch=master)](https://travis-ci.org/jackocnr/intl-tel-input)
+# International Telephone Input [![Build Status](https://travis-ci.org/jackocnr/intl-tel-input.svg?branch=master)](https://travis-ci.org/jackocnr/intl-tel-input) <img src="https://img.shields.io/github/package-json/v/jackocnr/intl-tel-input.svg" /> <img src="https://img.shields.io/npm/dm/intl-tel-input.svg" />
 A JavaScript plugin for entering and validating international telephone numbers. It adds a flag dropdown to any input, detects the user's country, displays a relevant placeholder and provides formatting/validation methods.
 
 <img src="https://raw.github.com/jackocnr/intl-tel-input/master/screenshots/vanilla.png" width="424px" height="246px">
@@ -57,10 +57,10 @@ Note: In v12.0.0 we dropped support for IE9 and IE10, because they are no longer
 
 3. Override the path to flags.png in your CSS
   ```css
-  .iti-flag {background-image: url("path/to/flags.png");}
+  .iti__flag {background-image: url("path/to/flags.png");}
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .iti-flag {background-image: url("path/to/flags@2x.png");}
+    .iti__flag {background-image: url("path/to/flags@2x.png");}
   }
   ```
 
@@ -151,7 +151,7 @@ _Tip: store the result in a cookie to avoid repeat lookups!_
 
 **hiddenInput**  
 Type: `String` Default: `""`  
-Add a hidden input with the given name (or if your input name contains square brackets then it will give the hidden input the same name, replacing the contents of the brackets with the given name). On submit, populate it with the full international number (using `getNumber`). This is a quick way for people using non-ajax forms to get the full international number, even when `nationalMode` is enabled. _Note: requires the input to be inside a form element, as this feature works by listening for the submit event on the closest form element. Also note that since this uses `getNumber` internally, it expects a valid number, and so should only be used after validation._
+Add a hidden input with the given name. Alternatively, if your input name contains square brackets (e.g. `name="phone_number[main]"`) then it will give the hidden input the same name, replacing the contents of the brackets with the given name (e.g. if you init the plugin with `hiddenInput: "full"`, then in this case the hidden input would have `name="phone_number[full]"`). On submit, it will automatically populate the hidden input with the full international number (using `getNumber`). This is a quick way for people using non-ajax forms to get the full international number, even when `nationalMode` is enabled. _Note: requires the input to be inside a form element, as this feature works by listening for the submit event on the closest form element. Also note that since this uses `getNumber` internally, it expects a valid number, and so should only be used after validation._
 
 **initialCountry**  
 Type: `String` Default: `""`  
@@ -359,7 +359,7 @@ To recompile the utils script yourself (e.g. to update the version of libphonenu
 **Full width input**  
 If you want your input to be full-width, you need to set the container to be the same i.e.
 ```css
-.intl-tel-input { width: 100%; }
+.iti { width: 100%; }
 ```
 
 **dropdownContainer: dropdown not closing on scroll**  
@@ -374,10 +374,10 @@ scrollingElement.addEventListener("scroll", function() {
 ```
 
 **Input margin**  
-For the sake of alignment, the default CSS forces the input's vertical margin to `0px`. If you want vertical margin, you should add it to the container (with class `intl-tel-input`).
+For the sake of alignment, the default CSS forces the input's vertical margin to `0px`. If you want vertical margin, you should add it to the container (with class `iti`).
 
 **Displaying error messages**  
-If your error handling code inserts an error message before the `<input>` it will break the layout. Instead you must insert it before the container (with class `intl-tel-input`).
+If your error handling code inserts an error message before the `<input>` it will break the layout. Instead you must insert it before the container (with class `iti`).
 
 **Dropdown position**  
 The dropdown should automatically appear above/below the input depending on the available space. For this to work properly, you must only initialise the plugin after the `<input>` has been added to the DOM.
