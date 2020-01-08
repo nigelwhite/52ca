@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "301e5044260daab261ac4a745cfe18b5",
+    "content-hash": "e2ffe7e850c8599cb071d3963530b9b8",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3869,17 +3869,17 @@
         },
         {
             "name": "drupal/environment_indicator",
-            "version": "3.6.0",
+            "version": "3.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/environment_indicator.git",
-                "reference": "8.x-3.6"
+                "reference": "8.x-3.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/environment_indicator-8.x-3.6.zip",
-                "reference": "8.x-3.6",
-                "shasum": "a27e3ab20273cda039610156ab9b9267b5c46b9f"
+                "url": "https://ftp.drupal.org/files/projects/environment_indicator-8.x-3.7.zip",
+                "reference": "8.x-3.7",
+                "shasum": "c5e27581a10f446f7c88568279454f20f5910dc9"
             },
             "require": {
                 "drupal/core": "*"
@@ -3890,7 +3890,7 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.6",
+                    "version": "8.x-3.7",
                     "datestamp": "1568149685",
                     "security-coverage": {
                         "status": "covered",
