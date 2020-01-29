@@ -30,5 +30,5 @@
 /web/themes/custom/bootsass/package-lock.json
 /web/themes/custom/bootsass/package.json
 
-# snapshots
-/.ddev/snapshots
+# Ignore local dev resources
+/localdev/
