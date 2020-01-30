@@ -22,38 +22,40 @@
 <div class="be-inspired-menu">
 	{% macro menu_links(items, attributes, menu_level, classes, dropdown_classes) %}
 
-		{% if items %}
+		{% treeloop item in items %}
+		{% if treeloop.first %}
 			<ul{{attributes.addClass("be-inspired-ul")}}>
-				{% for item in items %}
-					{%
+			{% endif %}
+
+			{%
         set item_classes = item.url.getOption('container_attributes').class | split(" ")
       %}
-					{%
+			{%
         set item_classes = [
           item.is_expanded and item.below ? 'expanded',
           item.in_active_trail ? 'active active-trail',
         ]
       %}
-					<li{{item.attributes.addClass(item_classes)}}>
-						{% set link_title = item.title %}
-						{% set link_attributes = item.link_attributes %}
-						{% if menu_level == 0 and item.is_expanded and item.below %}
-							{% set link_title %}{{ link_title }}
+			<li{{item.attributes.addClass(item_classes)}}>
+				{% set link_title = item.title %}
+				{% set link_attributes = item.link_attributes %}
+				{% if menu_level == 0 and item.is_expanded and item.below %}
+					{% set link_title %}{{ link_title }}
 
-							{% endset %}
-							{% set link_attributes = link_attributes.addClass('be-inspired-li') %}
-						{% endif %}
-						{# Must use link() here so it triggers hook_link_alter(). #}
-						{{ link(link_title, item.url, link_attributes.addClass(item.in_active_trail ? 'active-trail')) }}
-						{% if item.below %}
-							{{ _self.menu_links(item.below, attributes.removeClass(classes), menu_level + 1, classes, dropdown_classes) }}
-						{% endif %}
-					</li>
-				{% endfor %}
+					{% endset %}
+					{% set link_attributes = link_attributes.addClass('be-inspired-li') %}
+				{% endif %}
+				{# Must use link() here so it triggers hook_link_alter(). #}
+				{{ link(link_title, item.url, link_attributes.addClass(item.in_active_trail ? 'active-trail')) }}
+				{% subtree link.sublinks %}
+			</li>
+			{% if treeloop.last %}
 			</ul>
 		{% endif %}
-	</div>
-{% endmacro %}
+		{% endtreeloop %}
+
+	{% endmacro %}
+</div>
 
 {#
   Invoke the custom macro defined above. If classes were provided, use them.
