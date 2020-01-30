@@ -24,4 +24,5 @@ bootsass:
 fonts:
   css:
     theme:
-      '//fonts.googleapis.com/css?family=Muli:600,800,1000|Zilla+Slab:600': { type: external }
+      "//fonts.googleapis.com/css?family=Muli:600,800,1000|Zilla+Slab:600":
+        { type: external }
