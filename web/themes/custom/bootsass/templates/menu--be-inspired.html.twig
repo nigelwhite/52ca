@@ -32,6 +32,7 @@
         set item_classes = [
           item.is_expanded and item.below ? 'expanded',
           item.in_active_trail ? 'active active-trail',
+					'be-inspired-li'
         ]
       %}
 					<li{{item.attributes.addClass(item_classes)}}>
@@ -39,9 +40,9 @@
 						{% set link_attributes = item.link_attributes %}
 						{% if menu_level == 0 and item.is_expanded and item.below %}
 							{% set link_title %}{{ link_title }}
-
-							{% endset %}
 							{% set link_attributes = link_attributes.addClass('be-inspired-li') %}
+							{% endset %}
+
 						{% endif %}
 						{# Must use link() here so it triggers hook_link_alter(). #}
 						{{ link(link_title, item.url, link_attributes.addClass(item.in_active_trail ? 'active-trail')) }}

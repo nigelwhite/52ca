@@ -10779,6 +10779,15 @@ p:last-child,
 
 .be-inspired-menu {
   margin-top: 8rem;
-  
 }
+
+.be-inspired-ul {
+  list-style: none;
+}
+
+.be-inspired-li a {
+  margin-bottom: 5px;
+  display: block;
+}
+
 /*# sourceMappingURL=style.css.map */
