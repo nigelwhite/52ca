@@ -9740,9 +9740,9 @@ ul.entity-pager-list {
 }
 
 /* line 198, ../scss/custom/_card.scss */
-.region-sidebar-second {
+/* .region-sidebar-second {
   display: none;
-}
+} */
 
 @media screen and (min-width: 400px) {
   /* line 203, ../scss/custom/_card.scss */
