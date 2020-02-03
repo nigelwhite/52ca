@@ -10768,7 +10768,8 @@ p:last-child,
 }
 
 .be-inspired-hero {
-  background: linear-gradient(45deg, rgba(0,164,92,0.8), rgba(254,217,5,0.6));
+  /* background: linear-gradient(45deg, rgba(0,164,92,0.8), rgba(254,217,5,0.6)); */
+  background: linear-gradient(45deg, rgba(0,141,65,0.8) 50%, rgba(254,217,5,0.6));
   text-align: center;
 }
 
