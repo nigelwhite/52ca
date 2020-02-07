@@ -2688,21 +2688,20 @@
         },
         {
             "name": "drupal/ckeditorheight",
-            "version": "1.5.0",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ckeditorheight.git",
-                "reference": "8.x-1.5"
+                "reference": "8.x-1.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ckeditorheight-8.x-1.5.zip",
-                "reference": "8.x-1.5",
-                "shasum": "8c3bea209f1e2298951a40a1b3feba65914f70c3"
+                "url": "https://ftp.drupal.org/files/projects/ckeditorheight-8.x-1.8.zip",
+                "reference": "8.x-1.8",
+                "shasum": "ccf98078866e89da0c62c055752bdf59822d4d4c"
             },
             "require": {
-                "drupal/core": "*",
-                "drupal/readmehelp": "*"
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
@@ -2710,8 +2709,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.5",
-                    "datestamp": "1571431384",
+                    "version": "8.x-1.8",
+                    "datestamp": "1580163325",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2728,7 +2727,7 @@
                     "homepage": "https://www.drupal.org/user/894458"
                 },
                 {
-                    "name": "geek.merlin aka axel.rutz",
+                    "name": "geek-merlin",
                     "homepage": "https://www.drupal.org/user/229048"
                 }
             ],
@@ -4903,58 +4902,6 @@
             "homepage": "https://www.drupal.org/project/pathauto",
             "support": {
                 "source": "https://git.drupalcode.org/project/pathauto"
-            }
-        },
-        {
-            "name": "drupal/readmehelp",
-            "version": "1.0.0-beta4",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/readmehelp.git",
-                "reference": "8.x-1.0-beta4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/readmehelp-8.x-1.0-beta4.zip",
-                "reference": "8.x-1.0-beta4",
-                "shasum": "eb41b936db945b827e7fc15759df6182ff0b4086"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-beta4",
-                    "datestamp": "1545500580",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Vladimir Proshin (drugan)",
-                    "homepage": "https://www.drupal.org/u/drugan",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "Renders README file on the admin/help/your_module page",
-            "homepage": "https://www.drupal.org/project/readmehelp",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/readmehelp",
-                "issues": "https://www.drupal.org/project/issues/readmehelp"
             }
         },
         {
