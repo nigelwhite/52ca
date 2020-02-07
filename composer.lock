@@ -4413,20 +4413,20 @@
         },
         {
             "name": "drupal/linked_field",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/linked_field.git",
-                "reference": "8.x-1.1"
+                "reference": "8.x-1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/linked_field-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "99c877b15e814e8275a38d5b161fc5db444dd69d"
+                "url": "https://ftp.drupal.org/files/projects/linked_field-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "9d9ed0d4eb19707065e8f53672fc31c05a94158f"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
@@ -4434,8 +4434,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1493495342",
+                    "version": "8.x-1.2",
+                    "datestamp": "1580913964",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
