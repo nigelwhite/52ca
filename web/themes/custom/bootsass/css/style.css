@@ -10803,8 +10803,17 @@ li.active.active-trail.be-inspired-li{
   margin: 0 0 10px 0;
 }
 
+.partner-thumbnail a img{
+  -webkit-box-shadow: 9px 9px 22px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: 9px 9px 22px -8px rgba(0,0,0,0.75);
+box-shadow: 9px 9px 22px -8px rgba(0,0,0,0.75);
+}
+
 .partner-image img {
-  padding: 20px 0 40px 0;
+  margin: 30px 0 40px 0;
+  -webkit-box-shadow: 9px 9px 22px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: 9px 9px 22px -8px rgba(0,0,0,0.75);
+box-shadow: 9px 9px 22px -8px rgba(0,0,0,0.75);
 }
 
 .field--name-field-work {
