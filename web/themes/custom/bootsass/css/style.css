@@ -10786,8 +10786,34 @@ p:last-child,
 }
 
 .be-inspired-li a {
-  margin-bottom: 5px;
+  padding: 5px 0 5px 20px;
   display: block;
+}
+
+li.active.active-trail.be-inspired-li{
+  background: rgba(254,217,5,0.6);
+}
+
+.view-partners .views-row {
+  border-bottom: 1px black solid;
+  padding: 20px 0;
+}
+
+.view-partners .views-row h4 {
+  margin: 0 0 10px 0;
+}
+
+.partner-image img {
+  padding: 20px 0 40px 0;
+}
+
+.field--name-field-work {
+  font-size: 2rem;
+}
+
+.field--name-field-role,
+.partner-summary p {
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
