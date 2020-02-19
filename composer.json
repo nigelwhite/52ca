@@ -65,6 +65,7 @@
         "drupal/svg_image": "^1.8",
         "drupal/video_embed_field": "^2.0",
         "drupal/view_mode_page": "^3.1",
+        "drupal/view_unpublished": "^1.0@alpha",
         "drupal/views_bootstrap": "3.x-dev",
         "drupal/views_infinite_scroll": "^1.5",
         "drupal/views_slideshow": "^4.6",
