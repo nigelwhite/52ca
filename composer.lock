@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5e8eef4d16c42df8813ba6932d564864",
+    "content-hash": "8f32428196ffed30ed8b47a3208adbef",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -6701,6 +6701,21 @@
             "type": "drupal-library",
             "extra": {
                 "installer-name": "jquery.chosen"
+            }
+        },
+        {
+            "name": "jquery/geocomplete",
+            "version": "1.7.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/ubilabs/geocomplete/archive/1.7.0.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "jquery.geocomplete"
             }
         },
         {
