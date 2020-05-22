@@ -11605,7 +11605,7 @@ p:last-child,
   display: block;
 }
 
-.be-inspired-li .is-active {
+.be-inspired-li .active {
   background: rgba(254, 217, 5, 0.6);
   border-radius: 5px;
 }
