@@ -11574,13 +11574,10 @@ p:last-child,
 }
 
 .be-inspired-hero {
-  /* background: linear-gradient(45deg, rgba(0,164,92,0.8), rgba(254,217,5,0.6)); */
-  background: linear-gradient(
-    45deg,
-    rgba(0, 141, 65, 0.8) 40%,
-    rgba(254, 217, 5, 0.6)
-  );
-  text-align: center;
+  background-image: url("../images/love-nature-concept.png");
+  background-color: rgba(254, 217, 5, 0.6);
+  color: white;
+  padding-left: 30px;
 }
 
 .be-inspired-title {
@@ -11658,5 +11655,11 @@ li.active.active-trail.be-inspired-li {
 .align-center .embedded-square-200 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+/* for caption of embedded images of width 300 */
+figcaption {
+  float: right;
+  font-size: small;
 }
 /*# sourceMappingURL=style.css.map */
