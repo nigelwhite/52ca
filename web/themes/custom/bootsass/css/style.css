@@ -11604,8 +11604,9 @@ p:last-child,
   display: block;
 }
 
-li.active.active-trail.be-inspired-li {
+.be-inspired-li .is-active {
   background: rgba(254, 217, 5, 0.6);
+  border-radius: 5px;
 }
 
 .view-partners .views-row {
