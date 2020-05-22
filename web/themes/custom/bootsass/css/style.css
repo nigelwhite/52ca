@@ -11605,7 +11605,7 @@ p:last-child,
   display: block;
 }
 
-.active-trail .be-inspired-li a {
+.active.active-trail.be-inspired-li a {
   background: rgba(254, 217, 5, 0.6);
   border-radius: 5px;
 }
