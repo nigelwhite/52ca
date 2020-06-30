@@ -1,28 +1,28 @@
 {
-  "_from": "codemirror@5.48.2",
-  "_id": "codemirror@5.48.2",
+  "_from": "codemirror@5.51.0",
+  "_id": "codemirror@5.51.0",
   "_inBundle": false,
-  "_integrity": "sha512-i9VsmC8AfA5ji6EDIZ+aoSe4vt9FcwPLdHB1k1ItFbVyuOFRrcfvnoKqwZlC7EVA2UmTRiNEypE4Uo7YvzVY8Q==",
+  "_integrity": "sha512-vyuYYRv3eXL0SCuZA4spRFlKNzQAewHcipRQCOKgRy7VNAvZxTKzbItdbCl4S5AgPZ5g3WkHp+ibWQwv9TLG7Q==",
   "_location": "/codemirror",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "codemirror@5.48.2",
+    "raw": "codemirror@5.51.0",
     "name": "codemirror",
     "escapedName": "codemirror",
-    "rawSpec": "5.48.2",
+    "rawSpec": "5.51.0",
     "saveSpec": null,
-    "fetchSpec": "5.48.2"
+    "fetchSpec": "5.51.0"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/codemirror/-/codemirror-5.48.2.tgz",
-  "_shasum": "a9dd3d426dea4cd59efd59cd98e20a9152a30922",
-  "_spec": "codemirror@5.48.2",
-  "_where": "/private/var/folders/9p/clj0fc754y35m01btd46043c0000gn/T/tmp.afMLjyuc",
+  "_resolved": "https://registry.npmjs.org/codemirror/-/codemirror-5.51.0.tgz",
+  "_shasum": "7746caaf5223e68f5c55ea11e2f3cc82a9a3929e",
+  "_spec": "codemirror@5.51.0",
+  "_where": "/private/var/folders/9p/clj0fc754y35m01btd46043c0000gn/T/tmp.lo26wGvI",
   "author": {
     "name": "Marijn Haverbeke",
     "email": "marijnh@gmail.com",
@@ -253,6 +253,9 @@
       "name": "Anton Kovalyov"
     },
     {
+      "name": "antosarho"
+    },
+    {
       "name": "Apollo Zhu"
     },
     {
@@ -266,6 +269,9 @@
     },
     {
       "name": "Arnab Bose"
+    },
+    {
+      "name": "Arnoud Buzing"
     },
     {
       "name": "Arsène von Wyss"
@@ -703,6 +709,9 @@
       "name": "eborden"
     },
     {
+      "name": "edoroshenko"
+    },
+    {
       "name": "edsharp"
     },
     {
@@ -710,6 +719,9 @@
     },
     {
       "name": "Elisée"
+    },
+    {
+      "name": "elpnt"
     },
     {
       "name": "Emmanuel Schanzer"
@@ -797,6 +809,9 @@
     },
     {
       "name": "Franco Catena"
+    },
+    {
+      "name": "Frank Seifferth"
     },
     {
       "name": "Frank Wiegand"
@@ -890,6 +905,9 @@
       "name": "Grzegorz Mazur"
     },
     {
+      "name": "Guang Li"
+    },
+    {
       "name": "Guan Gui"
     },
     {
@@ -908,6 +926,9 @@
       "name": "Hakan Tunc"
     },
     {
+      "name": "Hanno Fellmann"
+    },
+    {
       "name": "Hans Engel"
     },
     {
@@ -921,6 +942,9 @@
     },
     {
       "name": "Harshvardhan Gupta"
+    },
+    {
+      "name": "Hasan Delibaş"
     },
     {
       "name": "Hasan Karahan"
@@ -986,6 +1010,9 @@
       "name": "idleberg"
     },
     {
+      "name": "Igor Petruk"
+    },
+    {
       "name": "ilvalle"
     },
     {
@@ -1023,6 +1050,9 @@
     },
     {
       "name": "James Campos"
+    },
+    {
+      "name": "James Cockshull"
     },
     {
       "name": "James Howard"
@@ -1149,6 +1179,9 @@
       "name": "Johan Ask"
     },
     {
+      "name": "Johannes"
+    },
+    {
       "name": "John Connor"
     },
     {
@@ -1159,6 +1192,9 @@
     },
     {
       "name": "John Lees-Miller"
+    },
+    {
+      "name": "John Ryan"
     },
     {
       "name": "John Snelson"
@@ -1195,6 +1231,9 @@
     },
     {
       "name": "Jon Sangster"
+    },
+    {
+      "name": "Joo"
     },
     {
       "name": "Joost-Wim Boekesteijn"
@@ -1353,6 +1392,9 @@
       "name": "Laszlo Vidacs"
     },
     {
+      "name": "leaf"
+    },
+    {
       "name": "leaf corcoran"
     },
     {
@@ -1390,6 +1432,9 @@
     },
     {
       "name": "lochel"
+    },
+    {
+      "name": "Lonnie Abelbeck"
     },
     {
       "name": "Lorenzo Simionato"
@@ -1482,6 +1527,9 @@
       "name": "Mark Dalgleish"
     },
     {
+      "name": "Mark Hamstra"
+    },
+    {
       "name": "Mark Lentczner"
     },
     {
@@ -1549,6 +1597,9 @@
     },
     {
       "name": "Matthias BUSSONNIER"
+    },
+    {
+      "name": "Mattia Astorino"
     },
     {
       "name": "Matt MacPherson"
@@ -1796,6 +1847,9 @@
       "name": "nilp0inter"
     },
     {
+      "name": "Nils Knappmeier"
+    },
+    {
       "name": "Nisarg Jhaveri"
     },
     {
@@ -1814,13 +1868,25 @@
       "name": "Oleksandr Yakovenko"
     },
     {
+      "name": "Olivia Ytterbrink"
+    },
+    {
+      "name": "Opender Singh"
+    },
+    {
       "name": "opl-"
     },
     {
       "name": "Oreoluwa Onatemowo"
     },
     {
+      "name": "oscar.lofwenhamn"
+    },
+    {
       "name": "Oskar Segersvärd"
+    },
+    {
+      "name": "ossdev"
     },
     {
       "name": "overdodactyl"
@@ -1934,6 +2000,9 @@
       "name": "Prayag Verma"
     },
     {
+      "name": "prendota"
+    },
+    {
       "name": "Prendota"
     },
     {
@@ -1971,6 +2040,9 @@
     },
     {
       "name": "Rasmus Schultz"
+    },
+    {
+      "name": "raymondf"
     },
     {
       "name": "Raymond Hill"
@@ -2028,6 +2100,9 @@
     },
     {
       "name": "Ruslan Osmanov"
+    },
+    {
+      "name": "Ryan Pangrle"
     },
     {
       "name": "Ryan Petrello"
@@ -2255,6 +2330,9 @@
       "name": "Tarmil"
     },
     {
+      "name": "T. Brandon Ashley"
+    },
+    {
       "name": "TDaglis"
     },
     {
@@ -2375,6 +2453,9 @@
       "name": "Tyler Long"
     },
     {
+      "name": "Tyler Makaro"
+    },
+    {
       "name": "Vadim Dyachenko"
     },
     {
@@ -2489,6 +2570,9 @@
       "name": "Ziv"
     },
     {
+      "name": "zoobestik"
+    },
+    {
       "name": "zziuni"
     },
     {
@@ -2498,12 +2582,11 @@
   "deprecated": false,
   "description": "Full-featured in-browser code editor",
   "devDependencies": {
-    "blint": "^1",
+    "blint": "^1.1.0",
     "node-static": "0.7.11",
-    "phantomjs-prebuilt": "^2.1.12",
-    "rollup": "^0.66.2",
-    "rollup-plugin-buble": "^0.19.2",
-    "rollup-watch": "^4.3.1"
+    "puppeteer": "^1.20.0",
+    "rollup": "^1.26.3",
+    "rollup-plugin-buble": "^0.19.8"
   },
   "directories": {
     "lib": "./lib"
@@ -2534,5 +2617,5 @@
     "watch": "rollup -w -c"
   },
   "style": "lib/codemirror.css",
-  "version": "5.48.2"
+  "version": "5.51.0"
 }
